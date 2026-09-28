@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="no-referrer">
-  <title>NR 23 — Brigada de Incêndio</title>
+  <title>NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário)</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="question-screen.css?v=orderFb">
+  <link rel="stylesheet" href="question-screen.css?v=fichaLike">
   <link rel="stylesheet" href="capa-animada.css?v=12">
   <link rel="stylesheet" href="fundo-novo.css?v=1">
-  <link rel="stylesheet" href="menu-compacto.css?v=1">
+  <link rel="stylesheet" href="menu-compacto.css?v=menuDestaque">
   <link rel="stylesheet" href="atividades.css?v=10">
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; }
@@ -26,7 +26,8 @@
       <div class="qs-home-inner">
         <div class="qs-home-card">
           <div class="qs-home-tag">SEGURANÇA DO TRABALHO</div>
-          <h1><em>NR 23</em> —<br>Brigada de Incêndio (Intermediário)</h1>
+          <h1><em>NR 23 –</em> Proteção Contra Incêndios</h1>
+          <p class="qs-home-level">Brigada de Incêndio · Nível Intermediário</p>
           <p>Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação e prestar os primeiros socorros no escritório FEMSA.</p>
           <div class="qs-home-badges">
             <div class="qs-home-badge">
@@ -150,10 +151,10 @@
 
   <audio id="bg-music" loop preload="metadata" aria-hidden="true"></audio>
 
-  <script src="question-screen-data.js?v=ttsAll"></script>
-  <script src="question-screen.js?v=orderFb"></script>
+  <script src="question-screen-data.js?v=p66jpeg"></script>
+  <script src="question-screen.js?v=fichaLike"></script>
   <script src="capa-animada.js?v=10"></script>
-  <script src="narration-text.js?v=tts6"></script>
+  <script src="narration-text.js?v=menuAudio"></script>
   <script src="narration.js?v=tts6"></script>
   <script>
 (function () {
@@ -434,14 +435,14 @@
         title: demoMode ? 'Modo simulação ligado' : 'Vamos começar pelo Módulo 1?',
         body: demoMode
           ? 'Todos os módulos estão liberados. Avance sem travar em quiz ou vídeo.'
-          : ((m.title || '') + ' — toque no card liberado para iniciar.')
+          : ((m.title || '') + '. Toque no card liberado para iniciar.')
       };
     }
     return {
       title: demoMode ? 'Modo simulação ligado' : ('Módulo ' + m.id + ' liberado!'),
       body: demoMode
         ? 'Todos os módulos estão liberados. Avance sem travar em quiz ou vídeo.'
-        : ((m.title || '') + ' — toque no card para continuar.')
+        : ((m.title || '') + '. Toque no card para continuar.')
     };
   }
 
@@ -711,8 +712,9 @@
     var callout = menuCallout();
     shell.innerHTML =
       '<div class="qs-menu">' +
-        '<h1>NR 23 — Brigada de Incêndio</h1>' +
-        '<p class="qs-menu-lead">Conteúdo programático do treinamento. As atividades ficam só no final de cada módulo.</p>' +
+        '<h1><span class="qs-menu-norm">NR 23 –</span> Proteção Contra Incêndios</h1>' +
+        '<p class="qs-menu-level">Brigada de Incêndio · Nível Intermediário</p>' +
+        '<p class="qs-menu-lead">Conteúdo programático completo. Só o módulo liberado pode ser aberto.</p>' +
         '<div class="qs-start-callout" role="status">' +
           '<strong>' + callout.title + '</strong>' +
           '<span>' + callout.body + '</span>' +
@@ -722,18 +724,17 @@
             var locked = !isUnlocked(i);
             var done = isCompleted(i);
             var cls = locked ? ' is-locked' : (done ? ' is-done' : ' is-open is-pulse');
-            var statusLabel = locked ? 'Bloqueado' : (done ? 'Concluído' : (i === 0 ? 'Começar' : 'Continuar'));
+            var statusLabel = locked
+              ? ('Após o Módulo ' + modules[i - 1].id)
+              : (done ? 'Concluído' : (i === 0 ? 'Começar' : 'Continuar'));
             var statusCls = locked ? 'qs-lock' : (done ? 'qs-done' : 'qs-go');
-            var meta = locked
-              ? ('Conclua o Módulo ' + modules[i - 1].id + ' para liberar')
-              : (done ? 'Toque para revisar' : 'Disponível agora');
             return '<button type="button" class="qs-mod-card' + cls + '"' +
               ' data-mod="' + i + '"' +
               (locked ? ' disabled aria-disabled="true"' : '') +
+              ' aria-label="Módulo ' + m.id + ': ' + m.title + (locked ? ' (libera após o Módulo ' + modules[i - 1].id + ')' : '') + '"' +
               '>' +
               '<div class="qs-mod-num">' + m.id + '</div>' +
               '<strong class="qs-mod-title">' + m.title + '</strong>' +
-              '<span class="qs-mod-meta">' + meta + '</span>' +
               '<em class="' + statusCls + '">' + statusLabel + '</em>' +
             '</button>';
           }).join('') +

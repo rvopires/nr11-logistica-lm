@@ -1,5 +1,5 @@
 ﻿/**
- * Conteúdo — NR 23 Brigada de Incêndio (Intermediário) · FEMSA / Coca-Cola
+ * Conteúdo — NR 23 Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário) · FEMSA / Coca-Cola
  * Gerado a partir de Roteiro-NR23-Brigada-Incendio.txt
  *
  * Tipos: cover | content | video | image | quiz-intro | question | order | match | compare | reflect | finale
@@ -19,7 +19,7 @@
   */
 window.QUESTION_SCREEN_SESSION = {
   "meta": {
-    "title": "NR 23 — Brigada de Incêndio",
+    "title": "NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário)",
     "brand": "TecnoCursos",
     "musicSrc": "musica/musica_foco.mp3"
   },
@@ -310,6 +310,20 @@ window.QUESTION_SCREEN_SESSION = {
           "brief": "Quatro faces: calor, comburente (oxigênio), material combustível e reação em cadeia.",
           "body": "Para o fogo existir: calor, comburente (oxigênio), material combustível e reação em cadeia. Remova um dos quatro lados e o fogo se apaga.",
           "transcript": "Vídeo: o tetraedro do fogo."
+        },
+        {
+          "id": "m2-tetraedro-elementos",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Tetraedro do Fogo: os 4 Elementos",
+          "body": "O tetraedro do fogo é o modelo que explica como o fogo começa e se mantém. Tirando qualquer um dos quatro elementos, o fogo se apaga.",
+          "items": [
+            { "icon": "🪵", "title": "Combustível:", "text": "o material que queima — sólido (madeira, papel), líquido (gasolina, álcool) ou gasoso (gás de cozinha)." },
+            { "icon": "💨", "title": "Comburente:", "text": "o que torna a queima possível — o oxigênio do ar é o mais comum." },
+            { "icon": "🔥", "title": "Calor:", "text": "a energia que inicia o fogo, como uma faísca, e leva o combustível à temperatura de ignição." },
+            { "icon": "🔁", "title": "Reação em cadeia:", "text": "o calor das próprias chamas alimenta a queima, fazendo o fogo se propagar sozinho." }
+          ],
+          "transcript": "Tetraedro do fogo: os quatro elementos essenciais."
         },
         {
           "id": "m2-v-metodos",
@@ -1279,6 +1293,134 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Vídeo: choque elétrico e hemorragias."
         },
         {
+          "id": "m6-hemorragia-controle",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "steps": true,
+          "stepUnit": "Passo",
+          "stepNext": "Próximo passo",
+          "stepFinish": "Concluir",
+          "title": "Hemorragia: Como Controlar o Sangramento",
+          "body": "Controle o sangramento externo nesta ordem — do mais urgente ao último recurso.",
+          "items": [
+            {
+              "n": 1,
+              "icon": "📞",
+              "title": "Ligue para a emergência:",
+              "text": "SAMU 192 ou Bombeiros 193, imediatamente.",
+              "image": "assets/fotos/p65-1.png",
+              "imageAlt": "Profissional de saúde ligando para emergência no celular"
+            },
+            {
+              "n": 2,
+              "icon": "🧤",
+              "title": "Proteja-se:",
+              "text": "use luvas descartáveis, se tiver, antes de tocar no sangue.",
+              "image": "assets/fotos/p65-2.png",
+              "imageAlt": "Uso de luvas descartáveis antes de tocar no sangue"
+            },
+            {
+              "n": 3,
+              "icon": "🩹",
+              "title": "Comprima a ferida:",
+              "text": "cubra com pano limpo, toalha ou gaze e pressione com firmeza por 10 a 20 minutos.",
+              "image": "assets/fotos/p65-3.png",
+              "imageAlt": "Compressão da ferida com gaze no braço do trabalhador"
+            },
+            {
+              "n": 4,
+              "icon": "🚫",
+              "title": "Não retire panos encharcados:",
+              "text": "se o sangue passar, coloque outro pano limpo por cima, sem tirar o primeiro.",
+              "image": "assets/fotos/p65-4.png",
+              "imageAlt": "Novo pano limpo colocado sobre o curativo encharcado, sem retirar o primeiro"
+            },
+            {
+              "n": 5,
+              "icon": "⬆️",
+              "title": "Eleve o membro:",
+              "text": "braço ou perna acima do nível do coração, se não houver suspeita de fratura grave.",
+              "image": "assets/fotos/p65-5.png",
+              "imageAlt": "Elevação do membro ferido acima do nível do coração"
+            },
+            {
+              "n": 6,
+              "icon": "⚠️",
+              "title": "Torniquete como último recurso:",
+              "text": "só se a pressão direta não for suficiente num sangramento grave em membro.",
+              "warn": "Último recurso — só em sangramento grave de membro.",
+              "image": "assets/fotos/p65-6.png",
+              "imageAlt": "Aplicação de torniquete no braço como último recurso"
+            }
+          ],
+          "review": "Como controlar hemorragia externa",
+          "transcript": "Hemorragia: como controlar o sangramento externo."
+        },
+        {
+          "id": "m6-hemorragia-torniquete",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "steps": true,
+          "stepUnit": "Passo",
+          "stepNext": "Próximo passo",
+          "stepFinish": "Concluir",
+          "title": "Torniquete: Passo a Passo",
+          "body": "Só use o torniquete quando a pressão direta não for suficiente para parar o sangramento.",
+          "items": [
+            {
+              "n": 1,
+              "icon": "📍",
+              "title": "Posicione:",
+              "text": "5 a 7 cm acima da ferida, na direção do tronco. Nunca sobre uma articulação; sem saber o local exato, coloque o mais alto possível no membro.",
+              "image": "assets/fotos/p66-1.png",
+              "imageAlt": "Posicionamento do torniquete acima da ferida"
+            },
+            {
+              "n": 2,
+              "icon": "🔒",
+              "title": "Ajuste:",
+              "text": "passe a fita ao redor do membro e puxe o velcro com firmeza, sem folga nenhuma.",
+              "image": "assets/fotos/p66-2.png",
+              "imageAlt": "Ajuste firme da fita do torniquete no membro"
+            },
+            {
+              "n": 3,
+              "icon": "🔄",
+              "title": "Torça:",
+              "text": "gire a barra de torção até o sangramento parar totalmente e o pulso sumir. Dói bastante, mas é necessário.",
+              "image": "assets/fotos/p66-3.png",
+              "imageAlt": "Torção da barra do torniquete até estancar o sangramento"
+            },
+            {
+              "n": 4,
+              "icon": "🧷",
+              "title": "Trave:",
+              "text": "prenda a barra no clipe de fixação e cubra com a tira de segurança.",
+              "image": "assets/fotos/p66-4.png",
+              "imageAlt": "Barra do torniquete travada no clipe de fixação"
+            },
+            {
+              "n": 5,
+              "icon": "🕒",
+              "title": "Anote o horário:",
+              "text": "registre a hora exata da aplicação, no próprio torniquete ou num papel visível na vítima.",
+              "image": "assets/fotos/p66-5.png",
+              "imageAlt": "Registro do horário de aplicação do torniquete"
+            },
+            {
+              "n": 6,
+              "icon": "⛔",
+              "title": "Nunca afrouxe:",
+              "text": "só uma equipe médica no hospital pode remover o torniquete.",
+              "warn": "Não afrouxe nem remova — só a equipe médica no hospital.",
+              "image": "assets/fotos/p66-6.jpeg",
+              "imageAlt": "Torniquete mantido no lugar até o atendimento hospitalar"
+            }
+          ],
+          "review": "Como aplicar um torniquete",
+          "transcript": "Torniquete: passo a passo de aplicação."
+        },
+        {
           "id": "m6-v-desmaio-engasgo",
           "type": "video",
           "kicker": "🎥 Vídeo",
@@ -1290,6 +1432,35 @@ window.QUESTION_SCREEN_SESSION = {
           "brief": "Desmaio: arejado, pernas elevadas. Adulto: tosse → Heimlich → SAMU/RCP. Bebê: bruços no antebraço + palmadas nas costas.",
           "body": "Desmaio: local arejado, deitar de costas com pernas elevadas, afrouxar roupas, água após recuperar. Engasgo adulto: tossir → Heimlich → SAMU → RCP se necessário. Bebê: bruços no antebraço, palmadas leves nas costas (manequim no vídeo).",
           "transcript": "Vídeo: desmaio e engasgo."
+        },
+        {
+          "id": "m6-engasgo-criancas-adultos",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Engasgo em Crianças (+1 ano) e Adultos",
+          "body": "A sequência certa alterna pancadas nas costas com compressões abdominais.",
+          "items": [
+            { "n": 1, "title": "Posicione-se:", "text": "atrás da vítima." },
+            { "n": 2, "title": "5 pancadas nas costas:", "text": "golpes firmes entre as escápulas." },
+            { "n": 3, "title": "Não saiu? Heimlich:", "text": "5 compressões abdominais." },
+            { "n": 4, "title": "Repita:", "text": "até o objeto sair ou a pessoa desmaiar. Se desmaiar, inicie a RCP." }
+          ],
+          "review": "Engasgo em crianças e adultos: pancadas + Heimlich",
+          "transcript": "Engasgo em crianças acima de um ano e adultos."
+        },
+        {
+          "id": "m6-engasgo-bebe",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Engasgo em Bebês (menos de 1 ano)",
+          "items": [
+            { "icon": "🚫", "title": "Proibido:", "text": "compressão abdominal em bebês — o risco de ferir os órgãos internos é grande." },
+            { "n": 1, "title": "De bruços no antebraço:", "text": "cabeça mais baixa que o corpo, e 5 pancadas firmes nas costas." },
+            { "n": 2, "title": "Vire de barriga para cima:", "text": "5 compressões torácicas no centro do peito, com a base da mão." },
+            { "n": 3, "title": "Alterne os ciclos:", "text": "até o bebê expelir o objeto ou perder a consciência." }
+          ],
+          "review": "Engasgo em bebês: pancadas + compressões torácicas",
+          "transcript": "Engasgo em bebês com menos de um ano."
         },
         {
           "id": "m6-v-convulsao",
@@ -1509,6 +1680,36 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Vídeo: RCP passo a passo."
         },
         {
+          "id": "m7-rcp-antes",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "RCP: Antes de Começar",
+          "items": [
+            { "n": 1, "title": "Verifique o local:", "text": "o ambiente precisa ser seguro pra você e pra vítima." },
+            { "n": 2, "title": "Cheque a resposta:", "text": "toque nos ombros e pergunte em voz alta se ela está bem." },
+            { "n": 3, "title": "Chame ajuda:", "text": "192 (SAMU), e peça um DEA se houver um por perto." },
+            { "n": 4, "title": "Observe a respiração:", "text": "o tórax se move? Por no máximo 10 segundos." },
+            { "n": 5, "title": "Posicione a vítima:", "text": "de barriga para cima, sobre uma superfície firme e plana." }
+          ],
+          "review": "Antes de começar a RCP",
+          "transcript": "RCP: os passos antes de iniciar as compressões."
+        },
+        {
+          "id": "m7-rcp-compressoes",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "RCP: Como Fazer as Compressões",
+          "items": [
+            { "n": 1, "title": "Posição das mãos:", "text": "ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito." },
+            { "n": 2, "title": "Postura:", "text": "braços esticados, use o peso do corpo, ângulo de 90° com o tórax." },
+            { "n": 3, "title": "Frequência:", "text": "100 a 120 compressões por minuto, no ritmo de \"Stayin' Alive\", dos Bee Gees." },
+            { "n": 4, "title": "Profundidade:", "text": "pelo menos 5 a 6 cm em adultos." },
+            { "n": 5, "title": "Retorno do tórax:", "text": "deixe o peito voltar à posição normal entre uma compressão e outra." }
+          ],
+          "review": "Como fazer as compressões da RCP",
+          "transcript": "RCP: técnica correta das compressões torácicas."
+        },
+        {
           "id": "m7-numeros",
           "type": "content",
           "kicker": "📄 Texto",
@@ -1614,14 +1815,14 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🏆 Conclusão",
           "eyebrow": "Certificado de conclusão",
           "title": "Parabéns",
-          "body": "Você concluiu o treinamento NR 23 — Curso de Prevenção de Incêndios (Intermediário).",
+          "body": "Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário).",
           "quote": "Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida.",
           "chips": [
             "NR 23",
             "Brigada de Incêndio",
-            "Intermediário"
+            "Nível Intermediário"
           ],
-          "transcript": "Parabéns pela conclusão do treinamento NR 23. Todos têm o direito de viver em um ambiente seguro.",
+          "transcript": "Parabéns. Você finalizou o NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Intermediário. Todos têm o direito de viver em um ambiente seguro.",
           "image": "assets/fotos/capafinal.png",
           "imageAlt": "Imagem final de parabéns pelo treinamento concluído"
         }
