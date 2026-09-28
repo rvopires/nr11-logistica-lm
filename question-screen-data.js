@@ -1449,6 +1449,18 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Engasgo em crianças acima de um ano e adultos."
         },
         {
+          "id": "m6-engasgo-criancas-adultos-foto",
+          "type": "content",
+          "layout": "stack",
+          "kicker": "📷 Foto",
+          "title": "Engasgo em Crianças (+1 ano) e Adultos",
+          "image": "assets/fotos/p68.png",
+          "imageAlt": "Infográfico da manobra Heimlich para desengasgar: posicionar-se atrás, fechar o punho, comprimir entre umbigo e tórax e empurrar para dentro e para cima",
+          "imageFit": "contain",
+          "review": "Manobra Heimlich para desengasgar",
+          "transcript": "Infográfico: a manobra Heimlich para desengasgar."
+        },
+        {
           "id": "m6-engasgo-bebe",
           "type": "content",
           "kicker": "📄 Texto",
@@ -1461,6 +1473,18 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "review": "Engasgo em bebês: pancadas + compressões torácicas",
           "transcript": "Engasgo em bebês com menos de um ano."
+        },
+        {
+          "id": "m6-engasgo-bebe-foto",
+          "type": "content",
+          "layout": "stack",
+          "kicker": "📷 Foto",
+          "title": "Engasgo em Bebês (menos de 1 ano)",
+          "image": "assets/fotos/pg71.png",
+          "imageAlt": "Infográfico de desengasgo em bebês: bruços no antebraço com palmadas nas costas, verificar respiração, chamar SAMU 192 e iniciar RCP se necessário",
+          "imageFit": "contain",
+          "review": "Desengasgo em bebês",
+          "transcript": "Infográfico: desengasgo em bebês."
         },
         {
           "id": "m6-v-convulsao",
@@ -1682,8 +1706,11 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m7-rcp-antes",
           "type": "content",
-          "kicker": "📄 Texto",
+          "layout": "stack",
+          "kicker": "📷 Foto",
           "title": "RCP: Antes de Começar",
+          "image": "assets/fotos/pagina81.png",
+          "imageFit": "contain",
           "items": [
             { "n": 1, "title": "Verifique o local:", "text": "o ambiente precisa ser seguro pra você e pra vítima." },
             { "n": 2, "title": "Cheque a resposta:", "text": "toque nos ombros e pergunte em voz alta se ela está bem." },
@@ -1697,8 +1724,11 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m7-rcp-compressoes",
           "type": "content",
-          "kicker": "📄 Texto",
+          "layout": "stack",
+          "kicker": "📷 Foto",
           "title": "RCP: Como Fazer as Compressões",
+          "image": "assets/fotos/pagina82.jpeg",
+          "imageFit": "contain",
           "items": [
             { "n": 1, "title": "Posição das mãos:", "text": "ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito." },
             { "n": 2, "title": "Postura:", "text": "braços esticados, use o peso do corpo, ângulo de 90° com o tórax." },
@@ -1715,24 +1745,17 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "📄 Texto",
           "title": "Números de Emergência: Saiba Quem Chamar",
           "stats": [
-            {
-              "num": "192",
-              "label": "SAMU — clínicas e traumas"
-            },
-            {
-              "num": "193",
-              "label": "Bombeiros — incêndio e resgate"
-            },
-            {
-              "num": "190",
-              "label": "Polícia Militar — segurança pública"
-            }
+            { "num": "193", "label": "Bombeiros", "tone": "featured" },
+            { "num": "199", "label": "Defesa Civil" },
+            { "num": "194", "label": "Polícia Federal" },
+            { "num": "192", "label": "SAMU" },
+            { "num": "191", "label": "Polícia Rodoviária Federal" },
+            { "num": "190", "label": "Polícia Militar" },
+            { "num": "198 ou 191", "label": "Polícia Militar Rodoviária Estadual" },
+            { "num": "8427 1052", "label": "Guarda Municipal" },
+            { "num": "0800 643 5252", "label": "Centro de Informações Toxicológicas" }
           ],
-          "note": {
-            "label": "Interno FEMSA",
-            "text": "Conheça também o procedimento de acionamento da portaria/segurança do prédio."
-          },
-          "transcript": "Números de emergência: 192, 193 e 190."
+          "transcript": "Números de emergência: Bombeiros 193, Defesa Civil 199, Polícia Federal 194, SAMU 192, Polícia Rodoviária Federal 191, Polícia Militar 190, Polícia Militar Rodoviária Estadual 198 ou 191, Guarda Municipal 8427 1052, e Centro de Informações Toxicológicas 0800 643 5252."
         },
         {
           "id": "m7-v-encerramento",

@@ -382,10 +382,11 @@
     if (data.body) html += `<p class="qs-body">${esc(data.body)}</p>`;
     if (Array.isArray(data.stats) && data.stats.length) {
       html += `<div class="qs-stats">${data.stats.map(function (s) {
-        return `<div class="qs-stat">
+        var tone = s.tone ? ' tone-' + esc(s.tone) : '';
+        return `<div class="qs-stat${tone}">
           ${s.icon ? `<span class="qs-stat-ico" aria-hidden="true">${esc(s.icon)}</span>` : ''}
-          <div class="qs-stat-num">${esc(s.num || '')}</div>
           <div class="qs-stat-lbl">${esc(s.label || '')}</div>
+          <div class="qs-stat-num">${esc(s.num || '')}</div>
         </div>`;
       }).join('')}</div>`;
     }
@@ -540,6 +541,19 @@
 
     var head = `<h2 class="qs-title">${esc(data.title || '')}</h2>
           ${contentBlocks(data)}`;
+    if (hasImg && data.layout === 'stack') {
+      /* Infográfico / foto protagonista: só o título em cima; a imagem fala sozinha.
+         body/items ficam nos dados para a narração, sem poluir o layout. */
+      return `
+      <article class="qs-screen is-content is-stack" data-qs-root data-type="content">
+        <div class="qs-panel qs-panel-stack">
+          <h2 class="qs-title">${esc(data.title || '')}</h2>
+        </div>
+        <div class="qs-media qs-media-wide">
+          ${mediaHTML(data, { contain: data.imageFit === 'contain' })}
+        </div>
+      </article>`;
+    }
     if (hasImg) {
       var extra = '';
       if (normCompact) extra += ' is-norm-compact';
