@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T11:40:13.319Z",
+  "generatedAt": "2026-09-28T18:42:50.593Z",
   "items": {
     "home": {
       "file": "assets/audio/home.mp3",
@@ -459,7 +459,7 @@
     },
     "m7-numeros": {
       "file": "assets/audio/m7-numeros.mp3",
-      "text": "Números de Emergência: Saiba Quem Chamar. 192 SAMU, clínicas e traumas. 193 Bombeiros, incêndio e resgate. 190 Polícia Militar, segurança pública. Interno FEMSA: Conheça também o procedimento de acionamento da portaria/segurança do prédio."
+      "text": "Números de Emergência: Saiba Quem Chamar. 193 Bombeiros. 199 Defesa Civil. 194 Polícia Federal. 192 SAMU. 191 Polícia Rodoviária Federal. 190 Polícia Militar. 198 ou 191 Polícia Militar Rodoviária Estadual. 8427 1052 Guarda Municipal. 0800 643 5252 Centro de Informações Toxicológicas."
     },
     "m7-v-encerramento": {
       "file": "assets/audio/m7-v-encerramento.mp3",
@@ -536,6 +536,38 @@
     "m7-result-fail": {
       "file": "assets/audio/m7-result-fail.mp3",
       "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m6-hemorragia-controle": {
+      "file": "assets/audio/m6-hemorragia-controle.mp3",
+      "text": "Hemorragia: Como Controlar o Sangramento. Controle o sangramento externo nesta ordem, do mais urgente ao último recurso. Ligue para a emergência: SAMU 192 ou Bombeiros 193, imediatamente. Na imagem: Profissional de saúde ligando para emergência no celular. Proteja-se: use luvas descartáveis, se tiver, antes de tocar no sangue. Na imagem: Uso de luvas descartáveis antes de tocar no sangue. Comprima a ferida: cubra com pano limpo, toalha ou gaze e pressione com firmeza por 10 a 20 minutos. Na imagem: Compressão da ferida com gaze no braço do trabalhador. Não retire panos encharcados: se o sangue passar, coloque outro pano limpo por cima, sem tirar o primeiro. Na imagem: Novo pano limpo colocado sobre o curativo encharcado, sem retirar o primeiro. Eleve o membro: braço ou perna acima do nível do coração, se não houver suspeita de fratura grave. Na imagem: Elevação do membro ferido acima do nível do coração. Torniquete como último recurso: só se a pressão direta não for suficiente num sangramento grave em membro. Na imagem: Aplicação de torniquete no braço como último recurso."
+    },
+    "m6-hemorragia-torniquete": {
+      "file": "assets/audio/m6-hemorragia-torniquete.mp3",
+      "text": "Torniquete: Passo a Passo. Só use o torniquete quando a pressão direta não for suficiente para parar o sangramento. Posicione: 5 a 7 centímetros acima da ferida, na direção do tronco. Nunca sobre uma articulação; sem saber o local exato, coloque o mais alto possível no membro. Na imagem: Posicionamento do torniquete acima da ferida. Ajuste: passe a fita ao redor do membro e puxe o velcro com firmeza, sem folga nenhuma. Na imagem: Ajuste firme da fita do torniquete no membro. Torça: gire a barra de torção até o sangramento parar totalmente e o pulso sumir. Dói bastante, mas é necessário. Na imagem: Torção da barra do torniquete até estancar o sangramento. Trave: prenda a barra no clipe de fixação e cubra com a tira de segurança. Na imagem: Barra do torniquete travada no clipe de fixação. Anote o horário: registre a hora exata da aplicação, no próprio torniquete ou num papel visível na vítima. Na imagem: Registro do horário de aplicação do torniquete. Nunca afrouxe: só uma equipe médica no hospital pode remover o torniquete. Na imagem: Torniquete mantido no lugar até o atendimento hospitalar."
+    },
+    "m6-engasgo-criancas-adultos": {
+      "file": "assets/audio/m6-engasgo-criancas-adultos.mp3",
+      "text": "Engasgo em Crianças (+1 ano) e Adultos. A sequência certa alterna pancadas nas costas com compressões abdominais. Posicione-se: atrás da vítima. 5 pancadas nas costas: golpes firmes entre as escápulas. Não saiu? Heimlich: 5 compressões abdominais. Repita: até o objeto sair ou a pessoa desmaiar. Se desmaiar, inicie a RCP."
+    },
+    "m6-engasgo-criancas-adultos-foto": {
+      "file": "assets/audio/m6-engasgo-criancas-adultos-foto.mp3",
+      "text": "Engasgo em Crianças (+1 ano) e Adultos. Na imagem: Infográfico da manobra Heimlich para desengasgar: posicionar-se atrás, fechar o punho, comprimir entre umbigo e tórax e empurrar para dentro e para cima."
+    },
+    "m6-engasgo-bebe": {
+      "file": "assets/audio/m6-engasgo-bebe.mp3",
+      "text": "Engasgo em Bebês (menos de 1 ano). Proibido: compressão abdominal em bebês, o risco de ferir os órgãos internos é grande. De bruços no antebraço: cabeça mais baixa que o corpo, e 5 pancadas firmes nas costas. Vire de barriga para cima: 5 compressões torácicas no centro do peito, com a base da mão. Alterne os ciclos: até o bebê expelir o objeto ou perder a consciência."
+    },
+    "m6-engasgo-bebe-foto": {
+      "file": "assets/audio/m6-engasgo-bebe-foto.mp3",
+      "text": "Engasgo em Bebês (menos de 1 ano). Na imagem: Infográfico de desengasgo em bebês: bruços no antebraço com palmadas nas costas, verificar respiração, chamar SAMU 192 e iniciar RCP se necessário."
+    },
+    "m7-rcp-antes": {
+      "file": "assets/audio/m7-rcp-antes.mp3",
+      "text": "RCP: Antes de Começar. Verifique o local: o ambiente precisa ser seguro pra você e pra vítima. Cheque a resposta: toque nos ombros e pergunte em voz alta se ela está bem. Chame ajuda: 192 (SAMU), e peça um DEA se houver um por perto. Observe a respiração: o tórax se move? Por no máximo 10 segundos. Posicione a vítima: de barriga para cima, sobre uma superfície firme e plana."
+    },
+    "m7-rcp-compressoes": {
+      "file": "assets/audio/m7-rcp-compressoes.mp3",
+      "text": "RCP: Como Fazer as Compressões. Posição das mãos: ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito. Postura: braços esticados, use o peso do corpo, ângulo de 90° com o tórax. Frequência: 100 a 120 compressões por minuto, no ritmo de \"Stayin' Alive\", dos Bee Gees. Profundidade: pelo menos 5 a 6 centímetros em adultos. Retorno do tórax: deixe o peito voltar à posição normal entre uma compressão e outra."
     }
   }
 }

@@ -488,7 +488,7 @@ window.QUESTION_SCREEN_SESSION = {
             {
               "title": "Gás Carbônico (CO₂)",
               "body": "Classes B e C — especialmente equipamentos elétricos sensíveis.",
-              "image": "assets/fotos/m3-gas.png",
+              "image": "assets/fotos/gás.png",
               "imageAlt": "Extintor de gás carbônico"
             }
           ],
@@ -503,7 +503,7 @@ window.QUESTION_SCREEN_SESSION = {
             {
               "title": "Mangueira",
               "body": "Fibra sintética com revestimento de borracha; 15 ou 30 m (30 m não é mais usado).",
-              "image": "assets/fotos/mangueira.png",
+              "image": "assets/fotos/mangueira.jpg",
               "imageAlt": "Mangueira de incêndio"
             },
             {
