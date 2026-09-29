@@ -1,11 +1,11 @@
-/* Fundo novo — degradê limpo, do verde ao amarelo (verde tropical #008471 → amarelo soleil #F4D242).
+/* Fundo novo — degradê limpo, do laranja ao yellow-green (Tiger Flame #FF5E32 → Yellow Green #B8CE4F).
    Carregado depois de question-screen.css. Para voltar ao visual antigo, remova o <link> dele. */
 
 .qs-app {
   /* fallback (navegadores sem interpolação em oklab) */
-  background: linear-gradient(165deg, #006B5C 0%, #008471 28%, #7FB768 66%, #F4D242 100%);
+  background: linear-gradient(165deg, #E04A22 0%, #FF5E32 28%, #FF8A5C 66%, #B8CE4F 100%);
   /* interpolação em oklab: a mistura fica limpa, sem passar por um tom "sujo" */
-  background: linear-gradient(in oklab 165deg, #006B5C 0%, #008471 28%, #F4D242 100%);
+  background: linear-gradient(in oklab 165deg, #E04A22 0%, #FF5E32 28%, #B8CE4F 100%);
 }
 
 /* remove as decorações do fundo antigo (listras, brilho e onda amarela) */
@@ -16,12 +16,12 @@
 /* o botão amarelo "ver mais" tinha sombra vermelha (sobra do tema antigo) */
 .qs-more {
   box-shadow:
-    0 8px 20px rgba(120, 96, 8, 0.36),
+    0 8px 20px rgba(90, 110, 30, 0.36),
     0 0 0 4px rgba(255, 255, 255, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* sombra discreta pro cartão branco "descolar" do fundo */
 .qs-screen {
-  box-shadow: 0 24px 60px rgba(0, 40, 30, 0.28);
+  box-shadow: 0 24px 60px rgba(60, 18, 8, 0.28);
 }

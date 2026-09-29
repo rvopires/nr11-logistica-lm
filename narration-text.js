@@ -19,7 +19,7 @@
   var HOME_TEXT = [
     'Abertura do treinamento.',
     'Segurança do trabalho.',
-    'NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Intermediário.',
+    'NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado.',
     'Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação',
     'e prestar os primeiros socorros no escritório FEMSA.',
     'São sete módulos, com conteúdo completo, em treinamento cem por cento online.',
@@ -251,7 +251,7 @@
   function buildMenuText(session, nextModule) {
     var mods = (session && session.modules) || [];
     var parts = [
-      'NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Intermediário.',
+      'NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado.',
       'Conteúdo programático completo.',
       'Só o módulo liberado pode ser aberto.'
     ];

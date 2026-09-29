@@ -1,5 +1,7 @@
 /* ==========================================================================
-   CAPA ANIMADA — fogo da lixeira, fumaça do extintor e faíscas
+   CAPA ANIMADA (AVANÇADO) — tablet e rádio na mesa, em primeiro plano: tela
+   do tablet "ligada" pulsando, luz de status piscando no rádio e ondas de
+   transmissão saindo da antena.
    O JS (capa-animada.js) cria a camada .qs-fx exatamente sobre a foto
    (mesmo enquadramento do object-fit: cover), então as posições abaixo são
    % da foto original (1672×941) e os tamanhos usam cqw (largura da camada).
@@ -18,130 +20,92 @@
   will-change: transform, opacity;
 }
 
-/* brilho do fogo (luz laranja que pulsa sobre o chão e a parede) — mais
-   saturado e mais opaco do que antes, pra o fogo "acender" mais na cena */
-.qs-fx-glow {
-  left: 80%; top: 60%;
-  width: 26cqw; height: 26cqw;
-  margin: -13cqw 0 0 -13cqw;
-  background: radial-gradient(circle, rgba(255,120,10,.75) 0%, rgba(255,70,0,.4) 40%, transparent 70%);
+/* retângulo da tela do tablet — recorta o brilho e a varredura por dentro */
+.qs-fx-tablet {
+  border-radius: 4%;
+  overflow: hidden;
+  transform: rotate(-4deg);
+}
+.qs-fx-tablet-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(90, 170, 255, .55) 0%, rgba(50, 110, 220, .28) 55%, transparent 85%);
   mix-blend-mode: screen;
-  animation: qsFxGlow 1.3s ease-in-out infinite alternate;
+  animation: qsFxTabletGlow 2.6s ease-in-out infinite alternate;
 }
-@keyframes qsFxGlow {
-  0%   { opacity: .7;  transform: scale(.94); }
-  35%  { opacity: 1;   transform: scale(1.04); }
-  60%  { opacity: .85; transform: scale(.98); }
-  100% { opacity: 1;   transform: scale(1.1); }
+@keyframes qsFxTabletGlow {
+  0%   { opacity: .55; }
+  100% { opacity: 1; }
 }
-
-/* línguas de fogo (por cima do fogo da foto, só somam movimento e luz) —
-   cores mais puras (menos branco lavado no miolo) e menos desfoque, pra
-   ficarem mais visíveis em vez de um brilho difuso */
-.qs-fx-flame {
-  width: 4.2cqw; height: 9cqw;
-  margin: -9cqw 0 0 -2.1cqw;
-  border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
-  background: radial-gradient(ellipse at 50% 78%, rgba(255,225,100,1) 0%, rgba(255,140,10,.95) 35%, rgba(230,50,0,.7) 68%, transparent 100%);
-  filter: blur(1.5px) saturate(1.35);
-  mix-blend-mode: screen;
-  transform-origin: 50% 100%;
-  animation: qsFxFlame var(--d, 0.9s) ease-in-out var(--dl, 0s) infinite alternate;
+.qs-fx-tablet-scan {
+  position: absolute;
+  left: 0; right: 0;
+  height: 22%;
+  background: linear-gradient(180deg, transparent 0%, rgba(160, 210, 255, .45) 50%, transparent 100%);
+  animation: qsFxTabletScan 3.2s ease-in-out infinite;
 }
-@keyframes qsFxFlame {
-  0%   { transform: scale(.85, .75) skewX(-4deg) translateY(0);   opacity: .85; }
-  50%  { transform: scale(1.05, 1.15) skewX(3deg) translateY(-1cqw); opacity: 1; }
-  100% { transform: scale(.9, 1.3) skewX(-2deg) translateY(-2cqw);  opacity: .92; }
+@keyframes qsFxTabletScan {
+  0%   { top: -25%; opacity: 0; }
+  10%  { opacity: .9; }
+  90%  { opacity: .9; }
+  100% { top: 100%; opacity: 0; }
 }
 
-/* fumaça branca do jato: left/top vêm de cada nuvem (JS), espalhadas ao
-   longo do jato já pintado na foto — os valores aqui são só o tamanho e o
-   fallback caso o JS não os defina.
-   O jato da própria foto já é branco, então uma nuvem branca pura por cima
-   dele praticamente não aparece (branco sobre branco). Por isso o miolo
-   continua branco, mas a borda ganhou um cinza-azulado e uma sombra leve —
-   dá o contorno que faz a nuvem se notar sem mudar a cor do jato. */
-.qs-fx-puff {
-  left: 62%; top: 58%;
-  width: 6.5cqw; height: 6.5cqw;
-  margin: -3.25cqw 0 0 -3.25cqw;
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,.9) 42%, rgba(224,233,242,.28) 72%, rgba(224,233,242,0) 90%);
-  filter: blur(5px) drop-shadow(0 2px 4px rgba(30,50,80,.11));
+/* luz de status piscando no corpo do rádio */
+.qs-fx-led {
+  width: .5cqw; height: .5cqw;
+  margin: -.25cqw 0 0 -.25cqw;
+  background: #ff5a4d;
+  box-shadow: 0 0 6px 2px rgba(255, 90, 77, .9);
   opacity: 0;
-  animation: qsFxPuff var(--d, 2.4s) ease-out var(--dl, 0s) infinite;
+  animation: qsFxLed 1.3s ease-in-out infinite;
 }
-@keyframes qsFxPuff {
-  0%   { opacity: 0;   transform: translate(0, 0) scale(.18); }
-  12%  { opacity: 1; }
-  100% { opacity: 0;   transform: translate(var(--dx, 10cqw), var(--dy, -1cqw)) scale(var(--s, 2.4)); }
+@keyframes qsFxLed {
+  0%, 100% { opacity: 0; }
+  50%      { opacity: 1; }
 }
 
-/* respingo da fumaça na lixeira: nuvens que se abrem em todas as direções */
-.qs-fx-splash {
-  left: 79.5%; top: 60%;
-  width: 9cqw; height: 9cqw;
-  margin: -4.5cqw 0 0 -4.5cqw;
-  background: radial-gradient(circle, rgba(255,255,255,.95) 0%, rgba(240,240,245,.75) 50%, rgba(235,235,240,0) 75%);
-  filter: blur(5px);
+/* ondas de transmissão saindo da ponta da antena do rádio */
+.qs-fx-ring {
+  width: 1.2cqw; height: 1.2cqw;
+  margin: -.6cqw 0 0 -.6cqw;
+  border: 1.5px solid rgba(255, 255, 255, .6);
   opacity: 0;
-  animation: qsFxSplash 1.8s ease-out var(--dl, 0s) infinite;
+  animation: qsFxRingPulse 2.2s ease-out var(--dl, 0s) infinite;
 }
-@keyframes qsFxSplash {
-  0%   { opacity: 0;  transform: translate(0, 0) scale(.4); }
-  20%  { opacity: .95; }
-  100% { opacity: 0;  transform: translate(var(--dx), var(--dy)) scale(2.6); }
+@keyframes qsFxRingPulse {
+  0%   { opacity: 0;  transform: scale(.3); }
+  18%  { opacity: .8; }
+  100% { opacity: 0;  transform: scale(6); }
 }
 
-/* fumaça escura que sobe da lixeira */
-.qs-fx-smoke {
-  left: 81%; top: 46%;
-  width: 8cqw; height: 8cqw;
-  margin: -4cqw 0 0 -4cqw;
-  background: radial-gradient(circle, rgba(70,70,75,.7) 0%, rgba(90,90,95,.4) 45%, rgba(90,90,95,0) 72%);
-  filter: blur(6px);
+/* pulso de localização (ping) no ponto do mapa de papel onde a caneta aponta */
+.qs-fx-pin-dot {
+  width: 1cqw; height: 1cqw;
+  margin: -.5cqw 0 0 -.5cqw;
+  background: radial-gradient(circle at 35% 30%, #fff 0%, #F4D242 45%, #D4B020 100%);
+  box-shadow: 0 0 10px 3px rgba(244, 210, 66, .75);
+  animation: qsFxPinDot 1.6s ease-in-out infinite;
+}
+@keyframes qsFxPinDot {
+  0%, 100% { transform: scale(.85); }
+  50%      { transform: scale(1.15); }
+}
+.qs-fx-pin-ring {
+  width: 1cqw; height: 1cqw;
+  margin: -.5cqw 0 0 -.5cqw;
+  border: 2px solid rgba(244, 210, 66, .55);
   opacity: 0;
-  animation: qsFxSmoke var(--d, 3.6s) ease-out var(--dl, 0s) infinite;
+  animation: qsFxPinRing 1.8s ease-out var(--dl, 0s) infinite;
 }
-@keyframes qsFxSmoke {
-  0%   { opacity: 0;  transform: translate(0, 0) scale(.5); }
-  20%  { opacity: .75; }
-  100% { opacity: 0;  transform: translate(var(--dx, -1.5cqw), -13cqw) scale(2.2); }
-}
-
-/* fumaça preta grande, nascendo em cima da própria chama — "engole" o fogo
-   por um instante antes de subir e sumir, e ele reaparece entre uma passada
-   e outra (as línguas de fogo continuam piscando por baixo, sem parar). */
-.qs-fx-smoke-big {
-  width: 11cqw; height: 11cqw;
-  margin: -5.5cqw 0 0 -5.5cqw;
-  background: radial-gradient(circle, rgba(35,34,37,.6) 0%, rgba(55,54,58,.4) 45%, rgba(55,54,58,0) 74%);
-  filter: blur(7px);
-  animation-name: qsFxSmokeBig;
-}
-@keyframes qsFxSmokeBig {
-  0%   { opacity: 0;   transform: translate(0, 0) scale(.4); }
-  25%  { opacity: .55; }
-  55%  { opacity: .48; transform: translate(0, -4cqw) scale(1.3); }
-  100% { opacity: 0;   transform: translate(1cqw, -15cqw) scale(2.1); }
-}
-
-/* faíscas subindo */
-.qs-fx-spark {
-  left: var(--x, 79%); top: 54%;
-  width: .38cqw; height: .38cqw;
-  background: #ffd36a;
-  box-shadow: 0 0 6px 2px rgba(255,150,30,.9);
-  opacity: 0;
-  animation: qsFxSpark var(--d, 2s) ease-out var(--dl, 0s) infinite;
-}
-@keyframes qsFxSpark {
-  0%   { opacity: 0; transform: translate(0, 0) scale(1); }
-  15%  { opacity: 1; }
-  100% { opacity: 0; transform: translate(var(--dx, 2cqw), -14cqw) scale(.3); }
+@keyframes qsFxPinRing {
+  0%   { opacity: 0;  transform: scale(.4); }
+  20%  { opacity: .8; }
+  100% { opacity: 0;  transform: scale(4.5); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .qs-fx > i { animation: none !important; }
-  .qs-fx-puff, .qs-fx-splash, .qs-fx-smoke, .qs-fx-spark { display: none; }
-  .qs-fx-glow { opacity: .7; }
+  .qs-fx > i, .qs-fx-tablet-scan, .qs-fx-tablet-glow { animation: none !important; }
+  .qs-fx-tablet-scan, .qs-fx-led, .qs-fx-ring, .qs-fx-pin-ring { display: none; }
+  .qs-fx-tablet-glow { opacity: .55; }
 }

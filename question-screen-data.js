@@ -1,5 +1,5 @@
-﻿/**
- * Conteúdo — NR 23 Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário) · FEMSA / Coca-Cola
+/**
+ * Conteúdo — NR 23 Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado) · FEMSA / Coca-Cola
  * Gerado a partir de Roteiro-NR23-Brigada-Incendio.txt
  *
  * Tipos: cover | content | video | image | quiz-intro | question | order | match | compare | reflect | finale
@@ -19,7 +19,7 @@
   */
 window.QUESTION_SCREEN_SESSION = {
   "meta": {
-    "title": "NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário)",
+    "title": "NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado)",
     "brand": "TecnoCursos",
     "musicSrc": "musica/musica_foco.mp3"
   },
@@ -1767,7 +1767,7 @@ window.QUESTION_SCREEN_SESSION = {
           "playerId": "panda-4821065b-d6e7-4715-aa3e-3ce8cdf013d9",
           "scene": "Brigadista confiante no corredor + logo FEMSA",
           "brief": "Mensagem final e frase de fechamento do material NR 23.",
-          "body": "Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida. Você concluiu o NR 23 Intermediário — esteja sempre pronto.",
+          "body": "Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida. Você concluiu o NR 23 Avançado — esteja sempre pronto.",
           "transcript": "Vídeo de encerramento."
         },
         {
@@ -1838,14 +1838,14 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🏆 Conclusão",
           "eyebrow": "Certificado de conclusão",
           "title": "Parabéns",
-          "body": "Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Intermediário).",
+          "body": "Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado).",
           "quote": "Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida.",
           "chips": [
             "NR 23",
             "Brigada de Incêndio",
-            "Nível Intermediário"
+            "Nível Avançado"
           ],
-          "transcript": "Parabéns. Você finalizou o NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Intermediário. Todos têm o direito de viver em um ambiente seguro.",
+          "transcript": "Parabéns. Você finalizou o NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Todos têm o direito de viver em um ambiente seguro.",
           "image": "assets/fotos/capafinal.png",
           "imageAlt": "Imagem final de parabéns pelo treinamento concluído"
         }
