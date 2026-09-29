@@ -395,7 +395,8 @@
         ? ' is-landscape'
         : (data.cardAspect === 'square' || data.cardAspect === '1x1' ? ' is-square' : '');
       var skinClass = data.skin === 'actions' ? ' is-actions'
-        : (data.skin === 'agents' ? ' is-agents' : '');
+        : (data.skin === 'agents' ? ' is-agents'
+        : (data.skin === 'principles' ? ' is-principles' : ''));
       html += `<div class="qs-cards count-${data.cards.length}${aspectClass}${skinClass}">${data.cards.map(function (c) {
         var imgOnly = !!(c.image && !c.title && !c.body && !c.icon && !(c.points && c.points.length));
         var img = c.image
@@ -539,6 +540,10 @@
     if (data.skin === 'ficha' && Array.isArray(data.items) && data.items.length) {
       return fichaHTML(data);
     }
+    /* Ficha rápida / princípios: cartões que viram ao tocar. */
+    if (data.layout === 'quickcards' && Array.isArray(data.items) && data.items.length) {
+      return quickCardsHTML(data);
+    }
 
     var head = `<h2 class="qs-title">${esc(data.title || '')}</h2>
           ${contentBlocks(data)}`;
@@ -572,13 +577,47 @@
     }
     var dense = (data.items && data.items.length > 6) || (data.cards && data.cards.length > 3);
     var skin = data.skin === 'actions' ? ' is-actions'
-      : (data.skin === 'agents' ? ' is-agents' : '');
+      : (data.skin === 'agents' ? ' is-agents'
+      : (data.skin === 'principles' ? ' is-principles' : ''));
     return `
       <article class="qs-screen is-content is-text${dense ? ' is-dense' : ''}${skin}" data-qs-root data-type="content">
         <div class="qs-panel qs-panel-text">
           ${head}
         </div>
       </article>`;
+  }
+
+  function quickCardsHTML(data) {
+    var items = data.items || [];
+    var cards = items.map(function (it, i) {
+      var tone = i % 7;
+      var title = esc((it.title || '').replace(/:\s*$/, ''));
+      var text = esc(it.text || it.body || '');
+      var icoHtml = it.icon ? ('<span class="qs-qc-ico" aria-hidden="true">' + esc(it.icon) + '</span>') : '';
+      return '' +
+        '<button type="button" class="qs-qc" data-tone="' + tone + '" aria-pressed="false" aria-label="' + title + '. Toque para ver a conduta">' +
+          '<span class="qs-qc-inner">' +
+            '<span class="qs-qc-face qs-qc-front">' +
+              icoHtml +
+              '<b class="qs-qc-title">' + title + '</b>' +
+              '<span class="qs-qc-hint">Toque para ver a conduta</span>' +
+            '</span>' +
+            '<span class="qs-qc-face qs-qc-back">' +
+              '<b class="qs-qc-title">' + title + '</b>' +
+              '<p class="qs-qc-text">' + text + '</p>' +
+            '</span>' +
+          '</span>' +
+        '</button>';
+    }).join('');
+    return '' +
+      '<article class="qs-screen is-content is-text is-quickcards" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text">' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          (data.body ? ('<p class="qs-body">' + esc(data.body) + '</p>') : '') +
+          '<p class="qs-qc-hintbar">🔄 Toque em cada cartão para ver o que fazer</p>' +
+          '<div class="qs-qc-grid">' + cards + '</div>' +
+        '</div>' +
+      '</article>';
   }
 
   function fichaHTML(data) {
@@ -932,7 +971,9 @@
   function questionHTML(data) {
     var alts = Array.isArray(data.alternatives) ? data.alternatives.slice(0, 4) : [];
     var count = Math.max(1, alts.length);
-    var variant = data.variant || '';
+    var hasPhoto = !!data.image;
+    /* Sem foto: layout de lista (não exige imagem). Com foto: variant do data ou padrão. */
+    var variant = data.variant || (hasPhoto ? '' : 'lista');
     var opts = alts.map(function (a, i) {
       return `
         <button type="button" class="qs-opt" data-tone="${i % 4}" data-id="${esc(a.id != null ? a.id : i)}" data-index="${i}">
@@ -942,15 +983,25 @@
         </button>`;
     }).join('');
 
-    return `
-      <article class="qs-screen is-question" data-qs-root data-type="question"${variant ? ` data-variant="${esc(variant)}"` : ''}>
-        <div class="qs-timer" aria-hidden="true"><i data-qs-timer></i></div>
-        <div class="qs-media qs-media-hero">
-          ${mediaHTML(data, { noZoom: true })}
+    var resultBanner = `
           <div class="qs-result-banner" data-qs-result role="status" aria-live="polite" hidden>
             <span data-qs-result-text></span>
-          </div>
-        </div>
+          </div>`;
+
+    var mediaBlock = hasPhoto
+      ? `<div class="qs-media qs-media-hero">
+          ${mediaHTML(data, { noZoom: true })}
+          ${resultBanner}
+        </div>`
+      : `<div class="qs-q-head">
+          <span class="qs-q-ico" aria-hidden="true">${esc(data.icon || '🧭')}</span>
+          ${resultBanner}
+        </div>`;
+
+    return `
+      <article class="qs-screen is-question${hasPhoto ? '' : ' no-photo'}" data-qs-root data-type="question"${variant ? ` data-variant="${esc(variant)}"` : ''}>
+        <div class="qs-timer" aria-hidden="true"><i data-qs-timer></i></div>
+        ${mediaBlock}
         <div class="qs-qbar-wrap">
           <div class="qs-qbar">${esc(data.question || '')}</div>
         </div>
@@ -1301,6 +1352,13 @@
       e.stopPropagation();
       var zImg = zoomBtn.parentNode && zoomBtn.parentNode.querySelector('img');
       openLightbox(zoomBtn.getAttribute('data-qs-zoom'), zImg ? zImg.alt : '');
+      return;
+    }
+    var qc = e.target.closest('.qs-qc');
+    if (qc) {
+      beep('click');
+      var flip = qc.classList.toggle('is-flip');
+      qc.setAttribute('aria-pressed', flip ? 'true' : 'false');
       return;
     }
     var opt = e.target.closest('.qs-opt');

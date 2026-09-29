@@ -406,6 +406,181 @@
 .qs-confirm:disabled { background: #e6e9e8; color: #7a8783; box-shadow: none; cursor: default; }
 .qs-confirm[hidden] { display: none; }
 
+/* ==========================================================================
+   PRINCIPIOS SCI (layout "quickcards")
+   Grade 3 colunas · cartão compacto com ícone + título · vira ao toque.
+   ========================================================================== */
+.qs-screen.is-quickcards {
+  background:
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(255, 94, 50, 0.1), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.16), transparent 50%),
+    linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
+}
+.qs-screen.is-quickcards .qs-panel-text {
+  justify-content: center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 16px 18px 18px;
+  gap: 0;
+}
+.qs-screen.is-quickcards .qs-title {
+  margin: 0 0 4px;
+  text-align: center;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  color: var(--qs-ink);
+}
+.qs-qc-hintbar {
+  margin: 0 0 12px;
+  flex: 0 0 auto;
+  text-align: center;
+  font-family: var(--qs-font-b);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--qs-muted);
+}
+.qs-qc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+/* 7º cartão sozinho na 3ª linha → coluna do meio */
+.qs-qc-grid .qs-qc:last-child:nth-child(3n+1) {
+  grid-column: 2;
+}
+.qs-qc {
+  position: relative;
+  height: 92px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  perspective: 1400px;
+  touch-action: manipulation;
+  animation: qsFichaIn 0.36s ease both;
+}
+.qs-qc-grid .qs-qc:nth-child(1) { animation-delay: 0.02s; }
+.qs-qc-grid .qs-qc:nth-child(2) { animation-delay: 0.05s; }
+.qs-qc-grid .qs-qc:nth-child(3) { animation-delay: 0.08s; }
+.qs-qc-grid .qs-qc:nth-child(4) { animation-delay: 0.11s; }
+.qs-qc-grid .qs-qc:nth-child(5) { animation-delay: 0.14s; }
+.qs-qc-grid .qs-qc:nth-child(6) { animation-delay: 0.17s; }
+.qs-qc-grid .qs-qc:nth-child(7) { animation-delay: 0.20s; }
+.qs-qc-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.qs-qc.is-flip .qs-qc-inner { transform: rotateY(180deg); }
+.qs-qc-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 22px rgba(60, 18, 8, 0.12);
+}
+.qs-qc-front {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid rgba(255, 94, 50, 0.1);
+  border-top: 5px solid transparent;
+}
+.qs-qc[data-tone="0"] .qs-qc-front { border-top-color: #2563eb; }
+.qs-qc[data-tone="1"] .qs-qc-front { border-top-color: #ea580c; }
+.qs-qc[data-tone="2"] .qs-qc-front { border-top-color: #db2777; }
+.qs-qc[data-tone="3"] .qs-qc-front { border-top-color: #7c3aed; }
+.qs-qc[data-tone="4"] .qs-qc-front { border-top-color: #0d9488; }
+.qs-qc[data-tone="5"] .qs-qc-front { border-top-color: #ca8a04; }
+.qs-qc[data-tone="6"] .qs-qc-front { border-top-color: #dc2626; }
+.qs-qc-ico { font-size: 1.55rem; line-height: 1; }
+.qs-qc-title {
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: var(--qs-ink);
+  line-height: 1.25;
+}
+.qs-qc-hint {
+  font-family: var(--qs-font-b);
+  font-weight: 600;
+  font-size: 0.62rem;
+  color: var(--qs-muted);
+}
+.qs-qc-hint::before { content: '⟲ '; }
+.qs-qc-back {
+  transform: rotateY(180deg);
+  justify-content: center;
+  gap: 5px;
+  overflow: auto;
+  color: #fff;
+}
+.qs-qc[data-tone="0"] .qs-qc-back { background: linear-gradient(150deg, #2563eb, #1d4ed8); }
+.qs-qc[data-tone="1"] .qs-qc-back { background: linear-gradient(150deg, #ea580c, #c2410c); }
+.qs-qc[data-tone="2"] .qs-qc-back { background: linear-gradient(150deg, #db2777, #be185d); }
+.qs-qc[data-tone="3"] .qs-qc-back { background: linear-gradient(150deg, #7c3aed, #6d28d9); }
+.qs-qc[data-tone="4"] .qs-qc-back { background: linear-gradient(150deg, #0d9488, #0f766e); }
+.qs-qc[data-tone="5"] .qs-qc-back { background: linear-gradient(150deg, #ca8a04, #a16207); }
+.qs-qc[data-tone="6"] .qs-qc-back { background: linear-gradient(150deg, #dc2626, #b91c1c); }
+.qs-qc-back .qs-qc-title { color: #fff; font-size: 0.78rem; }
+.qs-qc-back .qs-qc-text {
+  margin: 0;
+  font-family: var(--qs-font-b);
+  font-weight: 600;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+.qs-qc:focus-visible .qs-qc-face { outline: 3px solid #fff; outline-offset: -3px; box-shadow: 0 0 0 5px rgba(255, 94, 50, 0.35); }
+
+@media (max-height: 680px) {
+  .qs-qc { height: 80px; }
+  .qs-qc-ico { font-size: 1.35rem; }
+  .qs-qc-title { font-size: 0.76rem; }
+  .qs-qc-hint { display: none; }
+  .qs-qc-grid { gap: 8px; }
+  .qs-qc-face { padding: 10px 12px; }
+  .qs-qc-back .qs-qc-text { font-size: 0.68rem; }
+}
+@media (max-width: 720px) {
+  .qs-qc-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .qs-qc-grid .qs-qc:last-child:nth-child(3n+1) {
+    grid-column: auto;
+  }
+  .qs-qc-grid .qs-qc:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 5px);
+  }
+  .qs-qc { height: 86px; }
+}
+@media (max-width: 480px) {
+  .qs-qc { height: 78px; }
+  .qs-qc-hint { display: none; }
+  .qs-qc-title { font-size: 0.74rem; }
+  .qs-qc-back .qs-qc-text { font-size: 0.66rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qs-qc-inner { transition: none; }
+  .qs-qc { animation: none; }
+}
+
 @media (max-width: 599px) {
   .qs-screen[data-variant="cartoes"] .qs-opts,
   .qs-screen[data-variant="cartoes"] .qs-opts.count-3 { grid-template-columns: 1fr; gap: 8px; }

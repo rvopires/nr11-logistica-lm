@@ -2541,6 +2541,53 @@ html.qs-lightbox-open body {
   padding-top: 0;
 }
 
+/* Pergunta sem foto — layout limpo (lista), sem área de imagem */
+.qs-screen.is-question.no-photo {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% -8%, rgba(255, 94, 50, 0.1), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.14), transparent 50%),
+    linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
+}
+.qs-screen.is-question.no-photo .qs-q-head {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 16px 4px;
+  min-height: 56px;
+}
+.qs-screen.is-question.no-photo .qs-q-ico {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 10px rgba(60, 18, 8, 0.12));
+}
+.qs-screen.is-question.no-photo .qs-result-banner {
+  border-radius: 16px;
+  background: rgba(11, 46, 39, 0.72);
+  backdrop-filter: blur(6px);
+}
+.qs-screen.is-question.no-photo .qs-qbar-wrap {
+  margin: 8px 18px 0;
+}
+.qs-screen.is-question.no-photo .qs-qbar {
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(60, 18, 8, 0.1);
+  border: 1px solid rgba(255, 94, 50, 0.1);
+}
+.qs-screen.is-question.no-photo .qs-opts {
+  flex: 1 1 auto;
+  background: transparent;
+  padding: 14px 18px 8px;
+  align-content: start;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.qs-screen.is-question.no-photo .qs-foot-quiz {
+  background: transparent;
+  padding: 0 18px 16px;
+}
+
 .qs-timer {
   display: none;
   flex: 0 0 6px;
@@ -3354,6 +3401,120 @@ html.qs-lightbox-open body {
   .qs-cards.is-agents .qs-card-media {
     aspect-ratio: 16 / 10;
   }
+}
+
+/* Princípios SCI — grade de cards com ícone (sem foto) */
+.qs-screen.is-principles {
+  background:
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(255, 94, 50, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.18), transparent 50%),
+    linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
+}
+.qs-screen.is-principles .qs-panel-text {
+  justify-content: center;
+  gap: 6px;
+}
+.qs-screen.is-principles .qs-title {
+  text-align: center;
+  margin-bottom: 14px;
+  color: var(--qs-ink);
+}
+.qs-cards.is-principles {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.qs-cards.is-principles.count-7 {
+  grid-template-columns: repeat(12, 1fr);
+}
+.qs-cards.is-principles.count-7 .qs-card {
+  grid-column: span 4;
+}
+.qs-cards.is-principles.count-7 .qs-card:nth-child(n+4) {
+  grid-column: span 3;
+}
+.qs-cards.is-principles .qs-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding: 16px 14px 18px;
+  background: #fff;
+  border: 1px solid rgba(255, 94, 50, 0.1);
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(60, 18, 8, 0.08);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  animation: qsPrincipleIn 0.45s ease both;
+}
+.qs-cards.is-principles .qs-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(60, 18, 8, 0.12);
+}
+.qs-cards.is-principles .qs-card:nth-child(1) { animation-delay: 0.02s; }
+.qs-cards.is-principles .qs-card:nth-child(2) { animation-delay: 0.06s; }
+.qs-cards.is-principles .qs-card:nth-child(3) { animation-delay: 0.10s; }
+.qs-cards.is-principles .qs-card:nth-child(4) { animation-delay: 0.14s; }
+.qs-cards.is-principles .qs-card:nth-child(5) { animation-delay: 0.18s; }
+.qs-cards.is-principles .qs-card:nth-child(6) { animation-delay: 0.22s; }
+.qs-cards.is-principles .qs-card:nth-child(7) { animation-delay: 0.26s; }
+@keyframes qsPrincipleIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.qs-cards.is-principles .qs-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.qs-cards.is-principles .qs-card-ico {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  border-radius: 50%;
+  font-size: 1.45rem;
+  line-height: 1;
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.75), transparent 55%),
+    linear-gradient(145deg, #D0E07A, #FF5E32);
+  box-shadow: 0 4px 12px rgba(255, 94, 50, 0.22);
+}
+.qs-cards.is-principles .qs-card-head {
+  width: 100%;
+}
+.qs-cards.is-principles .qs-card h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: var(--qs-ink);
+  line-height: 1.25;
+}
+.qs-cards.is-principles .qs-card > p {
+  margin: 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--qs-muted);
+  line-height: 1.4;
+}
+@media (max-width: 720px) {
+  .qs-cards.is-principles,
+  .qs-cards.is-principles.count-7 {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .qs-cards.is-principles.count-7 .qs-card,
+  .qs-cards.is-principles.count-7 .qs-card:nth-child(n+4) {
+    grid-column: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qs-cards.is-principles .qs-card { animation: none !important; }
 }
 
 /* Prevenir × Papel — versão colorida */

@@ -15,8 +15,9 @@
  *  M4 Caça ao Risco → 3 compare (certo × errado) + 4 question
  *  M5 Guerra de Palpites → 2 reflect (reconheça a reação) + 4 question V/F
  *  M6 Corrente de Decisão → 3 question em cadeia (o erro mostra a consequência)
- *  M7 Roleta da RCP → order (5 etapas) + rhythm (tocar no ritmo das compressões, 100–120/min)
-  */
+ *  M7 Comando Estruturado → 1 reflect + 4 question (objetivo, estrutura, funções, princípios)
+ *  M8 Roleta da RCP → order (5 etapas) + rhythm (tocar no ritmo das compressões, 100–120/min)
+ */
 window.QUESTION_SCREEN_SESSION = {
   "meta": {
     "title": "NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado)",
@@ -318,10 +319,26 @@ window.QUESTION_SCREEN_SESSION = {
           "title": "Tetraedro do Fogo: os 4 Elementos",
           "body": "O tetraedro do fogo é o modelo que explica como o fogo começa e se mantém. Tirando qualquer um dos quatro elementos, o fogo se apaga.",
           "items": [
-            { "icon": "🪵", "title": "Combustível:", "text": "o material que queima — sólido (madeira, papel), líquido (gasolina, álcool) ou gasoso (gás de cozinha)." },
-            { "icon": "💨", "title": "Comburente:", "text": "o que torna a queima possível — o oxigênio do ar é o mais comum." },
-            { "icon": "🔥", "title": "Calor:", "text": "a energia que inicia o fogo, como uma faísca, e leva o combustível à temperatura de ignição." },
-            { "icon": "🔁", "title": "Reação em cadeia:", "text": "o calor das próprias chamas alimenta a queima, fazendo o fogo se propagar sozinho." }
+            {
+              "icon": "🪵",
+              "title": "Combustível:",
+              "text": "o material que queima — sólido (madeira, papel), líquido (gasolina, álcool) ou gasoso (gás de cozinha)."
+            },
+            {
+              "icon": "💨",
+              "title": "Comburente:",
+              "text": "o que torna a queima possível — o oxigênio do ar é o mais comum."
+            },
+            {
+              "icon": "🔥",
+              "title": "Calor:",
+              "text": "a energia que inicia o fogo, como uma faísca, e leva o combustível à temperatura de ignição."
+            },
+            {
+              "icon": "🔁",
+              "title": "Reação em cadeia:",
+              "text": "o calor das próprias chamas alimenta a queima, fazendo o fogo se propagar sozinho."
+            }
           ],
           "transcript": "Tetraedro do fogo: os quatro elementos essenciais."
         },
@@ -789,12 +806,30 @@ window.QUESTION_SCREEN_SESSION = {
               "title": "Prevenir",
               "lead": "Antes do fogo começar",
               "points": [
-                { "icon": "🗺️", "text": "Mapear setores de risco" },
-                { "icon": "🔍", "text": "Fazer inspeções periódicas" },
-                { "icon": "🛢️", "text": "Armazenar inflamáveis corretamente" },
-                { "icon": "⚡", "text": "Manter a elétrica em dia" },
-                { "icon": "🧯", "text": "Conhecer extintores, hidrantes e saídas" },
-                { "icon": "🏃", "text": "Treinar e simular evacuação" }
+                {
+                  "icon": "🗺️",
+                  "text": "Mapear setores de risco"
+                },
+                {
+                  "icon": "🔍",
+                  "text": "Fazer inspeções periódicas"
+                },
+                {
+                  "icon": "🛢️",
+                  "text": "Armazenar inflamáveis corretamente"
+                },
+                {
+                  "icon": "⚡",
+                  "text": "Manter a elétrica em dia"
+                },
+                {
+                  "icon": "🧯",
+                  "text": "Conhecer extintores, hidrantes e saídas"
+                },
+                {
+                  "icon": "🏃",
+                  "text": "Treinar e simular evacuação"
+                }
               ]
             },
             {
@@ -803,11 +838,26 @@ window.QUESTION_SCREEN_SESSION = {
               "title": "Papel do brigadista",
               "lead": "Quando a emergência chega",
               "points": [
-                { "icon": "🚨", "text": "Agir primeiro, com segurança" },
-                { "icon": "🔎", "text": "Identificar causas potenciais" },
-                { "icon": "🛠️", "text": "Inspecionar áreas e equipamentos" },
-                { "icon": "📋", "text": "Monitorar o cumprimento das normas" },
-                { "icon": "📢", "text": "Comunicar irregularidades ao superior" }
+                {
+                  "icon": "🚨",
+                  "text": "Agir primeiro, com segurança"
+                },
+                {
+                  "icon": "🔎",
+                  "text": "Identificar causas potenciais"
+                },
+                {
+                  "icon": "🛠️",
+                  "text": "Inspecionar áreas e equipamentos"
+                },
+                {
+                  "icon": "📋",
+                  "text": "Monitorar o cumprimento das normas"
+                },
+                {
+                  "icon": "📢",
+                  "text": "Comunicar irregularidades ao superior"
+                }
               ]
             }
           ],
@@ -1448,10 +1498,26 @@ window.QUESTION_SCREEN_SESSION = {
           "title": "Engasgo em Crianças (+1 ano) e Adultos",
           "body": "A sequência certa alterna pancadas nas costas com compressões abdominais.",
           "items": [
-            { "n": 1, "title": "Posicione-se:", "text": "atrás da vítima." },
-            { "n": 2, "title": "5 pancadas nas costas:", "text": "golpes firmes entre as escápulas." },
-            { "n": 3, "title": "Não saiu? Heimlich:", "text": "5 compressões abdominais." },
-            { "n": 4, "title": "Repita:", "text": "até o objeto sair ou a pessoa desmaiar. Se desmaiar, inicie a RCP." }
+            {
+              "n": 1,
+              "title": "Posicione-se:",
+              "text": "atrás da vítima."
+            },
+            {
+              "n": 2,
+              "title": "5 pancadas nas costas:",
+              "text": "golpes firmes entre as escápulas."
+            },
+            {
+              "n": 3,
+              "title": "Não saiu? Heimlich:",
+              "text": "5 compressões abdominais."
+            },
+            {
+              "n": 4,
+              "title": "Repita:",
+              "text": "até o objeto sair ou a pessoa desmaiar. Se desmaiar, inicie a RCP."
+            }
           ],
           "review": "Engasgo em crianças e adultos: pancadas + Heimlich",
           "transcript": "Engasgo em crianças acima de um ano e adultos."
@@ -1474,10 +1540,26 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "📄 Texto",
           "title": "Engasgo em Bebês (menos de 1 ano)",
           "items": [
-            { "icon": "🚫", "title": "Proibido:", "text": "compressão abdominal em bebês — o risco de ferir os órgãos internos é grande." },
-            { "n": 1, "title": "De bruços no antebraço:", "text": "cabeça mais baixa que o corpo, e 5 pancadas firmes nas costas." },
-            { "n": 2, "title": "Vire de barriga para cima:", "text": "5 compressões torácicas no centro do peito, com a base da mão." },
-            { "n": 3, "title": "Alterne os ciclos:", "text": "até o bebê expelir o objeto ou perder a consciência." }
+            {
+              "icon": "🚫",
+              "title": "Proibido:",
+              "text": "compressão abdominal em bebês — o risco de ferir os órgãos internos é grande."
+            },
+            {
+              "n": 1,
+              "title": "De bruços no antebraço:",
+              "text": "cabeça mais baixa que o corpo, e 5 pancadas firmes nas costas."
+            },
+            {
+              "n": 2,
+              "title": "Vire de barriga para cima:",
+              "text": "5 compressões torácicas no centro do peito, com a base da mão."
+            },
+            {
+              "n": 3,
+              "title": "Alterne os ciclos:",
+              "text": "até o bebê expelir o objeto ou perder a consciência."
+            }
           ],
           "review": "Engasgo em bebês: pancadas + compressões torácicas",
           "transcript": "Engasgo em bebês com menos de um ano."
@@ -1525,7 +1607,7 @@ window.QUESTION_SCREEN_SESSION = {
               "warn": "Nunca furar bolhas, usar pomada ou puxar roupa grudada.",
               "tone": "e1",
               "image": "assets/fotos/queimaduras.png",
-          "imageAlt": "Atendimento a queimadura"
+              "imageAlt": "Atendimento a queimadura"
             },
             {
               "n": 2,
@@ -1534,7 +1616,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Desligar energia primeiro; checar respiração/pulso; cobrir; SAMU.",
               "tone": "e2",
               "image": "assets/fotos/choque.png",
-          "imageAlt": "Atendimento a choque elétrico"
+              "imageAlt": "Atendimento a choque elétrico"
             },
             {
               "n": 3,
@@ -1543,7 +1625,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Curativo compressivo; chamar socorro.",
               "tone": "e3",
               "image": "assets/fotos/hemorragia.png",
-          "imageAlt": "Controle de hemorragia"
+              "imageAlt": "Controle de hemorragia"
             },
             {
               "n": 4,
@@ -1552,7 +1634,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Local arejado; deitar com pernas elevadas; afrouxar roupas.",
               "tone": "e4",
               "image": "assets/fotos/desmaio.png",
-          "imageAlt": "Atendimento a desmaio"
+              "imageAlt": "Atendimento a desmaio"
             },
             {
               "n": 5,
@@ -1561,7 +1643,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Tosse → Heimlich → SAMU → RCP se necessário.",
               "tone": "e5",
               "image": "assets/fotos/engasgo-adulto.png",
-          "imageAlt": "Manobra de desengasgo em adulto"
+              "imageAlt": "Manobra de desengasgo em adulto"
             },
             {
               "n": 6,
@@ -1570,7 +1652,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Bruços no antebraço + palmadas nas costas → SAMU → RCP se necessário.",
               "tone": "e6",
               "image": "assets/fotos/engasgo-bebe.png",
-          "imageAlt": "Manobra de desengasgo em bebê"
+              "imageAlt": "Manobra de desengasgo em bebê"
             },
             {
               "n": 7,
@@ -1580,7 +1662,7 @@ window.QUESTION_SCREEN_SESSION = {
               "warn": "Nunca medicação/líquido; nunca deixar sozinha.",
               "tone": "e7",
               "image": "assets/fotos/convulsao.png",
-          "imageAlt": "Atendimento a convulsão"
+              "imageAlt": "Atendimento a convulsão"
             }
           ],
           "transcript": "Ficha rápida de conduta em cada emergência. Avance emergência por emergência."
@@ -1668,6 +1750,290 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 7,
+      "title": "Sistema de Controle de Incidentes (SCI)",
+      "meta": "Texto + reflexão · 4 perguntas Comando Estruturado",
+      "titleUnlock": {
+        "title": "COMANDO ESTRUTURADO",
+        "body": "Você sabe como o SCI organiza a resposta a qualquer emergência.",
+        "icon": "🧭"
+      },
+      "screens": [
+        {
+          "id": "m7-cover",
+          "type": "cover",
+          "title": "Módulo 7 — Sistema de Controle de Incidentes (SCI)",
+          "subtitle": "Como organizar comando, comunicação e resposta em qualquer emergência.",
+          "transcript": "Módulo 7: Sistema de Controle de Incidentes.",
+          "image": "assets/fotos/capamodulo7.png",
+          "imageAlt": "Capa do módulo 7: Sistema de Controle de Incidentes"
+        },
+        {
+          "id": "m7-v-oque",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "O Que É o Sistema de Controle de Incidentes?",
+          "duration": "1:00",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
+          "playerId": "panda-d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
+          "scene": "Brigadista apresentando o conceito, com um organograma simples ao fundo",
+          "brief": "SCI: modelo de gestão que padroniza organização, comando e comunicação em emergências de qualquer natureza.",
+          "body": "O Sistema de Controle de Incidentes (SCI) é um modelo de gestão de emergências. Ele padroniza a organização, o comando e a comunicação em situações críticas, e é usado em emergências de qualquer natureza: incêndios, desabamentos, vazamentos químicos, entre outros.",
+          "transcript": "Vídeo: o que é o Sistema de Controle de Incidentes."
+        },
+        {
+          "id": "m7-principios",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Princípios Básicos do SCI",
+          "items": [
+            {
+              "icon": "🪜",
+              "title": "Hierarquia clara:",
+              "text": "uma cadeia de comando definida, sem ambiguidade sobre quem decide."
+            },
+            {
+              "icon": "🎯",
+              "title": "Funções bem definidas:",
+              "text": "cada pessoa sabe exatamente qual é o seu papel."
+            },
+            {
+              "icon": "🧩",
+              "title": "Organização modular:",
+              "text": "a estrutura cresce ou diminui conforme o tamanho da emergência."
+            },
+            {
+              "icon": "🗣️",
+              "title": "Linguagem comum:",
+              "text": "termos simples e de fácil entendimento entre todos os envolvidos."
+            },
+            {
+              "icon": "🔄",
+              "title": "Flexibilidade e escalabilidade:",
+              "text": "o sistema se adapta a diferentes tipos e portes de incidente."
+            },
+            {
+              "icon": "🤝",
+              "title": "Integração:",
+              "text": "entre equipes internas e órgãos externos, como Bombeiros e SAMU."
+            },
+            {
+              "icon": "📋",
+              "title": "Objetivos claros:",
+              "text": "planos operacionais bem definidos, sem depender de improviso."
+            }
+          ],
+          "layout": "quickcards",
+          "transcript": "Princípios básicos do Sistema de Controle de Incidentes."
+        },
+        {
+          "id": "m7-estrutura",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Estrutura Básica do SCI",
+          "duration": "1:00",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=f7ea888a-8b32-4cf0-b971-4d7fff35255d",
+          "playerId": "panda-f7ea888a-8b32-4cf0-b971-4d7fff35255d",
+          "scene": "Brigadista explicando diante de um organograma simples: Comandante no topo, quatro seções abaixo",
+          "brief": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
+          "body": "No topo está o Comandante do Incidente. Abaixo dele, quatro seções dividem o trabalho: Operações executa as ações diretas de resposta; Planejamento analisa a situação e antecipa os próximos cenários; Logística fornece os recursos e o apoio necessários; e Administração e Finanças cuida dos custos e dos registros do incidente.",
+          "transcript": "Estrutura básica do SCI: comandante e quatro seções operacionais."
+        },
+        {
+          "id": "m7-funcoes",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Funções do Brigadista Dentro do SCI",
+          "items": [
+            {
+              "n": 1,
+              "title": "Apoiar o comando:",
+              "text": "informar o Comandante do Incidente sobre a situação local."
+            },
+            {
+              "n": 2,
+              "title": "Executar sua função:",
+              "text": "agir de acordo com o papel que lhe foi atribuído."
+            },
+            {
+              "n": 3,
+              "title": "Manter a comunicação:",
+              "text": "com os líderes e com o restante da equipe."
+            },
+            {
+              "n": 4,
+              "title": "Relatar riscos:",
+              "text": "avisar imediatamente sobre riscos e necessidades que encontrar."
+            },
+            {
+              "n": 5,
+              "title": "Auxiliar vítimas:",
+              "text": "apoiar a evacuação e o atendimento de quem precisar."
+            }
+          ],
+          "review": "Funções do brigadista dentro do SCI",
+          "transcript": "Funções essenciais do brigadista dentro do SCI."
+        },
+        {
+          "id": "m7-procedimento",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Procedimentos do SCI em Ação",
+          "duration": "1:00",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
+          "playerId": "panda-a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
+          "scene": "Brigadista narrando o passo a passo, com os números das etapas aparecendo na tela conforme fala",
+          "brief": "Avaliação inicial → comando → funções → planejamento → execução → monitoramento.",
+          "body": "O passo a passo de como o sistema entra em funcionamento: avaliação inicial da situação assim que ela é identificada; estabelecimento do comando, definindo quem é o Comandante do Incidente; definição das funções e responsabilidades de cada pessoa envolvida; planejamento das ações, com objetivos e estratégias; execução da resposta; e monitoramento constante, com ajustes e comunicação ao longo de todo o processo.",
+          "transcript": "Procedimentos do SCI em ação, passo a passo."
+        },
+        {
+          "id": "m7-vantagens",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Vantagens de Implantar o SCI",
+          "items": [
+            {
+              "icon": "⚡",
+              "title": "Agilidade:",
+              "text": "organização que acelera a resposta em incidentes."
+            },
+            {
+              "icon": "🎯",
+              "title": "Menos improviso:",
+              "text": "reduz falhas causadas por decisões de última hora."
+            },
+            {
+              "icon": "🛡️",
+              "title": "Mais segurança:",
+              "text": "para as equipes envolvidas e para as vítimas."
+            },
+            {
+              "icon": "🤝",
+              "title": "Coordenação:",
+              "text": "entre diferentes setores da empresa ou instituições externas."
+            }
+          ],
+          "transcript": "Vantagens da implantação do SCI."
+        },
+        {
+          "id": "m7-reflexao",
+          "type": "reflect",
+          "kicker": "💭 Reflexão",
+          "title": "Reflexão Sobre o SCI",
+          "prompt": "Por que o treinamento contínuo é tão importante para o SCI funcionar de verdade?",
+          "answer": "O SCI é uma ferramenta essencial para uma atuação organizada, mas só funciona se todo mundo souber usá-la na hora certa. O treinamento contínuo é a chave para isso — e a Brigada de Incêndio é peça fundamental para aplicar o SCI com sucesso.",
+          "transcript": "Reflexão sobre a importância do SCI e do treinamento contínuo."
+        },
+        {
+          "id": "m7-quiz-intro",
+          "type": "quiz-intro",
+          "title": "Desafio — Comando Estruturado",
+          "count": 4,
+          "minCorrect": 3,
+          "icon": "🧭",
+          "body": "4 perguntas pra fechar o módulo: objetivo, estrutura, funções do brigadista e princípios do SCI. Mínimo de <strong>3 acertos</strong>.",
+          "transcript": "Desafio do módulo: Comando Estruturado. Quatro perguntas."
+        },
+        {
+          "id": "m7-q1",
+          "type": "question",
+          "question": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)?",
+          "alternatives": [
+            {
+              "text": "Substituir a brigada em situações de emergência.",
+              "correct": false
+            },
+            {
+              "text": "Garantir que todas as emergências sejam resolvidas sem apoio externo.",
+              "correct": false
+            },
+            {
+              "text": "Organizar e coordenar a resposta a emergências de forma estruturada.",
+              "correct": true
+            }
+          ],
+          "explanation": "O SCI não substitui a brigada nem dispensa apoio externo — ele organiza e coordena a resposta, com comando claro e funções bem definidas.",
+          "review": "Objetivo do SCI",
+          "transcript": "Pergunta: qual é o principal objetivo do SCI?",
+          "image": "assets/fotos/modulo7-pergunta1.png",
+          "imageAlt": "Equipe organizada respondendo a uma emergência com comando claro"
+        },
+        {
+          "id": "m7-q2",
+          "type": "question",
+          "question": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo?",
+          "alternatives": [
+            {
+              "text": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
+              "correct": true
+            },
+            {
+              "text": "Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.",
+              "correct": false
+            },
+            {
+              "text": "Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.",
+              "correct": false
+            }
+          ],
+          "explanation": "O Comandante do Incidente lidera a resposta. As quatro seções — Operações, Planejamento, Logística e Administração/Finanças — dividem o trabalho sob o comando.",
+          "review": "Estrutura básica do SCI",
+          "transcript": "Pergunta: na estrutura do SCI, quem fica no topo e quais são as quatro seções?",
+          "image": "assets/fotos/modulo7-pergunta2.png",
+          "imageAlt": "Organograma do SCI: Comandante do Incidente e quatro seções"
+        },
+        {
+          "id": "m7-q3",
+          "type": "question",
+          "question": "Qual destas é uma função do brigadista dentro do SCI?",
+          "alternatives": [
+            {
+              "text": "Assumir sozinho o comando de toda a emergência, sem informar ninguém.",
+              "correct": false
+            },
+            {
+              "text": "Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.",
+              "correct": true
+            },
+            {
+              "text": "Decidir sozinho o orçamento e os registros financeiros do incidente.",
+              "correct": false
+            }
+          ],
+          "explanation": "O brigadista apoia o Comandante, executa o papel atribuído, mantém a comunicação, relata riscos e auxilia vítimas — não age por conta própria fora da estrutura.",
+          "review": "Funções do brigadista no SCI",
+          "transcript": "Pergunta: qual é uma função do brigadista dentro do SCI?",
+          "image": "assets/fotos/modulo7-pergunta3.png",
+          "imageAlt": "Brigadista comunicando a situação ao comando durante emergência"
+        },
+        {
+          "id": "m7-q4",
+          "type": "question",
+          "question": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência?",
+          "alternatives": [
+            {
+              "text": "Linguagem comum — termos simples e de fácil entendimento entre todos.",
+              "correct": true
+            },
+            {
+              "text": "Organização modular — a estrutura cresce ou diminui conforme o incidente.",
+              "correct": false
+            },
+            {
+              "text": "Flexibilidade e escalabilidade — o sistema se adapta a diferentes portes.",
+              "correct": false
+            }
+          ],
+          "explanation": "Linguagem comum garante que todos se entendam. Organização modular e flexibilidade são princípios importantes, mas tratam do tamanho e da adaptação da estrutura — não do vocabulário.",
+          "review": "Princípio da linguagem comum",
+          "transcript": "Pergunta: qual princípio do SCI evita confusão de termos entre as equipes?",
+          "image": "assets/fotos/modulo7-pergunta4.png",
+          "imageAlt": "Equipes internas e externas se comunicando com linguagem comum na emergência"
+        }
+      ]
+    },
+    {
+      "id": 8,
       "title": "RCP, Infarto e Encerramento",
       "meta": "Vídeos + números · Roleta da RCP + certificado",
       "titleUnlock": {
@@ -1677,16 +2043,16 @@ window.QUESTION_SCREEN_SESSION = {
       },
       "screens": [
         {
-          "id": "m7-cover",
+          "id": "m8-cover",
           "type": "cover",
-          "title": "Módulo 7 — RCP, Infarto e Encerramento",
+          "title": "Módulo 8 — RCP, Infarto e Encerramento",
           "subtitle": "AVC, infarto, passo a passo da RCP, números de emergência e certificado.",
-          "transcript": "Módulo 7: RCP, infarto e encerramento.",
+          "transcript": "Módulo 8: RCP, infarto e encerramento.",
           "image": "assets/fotos/capa-modulo7.png",
-          "imageAlt": "Capa do módulo 7: RCP, infarto e encerramento"
+          "imageAlt": "Capa do módulo 8: RCP, infarto e encerramento"
         },
         {
-          "id": "m7-v-avc-infarto",
+          "id": "m8-v-avc-infarto",
           "type": "video",
           "kicker": "🎥 Vídeo",
           "title": "Reconhecendo o AVC e o Infarto",
@@ -1699,7 +2065,7 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Vídeo: reconhecendo AVC e infarto."
         },
         {
-          "id": "m7-v-rcp",
+          "id": "m8-v-rcp",
           "type": "video",
           "kicker": "🎥 Vídeo",
           "title": "RCP: O Passo a Passo Que Salva Vidas",
@@ -1712,7 +2078,7 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Vídeo: RCP passo a passo."
         },
         {
-          "id": "m7-rcp-antes",
+          "id": "m8-rcp-antes",
           "type": "content",
           "layout": "stack",
           "kicker": "📷 Foto",
@@ -1720,17 +2086,37 @@ window.QUESTION_SCREEN_SESSION = {
           "image": "assets/fotos/pagina81.png",
           "imageFit": "contain",
           "items": [
-            { "n": 1, "title": "Verifique o local:", "text": "o ambiente precisa ser seguro pra você e pra vítima." },
-            { "n": 2, "title": "Cheque a resposta:", "text": "toque nos ombros e pergunte em voz alta se ela está bem." },
-            { "n": 3, "title": "Chame ajuda:", "text": "192 (SAMU), e peça um DEA se houver um por perto." },
-            { "n": 4, "title": "Observe a respiração:", "text": "o tórax se move? Por no máximo 10 segundos." },
-            { "n": 5, "title": "Posicione a vítima:", "text": "de barriga para cima, sobre uma superfície firme e plana." }
+            {
+              "n": 1,
+              "title": "Verifique o local:",
+              "text": "o ambiente precisa ser seguro pra você e pra vítima."
+            },
+            {
+              "n": 2,
+              "title": "Cheque a resposta:",
+              "text": "toque nos ombros e pergunte em voz alta se ela está bem."
+            },
+            {
+              "n": 3,
+              "title": "Chame ajuda:",
+              "text": "192 (SAMU), e peça um DEA se houver um por perto."
+            },
+            {
+              "n": 4,
+              "title": "Observe a respiração:",
+              "text": "o tórax se move? Por no máximo 10 segundos."
+            },
+            {
+              "n": 5,
+              "title": "Posicione a vítima:",
+              "text": "de barriga para cima, sobre uma superfície firme e plana."
+            }
           ],
           "review": "Antes de começar a RCP",
           "transcript": "RCP: os passos antes de iniciar as compressões."
         },
         {
-          "id": "m7-rcp-compressoes",
+          "id": "m8-rcp-compressoes",
           "type": "content",
           "layout": "stack",
           "kicker": "📷 Foto",
@@ -1738,35 +2124,83 @@ window.QUESTION_SCREEN_SESSION = {
           "image": "assets/fotos/pagina82.jpeg",
           "imageFit": "contain",
           "items": [
-            { "n": 1, "title": "Posição das mãos:", "text": "ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito." },
-            { "n": 2, "title": "Postura:", "text": "braços esticados, use o peso do corpo, ângulo de 90° com o tórax." },
-            { "n": 3, "title": "Frequência:", "text": "100 a 120 compressões por minuto, no ritmo de \"Stayin' Alive\", dos Bee Gees." },
-            { "n": 4, "title": "Profundidade:", "text": "pelo menos 5 a 6 cm em adultos." },
-            { "n": 5, "title": "Retorno do tórax:", "text": "deixe o peito voltar à posição normal entre uma compressão e outra." }
+            {
+              "n": 1,
+              "title": "Posição das mãos:",
+              "text": "ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito."
+            },
+            {
+              "n": 2,
+              "title": "Postura:",
+              "text": "braços esticados, use o peso do corpo, ângulo de 90° com o tórax."
+            },
+            {
+              "n": 3,
+              "title": "Frequência:",
+              "text": "100 a 120 compressões por minuto, no ritmo de \"Stayin' Alive\", dos Bee Gees."
+            },
+            {
+              "n": 4,
+              "title": "Profundidade:",
+              "text": "pelo menos 5 a 6 cm em adultos."
+            },
+            {
+              "n": 5,
+              "title": "Retorno do tórax:",
+              "text": "deixe o peito voltar à posição normal entre uma compressão e outra."
+            }
           ],
           "review": "Como fazer as compressões da RCP",
           "transcript": "RCP: técnica correta das compressões torácicas."
         },
         {
-          "id": "m7-numeros",
+          "id": "m8-numeros",
           "type": "content",
           "kicker": "📄 Texto",
           "title": "Números de Emergência: Saiba Quem Chamar",
           "stats": [
-            { "num": "193", "label": "Bombeiros", "tone": "featured" },
-            { "num": "199", "label": "Defesa Civil" },
-            { "num": "194", "label": "Polícia Federal" },
-            { "num": "192", "label": "SAMU" },
-            { "num": "191", "label": "Polícia Rodoviária Federal" },
-            { "num": "190", "label": "Polícia Militar" },
-            { "num": "198 ou 191", "label": "Polícia Militar Rodoviária Estadual" },
-            { "num": "8427 1052", "label": "Guarda Municipal" },
-            { "num": "0800 643 5252", "label": "Centro de Informações Toxicológicas" }
+            {
+              "num": "193",
+              "label": "Bombeiros",
+              "tone": "featured"
+            },
+            {
+              "num": "199",
+              "label": "Defesa Civil"
+            },
+            {
+              "num": "194",
+              "label": "Polícia Federal"
+            },
+            {
+              "num": "192",
+              "label": "SAMU"
+            },
+            {
+              "num": "191",
+              "label": "Polícia Rodoviária Federal"
+            },
+            {
+              "num": "190",
+              "label": "Polícia Militar"
+            },
+            {
+              "num": "198 ou 191",
+              "label": "Polícia Militar Rodoviária Estadual"
+            },
+            {
+              "num": "8427 1052",
+              "label": "Guarda Municipal"
+            },
+            {
+              "num": "0800 643 5252",
+              "label": "Centro de Informações Toxicológicas"
+            }
           ],
           "transcript": "Números de emergência: Bombeiros 193, Defesa Civil 199, Polícia Federal 194, SAMU 192, Polícia Rodoviária Federal 191, Polícia Militar 190, Polícia Militar Rodoviária Estadual 198 ou 191, Guarda Municipal 8427 1052, e Centro de Informações Toxicológicas 0800 643 5252."
         },
         {
-          "id": "m7-v-encerramento",
+          "id": "m8-v-encerramento",
           "type": "video",
           "kicker": "🎥 Vídeo",
           "title": "Encerramento: Você Está Pronto",
@@ -1779,7 +2213,7 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Vídeo de encerramento."
         },
         {
-          "id": "m7-quiz-intro",
+          "id": "m8-quiz-intro",
           "type": "quiz-intro",
           "title": "Desafio — Roleta da RCP",
           "count": 2,
@@ -1789,7 +2223,7 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Desafio final: Roleta da RCP."
         },
         {
-          "id": "m7-order-rcp",
+          "id": "m8-order-rcp",
           "type": "order",
           "kicker": "🔢 Roleta da RCP",
           "title": "Ordene as etapas da RCP",
@@ -1826,7 +2260,7 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Ordene as 5 etapas da RCP."
         },
         {
-          "id": "m7-rhythm",
+          "id": "m8-rhythm",
           "type": "rhythm",
           "kicker": "🫀 Ritmo da compressão",
           "title": "Ritmo da compressão",
@@ -1841,7 +2275,7 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Toque no ritmo das compressões torácicas: de 100 a 120 por minuto."
         },
         {
-          "id": "m7-finale",
+          "id": "m8-finale",
           "type": "finale",
           "kicker": "🏆 Conclusão",
           "eyebrow": "Certificado de conclusão",

@@ -22,7 +22,7 @@
     'NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado.',
     'Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação',
     'e prestar os primeiros socorros no ambiente Coca-Cola.',
-    'São sete módulos, com conteúdo completo, em treinamento cem por cento online.',
+    'São oito módulos, com conteúdo completo, em treinamento cem por cento online.',
     'Na imagem: capa do treinamento, brigadistas em ação no ambiente de trabalho.',
     'Na imagem: logo TecnoCursos.'
   ].join(' ');
