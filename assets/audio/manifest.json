@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T18:22:51.564Z",
+  "generatedAt": "2026-09-29T19:22:18.697Z",
   "items": {
     "m5-v-final": {
       "file": "assets/audio/m5-v-final.mp3",
@@ -515,7 +515,7 @@
     },
     "m8-finale": {
       "file": "assets/audio/m8-finale.mp3",
-      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 23, Curso de Prevenção de Incêndios (Avançado). Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida. Na imagem: Imagem final de parabéns pelo treinamento concluído."
+      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado). Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida. Na imagem: Imagem final de parabéns pelo treinamento concluído."
     },
     "m2-result-pass": {
       "file": "assets/audio/m2-result-pass.mp3",
@@ -575,7 +575,7 @@
     },
     "m7-cover": {
       "file": "assets/audio/m7-cover.mp3",
-      "text": "Módulo 7, Sistema de Controle de Incidentes (SCI). Como organizar comando, comunicação e resposta em qualquer emergência."
+      "text": "Módulo 7, Sistema de Controle de Incidentes (SCI). Como organizar comando, comunicação e resposta em qualquer emergência. Na imagem: Capa do módulo 7: Sistema de Controle de Incidentes."
     },
     "m7-v-oque": {
       "file": "assets/audio/m7-v-oque.mp3",
@@ -583,7 +583,7 @@
     },
     "m7-principios": {
       "file": "assets/audio/m7-principios.mp3",
-      "text": "Princípios Básicos do SCI. Hierarquia clara: Uma cadeia de comando definida, sem ambiguidade sobre quem decide. Funções bem definidas: Cada pessoa sabe exatamente qual é o seu papel. Organização modular: A estrutura cresce ou diminui conforme o tamanho da emergência. Linguagem comum: Termos simples e de fácil entendimento entre todos os envolvidos. Flexibilidade e escalabilidade: O sistema se adapta a diferentes tipos e portes de incidente. Integração: Entre equipes internas e órgãos externos, como Bombeiros e SAMU. Objetivos claros: Planos operacionais bem definidos, sem depender de improviso."
+      "text": "Princípios Básicos do SCI. Hierarquia clara: uma cadeia de comando definida, sem ambiguidade sobre quem decide. Funções bem definidas: cada pessoa sabe exatamente qual é o seu papel. Organização modular: a estrutura cresce ou diminui conforme o tamanho da emergência. Linguagem comum: termos simples e de fácil entendimento entre todos os envolvidos. Flexibilidade e escalabilidade: o sistema se adapta a diferentes tipos e portes de incidente. Integração: entre equipes internas e órgãos externos, como Bombeiros e SAMU. Objetivos claros: planos operacionais bem definidos, sem depender de improviso."
     },
     "m7-estrutura": {
       "file": "assets/audio/m7-estrutura.mp3",
@@ -611,7 +611,7 @@
     },
     "m7-q1": {
       "file": "assets/audio/m7-q1.mp3",
-      "text": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)? Opção 1: Substituir a brigada em situações de emergência.. Opção 2: Garantir que todas as emergências sejam resolvidas sem apoio externo.. Opção 3: Organizar e coordenar a resposta a emergências de forma estruturada.."
+      "text": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)? Opção 1: Substituir a brigada em situações de emergência.. Opção 2: Garantir que todas as emergências sejam resolvidas sem apoio externo.. Opção 3: Organizar e coordenar a resposta a emergências de forma estruturada.. Na imagem: Equipe organizada respondendo a uma emergência com comando claro."
     },
     "m7-result-pass": {
       "file": "assets/audio/m7-result-pass.mp3",
@@ -623,15 +623,19 @@
     },
     "m7-q2": {
       "file": "assets/audio/m7-q2.mp3",
-      "text": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo? Opção 1: Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.. Opção 2: Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.. Opção 3: Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.."
+      "text": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo? Opção 1: Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.. Opção 2: Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.. Opção 3: Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.. Na imagem: Organograma do SCI: Comandante do Incidente e quatro seções."
     },
     "m7-q3": {
       "file": "assets/audio/m7-q3.mp3",
-      "text": "Qual destas é uma função do brigadista dentro do SCI? Opção 1: Assumir sozinho o comando de toda a emergência, sem informar ninguém.. Opção 2: Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.. Opção 3: Decidir sozinho o orçamento e os registros financeiros do incidente.."
+      "text": "Qual destas é uma função do brigadista dentro do SCI? Opção 1: Assumir sozinho o comando de toda a emergência, sem informar ninguém.. Opção 2: Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.. Opção 3: Decidir sozinho o orçamento e os registros financeiros do incidente.. Na imagem: Brigadista comunicando a situação ao comando durante emergência."
     },
     "m7-q4": {
       "file": "assets/audio/m7-q4.mp3",
-      "text": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência? Opção 1: Linguagem comum, termos simples e de fácil entendimento entre todos.. Opção 2: Organização modular, a estrutura cresce ou diminui conforme o incidente.. Opção 3: Flexibilidade e escalabilidade, o sistema se adapta a diferentes portes.."
+      "text": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência? Opção 1: Linguagem comum, termos simples e de fácil entendimento entre todos.. Opção 2: Organização modular, a estrutura cresce ou diminui conforme o incidente.. Opção 3: Flexibilidade e escalabilidade, o sistema se adapta a diferentes portes.. Na imagem: Equipes internas e externas se comunicando com linguagem comum na emergência."
+    },
+    "m2-tetraedro-elementos": {
+      "file": "assets/audio/m2-tetraedro-elementos.mp3",
+      "text": "Tetraedro do Fogo: os 4 Elementos. O tetraedro do fogo é o modelo que explica como o fogo começa e se mantém. Tirando qualquer um dos quatro elementos, o fogo se apaga. Combustível: o material que queima, sólido (madeira, papel), líquido (gasolina, álcool) ou gasoso (gás de cozinha). Comburente: o que torna a queima possível, o oxigênio do ar é o mais comum. Calor: a energia que inicia o fogo, como uma faísca, e leva o combustível à temperatura de ignição. Reação em cadeia: o calor das próprias chamas alimenta a queima, fazendo o fogo se propagar sozinho."
     }
   }
 }
