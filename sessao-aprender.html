@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="fundo-novo.css?v=tigerFlame">
   <link rel="stylesheet" href="menu-compacto.css?v=tigerFlame">
   <link rel="stylesheet" href="atividades.css?v=tigerFlame">
-  <link rel="stylesheet" href="avancado-unlock.css?v=tigerFlame">
+  <link rel="stylesheet" href="avancado-unlock.css?v=1">
   <link rel="stylesheet" href="capa-animada.css?v=14">
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; }
@@ -18,15 +18,15 @@
 </head>
 <body>
   <div class="qs-app" id="app">
-    <!-- Selo "Nível Avançado desbloqueado" — só na primeira vez que abre nesta
-         sessão; aparece ao clicar em Iniciar, depois some e vai pro menu. -->
-    <section class="qs-unlock" id="unlockIntro" hidden aria-label="Nível Avançado desbloqueado">
+    <!-- Selo "Bem-vindo ao Nível Avançado" — sempre depois da capa (página 1),
+         antes do menu. Toque/clique ou 6s para continuar. -->
+    <section class="qs-unlock" id="unlockIntro" hidden aria-label="Bem-vindo ao Nível Avançado">
       <div class="qs-unlock-badge" aria-hidden="true">
         <span class="qs-unlock-badge-face">🧭</span>
       </div>
-      <div class="qs-unlock-tag">VOCÊ CONCLUIU O INTERMEDIÁRIO</div>
-      <h1 class="qs-unlock-title">Nível Avançado<br>desbloqueado</h1>
-      <p class="qs-unlock-sub">Você já sabe apagar o fogo. Agora vai aprender a comandar a resposta.</p>
+      <div class="qs-unlock-tag">NR 23 — NÍVEL AVANÇADO</div>
+      <h1 class="qs-unlock-title">Bem-vindo ao<br>Nível Avançado</h1>
+      <p class="qs-unlock-sub">Mais preparo para agir com segurança nas situações de emergência.</p>
       <button type="button" class="qs-unlock-skip" id="btnUnlockSkip">Toque para continuar</button>
     </section>
 
@@ -448,14 +448,14 @@
         title: demoMode ? 'Modo simulação ligado' : 'Vamos começar pelo Módulo 1?',
         body: demoMode
           ? 'Todos os módulos estão liberados. Avance sem travar em quiz ou vídeo.'
-          : ((m.title || '') + '. Toque no card liberado para iniciar.')
+          : 'Toque no card liberado para iniciar.'
       };
     }
     return {
       title: demoMode ? 'Modo simulação ligado' : ('Módulo ' + m.id + ' liberado!'),
       body: demoMode
         ? 'Todos os módulos estão liberados. Avance sem travar em quiz ou vídeo.'
-        : ((m.title || '') + '. Toque no card para continuar.')
+        : 'Toque no card para continuar.'
     };
   }
 
@@ -727,7 +727,7 @@
       '<div class="qs-menu">' +
         '<h1><span class="qs-menu-norm">NR 23 –</span> Proteção Contra Incêndios</h1>' +
         '<p class="qs-menu-level">Brigada de Incêndio · Nível Avançado</p>' +
-        '<p class="qs-menu-lead">Conteúdo programático completo. Só o módulo liberado pode ser aberto.</p>' +
+        '<p class="qs-menu-lead">Conteúdo programático completo.</p>' +
         '<div class="qs-start-callout" role="status">' +
           '<strong>' + callout.title + '</strong>' +
           '<span>' + callout.body + '</span>' +
@@ -1406,28 +1406,43 @@
     }
   });
 
-  /* Selo "Nível Avançado desbloqueado": entre a capa e o menu, só na
-     primeira vez da sessão. Depois disso, "Continuar" vai direto ao menu. */
+  /* Selo "Bem-vindo ao Nível Avançado": sempre entre a capa (página 1) e o menu. */
   function goToMenuWithUnlockIntro() {
     var el = document.getElementById('unlockIntro');
-    var already = false;
-    try { already = sessionStorage.getItem('nr23-avancado-unlock-visto') === '1'; } catch (e) {}
-    if (!el || already) { showMenu(); return; }
-    setChrome(false);
+    if (!el) { showMenu(); return; }
+
+    mode = 'unlock';
+    clearAutoAdvance();
+    if (qs) { qs.destroy(); qs = null; }
+    if (topBar) topBar.hidden = true;
+    if (stage) stage.hidden = true;
+    if (sessionWave) sessionWave.hidden = true;
     if (home) home.hidden = true;
+    app.classList.remove('is-home');
+
     el.hidden = false;
+    el.classList.remove('is-leaving');
+
     var done = false;
     function finish() {
       if (done) return;
       done = true;
-      try { sessionStorage.setItem('nr23-avancado-unlock-visto', '1'); } catch (e) {}
       el.classList.add('is-leaving');
-      setTimeout(function () { el.hidden = true; el.classList.remove('is-leaving'); showMenu(); }, 500);
+      setTimeout(function () {
+        el.hidden = true;
+        el.classList.remove('is-leaving');
+        showMenu();
+      }, 500);
     }
-    el.addEventListener('click', finish);
+    el.addEventListener('click', finish, { once: true });
     var skipBtn = document.getElementById('btnUnlockSkip');
-    if (skipBtn) skipBtn.addEventListener('click', function (e) { e.stopPropagation(); finish(); });
-    setTimeout(finish, 3200);
+    if (skipBtn) {
+      skipBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        finish();
+      }, { once: true });
+    }
+    setTimeout(finish, 6000);
   }
 
   function bootFromResume() {
