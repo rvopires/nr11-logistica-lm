@@ -1990,8 +1990,8 @@ html.qs-lightbox-open body {
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(168, 245, 236, 0.22) 0%, transparent 62%),
-    linear-gradient(180deg, rgba(45, 12, 6, 0.35) 0%, rgba(255, 94, 50, 0.22) 45%, rgba(45, 12, 6, 0.5) 100%);
+    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(184, 206, 79, 0.2) 0%, transparent 62%),
+    linear-gradient(180deg, rgba(45, 12, 6, 0.4) 0%, rgba(255, 94, 50, 0.28) 45%, rgba(45, 12, 6, 0.55) 100%);
 }
 .qs-finale-glow {
   position: absolute;
@@ -2003,8 +2003,8 @@ html.qs-lightbox-open body {
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 50% 40%, rgba(255, 215, 106, 0.28) 0%, transparent 42%),
-    radial-gradient(circle at 50% 55%, rgba(124, 255, 178, 0.22) 0%, transparent 55%);
+    radial-gradient(circle at 50% 40%, rgba(255, 94, 50, 0.32) 0%, transparent 42%),
+    radial-gradient(circle at 50% 55%, rgba(184, 206, 79, 0.26) 0%, transparent 55%);
   filter: blur(8px);
   animation: qsFinaleGlow 3.6s ease-in-out infinite alternate;
 }
@@ -2029,16 +2029,16 @@ html.qs-lightbox-open body {
   text-align: center;
   padding: 22px 22px 20px;
   background:
-    linear-gradient(155deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.04) 28%, transparent 52%),
-    linear-gradient(180deg, rgba(168, 245, 236, 0.14) 0%, transparent 38%),
-    linear-gradient(160deg, #1A8A6A 0%, #0E5A45 32%, #0A3F32 68%, #B8381A 100%);
-  border: 1.5px solid rgba(168, 245, 236, 0.45);
+    linear-gradient(155deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.04) 28%, transparent 52%),
+    linear-gradient(180deg, rgba(184, 206, 79, 0.16) 0%, transparent 38%),
+    linear-gradient(160deg, #FF5E32 0%, #E04A22 32%, #B8381A 68%, #5C1A0C 100%);
+  border: 1.5px solid rgba(184, 206, 79, 0.5);
   border-radius: 20px;
   box-shadow:
     0 22px 48px rgba(0, 0, 0, 0.38),
     0 0 0 1px rgba(255, 255, 255, 0.18) inset,
-    0 0 48px rgba(124, 255, 178, 0.28),
-    0 0 80px rgba(255, 215, 106, 0.12);
+    0 0 48px rgba(255, 94, 50, 0.32),
+    0 0 80px rgba(184, 206, 79, 0.18);
   animation: qsFinaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .qs-finale-shine {
@@ -2064,11 +2064,11 @@ html.qs-lightbox-open body {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #E8FFF8;
+  color: #FFF8F0;
   margin-bottom: 10px;
   padding: 5px 12px;
   border-radius: 99px;
-  background: linear-gradient(135deg, rgba(184, 206, 79, 0.42), rgba(255, 120, 90, 0.22));
+  background: linear-gradient(135deg, rgba(184, 206, 79, 0.5), rgba(255, 94, 50, 0.28));
   border: 1px solid rgba(255, 200, 180, 0.55);
   box-shadow: 0 0 18px rgba(184, 206, 79, 0.28);
 }
@@ -2081,12 +2081,12 @@ html.qs-lightbox-open body {
   display: grid;
   place-items: center;
   font-size: 30px;
-  background: linear-gradient(145deg, #FFE08A, #D0E07A 38%, #1F9D55 100%);
+  background: linear-gradient(145deg, #D0E07A, #B8CE4F 38%, #FF5E32 100%);
   box-shadow:
     0 0 0 4px rgba(255, 255, 255, 0.22),
-    0 0 0 7px rgba(255, 215, 106, 0.28),
-    0 8px 28px rgba(255, 180, 60, 0.45),
-    0 0 36px rgba(124, 255, 178, 0.4);
+    0 0 0 7px rgba(184, 206, 79, 0.35),
+    0 8px 28px rgba(255, 94, 50, 0.4),
+    0 0 36px rgba(184, 206, 79, 0.35);
   animation: qsFinaleTrophy 2.4s ease-in-out infinite;
 }
 .qs-finale-title {
@@ -2098,18 +2098,18 @@ html.qs-lightbox-open body {
   font-weight: 800;
   letter-spacing: 0.02em;
   text-shadow:
-    0 0 24px rgba(168, 245, 236, 0.45),
+    0 0 24px rgba(255, 94, 50, 0.4),
     0 2px 18px rgba(184, 206, 79, 0.28);
 }
-.qs-finale-title span { color: #FFD76A; }
+.qs-finale-title span { color: #D0E07A; }
 .qs-finale-line {
   position: relative;
   width: 64px;
   height: 3px;
   margin: 0 auto 12px;
   border-radius: 3px;
-  background: linear-gradient(90deg, transparent, #A8F5EC, #FFD76A, #D0E07A, transparent);
-  box-shadow: 0 0 12px rgba(168, 245, 236, 0.55);
+  background: linear-gradient(90deg, transparent, #FF8A5C, #B8CE4F, #D0E07A, transparent);
+  box-shadow: 0 0 12px rgba(184, 206, 79, 0.55);
 }
 .qs-finale-medal-name {
   position: relative;
@@ -2118,9 +2118,9 @@ html.qs-lightbox-open body {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #FFD76A;
+  color: #D0E07A;
   margin: 0 0 4px;
-  text-shadow: 0 0 14px rgba(255, 215, 106, 0.55);
+  text-shadow: 0 0 14px rgba(184, 206, 79, 0.55);
 }
 .qs-finale-card.medal-silver .qs-finale-medal-name { color: #e8f0f8; }
 .qs-finale-card.medal-bronze .qs-finale-medal-name { color: #f0c29a; }
@@ -2133,7 +2133,7 @@ html.qs-lightbox-open body {
   line-height: 1;
   margin: 2px 0 4px;
   text-shadow:
-    0 0 22px rgba(124, 255, 178, 0.55),
+    0 0 22px rgba(184, 206, 79, 0.55),
     0 2px 14px rgba(0, 0, 0, 0.35);
 }
 .qs-finale-score small {
@@ -2141,7 +2141,7 @@ html.qs-lightbox-open body {
   margin-left: 4px;
   font-size: 0.42em;
   font-weight: 800;
-  color: rgba(232, 255, 248, 0.85);
+  color: rgba(255, 248, 240, 0.88);
   vertical-align: middle;
 }
 .qs-finale-hits {
@@ -2149,7 +2149,7 @@ html.qs-lightbox-open body {
   margin: 0 0 8px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #C8FFF4;
+  color: #FFE8DE;
 }
 .qs-finale-body {
   position: relative;
@@ -2170,17 +2170,17 @@ html.qs-lightbox-open body {
   font-weight: 700;
   font-style: italic;
   line-height: 1.45;
-  color: #FFF8E6;
-  background: linear-gradient(135deg, rgba(255, 215, 106, 0.18), rgba(168, 245, 236, 0.1));
-  border: 1px solid rgba(255, 215, 106, 0.42);
+  color: #FFF8F0;
+  background: linear-gradient(135deg, rgba(184, 206, 79, 0.22), rgba(255, 94, 50, 0.14));
+  border: 1px solid rgba(184, 206, 79, 0.45);
   border-radius: 14px;
   box-shadow:
-    0 0 24px rgba(255, 215, 106, 0.16),
+    0 0 24px rgba(184, 206, 79, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 .qs-finale-quote span {
-  color: #FFD76A;
+  color: #D0E07A;
   font-style: normal;
   font-weight: 900;
   font-size: 1.05em;
@@ -2200,15 +2200,15 @@ html.qs-lightbox-open body {
   text-transform: uppercase;
   color: #fff;
   background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(168, 245, 236, 0.4);
+  border: 1px solid rgba(184, 206, 79, 0.4);
   border-radius: 99px;
   padding: 5px 10px;
-  box-shadow: 0 0 12px rgba(124, 255, 178, 0.12);
+  box-shadow: 0 0 12px rgba(255, 94, 50, 0.14);
 }
 .qs-finale-chip:first-child {
-  background: linear-gradient(135deg, rgba(184, 206, 79, 0.42), rgba(255, 120, 90, 0.18));
+  background: linear-gradient(135deg, rgba(184, 206, 79, 0.5), rgba(255, 94, 50, 0.22));
   border-color: rgba(255, 180, 160, 0.55);
-  color: #E8FFF8;
+  color: #FFF8F0;
 }
 @keyframes qsFinaleIn {
   from { opacity: 0; transform: translateY(22px) scale(0.97); }
@@ -2652,7 +2652,7 @@ html.qs-lightbox-open body {
   pointer-events: none;
 }
 .qs-quiz-result.is-pass::before {
-  background: linear-gradient(90deg, var(--qs-green) 0%, #2ecc71 50%, var(--qs-green) 100%);
+  background: linear-gradient(90deg, var(--qs-green) 0%, var(--qs-red) 50%, var(--qs-green) 100%);
 }
 .qs-quiz-result.is-fail::before {
   background: linear-gradient(90deg, var(--qs-red) 0%, var(--qs-red-lt) 50%, var(--qs-red) 100%);
