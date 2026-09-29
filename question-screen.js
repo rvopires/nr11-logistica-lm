@@ -540,6 +540,10 @@
     if (data.skin === 'ficha' && Array.isArray(data.items) && data.items.length) {
       return fichaHTML(data);
     }
+    /* Vantagens SCI: grade 2×2 — as 4 de uma vez (diferente das sequências 80/82). */
+    if (data.layout === 'benefits-grid' && Array.isArray(data.items) && data.items.length) {
+      return benefitsGridHTML(data);
+    }
     /* Ficha rápida / princípios: cartões que viram ao tocar. */
     if (data.layout === 'quickcards' && Array.isArray(data.items) && data.items.length) {
       return quickCardsHTML(data);
@@ -585,6 +589,30 @@
           ${head}
         </div>
       </article>`;
+  }
+
+  function benefitsGridHTML(data) {
+    var items = data.items || [];
+    var tiles = items.map(function (it, i) {
+      var title = esc(String(it.title || '').replace(/:\s*$/, ''));
+      var text = esc(it.text || it.body || '');
+      var ico = it.icon ? ('<span class="qs-ben-tile-ico" aria-hidden="true">' + esc(it.icon) + '</span>') : '';
+      return '' +
+        '<article class="qs-ben-tile" data-tone="' + (i % 4) + '">' +
+          '<span class="qs-ben-tile-num">' + (i + 1) + '</span>' +
+          ico +
+          '<h3 class="qs-ben-tile-title">' + title + '</h3>' +
+          '<p class="qs-ben-tile-text">' + text + '</p>' +
+        '</article>';
+    }).join('');
+    return '' +
+      '<article class="qs-screen is-content is-text is-benefits-grid" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text">' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          (data.body ? ('<p class="qs-ben-lead">' + esc(data.body) + '</p>') : '') +
+          '<div class="qs-ben-grid count-' + items.length + '">' + tiles + '</div>' +
+        '</div>' +
+      '</article>';
   }
 
   function quickCardsHTML(data) {
@@ -659,6 +687,9 @@
     var textLayout = !photoOnly && items.every(function (it) {
       return !!(it.title || it.text || it.body);
     });
+    var isFuncoes = data.stepSkin === 'funcoes';
+    var isVantagens = data.stepSkin === 'vantagens';
+    var customSteps = isFuncoes || isVantagens;
     var slides = items.map(function (it, i) {
       var raw = it.text || it.body || '';
       var d = splitDose(raw);
@@ -668,6 +699,40 @@
       }).join('');
       var num = it.n != null ? it.n : (i + 1);
       var warn = it.warn || (d && d.caveat) || '';
+      if (isFuncoes) {
+        var titleF = it.title ? esc(it.title) : '';
+        var textF = esc(d ? d.move : raw);
+        var icoF = it.icon ? esc(it.icon) : esc(String(num));
+        return `<div class="qs-step is-funcoes-card${i === 0 ? ' is-on' : ''}" data-qs-step="${i}"${i === 0 ? '' : ' hidden'}>
+          <article class="qs-func-card">
+            <header class="qs-func-head">
+              <span class="qs-func-num">${esc(num)}</span>
+              <span class="qs-func-label">Papel do brigadista no SCI</span>
+            </header>
+            <div class="qs-func-body">
+              <div class="qs-func-ico" aria-hidden="true">${icoF}</div>
+              <div class="qs-func-copy">
+                ${titleF ? `<b class="qs-func-title">${titleF}</b>` : ''}
+                <p class="qs-func-text">${textF}</p>
+              </div>
+            </div>
+          </article>
+        </div>`;
+      }
+      if (isVantagens) {
+        var titleV = it.title ? esc(String(it.title).replace(/:\s*$/, '')) : '';
+        var textV = esc(d ? d.move : raw);
+        var icoV = it.icon ? esc(it.icon) : esc(String(num));
+        var toneV = i % 4;
+        return `<div class="qs-step is-vantagens-card${i === 0 ? ' is-on' : ''}" data-qs-step="${i}" data-ben-tone="${toneV}"${i === 0 ? '' : ' hidden'}>
+          <article class="qs-ben-card">
+            <span class="qs-ben-tag">Benefício do SCI</span>
+            <div class="qs-ben-ico-wrap" aria-hidden="true"><span class="qs-ben-ico">${icoV}</span></div>
+            ${titleV ? `<h3 class="qs-ben-title">${titleV}</h3>` : ''}
+            <p class="qs-ben-text">${textV}</p>
+          </article>
+        </div>`;
+      }
       var hasInfo = !!(it.title || raw);
       var info = hasInfo
         ? `<div class="qs-step-info">
@@ -694,7 +759,7 @@
     }).join('');
 
     return `
-      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout ? ' is-text-steps' : ''}" data-qs-root data-type="content">
+      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}" data-qs-root data-type="content">
         <div class="qs-steps" data-qs-steps data-step-unit="${esc(unit)}" data-step-next="${esc(nextLbl)}" data-step-finish="${esc(data.stepFinish || 'Concluir sequência')}">
           <header class="qs-steps-top">
             <h2 class="qs-title">${esc(data.title || '')}</h2>

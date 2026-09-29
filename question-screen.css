@@ -3411,19 +3411,24 @@ html.qs-lightbox-open body {
     linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
 }
 .qs-screen.is-principles .qs-panel-text {
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 18px;
 }
 .qs-screen.is-principles .qs-title {
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+  font-size: clamp(1.05rem, 2.4vw, 1.35rem);
   color: var(--qs-ink);
 }
 .qs-cards.is-principles {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  gap: 12px;
+  gap: 8px;
   grid-template-columns: repeat(3, 1fr);
 }
 .qs-cards.is-principles.count-7 {
@@ -3431,6 +3436,7 @@ html.qs-lightbox-open body {
 }
 .qs-cards.is-principles.count-7 .qs-card {
   grid-column: span 4;
+  padding: 12px 12px 14px;
 }
 .qs-cards.is-principles.count-7 .qs-card:nth-child(n+4) {
   grid-column: span 3;
@@ -3467,18 +3473,18 @@ html.qs-lightbox-open body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .qs-cards.is-principles .qs-card-ico {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   margin: 0;
   border-radius: 50%;
-  font-size: 1.45rem;
+  font-size: 1.2rem;
   line-height: 1;
   background:
     radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.75), transparent 55%),
@@ -3490,17 +3496,17 @@ html.qs-lightbox-open body {
 }
 .qs-cards.is-principles .qs-card h3 {
   margin: 0;
-  font-size: 0.98rem;
+  font-size: 0.88rem;
   font-weight: 800;
   color: var(--qs-ink);
   line-height: 1.25;
 }
 .qs-cards.is-principles .qs-card > p {
   margin: 0;
-  font-size: 0.84rem;
+  font-size: 0.76rem;
   font-weight: 600;
   color: var(--qs-muted);
-  line-height: 1.4;
+  line-height: 1.35;
 }
 @media (max-width: 720px) {
   .qs-cards.is-principles,
@@ -3983,6 +3989,406 @@ html.qs-lightbox-open body {
   width: auto;
   height: auto;
   border-radius: 0;
+}
+
+/* Princípios SCI — um tópico por vez (sequência) */
+.qs-screen.is-principles-steps {
+  background:
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(255, 94, 50, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.18), transparent 50%),
+    linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
+}
+.qs-screen.is-principles-steps .qs-steps-top .qs-title {
+  color: var(--qs-ink);
+}
+.qs-screen.is-principles-steps .qs-step.is-text {
+  grid-template-columns: 1fr;
+  max-width: 520px;
+  gap: 14px;
+  align-content: center;
+  text-align: center;
+}
+.qs-screen.is-principles-steps .qs-step-media {
+  min-height: clamp(120px, 22vh, 168px);
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+}
+.qs-screen.is-principles-steps .qs-step-fallback.is-icon {
+  font-size: clamp(3.5rem, 10vw, 5rem);
+}
+.qs-screen.is-principles-steps .qs-step-info {
+  text-align: center;
+  padding: 4px 8px 0;
+}
+.qs-screen.is-principles-steps .qs-step-num {
+  display: none;
+}
+.qs-screen.is-principles-steps .qs-step-head {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.qs-screen.is-principles-steps .qs-step-title {
+  font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+  color: var(--qs-ink);
+}
+.qs-screen.is-principles-steps .qs-step-move {
+  font-size: clamp(0.95rem, 2vw, 1.08rem);
+  line-height: 1.45;
+  color: var(--qs-muted);
+  max-width: 42ch;
+  margin: 0 auto;
+}
+.qs-screen.is-principles-steps .qs-step-cta.is-finish {
+  color: #fff;
+  background: linear-gradient(135deg, #FF5E32, #B8CE4F);
+}
+
+/* Funções do brigadista — cartão horizontal (página 82), distinto dos princípios */
+.qs-screen.is-funcoes-steps {
+  background:
+    radial-gradient(ellipse 70% 45% at 0% 0%, rgba(0, 107, 92, 0.14), transparent 55%),
+    radial-gradient(ellipse 55% 40% at 100% 100%, rgba(184, 206, 79, 0.22), transparent 50%),
+    linear-gradient(165deg, #eef8f3 0%, #e2f0ea 55%, #f2f6e8 100%);
+}
+.qs-screen.is-funcoes-steps .qs-steps-top .qs-title {
+  color: #00332C;
+}
+.qs-screen.is-funcoes-steps .qs-steps-count {
+  background: #00332C;
+  color: #B8CE4F;
+  border-color: rgba(184, 206, 79, 0.35);
+}
+.qs-screen.is-funcoes-steps .qs-step.is-funcoes-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: unset;
+  padding: 8px 4px;
+}
+.qs-func-card {
+  width: min(100%, 560px);
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 22px;
+  border: 1px solid rgba(0, 51, 44, 0.12);
+  box-shadow: 0 18px 44px rgba(0, 51, 44, 0.14);
+  overflow: hidden;
+}
+.qs-func-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, #00332C, #006B5C);
+  color: #fff;
+}
+.qs-func-num {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--qs-font-h);
+  font-weight: 900;
+  font-size: 1rem;
+  background: #FF5E32;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.qs-func-label {
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+.qs-func-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 18px 22px;
+}
+.qs-func-ico {
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  line-height: 1;
+  background: linear-gradient(145deg, #D0E07A, #B8CE4F);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 8px 20px rgba(184, 206, 79, 0.35);
+}
+.qs-func-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  text-align: left;
+}
+.qs-func-title {
+  display: block;
+  margin: 0 0 8px;
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: clamp(1.05rem, 2.5vw, 1.28rem);
+  color: #00332C;
+  line-height: 1.25;
+}
+.qs-func-text {
+  margin: 0;
+  font-family: var(--qs-font-b);
+  font-weight: 600;
+  font-size: clamp(0.92rem, 2vw, 1.02rem);
+  line-height: 1.45;
+  color: #3d554c;
+}
+.qs-screen.is-funcoes-steps .qs-step-cta {
+  background: linear-gradient(135deg, #006B5C, #00332C);
+  color: #fff;
+  box-shadow: 0 10px 28px rgba(0, 51, 44, 0.28);
+}
+.qs-screen.is-funcoes-steps .qs-step-cta.is-finish {
+  background: linear-gradient(135deg, #FF5E32, #E04A38);
+  box-shadow: 0 10px 28px rgba(255, 94, 50, 0.35);
+}
+@media (max-width: 520px) {
+  .qs-func-body { flex-direction: column; align-items: center; text-align: center; }
+  .qs-func-copy { text-align: center; }
+}
+
+/* Vantagens do SCI — destaque central (página 84) */
+.qs-screen.is-vantagens-steps {
+  background:
+    radial-gradient(ellipse 75% 55% at 50% -15%, rgba(255, 94, 50, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 100% 90%, rgba(184, 206, 79, 0.28), transparent 50%),
+    linear-gradient(165deg, #fff8f2 0%, #fff3e8 50%, #f5f9e8 100%);
+}
+.qs-screen.is-vantagens-steps .qs-steps-top .qs-title {
+  color: #5C1A0C;
+  text-align: center;
+  flex: 1 1 auto;
+}
+.qs-screen.is-vantagens-steps .qs-steps-top {
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+.qs-screen.is-vantagens-steps .qs-steps-count {
+  background: linear-gradient(135deg, #FF5E32, #E04A38);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.qs-screen.is-vantagens-steps .qs-step.is-vantagens-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: unset;
+}
+.qs-ben-card {
+  width: min(100%, 480px);
+  margin: 0 auto;
+  padding: 28px 22px 32px;
+  text-align: center;
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 94, 50, 0.14);
+  box-shadow:
+    0 0 0 4px rgba(184, 206, 79, 0.12),
+    0 20px 48px rgba(92, 26, 12, 0.12);
+}
+.qs-ben-tag {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5C1A0C;
+  background: rgba(184, 206, 79, 0.35);
+  border: 1px solid rgba(184, 206, 79, 0.55);
+}
+.qs-ben-ico-wrap {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #FFE27A, #FF5E32);
+  box-shadow: 0 12px 32px rgba(255, 94, 50, 0.35);
+}
+.qs-step[data-ben-tone="1"] .qs-ben-ico-wrap {
+  background: linear-gradient(145deg, #D0E07A, #B8CE4F);
+  box-shadow: 0 12px 32px rgba(184, 206, 79, 0.4);
+}
+.qs-step[data-ben-tone="2"] .qs-ben-ico-wrap {
+  background: linear-gradient(145deg, #6b9cff, #1E4FA8);
+  box-shadow: 0 12px 32px rgba(30, 79, 168, 0.35);
+}
+.qs-step[data-ben-tone="3"] .qs-ben-ico-wrap {
+  background: linear-gradient(145deg, #5eead4, #006B5C);
+  box-shadow: 0 12px 32px rgba(0, 107, 92, 0.35);
+}
+.qs-ben-ico {
+  font-size: 2.75rem;
+  line-height: 1;
+}
+.qs-ben-title {
+  margin: 0 0 12px;
+  font-family: var(--qs-font-h);
+  font-weight: 900;
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  color: #5C1A0C;
+  line-height: 1.2;
+}
+.qs-ben-text {
+  margin: 0 auto;
+  max-width: 36ch;
+  font-family: var(--qs-font-b);
+  font-weight: 600;
+  font-size: clamp(0.95rem, 2.1vw, 1.08rem);
+  line-height: 1.5;
+  color: #3d554c;
+}
+.qs-screen.is-vantagens-steps .qs-step-cta {
+  background: linear-gradient(135deg, #FF5E32, #B8CE4F);
+  color: #5C1A0C;
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(255, 94, 50, 0.35);
+}
+.qs-screen.is-vantagens-steps .qs-step-cta.is-finish {
+  color: #fff;
+  background: linear-gradient(135deg, #006B5C, #00332C);
+  box-shadow: 0 10px 28px rgba(0, 51, 44, 0.3);
+}
+
+/* Vantagens SCI — grade 2×2 (página 84), tudo visível de uma vez */
+.qs-screen.is-benefits-grid {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 94, 50, 0.14), transparent 58%),
+    linear-gradient(180deg, #fff9f4 0%, #f4f9ef 100%);
+}
+.qs-screen.is-benefits-grid .qs-panel-text {
+  justify-content: center;
+  align-items: center;
+  padding: 16px 18px 20px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.qs-screen.is-benefits-grid .qs-title {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: clamp(1.18rem, 2.8vw, 1.48rem);
+  color: #5C1A0C;
+}
+.qs-ben-lead {
+  margin: 0 0 16px;
+  text-align: center;
+  font-family: var(--qs-font-b);
+  font-weight: 600;
+  font-size: clamp(0.92rem, 2vw, 1.02rem);
+  color: var(--qs-muted);
+  max-width: 42ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.qs-ben-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.qs-ben-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  min-height: 0;
+  padding: 16px 12px 14px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(0, 51, 44, 0.08);
+  box-shadow: 0 8px 22px rgba(60, 18, 8, 0.08);
+  overflow: hidden;
+  animation: qsBenIn 0.4s ease both;
+}
+.qs-ben-grid .qs-ben-tile:nth-child(1) { animation-delay: 0.04s; }
+.qs-ben-grid .qs-ben-tile:nth-child(2) { animation-delay: 0.08s; }
+.qs-ben-grid .qs-ben-tile:nth-child(3) { animation-delay: 0.12s; }
+.qs-ben-grid .qs-ben-tile:nth-child(4) { animation-delay: 0.16s; }
+@keyframes qsBenIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+.qs-ben-tile::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5px;
+  width: 100%;
+  background: var(--qs-red, #FF5E32);
+}
+.qs-ben-tile[data-tone="0"]::before { background: #FF5E32; }
+.qs-ben-tile[data-tone="1"]::before { background: #B8CE4F; }
+.qs-ben-tile[data-tone="2"]::before { background: #1E4FA8; }
+.qs-ben-tile[data-tone="3"]::before { background: #006B5C; }
+.qs-ben-tile-num {
+  order: -2;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: 0.72rem;
+  color: #fff;
+  background: rgba(92, 26, 12, 0.75);
+}
+.qs-ben-tile-ico {
+  order: -1;
+  font-size: 1.85rem;
+  line-height: 1;
+}
+.qs-ben-tile-title {
+  margin: 0;
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: clamp(0.9rem, 2.1vw, 1rem);
+  color: #5C1A0C;
+  line-height: 1.25;
+  padding-right: 0;
+  width: 100%;
+}
+.qs-ben-tile-text {
+  margin: 0 auto;
+  font-family: var(--qs-font-b);
+  font-weight: 600;
+  font-size: clamp(0.82rem, 2vw, 0.92rem);
+  line-height: 1.4;
+  color: #3d554c;
+  max-width: 28ch;
+}
+@media (max-width: 520px) {
+  .qs-ben-grid { grid-template-columns: 1fr; max-width: 400px; }
+  .qs-ben-tile { padding: 12px 12px 12px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qs-ben-tile { animation: none; }
 }
 
 /* Cores por emergência na ficha rápida */

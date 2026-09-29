@@ -1784,45 +1784,56 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m7-principios",
           "type": "content",
           "kicker": "📄 Texto",
+          "steps": true,
+          "stepSkin": "principles",
+          "stepUnit": "Princípio",
+          "stepNext": "Próximo princípio",
+          "stepFinish": "Concluir",
           "title": "Princípios Básicos do SCI",
           "items": [
             {
+              "n": 1,
               "icon": "🪜",
               "title": "Hierarquia clara:",
-              "text": "uma cadeia de comando definida, sem ambiguidade sobre quem decide."
+              "text": "Uma cadeia de comando definida, sem ambiguidade sobre quem decide."
             },
             {
+              "n": 2,
               "icon": "🎯",
               "title": "Funções bem definidas:",
-              "text": "cada pessoa sabe exatamente qual é o seu papel."
+              "text": "Cada pessoa sabe exatamente qual é o seu papel."
             },
             {
+              "n": 3,
               "icon": "🧩",
               "title": "Organização modular:",
-              "text": "a estrutura cresce ou diminui conforme o tamanho da emergência."
+              "text": "A estrutura cresce ou diminui conforme o tamanho da emergência."
             },
             {
+              "n": 4,
               "icon": "🗣️",
               "title": "Linguagem comum:",
-              "text": "termos simples e de fácil entendimento entre todos os envolvidos."
+              "text": "Termos simples e de fácil entendimento entre todos os envolvidos."
             },
             {
+              "n": 5,
               "icon": "🔄",
               "title": "Flexibilidade e escalabilidade:",
-              "text": "o sistema se adapta a diferentes tipos e portes de incidente."
+              "text": "O sistema se adapta a diferentes tipos e portes de incidente."
             },
             {
+              "n": 6,
               "icon": "🤝",
               "title": "Integração:",
-              "text": "entre equipes internas e órgãos externos, como Bombeiros e SAMU."
+              "text": "Entre equipes internas e órgãos externos, como Bombeiros e SAMU."
             },
             {
+              "n": 7,
               "icon": "📋",
               "title": "Objetivos claros:",
-              "text": "planos operacionais bem definidos, sem depender de improviso."
+              "text": "Planos operacionais bem definidos, sem depender de improviso."
             }
           ],
-          "layout": "quickcards",
           "transcript": "Princípios básicos do Sistema de Controle de Incidentes."
         },
         {
@@ -1842,32 +1853,42 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m7-funcoes",
           "type": "content",
           "kicker": "📄 Texto",
+          "steps": true,
+          "stepSkin": "funcoes",
+          "stepUnit": "Função",
+          "stepNext": "Próxima função",
+          "stepFinish": "Concluir",
           "title": "Funções do Brigadista Dentro do SCI",
           "items": [
             {
               "n": 1,
+              "icon": "📣",
               "title": "Apoiar o comando:",
-              "text": "informar o Comandante do Incidente sobre a situação local."
+              "text": "Informar o Comandante do Incidente sobre a situação local."
             },
             {
               "n": 2,
+              "icon": "✅",
               "title": "Executar sua função:",
-              "text": "agir de acordo com o papel que lhe foi atribuído."
+              "text": "Agir de acordo com o papel que lhe foi atribuído."
             },
             {
               "n": 3,
+              "icon": "📡",
               "title": "Manter a comunicação:",
-              "text": "com os líderes e com o restante da equipe."
+              "text": "Com os líderes e com o restante da equipe."
             },
             {
               "n": 4,
+              "icon": "⚠️",
               "title": "Relatar riscos:",
-              "text": "avisar imediatamente sobre riscos e necessidades que encontrar."
+              "text": "Avisar imediatamente sobre riscos e necessidades que encontrar."
             },
             {
               "n": 5,
+              "icon": "🆘",
               "title": "Auxiliar vítimas:",
-              "text": "apoiar a evacuação e o atendimento de quem precisar."
+              "text": "Apoiar a evacuação e o atendimento de quem precisar."
             }
           ],
           "review": "Funções do brigadista dentro do SCI",
@@ -1890,27 +1911,33 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m7-vantagens",
           "type": "content",
           "kicker": "📄 Texto",
+          "layout": "benefits-grid",
           "title": "Vantagens de Implantar o SCI",
+          "body": "Quatro ganhos quando o SCI está implantado na operação:",
           "items": [
             {
+              "n": 1,
               "icon": "⚡",
               "title": "Agilidade:",
-              "text": "organização que acelera a resposta em incidentes."
+              "text": "Organização que acelera a resposta em incidentes."
             },
             {
+              "n": 2,
               "icon": "🎯",
               "title": "Menos improviso:",
-              "text": "reduz falhas causadas por decisões de última hora."
+              "text": "Reduz falhas causadas por decisões de última hora."
             },
             {
+              "n": 3,
               "icon": "🛡️",
               "title": "Mais segurança:",
-              "text": "para as equipes envolvidas e para as vítimas."
+              "text": "Para as equipes envolvidas e para as vítimas."
             },
             {
+              "n": 4,
               "icon": "🤝",
               "title": "Coordenação:",
-              "text": "entre diferentes setores da empresa ou instituições externas."
+              "text": "Entre diferentes setores da empresa ou instituições externas."
             }
           ],
           "transcript": "Vantagens da implantação do SCI."
