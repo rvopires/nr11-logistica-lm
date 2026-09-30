@@ -1,23 +1,3 @@
-/**
- * Conteúdo — NR 23 Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado) · Coca-Cola
- * Gerado a partir de Roteiro-NR23-Brigada-Incendio.txt
- *
- * Tipos: cover | content | video | image | quiz-intro | question | order | match | compare | reflect | finale
- *
- * Vídeos: SEM embed — só nome + scene/brief no frame "Vídeo a gravar".
- *         Depois cole embed/playerId Panda em cada tela type:"video".
- * Fotos: caminhos placeholder em assets/fotos/ — substitua pelos arquivos reais.
- *
- * Atividades por módulo — cada módulo tem um formato diferente:
- *  M1 Contra o Alarme → 3 question + 1 order (montar o protocolo em 6 passos)
- *  M2 Apaga ou Alimenta? → match (5 pares: situação → efeito no fogo)
- *  M3 Combinação Certa → question com foto (classe de incêndio → agente)
- *  M4 Caça ao Risco → 3 compare (certo × errado) + 4 question
- *  M5 Guerra de Palpites → 2 reflect (reconheça a reação) + 4 question V/F
- *  M6 Corrente de Decisão → 3 question em cadeia (o erro mostra a consequência)
- *  M7 Comando Estruturado → 1 reflect + 4 question (objetivo, estrutura, funções, princípios)
- *  M8 Roleta da RCP → order (5 etapas) + rhythm (tocar no ritmo das compressões, 100–120/min)
- */
 window.QUESTION_SCREEN_SESSION = {
   "meta": {
     "title": "NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado)",
@@ -1294,22 +1274,333 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 6,
-      "title": "Primeiros Socorros: Traumas e Emergências Clínicas",
-      "meta": "Vídeos + ficha · desafio Corrente de Decisão",
+      "title": "Sistema de Controle de Incidentes (SCI)",
+      "meta": "Texto + reflexão · 4 perguntas Comando Estruturado",
       "titleUnlock": {
-        "title": "PRIMEIRA RESPOSTA",
-        "body": "Você sabe conduzir as emergências clínicas mais comuns.",
-        "icon": "🩹"
+        "title": "COMANDO ESTRUTURADO",
+        "body": "Você sabe como o SCI organiza a resposta a qualquer emergência.",
+        "icon": "🧭"
       },
       "screens": [
         {
-          "id": "m6-cover",
+          "id": "m7-cover",
           "type": "cover",
-          "title": "Módulo 6 — Primeiros Socorros",
-          "subtitle": "Queimaduras, choque, hemorragia, desmaio, engasgo e convulsão.",
-          "transcript": "Módulo 6: Primeiros Socorros — traumas e emergências clínicas.",
+          "title": "Módulo 6 — Sistema de Controle de Incidentes (SCI)",
+          "subtitle": "Como organizar comando, comunicação e resposta em qualquer emergência.",
+          "transcript": "Módulo 6: Sistema de Controle de Incidentes.",
+          "image": "assets/fotos/capamodulo7.png",
+          "imageAlt": "Capa do módulo 6: Sistema de Controle de Incidentes"
+        },
+        {
+          "id": "m7-v-oque",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "O Que É o Sistema de Controle de Incidentes?",
+          "duration": "1:00",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
+          "playerId": "panda-d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
+          "scene": "Brigadista apresentando o conceito, com um organograma simples ao fundo",
+          "brief": "SCI: modelo de gestão que padroniza organização, comando e comunicação em emergências de qualquer natureza.",
+          "body": "O Sistema de Controle de Incidentes (SCI) é um modelo de gestão de emergências. Ele padroniza a organização, o comando e a comunicação em situações críticas, e é usado em emergências de qualquer natureza: incêndios, desabamentos, vazamentos químicos, entre outros.",
+          "transcript": "Vídeo: o que é o Sistema de Controle de Incidentes."
+        },
+        {
+          "id": "m7-principios",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "steps": true,
+          "stepSkin": "principles",
+          "stepUnit": "Princípio",
+          "stepNext": "Próximo princípio",
+          "stepFinish": "Concluir",
+          "title": "Princípios Básicos do SCI",
+          "items": [
+            {
+              "n": 1,
+              "icon": "🪜",
+              "title": "Hierarquia clara:",
+              "text": "Uma cadeia de comando definida, sem ambiguidade sobre quem decide."
+            },
+            {
+              "n": 2,
+              "icon": "🎯",
+              "title": "Funções bem definidas:",
+              "text": "Cada pessoa sabe exatamente qual é o seu papel."
+            },
+            {
+              "n": 3,
+              "icon": "🧩",
+              "title": "Organização modular:",
+              "text": "A estrutura cresce ou diminui conforme o tamanho da emergência."
+            },
+            {
+              "n": 4,
+              "icon": "🗣️",
+              "title": "Linguagem comum:",
+              "text": "Termos simples e de fácil entendimento entre todos os envolvidos."
+            },
+            {
+              "n": 5,
+              "icon": "🔄",
+              "title": "Flexibilidade e escalabilidade:",
+              "text": "O sistema se adapta a diferentes tipos e portes de incidente."
+            },
+            {
+              "n": 6,
+              "icon": "🤝",
+              "title": "Integração:",
+              "text": "Entre equipes internas e órgãos externos, como Bombeiros e SAMU."
+            },
+            {
+              "n": 7,
+              "icon": "📋",
+              "title": "Objetivos claros:",
+              "text": "Planos operacionais bem definidos, sem depender de improviso."
+            }
+          ],
+          "transcript": "Princípios básicos do Sistema de Controle de Incidentes."
+        },
+        {
+          "id": "m7-estrutura",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Estrutura Básica do SCI",
+          "duration": "1:00",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=f7ea888a-8b32-4cf0-b971-4d7fff35255d",
+          "playerId": "panda-f7ea888a-8b32-4cf0-b971-4d7fff35255d",
+          "scene": "Brigadista explicando diante de um organograma simples: Comandante no topo, quatro seções abaixo",
+          "brief": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
+          "body": "No topo está o Comandante do Incidente. Abaixo dele, quatro seções dividem o trabalho: Operações executa as ações diretas de resposta; Planejamento analisa a situação e antecipa os próximos cenários; Logística fornece os recursos e o apoio necessários; e Administração e Finanças cuida dos custos e dos registros do incidente.",
+          "transcript": "Estrutura básica do SCI: comandante e quatro seções operacionais."
+        },
+        {
+          "id": "m7-funcoes",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "steps": true,
+          "stepSkin": "funcoes",
+          "stepUnit": "Função",
+          "stepNext": "Próxima função",
+          "stepFinish": "Concluir",
+          "title": "Funções do Brigadista Dentro do SCI",
+          "items": [
+            {
+              "n": 1,
+              "icon": "📣",
+              "title": "Apoiar o comando:",
+              "text": "Informar o Comandante do Incidente sobre a situação local."
+            },
+            {
+              "n": 2,
+              "icon": "✅",
+              "title": "Executar sua função:",
+              "text": "Agir de acordo com o papel que lhe foi atribuído."
+            },
+            {
+              "n": 3,
+              "icon": "📡",
+              "title": "Manter a comunicação:",
+              "text": "Com os líderes e com o restante da equipe."
+            },
+            {
+              "n": 4,
+              "icon": "⚠️",
+              "title": "Relatar riscos:",
+              "text": "Avisar imediatamente sobre riscos e necessidades que encontrar."
+            },
+            {
+              "n": 5,
+              "icon": "🆘",
+              "title": "Auxiliar vítimas:",
+              "text": "Apoiar a evacuação e o atendimento de quem precisar."
+            }
+          ],
+          "review": "Funções do brigadista dentro do SCI",
+          "transcript": "Funções essenciais do brigadista dentro do SCI."
+        },
+        {
+          "id": "m7-procedimento",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Procedimentos do SCI em Ação",
+          "duration": "1:00",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
+          "playerId": "panda-a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
+          "scene": "Brigadista narrando o passo a passo, com os números das etapas aparecendo na tela conforme fala",
+          "brief": "Avaliação inicial → comando → funções → planejamento → execução → monitoramento.",
+          "body": "O passo a passo de como o sistema entra em funcionamento: avaliação inicial da situação assim que ela é identificada; estabelecimento do comando, definindo quem é o Comandante do Incidente; definição das funções e responsabilidades de cada pessoa envolvida; planejamento das ações, com objetivos e estratégias; execução da resposta; e monitoramento constante, com ajustes e comunicação ao longo de todo o processo.",
+          "transcript": "Procedimentos do SCI em ação, passo a passo."
+        },
+        {
+          "id": "m7-vantagens",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "layout": "benefits-grid",
+          "title": "Vantagens de Implantar o SCI",
+          "body": "Quatro ganhos quando o SCI está implantado na operação:",
+          "items": [
+            {
+              "n": 1,
+              "icon": "⚡",
+              "title": "Agilidade:",
+              "text": "Organização que acelera a resposta em incidentes."
+            },
+            {
+              "n": 2,
+              "icon": "🎯",
+              "title": "Menos improviso:",
+              "text": "Reduz falhas causadas por decisões de última hora."
+            },
+            {
+              "n": 3,
+              "icon": "🛡️",
+              "title": "Mais segurança:",
+              "text": "Para as equipes envolvidas e para as vítimas."
+            },
+            {
+              "n": 4,
+              "icon": "🤝",
+              "title": "Coordenação:",
+              "text": "Entre diferentes setores da empresa ou instituições externas."
+            }
+          ],
+          "transcript": "Vantagens da implantação do SCI."
+        },
+        {
+          "id": "m7-reflexao",
+          "type": "reflect",
+          "kicker": "💭 Reflexão",
+          "title": "Reflexão Sobre o SCI",
+          "prompt": "Por que o treinamento contínuo é tão importante para o SCI funcionar de verdade?",
+          "answer": "O SCI é uma ferramenta essencial para uma atuação organizada, mas só funciona se todo mundo souber usá-la na hora certa. O treinamento contínuo é a chave para isso — e a Brigada de Incêndio é peça fundamental para aplicar o SCI com sucesso.",
+          "transcript": "Reflexão sobre a importância do SCI e do treinamento contínuo."
+        },
+        {
+          "id": "m7-quiz-intro",
+          "type": "quiz-intro",
+          "title": "Desafio — Comando Estruturado",
+          "count": 4,
+          "minCorrect": 3,
+          "icon": "🧭",
+          "body": "4 perguntas pra fechar o módulo: objetivo, estrutura, funções do brigadista e princípios do SCI. Mínimo de <strong>3 acertos</strong>.",
+          "transcript": "Desafio do módulo: Comando Estruturado. Quatro perguntas."
+        },
+        {
+          "id": "m7-q1",
+          "type": "question",
+          "question": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)?",
+          "alternatives": [
+            {
+              "text": "Substituir a brigada em situações de emergência.",
+              "correct": false
+            },
+            {
+              "text": "Garantir que todas as emergências sejam resolvidas sem apoio externo.",
+              "correct": false
+            },
+            {
+              "text": "Organizar e coordenar a resposta a emergências de forma estruturada.",
+              "correct": true
+            }
+          ],
+          "explanation": "O SCI não substitui a brigada nem dispensa apoio externo — ele organiza e coordena a resposta, com comando claro e funções bem definidas.",
+          "review": "Objetivo do SCI",
+          "transcript": "Pergunta: qual é o principal objetivo do SCI?",
+          "image": "assets/fotos/modulo7-pergunta1.png",
+          "imageAlt": "Equipe organizada respondendo a uma emergência com comando claro"
+        },
+        {
+          "id": "m7-q2",
+          "type": "question",
+          "question": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo?",
+          "alternatives": [
+            {
+              "text": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
+              "correct": true
+            },
+            {
+              "text": "Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.",
+              "correct": false
+            },
+            {
+              "text": "Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.",
+              "correct": false
+            }
+          ],
+          "explanation": "O Comandante do Incidente lidera a resposta. As quatro seções — Operações, Planejamento, Logística e Administração/Finanças — dividem o trabalho sob o comando.",
+          "review": "Estrutura básica do SCI",
+          "transcript": "Pergunta: na estrutura do SCI, quem fica no topo e quais são as quatro seções?",
+          "image": "assets/fotos/modulo7-pergunta2.png",
+          "imageAlt": "Organograma do SCI: Comandante do Incidente e quatro seções"
+        },
+        {
+          "id": "m7-q3",
+          "type": "question",
+          "question": "Qual destas é uma função do brigadista dentro do SCI?",
+          "alternatives": [
+            {
+              "text": "Assumir sozinho o comando de toda a emergência, sem informar ninguém.",
+              "correct": false
+            },
+            {
+              "text": "Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.",
+              "correct": true
+            },
+            {
+              "text": "Decidir sozinho o orçamento e os registros financeiros do incidente.",
+              "correct": false
+            }
+          ],
+          "explanation": "O brigadista apoia o Comandante, executa o papel atribuído, mantém a comunicação, relata riscos e auxilia vítimas — não age por conta própria fora da estrutura.",
+          "review": "Funções do brigadista no SCI",
+          "transcript": "Pergunta: qual é uma função do brigadista dentro do SCI?",
+          "image": "assets/fotos/modulo7-pergunta3.png",
+          "imageAlt": "Brigadista comunicando a situação ao comando durante emergência"
+        },
+        {
+          "id": "m7-q4",
+          "type": "question",
+          "question": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência?",
+          "alternatives": [
+            {
+              "text": "Linguagem comum — termos simples e de fácil entendimento entre todos.",
+              "correct": true
+            },
+            {
+              "text": "Organização modular — a estrutura cresce ou diminui conforme o incidente.",
+              "correct": false
+            },
+            {
+              "text": "Flexibilidade e escalabilidade — o sistema se adapta a diferentes portes.",
+              "correct": false
+            }
+          ],
+          "explanation": "Linguagem comum garante que todos se entendam. Organização modular e flexibilidade são princípios importantes, mas tratam do tamanho e da adaptação da estrutura — não do vocabulário.",
+          "review": "Princípio da linguagem comum",
+          "transcript": "Pergunta: qual princípio do SCI evita confusão de termos entre as equipes?",
+          "image": "assets/fotos/modulo7-pergunta4.png",
+          "imageAlt": "Equipes internas e externas se comunicando com linguagem comum na emergência"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Primeiros Socorros, RCP e Encerramento",
+      "meta": "Vídeos + ficha · Corrente de Decisão + Roleta da RCP + certificado",
+      "titleUnlock": {
+        "title": "PRONTO PARA AGIR",
+        "body": "Você domina primeiros socorros, reconhece AVC/infarto, sabe a RCP e quem ligar.",
+        "icon": "❤️"
+      },
+      "screens": [
+        {
+          "id": "m8-cover",
+          "type": "cover",
+          "title": "Módulo 7 — Primeiros Socorros, RCP e Encerramento",
+          "subtitle": "Traumas, emergências clínicas, AVC, infarto, RCP, números de emergência e certificado.",
+          "transcript": "Módulo 7: Primeiros Socorros, RCP e Encerramento.",
           "image": "assets/fotos/capa-modulo6.png",
-          "imageAlt": "Capa do módulo 6: primeiros socorros"
+          "imageAlt": "Capa do módulo 7: primeiros socorros, RCP e encerramento"
         },
         {
           "id": "m6-v-intro",
@@ -1745,338 +2036,6 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Decisão 3 de 3 · Vítima respirando, com queimadura visível no braço. Ação final?",
           "image": "assets/fotos/m6-p3.png",
           "imageAlt": "Vítima respirando com queimadura visível no braço"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Sistema de Controle de Incidentes (SCI)",
-      "meta": "Texto + reflexão · 4 perguntas Comando Estruturado",
-      "titleUnlock": {
-        "title": "COMANDO ESTRUTURADO",
-        "body": "Você sabe como o SCI organiza a resposta a qualquer emergência.",
-        "icon": "🧭"
-      },
-      "screens": [
-        {
-          "id": "m7-cover",
-          "type": "cover",
-          "title": "Módulo 7 — Sistema de Controle de Incidentes (SCI)",
-          "subtitle": "Como organizar comando, comunicação e resposta em qualquer emergência.",
-          "transcript": "Módulo 7: Sistema de Controle de Incidentes.",
-          "image": "assets/fotos/capamodulo7.png",
-          "imageAlt": "Capa do módulo 7: Sistema de Controle de Incidentes"
-        },
-        {
-          "id": "m7-v-oque",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "O Que É o Sistema de Controle de Incidentes?",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
-          "playerId": "panda-d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
-          "scene": "Brigadista apresentando o conceito, com um organograma simples ao fundo",
-          "brief": "SCI: modelo de gestão que padroniza organização, comando e comunicação em emergências de qualquer natureza.",
-          "body": "O Sistema de Controle de Incidentes (SCI) é um modelo de gestão de emergências. Ele padroniza a organização, o comando e a comunicação em situações críticas, e é usado em emergências de qualquer natureza: incêndios, desabamentos, vazamentos químicos, entre outros.",
-          "transcript": "Vídeo: o que é o Sistema de Controle de Incidentes."
-        },
-        {
-          "id": "m7-principios",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "steps": true,
-          "stepSkin": "principles",
-          "stepUnit": "Princípio",
-          "stepNext": "Próximo princípio",
-          "stepFinish": "Concluir",
-          "title": "Princípios Básicos do SCI",
-          "items": [
-            {
-              "n": 1,
-              "icon": "🪜",
-              "title": "Hierarquia clara:",
-              "text": "Uma cadeia de comando definida, sem ambiguidade sobre quem decide."
-            },
-            {
-              "n": 2,
-              "icon": "🎯",
-              "title": "Funções bem definidas:",
-              "text": "Cada pessoa sabe exatamente qual é o seu papel."
-            },
-            {
-              "n": 3,
-              "icon": "🧩",
-              "title": "Organização modular:",
-              "text": "A estrutura cresce ou diminui conforme o tamanho da emergência."
-            },
-            {
-              "n": 4,
-              "icon": "🗣️",
-              "title": "Linguagem comum:",
-              "text": "Termos simples e de fácil entendimento entre todos os envolvidos."
-            },
-            {
-              "n": 5,
-              "icon": "🔄",
-              "title": "Flexibilidade e escalabilidade:",
-              "text": "O sistema se adapta a diferentes tipos e portes de incidente."
-            },
-            {
-              "n": 6,
-              "icon": "🤝",
-              "title": "Integração:",
-              "text": "Entre equipes internas e órgãos externos, como Bombeiros e SAMU."
-            },
-            {
-              "n": 7,
-              "icon": "📋",
-              "title": "Objetivos claros:",
-              "text": "Planos operacionais bem definidos, sem depender de improviso."
-            }
-          ],
-          "transcript": "Princípios básicos do Sistema de Controle de Incidentes."
-        },
-        {
-          "id": "m7-estrutura",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Estrutura Básica do SCI",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=f7ea888a-8b32-4cf0-b971-4d7fff35255d",
-          "playerId": "panda-f7ea888a-8b32-4cf0-b971-4d7fff35255d",
-          "scene": "Brigadista explicando diante de um organograma simples: Comandante no topo, quatro seções abaixo",
-          "brief": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
-          "body": "No topo está o Comandante do Incidente. Abaixo dele, quatro seções dividem o trabalho: Operações executa as ações diretas de resposta; Planejamento analisa a situação e antecipa os próximos cenários; Logística fornece os recursos e o apoio necessários; e Administração e Finanças cuida dos custos e dos registros do incidente.",
-          "transcript": "Estrutura básica do SCI: comandante e quatro seções operacionais."
-        },
-        {
-          "id": "m7-funcoes",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "steps": true,
-          "stepSkin": "funcoes",
-          "stepUnit": "Função",
-          "stepNext": "Próxima função",
-          "stepFinish": "Concluir",
-          "title": "Funções do Brigadista Dentro do SCI",
-          "items": [
-            {
-              "n": 1,
-              "icon": "📣",
-              "title": "Apoiar o comando:",
-              "text": "Informar o Comandante do Incidente sobre a situação local."
-            },
-            {
-              "n": 2,
-              "icon": "✅",
-              "title": "Executar sua função:",
-              "text": "Agir de acordo com o papel que lhe foi atribuído."
-            },
-            {
-              "n": 3,
-              "icon": "📡",
-              "title": "Manter a comunicação:",
-              "text": "Com os líderes e com o restante da equipe."
-            },
-            {
-              "n": 4,
-              "icon": "⚠️",
-              "title": "Relatar riscos:",
-              "text": "Avisar imediatamente sobre riscos e necessidades que encontrar."
-            },
-            {
-              "n": 5,
-              "icon": "🆘",
-              "title": "Auxiliar vítimas:",
-              "text": "Apoiar a evacuação e o atendimento de quem precisar."
-            }
-          ],
-          "review": "Funções do brigadista dentro do SCI",
-          "transcript": "Funções essenciais do brigadista dentro do SCI."
-        },
-        {
-          "id": "m7-procedimento",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Procedimentos do SCI em Ação",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
-          "playerId": "panda-a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
-          "scene": "Brigadista narrando o passo a passo, com os números das etapas aparecendo na tela conforme fala",
-          "brief": "Avaliação inicial → comando → funções → planejamento → execução → monitoramento.",
-          "body": "O passo a passo de como o sistema entra em funcionamento: avaliação inicial da situação assim que ela é identificada; estabelecimento do comando, definindo quem é o Comandante do Incidente; definição das funções e responsabilidades de cada pessoa envolvida; planejamento das ações, com objetivos e estratégias; execução da resposta; e monitoramento constante, com ajustes e comunicação ao longo de todo o processo.",
-          "transcript": "Procedimentos do SCI em ação, passo a passo."
-        },
-        {
-          "id": "m7-vantagens",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "layout": "benefits-grid",
-          "title": "Vantagens de Implantar o SCI",
-          "body": "Quatro ganhos quando o SCI está implantado na operação:",
-          "items": [
-            {
-              "n": 1,
-              "icon": "⚡",
-              "title": "Agilidade:",
-              "text": "Organização que acelera a resposta em incidentes."
-            },
-            {
-              "n": 2,
-              "icon": "🎯",
-              "title": "Menos improviso:",
-              "text": "Reduz falhas causadas por decisões de última hora."
-            },
-            {
-              "n": 3,
-              "icon": "🛡️",
-              "title": "Mais segurança:",
-              "text": "Para as equipes envolvidas e para as vítimas."
-            },
-            {
-              "n": 4,
-              "icon": "🤝",
-              "title": "Coordenação:",
-              "text": "Entre diferentes setores da empresa ou instituições externas."
-            }
-          ],
-          "transcript": "Vantagens da implantação do SCI."
-        },
-        {
-          "id": "m7-reflexao",
-          "type": "reflect",
-          "kicker": "💭 Reflexão",
-          "title": "Reflexão Sobre o SCI",
-          "prompt": "Por que o treinamento contínuo é tão importante para o SCI funcionar de verdade?",
-          "answer": "O SCI é uma ferramenta essencial para uma atuação organizada, mas só funciona se todo mundo souber usá-la na hora certa. O treinamento contínuo é a chave para isso — e a Brigada de Incêndio é peça fundamental para aplicar o SCI com sucesso.",
-          "transcript": "Reflexão sobre a importância do SCI e do treinamento contínuo."
-        },
-        {
-          "id": "m7-quiz-intro",
-          "type": "quiz-intro",
-          "title": "Desafio — Comando Estruturado",
-          "count": 4,
-          "minCorrect": 3,
-          "icon": "🧭",
-          "body": "4 perguntas pra fechar o módulo: objetivo, estrutura, funções do brigadista e princípios do SCI. Mínimo de <strong>3 acertos</strong>.",
-          "transcript": "Desafio do módulo: Comando Estruturado. Quatro perguntas."
-        },
-        {
-          "id": "m7-q1",
-          "type": "question",
-          "question": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)?",
-          "alternatives": [
-            {
-              "text": "Substituir a brigada em situações de emergência.",
-              "correct": false
-            },
-            {
-              "text": "Garantir que todas as emergências sejam resolvidas sem apoio externo.",
-              "correct": false
-            },
-            {
-              "text": "Organizar e coordenar a resposta a emergências de forma estruturada.",
-              "correct": true
-            }
-          ],
-          "explanation": "O SCI não substitui a brigada nem dispensa apoio externo — ele organiza e coordena a resposta, com comando claro e funções bem definidas.",
-          "review": "Objetivo do SCI",
-          "transcript": "Pergunta: qual é o principal objetivo do SCI?",
-          "image": "assets/fotos/modulo7-pergunta1.png",
-          "imageAlt": "Equipe organizada respondendo a uma emergência com comando claro"
-        },
-        {
-          "id": "m7-q2",
-          "type": "question",
-          "question": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo?",
-          "alternatives": [
-            {
-              "text": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
-              "correct": true
-            },
-            {
-              "text": "Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.",
-              "correct": false
-            },
-            {
-              "text": "Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.",
-              "correct": false
-            }
-          ],
-          "explanation": "O Comandante do Incidente lidera a resposta. As quatro seções — Operações, Planejamento, Logística e Administração/Finanças — dividem o trabalho sob o comando.",
-          "review": "Estrutura básica do SCI",
-          "transcript": "Pergunta: na estrutura do SCI, quem fica no topo e quais são as quatro seções?",
-          "image": "assets/fotos/modulo7-pergunta2.png",
-          "imageAlt": "Organograma do SCI: Comandante do Incidente e quatro seções"
-        },
-        {
-          "id": "m7-q3",
-          "type": "question",
-          "question": "Qual destas é uma função do brigadista dentro do SCI?",
-          "alternatives": [
-            {
-              "text": "Assumir sozinho o comando de toda a emergência, sem informar ninguém.",
-              "correct": false
-            },
-            {
-              "text": "Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.",
-              "correct": true
-            },
-            {
-              "text": "Decidir sozinho o orçamento e os registros financeiros do incidente.",
-              "correct": false
-            }
-          ],
-          "explanation": "O brigadista apoia o Comandante, executa o papel atribuído, mantém a comunicação, relata riscos e auxilia vítimas — não age por conta própria fora da estrutura.",
-          "review": "Funções do brigadista no SCI",
-          "transcript": "Pergunta: qual é uma função do brigadista dentro do SCI?",
-          "image": "assets/fotos/modulo7-pergunta3.png",
-          "imageAlt": "Brigadista comunicando a situação ao comando durante emergência"
-        },
-        {
-          "id": "m7-q4",
-          "type": "question",
-          "question": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência?",
-          "alternatives": [
-            {
-              "text": "Linguagem comum — termos simples e de fácil entendimento entre todos.",
-              "correct": true
-            },
-            {
-              "text": "Organização modular — a estrutura cresce ou diminui conforme o incidente.",
-              "correct": false
-            },
-            {
-              "text": "Flexibilidade e escalabilidade — o sistema se adapta a diferentes portes.",
-              "correct": false
-            }
-          ],
-          "explanation": "Linguagem comum garante que todos se entendam. Organização modular e flexibilidade são princípios importantes, mas tratam do tamanho e da adaptação da estrutura — não do vocabulário.",
-          "review": "Princípio da linguagem comum",
-          "transcript": "Pergunta: qual princípio do SCI evita confusão de termos entre as equipes?",
-          "image": "assets/fotos/modulo7-pergunta4.png",
-          "imageAlt": "Equipes internas e externas se comunicando com linguagem comum na emergência"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "title": "RCP, Infarto e Encerramento",
-      "meta": "Vídeos + números · Roleta da RCP + certificado",
-      "titleUnlock": {
-        "title": "PRONTO PARA AGIR",
-        "body": "Você reconhece AVC/infarto, sabe a RCP e quem ligar.",
-        "icon": "❤️"
-      },
-      "screens": [
-        {
-          "id": "m8-cover",
-          "type": "cover",
-          "title": "Módulo 8 — RCP, Infarto e Encerramento",
-          "subtitle": "AVC, infarto, passo a passo da RCP, números de emergência e certificado.",
-          "transcript": "Módulo 8: RCP, infarto e encerramento.",
-          "image": "assets/fotos/capa-modulo7.png",
-          "imageAlt": "Capa do módulo 8: RCP, infarto e encerramento"
         },
         {
           "id": "m8-v-avc-infarto",

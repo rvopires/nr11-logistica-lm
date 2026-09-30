@@ -6,7 +6,7 @@
   <meta name="referrer" content="no-referrer">
   <title>NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado)</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="question-screen.css?v=finaleTiger">
+  <link rel="stylesheet" href="question-screen.css?v=progressGap2">
   <link rel="stylesheet" href="fundo-novo.css?v=tigerFlame">
   <link rel="stylesheet" href="menu-compacto.css?v=tigerFlame">
   <link rel="stylesheet" href="atividades.css?v=quickcards4">
@@ -45,7 +45,7 @@
           <div class="qs-home-badges">
             <div class="qs-home-badge">
               <div>
-                <strong>8 Módulos</strong>
+                <strong>7 Módulos</strong>
                 <span>Conteúdo completo</span>
               </div>
             </div>
@@ -164,10 +164,10 @@
 
   <audio id="bg-music" loop preload="metadata" aria-hidden="true"></audio>
 
-  <script src="question-screen-data.js?v=principlesSteps80"></script>
+  <script src="question-screen-data.js?v=mergeFirstAid7"></script>
   <script src="question-screen.js?v=principlesSteps80"></script>
   <script src="capa-animada.js?v=13"></script>
-  <script src="narration-text.js?v=m7sci"></script>
+  <script src="narration-text.js?v=mergeFirstAid7"></script>
   <script src="narration.js?v=tts6"></script>
   <script>
 (function () {
@@ -591,7 +591,14 @@
     var medal = quizMedal(quizState.passed, hits, total);
     var m = currentMod() || {};
     var unlock = m.titleUnlock || null;
-    var titleUnlock = (quizState.passed && unlock)
+    /* Só libera o título do módulo no último desafio — se ainda houver
+       conteúdo depois (ex.: primeiros socorros + RCP no mesmo módulo),
+       o resultado intermediário fica só com a medalha. */
+    var listNow = screens();
+    var afterQuiz = slideIndex + 1;
+    while (afterQuiz < listNow.length && isScoreType(listNow[afterQuiz].type)) afterQuiz++;
+    var isModuleClosingQuiz = afterQuiz >= listNow.length;
+    var titleUnlock = (quizState.passed && unlock && isModuleClosingQuiz)
       ? {
           moduleLabel: 'Módulo ' + m.id + ' concluído',
           title: unlock.title,

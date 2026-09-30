@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T19:47:17.698Z",
+  "generatedAt": "2026-09-30T19:04:29.009Z",
   "items": {
     "m5-v-final": {
       "file": "assets/audio/m5-v-final.mp3",
@@ -15,7 +15,7 @@
     },
     "menu-1": {
       "file": "assets/audio/menu-1.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 1 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 1 de 7 liberado."
     },
     "m2-result-fail": {
       "file": "assets/audio/m2-result-fail.mp3",
@@ -119,7 +119,7 @@
     },
     "menu-done": {
       "file": "assets/audio/menu-done.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Treinamento concluído. Você finalizou todos os módulos."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Treinamento concluído. Você finalizou todos os módulos."
     },
     "m2-cover": {
       "file": "assets/audio/m2-cover.mp3",
@@ -139,7 +139,7 @@
     },
     "m8-cover": {
       "file": "assets/audio/m8-cover.mp3",
-      "text": "Módulo 8, RCP, Infarto e Encerramento. AVC, infarto, passo a passo da RCP, números de emergência e certificado. Na imagem: Capa do módulo 8: RCP, infarto e encerramento."
+      "text": "Módulo 7, Primeiros Socorros, RCP e Encerramento. Traumas, emergências clínicas, AVC, infarto, RCP, números de emergência e certificado. Na imagem: Capa do módulo 7: primeiros socorros, RCP e encerramento."
     },
     "m6-v-convulsao": {
       "file": "assets/audio/m6-v-convulsao.mp3",
@@ -255,7 +255,7 @@
     },
     "menu-2": {
       "file": "assets/audio/menu-2.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 2 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 2 de 7 liberado."
     },
     "m5-v-lideranca": {
       "file": "assets/audio/m5-v-lideranca.mp3",
@@ -403,7 +403,7 @@
     },
     "menu-5": {
       "file": "assets/audio/menu-5.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 5 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 5 de 7 liberado."
     },
     "m5-q4": {
       "file": "assets/audio/m5-q4.mp3",
@@ -451,15 +451,15 @@
     },
     "menu-4": {
       "file": "assets/audio/menu-4.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 4 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 4 de 7 liberado."
     },
     "menu-6": {
       "file": "assets/audio/menu-6.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 6 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 6 de 7 liberado."
     },
     "home": {
       "file": "assets/audio/home.mp3",
-      "text": "Abertura do treinamento. Segurança do trabalho. NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação e prestar os primeiros socorros no ambiente Coca-Cola. São oito módulos, com conteúdo completo, em treinamento cem por cento online. Na imagem: capa do treinamento, brigadistas em ação no ambiente de trabalho. Na imagem: logo TecnoCursos."
+      "text": "Abertura do treinamento. Segurança do trabalho. NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação e prestar os primeiros socorros no ambiente Coca-Cola. São sete módulos, com conteúdo completo, em treinamento cem por cento online. Na imagem: capa do treinamento, brigadistas em ação no ambiente de trabalho. Na imagem: logo TecnoCursos."
     },
     "m5-q2": {
       "file": "assets/audio/m5-q2.mp3",
@@ -467,7 +467,7 @@
     },
     "menu-7": {
       "file": "assets/audio/menu-7.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 7 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 7 de 7 liberado."
     },
     "m6-ficha": {
       "file": "assets/audio/m6-ficha.mp3",
@@ -507,7 +507,7 @@
     },
     "menu-3": {
       "file": "assets/audio/menu-3.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 3 de 8 liberado."
+      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 3 de 7 liberado."
     },
     "m2-quiz-intro": {
       "file": "assets/audio/m2-quiz-intro.mp3",
@@ -575,7 +575,7 @@
     },
     "m7-cover": {
       "file": "assets/audio/m7-cover.mp3",
-      "text": "Módulo 7, Sistema de Controle de Incidentes (SCI). Como organizar comando, comunicação e resposta em qualquer emergência. Na imagem: Capa do módulo 7: Sistema de Controle de Incidentes."
+      "text": "Módulo 6, Sistema de Controle de Incidentes (SCI). Como organizar comando, comunicação e resposta em qualquer emergência. Na imagem: Capa do módulo 6: Sistema de Controle de Incidentes."
     },
     "m7-v-oque": {
       "file": "assets/audio/m7-v-oque.mp3",
