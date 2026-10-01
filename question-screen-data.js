@@ -2267,13 +2267,13 @@ window.QUESTION_SCREEN_SESSION = {
           "eyebrow": "Certificado de conclusão",
           "title": "Parabéns",
           "body": "Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado).",
-          "quote": "Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida.",
+          "quote": "Segurança não é sorte: é prevenção, preparo e atitude no momento certo. Agora você está pronto para proteger vidas.",
           "chips": [
             "NR 23",
             "Brigada de Incêndio",
             "Nível Avançado"
           ],
-          "transcript": "Parabéns. Você finalizou o NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Todos têm o direito de viver em um ambiente seguro.",
+          "transcript": "Parabéns. Você finalizou o NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Segurança não é sorte: é prevenção, preparo e atitude no momento certo. Agora você está pronto para proteger vidas.",
           "image": "assets/fotos/capafinal.png",
           "imageAlt": "Imagem final de parabéns pelo treinamento concluído"
         }
