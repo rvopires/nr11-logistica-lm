@@ -1,2281 +1,1805 @@
+﻿/**
+ * Conteúdo — NR 11 Logística para Todos · Leroy Merlin
+ * Gerado a partir do roteiro "Roteiro NR 11 — Logística para Todos" (35 slides do SESMT).
+ *
+ * Tipos: cover | content | video | image | quiz-intro | question | order | match | compare | reflect | finale
+ *
+ * Vídeos: SEM embed — só nome + scene/brief no frame "Vídeo a gravar".
+ *         Depois cole embed/playerId Panda em cada tela type:"video".
+ * Fotos: caminhos placeholder em assets/fotos/ — substitua pelos arquivos reais.
+ *
+ * Atividades por módulo (formatos do motor do curso):
+ *  M1 Crachá Liberado?     → 6 question (confirmar): liberar ou barrar
+ *  M2 Vista o Operador     → match (tarefa → EPI exigido)
+ *  M3 Checklist Relâmpago  → 10 question (duelo): conforme ou não conforme
+ *  M4 Pode Parar Aqui?     → 6 question (cartoes): local proibido
+ *  M5 Balança da Decisão   → 8 question (lista): sozinho, com colega ou com equipamento
+ *  M6 Na Medida            → 7 question: medidas e limites
+ */
 window.QUESTION_SCREEN_SESSION = {
   "meta": {
-    "title": "NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado)",
+    "title": "NR 11 – Logística para Todos",
     "brand": "TecnoCursos",
     "musicSrc": "musica/musica_foco.mp3"
   },
   "modules": [
     {
       "id": 1,
-      "title": "Fundamentos da Brigada de Incêndio",
-      "meta": "Vídeos + texto · desafio Contra o Alarme",
+      "title": "Logística para Todos: Equipamentos e Quem Pode Operar",
+      "meta": "Vídeos + texto · desafio Crachá Liberado?",
       "titleUnlock": {
-        "title": "GUARDIÃO DO ALERTA",
-        "body": "Você já sabe o que a brigada faz e a ordem dos primeiros minutos.",
-        "icon": "🚨"
+        "title": "OPERADOR HABILITADO",
+        "body": "Você sabe quem pode operar cada equipamento e o que é exigido.",
+        "icon": "🪪"
       },
       "screens": [
         {
           "id": "m1-cover",
           "type": "cover",
-          "title": "Módulo 1 — Fundamentos da Brigada de Incêndio",
-          "subtitle": "Abertura, composição da brigada e procedimentos básicos — do alerta ao confinamento.",
-          "transcript": "Módulo 1: Fundamentos da Brigada de Incêndio.",
-          "image": "assets/fotos/capa-modulo1.png",
-          "imageAlt": "Instrutora com EPI em fábrica, apontando para equipamentos de combate a incêndio e sinalização da brigada",
-          "imagePosition": "18% 82%"
+          "title": "Módulo 1 — Logística para Todos: Equipamentos e Quem Pode Operar",
+          "subtitle": "Objetivos do treinamento, os cinco equipamentos da Logística e do Drive e a formação exigida para cada um.",
+          "transcript": "Módulo 1: Logística para Todos: Equipamentos e Quem Pode Operar."
         },
         {
           "id": "m1-v-abertura",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Os Primeiros Minutos Decidem Tudo",
-          "duration": "0:35",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=32bc5670-14b3-4323-b7ac-486cd06a3de6",
-          "playerId": "panda-32bc5670-14b3-4323-b7ac-486cd06a3de6",
-          "scene": "Abertura com a instrutora Fernanda + takes no ambiente Coca-Cola",
-          "brief": "Fernanda se apresenta; cortes rápidos: extintor, rota de fuga, colaboradores, quadro elétrico; título sobre fundo vermelho institucional.",
-          "body": "Nos primeiros minutos de um princípio de incêndio, quem está treinado faz a diferença entre um susto controlado e uma tragédia. Neste treinamento de NR 23 você aprende a prevenir, combater o início do fogo, apoiar na evacuação e prestar primeiros socorros.",
-          "transcript": "Vídeo de abertura: os primeiros minutos decidem tudo."
-        },
-        {
-          "id": "m1-v-oque",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "O Que É a Brigada de Incêndio",
+          "title": "Logística Segura Começa por Você",
           "duration": "0:40",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=25fb4bf7-7a17-4002-ac13-41773c05cf26",
-          "playerId": "panda-25fb4bf7-7a17-4002-ac13-41773c05cf26",
-          "scene": "Brigadista com colete laranja no open space Coca-Cola",
-          "brief": "Colaborador de colete e crachá circula pelo escritório até o quadro com organograma da brigada.",
-          "body": "A Brigada de Incêndio é um grupo organizado de colaboradores, treinados para prevenir e combater um princípio de incêndio, evacuar e prestar primeiros socorros. Na Coca-Cola, são colegas do próprio andar. Objetivo: proteger vida e patrimônio até a chegada do socorro especializado.",
-          "transcript": "Vídeo: o que é a Brigada de Incêndio."
+          "scene": "Abertura com o instrutor Lucas + takes na logística da Leroy Merlin",
+          "brief": "Lucas se apresenta; cortes rápidos: paleteira manual, pedestre na faixa pintada, operador afivelando o cinto; título do treinamento sobre o galpão.",
+          "body": "Todo dia, toneladas de mercadorias passam pela logística e pelo Drive. Este treinamento existe para prevenir acidentes, conscientizar, reduzir custos, aumentar a produtividade e promover bem-estar e segurança no trabalho.",
+          "transcript": "Vídeo de abertura: logística segura começa por você."
         },
         {
-          "id": "m1-composicao",
+          "id": "m1-objetivos",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Composição da Brigada e Atribuições",
+          "title": "Objetivos do Treinamento",
+          "items": [
+            {
+              "icon": "🛡️",
+              "title": "Prevenção de acidentes",
+              "text": "agir antes que o risco vire ocorrência"
+            },
+            {
+              "icon": "💡",
+              "title": "Conscientização dos colaboradores",
+              "text": "cada pessoa faz parte da segurança"
+            },
+            {
+              "icon": "💰",
+              "title": "Redução de custos",
+              "text": "menos acidentes, menos perdas e paradas"
+            },
+            {
+              "icon": "📈",
+              "title": "Maior produtividade",
+              "text": "operação segura é operação que flui"
+            },
+            {
+              "icon": "🤝",
+              "title": "Bem-estar e segurança",
+              "text": "um ambiente de trabalho melhor para todos"
+            }
+          ],
+          "transcript": "Objetivos do treinamento: prevenção de acidentes, conscientização, redução de custos, maior produtividade, bem-estar e segurança."
+        },
+        {
+          "id": "m1-v-equipamentos",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Os Cinco Equipamentos da Logística e do Drive",
+          "duration": "0:45",
+          "scene": "Filmagem real — um plano por equipamento, todos parados",
+          "brief": "Empilhadeira, empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA, cada um com o nome em legenda; último plano com os cinco lado a lado.",
+          "body": "Cinco equipamentos fazem o trabalho pesado: empilhadeira (a gás ou elétrica), empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA. Cada um tem suas regras, e nem todo mundo pode operar todos.",
+          "transcript": "Vídeo: os cinco equipamentos da logística e do Drive."
+        },
+        {
+          "id": "m1-quem-opera",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Quem Pode Operar o Quê",
           "cards": [
             {
-              "icon": "👔",
-              "title": "Coordenador Geral",
-              "body": "Responsável institucional pela brigada perante a Coca-Cola."
+              "icon": "🚜",
+              "title": "Empilhadeira (gás e elétrica)",
+              "body": "CNH + treinamento teórico e prático."
             },
             {
-              "icon": "🧭",
-              "title": "Líder da Brigada",
-              "body": "Comanda a ação nos primeiros minutos de qualquer emergência."
+              "icon": "🔌",
+              "title": "Empilhadeira elétrica patolada",
+              "body": "Treinamento teórico e prático. CNH não exigida."
             },
             {
-              "icon": "🦺",
-              "title": "Brigadistas",
-              "body": "Atuam na prevenção, combate ao princípio de incêndio, abandono de área e primeiros socorros."
+              "icon": "🛒",
+              "title": "Paleteira / transpaleteira elétrica",
+              "body": "NR 11 Operador de Paleteira (teoria e prática) + carteirinha."
+            },
+            {
+              "icon": "🏗️",
+              "title": "Plataforma elevatória (PTA)",
+              "body": "NR 35 e NR 18 (teoria e prática) + carteirinha."
             }
           ],
           "items": [
             {
-              "icon": "🔍",
-              "title": "Prevenção:",
-              "text": "analisar os riscos existentes no local"
+              "icon": "🌬️",
+              "title": "Manipulador de sacaria a vácuo:",
+              "text": "formação de NR 12 obrigatória."
             },
             {
-              "icon": "📢",
-              "title": "Comunicar:",
-              "text": "informar ao coordenador irregularidades de prevenção e proteção"
-            },
-            {
-              "icon": "🗣️",
-              "title": "Orientar:",
-              "text": "orientar colaboradores do setor sobre prevenção e proteção contra incêndios"
+              "icon": "⛔",
+              "title": "Atenção:",
+              "text": "não está autorizada a operação da transpaleteira no modo embarcado."
             }
           ],
-          "transcript": "Composição da brigada: coordenador, líder e brigadistas; ações de prevenção no dia a dia."
-        },
-        {
-          "id": "m1-v-procedimentos",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Procedimentos Básicos: do Alerta ao Confinamento",
-          "duration": "1:25",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=7df6c91a-ffbc-4d2c-8d9a-467a93a10740",
-          "playerId": "panda-7df6c91a-ffbc-4d2c-8d9a-467a93a10740",
-          "scene": "Fernanda em câmera + corte de energia e fila de evacuação",
-          "brief": "Seis passos: alerta, análise, corte de energia, abandono, primeiros socorros e confinamento/extinção.",
-          "body": "Alerta pelos meios disponíveis → líder analisa e decide (aciona Bombeiros se preciso) → corte de energia no quadro → abandono a no mínimo 100 m do sinistro → primeiros socorros → confinamento para evitar propagação e eliminar o sinistro.",
-          "transcript": "Vídeo: procedimentos básicos de emergência."
+          "transcript": "Quem pode operar cada equipamento: a formação exigida e a carteirinha."
         },
         {
           "id": "m1-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Contra o Alarme",
-          "count": 4,
-          "minCorrect": 3,
-          "icon": "🚨",
-          "body": "4 perguntas cronometradas. Mínimo de <strong>3 acertos</strong> para avançar.",
-          "transcript": "Desafio do módulo 1: Contra o Alarme."
+          "title": "Desafio — Crachá Liberado?",
+          "count": 6,
+          "minCorrect": 5,
+          "icon": "🪪",
+          "body": "6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: <strong>libere</strong> ou <strong>barre</strong>. Mínimo de <strong>5 acertos</strong> para avançar.",
+          "transcript": "Desafio do módulo 1: Crachá Liberado?."
         },
         {
           "id": "m1-q1",
           "type": "question",
-          "question": "O que é a Brigada de Incêndio?",
+          "variant": "confirmar",
+          "question": "Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Um setor exclusivo da segurança patrimonial",
-              "correct": false
-            },
-            {
-              "id": "b",
-              "text": "Grupo treinado e capacitado para prevenir, combater um princípio de incêndio, evacuar e prestar primeiros socorros",
+              "text": "Liberar",
               "correct": true
             },
             {
-              "id": "c",
-              "text": "Somente os bombeiros civis contratados",
-              "correct": false
-            },
-            {
-              "id": "d",
-              "text": "Um grupo que só age depois que o Corpo de Bombeiros chega",
+              "id": "b",
+              "text": "Barrar",
               "correct": false
             }
           ],
-          "explanation": "A brigada é um grupo organizado de colaboradores capacitados para prevenir, combater, evacuar e prestar primeiros socorros.",
-          "review": "Definição de Brigada de Incêndio",
-          "transcript": "O que é a Brigada de Incêndio?",
-          "image": "assets/fotos/m1p1.png",
-          "imageAlt": "Equipamentos de brigada: extintores, mangueira, colete, capacete, abrigo de mangueira, kit de primeiros socorros e cone de sinalização",
-          "imagePosition": "center 28%"
+          "explanation": "Liberado: CNH e treinamento teórico e prático completos.",
+          "review": "Habilitação da empilhadeira",
+          "transcript": "Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás."
         },
         {
           "id": "m1-q2",
           "type": "question",
-          "question": "Quem comanda a ação nos primeiros minutos de uma emergência?",
+          "variant": "confirmar",
+          "question": "Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Qualquer visitante presente",
+              "text": "Liberar",
               "correct": false
             },
             {
               "id": "b",
-              "text": "O Líder da Brigada",
+              "text": "Barrar",
               "correct": true
-            },
-            {
-              "id": "c",
-              "text": "Somente o Corpo de Bombeiros",
-              "correct": false
-            },
-            {
-              "id": "d",
-              "text": "Ninguém, espera-se a chegada do socorro",
-              "correct": false
             }
           ],
-          "explanation": "O Líder da Brigada comanda a ação nos primeiros minutos.",
-          "review": "Papel do Líder da Brigada",
-          "transcript": "Quem comanda a ação nos primeiros minutos de uma emergência?",
-          "image": "assets/fotos/m1p2.png",
-          "imageAlt": "Líder da brigada com prancheta orientando dois brigadistas, com extintor e ponto de encontro ao fundo"
+          "explanation": "Barrado: a CNH é obrigatória para empilhadeira. A única exceção é a empilhadeira patolada.",
+          "review": "CNH para empilhadeira",
+          "transcript": "Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica."
         },
         {
           "id": "m1-q3",
           "type": "question",
-          "question": "Qual é a distância mínima recomendada no abandono de área?",
+          "variant": "confirmar",
+          "question": "Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada.",
           "alternatives": [
             {
               "id": "a",
-              "text": "10 metros",
-              "correct": false
-            },
-            {
-              "id": "b",
-              "text": "50 metros",
-              "correct": false
-            },
-            {
-              "id": "c",
-              "text": "100 metros",
+              "text": "Liberar",
               "correct": true
             },
             {
-              "id": "d",
-              "text": "Não há distância definida",
+              "id": "b",
+              "text": "Barrar",
               "correct": false
             }
           ],
-          "explanation": "No abandono de área, remova todos para um local seguro a no mínimo 100 metros do sinistro.",
-          "review": "Distância mínima no abandono de área",
-          "transcript": "Qual é a distância mínima recomendada no abandono de área?",
-          "image": "assets/fotos/m1p3.png",
-          "imageAlt": "Colaboradores evacuando pela saída de emergência em direção ao ponto de encontro"
+          "explanation": "Liberado: a patolada não exige CNH, só o treinamento teórico e prático.",
+          "review": "Exceção da empilhadeira patolada",
+          "transcript": "Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada."
         },
         {
           "id": "m1-q4",
           "type": "question",
-          "question": "Qual é a ordem correta dos procedimentos básicos de emergência?",
+          "variant": "confirmar",
+          "question": "Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Alerta → Análise → Corte de energia → Abandono → Socorros → Confinamento",
+              "text": "Liberar",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Barrar",
+              "correct": true
+            }
+          ],
+          "explanation": "Barrado: a formação é teoria e prática, e é preciso ter a carteirinha.",
+          "review": "Formação da paleteira elétrica",
+          "transcript": "Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica."
+        },
+        {
+          "id": "m1-q5",
+          "type": "question",
+          "variant": "confirmar",
+          "question": "Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA).",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Liberar",
               "correct": true
             },
             {
               "id": "b",
-              "text": "Confinamento → Alerta → Abandono",
-              "correct": false
-            },
-            {
-              "id": "c",
-              "text": "Abandono → Alerta → Corte de energia",
-              "correct": false
-            },
-            {
-              "id": "d",
-              "text": "Análise → Confinamento → Alerta",
+              "text": "Barrar",
               "correct": false
             }
           ],
-          "explanation": "A sequência é: alerta, análise, corte de energia, abandono, primeiros socorros e confinamento.",
-          "review": "Ordem dos procedimentos básicos",
-          "transcript": "Qual é a ordem correta dos procedimentos básicos de emergência?",
-          "image": "assets/fotos/m1p4.png",
-          "imageAlt": "Quatro etapas de emergência: telefone de alerta, acionamento do alarme, saída de emergência e extintor combatendo o fogo"
+          "explanation": "Liberado: as duas formações e a carteirinha em dia.",
+          "review": "Requisitos da PTA",
+          "transcript": "Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA)."
+        },
+        {
+          "id": "m1-q6",
+          "type": "question",
+          "variant": "confirmar",
+          "question": "Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Liberar",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Barrar",
+              "correct": true
+            }
+          ],
+          "explanation": "Barrado: o modo embarcado não está autorizado para ninguém, por razões de segurança.",
+          "review": "Modo embarcado da transpaleteira",
+          "transcript": "Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado."
         }
       ]
     },
     {
       "id": 2,
-      "title": "O Fogo: Teoria e Métodos de Extinção",
-      "meta": "Vídeos + texto · desafio Apaga ou Alimenta?",
+      "title": "EPI: Sua Primeira Barreira",
+      "meta": "Vídeo + fotos + texto · desafio Vista o Operador",
       "titleUnlock": {
-        "title": "MESTRE DO TETRAEDRO",
-        "body": "Você entende o fogo e sabe o que o apaga — ou o alimenta.",
-        "icon": "🔥"
+        "title": "EPI EM DIA",
+        "body": "Você sabe qual proteção usar em cada tarefa.",
+        "icon": "🦺"
       },
       "screens": [
         {
           "id": "m2-cover",
           "type": "cover",
-          "title": "Módulo 2 — O Fogo: Teoria e Métodos de Extinção",
-          "subtitle": "Tetraedro do fogo e os três métodos: abafamento, resfriamento e retirada do material.",
-          "transcript": "Módulo 2: O Fogo — teoria e métodos de extinção.",
-          "image": "assets/fotos/m2-capa.png",
-          "imageAlt": "Instrutora com EPI apontando para o triângulo do fogo na parede, com extintor e hidrante ao lado",
-          "imagePosition": "70% 78%"
+          "title": "Módulo 2 — EPI: Sua Primeira Barreira",
+          "subtitle": "Os EPIs obrigatórios na logística, as responsabilidades do colaborador e os óculos com grau.",
+          "transcript": "Módulo 2: EPI: Sua Primeira Barreira."
         },
         {
-          "id": "m2-v-oque",
+          "id": "m2-v-epi",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "O Que É o Fogo, Afinal?",
-          "duration": "0:30",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=15078fb0-2eea-4e5c-be9e-8c7ed61ae9d1",
-          "playerId": "panda-15078fb0-2eea-4e5c-be9e-8c7ed61ae9d1",
-          "scene": "Animação estilo Pixar — chama estilizada",
-          "brief": "Chama sobre madeira em fundo escuro; câmera gira revelando estrutura interna; vira definição técnica.",
-          "body": "O fogo é uma reação química com desprendimento de luz e calor. Entender como essa reação acontece é o que separa quem teme o fogo de quem sabe controlá-lo.",
-          "transcript": "Vídeo: o que é o fogo."
+          "title": "EPI: Obrigatório e de Acordo com a Tarefa",
+          "duration": "0:50",
+          "scene": "Lucas em câmera + cortes de demonstração real",
+          "brief": "Quatro responsabilidades aparecem como texto na tela: usar, guardar e conservar, higienizar, comunicar. Cortes: inspeção do capacete e EPIs guardados no armário.",
+          "body": "O EPI é de uso obrigatório e varia conforme o local e a tarefa. Suas responsabilidades: usar adequadamente, guardar e conservar, higienizar e comunicar quando impróprio. Antes de cada atividade, avalie se estão em condições de uso.",
+          "transcript": "Vídeo: EPI obrigatório e de acordo com a tarefa."
         },
         {
-          "id": "m2-v-tetraedro",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "O Tetraedro do Fogo",
-          "duration": "0:55",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=66974896-42bf-412c-8b85-30e5d8a90783",
-          "playerId": "panda-66974896-42bf-412c-8b85-30e5d8a90783",
-          "scene": "Animação 3D do tetraedro do fogo",
-          "brief": "Quatro faces: calor, comburente (oxigênio), material combustível e reação em cadeia.",
-          "body": "Para o fogo existir: calor, comburente (oxigênio), material combustível e reação em cadeia. Remova um dos quatro lados e o fogo se apaga.",
-          "transcript": "Vídeo: o tetraedro do fogo."
-        },
-        {
-          "id": "m2-tetraedro-elementos",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "title": "Tetraedro do Fogo: os 4 Elementos",
-          "body": "O tetraedro do fogo é o modelo que explica como o fogo começa e se mantém. Tirando qualquer um dos quatro elementos, o fogo se apaga.",
-          "items": [
-            {
-              "icon": "🪵",
-              "title": "Combustível:",
-              "text": "o material que queima — sólido (madeira, papel), líquido (gasolina, álcool) ou gasoso (gás de cozinha)."
-            },
-            {
-              "icon": "💨",
-              "title": "Comburente:",
-              "text": "o que torna a queima possível — o oxigênio do ar é o mais comum."
-            },
-            {
-              "icon": "🔥",
-              "title": "Calor:",
-              "text": "a energia que inicia o fogo, como uma faísca, e leva o combustível à temperatura de ignição."
-            },
-            {
-              "icon": "🔁",
-              "title": "Reação em cadeia:",
-              "text": "o calor das próprias chamas alimenta a queima, fazendo o fogo se propagar sozinho."
-            }
+          "id": "m2-foto-epis",
+          "type": "image",
+          "layout": "stack",
+          "kicker": "📷 Foto",
+          "title": "Os EPIs da Logística, Um a Um",
+          "image": "assets/fotos/m2-epis.png",
+          "imageAlt": "Galeria dos EPIs da logística: capacete, óculos, luva, calçado, cinta lombar e protetor auricular",
+          "imageFit": "contain",
+          "bullets": [
+            "Capacete de segurança com jugular",
+            "Óculos de segurança (empilhadeira)",
+            "Luva de proteção (atividades manuais)",
+            "Calçado de segurança",
+            "Cinta lombar",
+            "Protetor auricular (empilhadeira a gás)"
           ],
-          "transcript": "Tetraedro do fogo: os quatro elementos essenciais."
+          "transcript": "Foto: os EPIs da logística. Capacete com jugular, óculos, luva, calçado, cinta lombar e protetor auricular."
         },
         {
-          "id": "m2-v-metodos",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Métodos de Extinção: Abafamento, Resfriamento e Retirada",
-          "duration": "1:15",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=8923c9ca-2d62-4eca-be47-d59d8c7331ba",
-          "playerId": "panda-8923c9ca-2d62-4eca-be47-d59d8c7331ba",
-          "scene": "Fernanda em câmera + animações de abafamento e resfriamento",
-          "brief": "Abafamento (oxigênio), resfriamento (calor/água) e retirada do material combustível.",
-          "body": "Abafamento retira o oxigênio (abaixo de 13% não sustenta fogo). Resfriamento retira o calor, geralmente com água. Retirada do material elimina o combustível. Essa base define qual extintor usar.",
-          "transcript": "Vídeo: métodos de extinção."
-        },
-        {
-          "id": "m2-transmissao",
+          "id": "m2-responsabilidades",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Transmissão de Calor",
+          "title": "Responsabilidades e Óculos com Grau",
           "cards": [
             {
-              "title": "Condução",
-              "body": "Transmite a temperatura molécula a molécula. Ex.: colher na água fervente.",
-              "image": "assets/fotos/m2-conducao.png",
-              "imageAlt": "Colher no vapor de água fervente, com o cabo aquecido — condução de calor"
+              "icon": "🧤",
+              "title": "Usar",
+              "body": "Use adequadamente, conforme a tarefa."
             },
             {
-              "title": "Convecção",
-              "body": "Ar quente sobe e encontra ar frio, formando looping. Pode atingir o ponto de fulgor e iniciar novo foco.",
-              "image": "assets/fotos/m2-conveccao.png",
-              "imageAlt": "Panela fervendo com setas de ar quente subindo e ar frio descendo — convecção"
+              "icon": "🗄️",
+              "title": "Guardar e conservar",
+              "body": "Cuide do equipamento e guarde no lugar certo."
             },
             {
-              "title": "Irradiação",
-              "body": "Transmissão por ondas caloríferas de uma fonte de calor, como o sol.",
-              "image": "assets/fotos/m2-irradiacao.png",
-              "imageAlt": "Pessoa aquecendo as mãos diante da lareira — irradiação de calor"
+              "icon": "🧼",
+              "title": "Higienizar",
+              "body": "Mantenha o EPI limpo."
+            },
+            {
+              "icon": "📣",
+              "title": "Comunicar",
+              "body": "Avise quando estiver impróprio para uso."
             }
           ],
-          "transcript": "Três formas de transmissão de calor: condução, convecção e irradiação."
+          "items": [
+            {
+              "icon": "👓",
+              "title": "Óculos com grau:",
+              "text": "a empresa fornece. Entregue a receita médica atualizada ao seu líder, que envia ao RH para fazer a solicitação."
+            },
+            {
+              "icon": "🔎",
+              "title": "Antes da atividade:",
+              "text": "avalie os EPIs e veja se estão em condições de uso."
+            }
+          ],
+          "transcript": "Responsabilidades do colaborador com o EPI e como pedir óculos com grau."
         },
         {
           "id": "m2-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Apaga ou Alimenta?",
+          "title": "Desafio — Vista o Operador",
           "count": 1,
           "minCorrect": 1,
-          "icon": "🧯",
-          "body": "Ligue cada situação ao efeito dela sobre o fogo: <strong>APAGA</strong> ou <strong>ALIMENTA</strong>. Só avança com todos os pares certos.",
-          "transcript": "Desafio do módulo 2: Apaga ou Alimenta?"
+          "icon": "🦺",
+          "body": "Ligue cada <strong>tarefa</strong> ao <strong>EPI</strong> que ela exige. Só avança com todos os pares certos.",
+          "transcript": "Desafio do módulo 2: Vista o Operador."
         },
         {
           "id": "m2-match",
           "type": "match",
-          "title": "Apaga ou Alimenta?",
-          "body": "Toque numa situação e depois no efeito dela sobre o fogo.",
-          "leftTitle": "Situação",
-          "rightTitle": "Efeito no fogo",
+          "title": "Vista o Operador",
+          "body": "Toque numa tarefa e depois no EPI que ela exige.",
+          "leftTitle": "Tarefa",
+          "rightTitle": "EPI exigido",
           "pairs": [
             {
-              "ex": "Cobrir a chama com uma manta",
-              "body": "Apaga: tira o oxigênio"
+              "ex": "Operar empilhadeira a gás",
+              "body": "Protetor auricular"
             },
             {
-              "ex": "Jogar água na base da chama",
-              "body": "Apaga: tira o calor"
+              "ex": "Operar qualquer empilhadeira",
+              "body": "Óculos de segurança"
             },
             {
-              "ex": "Levar o material que queima para uma área isolada",
-              "body": "Apaga: tira o combustível"
+              "ex": "Atividades manuais",
+              "body": "Luva de proteção"
             },
             {
-              "ex": "Abrir a janela perto do foco de fogo",
-              "body": "Alimenta: dá mais oxigênio"
+              "ex": "Movimentar cargas",
+              "body": "Cinta lombar, ajustada só durante o esforço"
             },
             {
-              "ex": "Empilhar papelão perto de um ponto quente",
-              "body": "Alimenta: dá mais combustível"
+              "ex": "Usar a escada para abastecer ou pegar",
+              "body": "Capacete de segurança com jugular"
             }
           ],
-          "review": "Tetraedro do fogo: o que apaga e o que alimenta",
-          "transcript": "Ligue cada situação ao efeito dela sobre o fogo: apaga ou alimenta."
+          "review": "EPI exigido em cada tarefa",
+          "transcript": "Ligue cada tarefa ao EPI que ela exige."
         }
       ]
     },
     {
       "id": 3,
-      "title": "Classes de Incêndio e Extintores",
-      "meta": "Vídeos + texto · desafio Combinação Certa",
+      "title": "Empilhadeira e PTA: Operação Segura",
+      "meta": "Vídeos + texto · desafio Checklist Relâmpago",
       "titleUnlock": {
-        "title": "AGENTE CERTO",
-        "body": "Você escolhe a classe e o extintor corretos.",
-        "icon": "🧯"
+        "title": "CHECKLIST SEM FALHA",
+        "body": "Você reconhece uma operação segura e a que não é.",
+        "icon": "✅"
       },
       "screens": [
         {
           "id": "m3-cover",
           "type": "cover",
-          "title": "Módulo 3 — Classes de Incêndio e Extintores",
-          "subtitle": "Classes A, B, C e D e como operar água, PQS e CO₂.",
-          "transcript": "Módulo 3: Classes de Incêndio e Extintores.",
-          "image": "assets/fotos/capa-modulo3.png",
-          "imageAlt": "Capa do módulo 3: classes de incêndio e extintores no ambiente de trabalho"
+          "title": "Módulo 3 — Empilhadeira e PTA: Operação Segura",
+          "subtitle": "Riscos, limite de velocidade, regras de operação, checklist diário, troca de baterias e plataforma elevatória.",
+          "transcript": "Módulo 3: Empilhadeira e PTA: Operação Segura."
         },
         {
-          "id": "m3-v-classes",
+          "id": "m3-v-riscos",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "As 4 Classes de Incêndio",
+          "title": "Os Riscos da Empilhadeira",
           "duration": "1:05",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=7b1106bc-89a0-4f80-a50c-1751898d7aaf",
-          "playerId": "panda-7b1106bc-89a0-4f80-a50c-1751898d7aaf",
-          "scene": "Animação das 4 classes + cenas reais no escritório",
-          "brief": "Classe A papel/tecido/madeira; B líquidos/gases; C elétricos energizados; D metais pirofóricos.",
-          "body": "Classe A: sólidos combustíveis (queimam em superfície e profundidade, deixam resíduos). Classe B: líquidos e gases (só superfície, sem resíduos). Classe C: equipamentos elétricos energizados — sem energia viram Classe A. Classe D: metais pirofóricos (mais raros no escritório).",
-          "transcript": "Vídeo: as 4 classes de incêndio."
+          "scene": "Lucas em câmera + animações estilo Pixar (acidente não se filma)",
+          "brief": "Tombamento, colisão, atropelamento e queda de carga em animação, sempre parando antes do impacto. No fim, \"6 km/h\" ocupa a tela.",
+          "body": "Tombamento, colisão, atropelamento, queda e falta de manutenção são os riscos principais. A velocidade máxima no Drive e na Logística é de 6 km/h.",
+          "transcript": "Vídeo: os riscos da empilhadeira."
         },
         {
-          "id": "m3-v-agua-pqs",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Extintores de Água e PQS: Como Operar",
-          "duration": "1:25",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=915e1a67-282e-460c-aa69-d0442e339478",
-          "playerId": "panda-915e1a67-282e-460c-aa69-d0442e339478",
-          "scene": "Demonstração real no corredor Coca-Cola (sem fogo)",
-          "brief": "Retirar da parede, tirar trava, jato em ziguezague na base; PQS a 4–6 m formando nuvem.",
-          "body": "Água: 10 L, alcance 8–10 m. PQS: 1 a 12 kg, aproximar 4–6 m, jato horizontal em ziguezague. Sempre: parede → trava → mangueira → base do fogo.",
-          "transcript": "Vídeo: operar extintores de água e PQS."
-        },
-        {
-          "id": "m3-v-co2",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Extintor de CO₂ e o Uso Indevido",
-          "duration": "0:45",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=7373b4a0-0933-405d-a613-2f559dc76b0c",
-          "playerId": "panda-7373b4a0-0933-405d-a613-2f559dc76b0c",
-          "scene": "Demonstração CO₂ + alerta legal",
-          "brief": "Segurar o punho isolante (nunca a mangueira fria); uso indevido é crime.",
-          "body": "CO₂: 4–6 kg, alcance 2–4 m. Empunhe o punho isolante — a mangueira fica extremamente fria. Aproximar a 4 m, nuvem em ziguezague. Uso indevido fora de emergência é crime contra o patrimônio físico e humano.",
-          "transcript": "Vídeo: extintor de CO₂ e uso indevido."
-        },
-        {
-          "id": "m3-agentes",
+          "id": "m3-riscos",
           "type": "content",
           "kicker": "📄 Texto",
-          "skin": "agents",
-          "cardAspect": "square",
-          "title": "Qual agente usar em cada classe",
+          "title": "Riscos da Empilhadeira e suas Causas",
           "cards": [
             {
-              "title": "Água",
-              "lead": "Classe A",
-              "body": "Madeira, papel, tecidos e resíduos sólidos comuns.",
-              "image": "assets/fotos/agua.png",
-              "imageAlt": "Extintor de água em uso",
-              "tone": "agua"
+              "icon": "⚠️",
+              "title": "Tombamentos",
+              "body": "Excesso de carga, manobras arriscadas, obstáculos no caminho."
             },
             {
-              "title": "Pó Químico Seco",
-              "lead": "Classes B e C",
-              "body": "Líquidos inflamáveis e equipamentos elétricos energizados.",
-              "image": "assets/fotos/pqs.png",
-              "imageAlt": "Extintor de pó químico seco em uso",
-              "tone": "pqs"
+              "icon": "💥",
+              "title": "Colisões",
+              "body": "Pontos cegos, excesso de velocidade."
             },
             {
-              "title": "Gás Carbônico (CO₂)",
-              "lead": "Classes B e C",
-              "body": "Painéis e equipamentos elétricos sensíveis — sem deixar resíduos.",
-              "image": "assets/fotos/gás.png",
-              "imageAlt": "Extintor de gás carbônico em painel elétrico",
-              "tone": "co2"
+              "icon": "🚶",
+              "title": "Atropelamentos",
+              "body": "Falta de sinalização, distração, pontos cegos, perda de controle."
+            },
+            {
+              "icon": "📦",
+              "title": "Quedas",
+              "body": "Material sem stretch, falta do cinto de segurança."
             }
           ],
-          "transcript": "Três agentes extintores: água na classe A; PQS e CO₂ nas classes B e C."
+          "items": [
+            {
+              "icon": "🔧",
+              "title": "Falta de manutenção:",
+              "text": "transforma qualquer equipamento em um risco."
+            },
+            {
+              "icon": "🐢",
+              "title": "Velocidade máxima:",
+              "text": "6 km/h no Drive e na Logística."
+            }
+          ],
+          "transcript": "Os riscos da empilhadeira e suas causas. Velocidade máxima de seis quilômetros por hora."
         },
         {
-          "id": "m3-equipamentos",
+          "id": "m3-v-operacao",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Operação Segura, do Checklist ao Estacionamento",
+          "duration": "1:10",
+          "scene": "Filmagem real acompanhando um operador em sequência",
+          "brief": "Checklist assinado, cinto afivelado, celular guardado, palete com stretch, garfos baixos, redução diante de piso molhado sinalizado.",
+          "body": "Faça o checklist, use o cinto, não use o celular, respeite capacidade e altura da carga, fixe a carga, não ande com garfos erguidos e cheque o piso. Empilhadeira a gás não entra na loja nem em lugares fechados.",
+          "transcript": "Vídeo: operação segura, do checklist ao estacionamento."
+        },
+        {
+          "id": "m3-operacao",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Mangueira e Hidrante",
-          "cards": [
+          "title": "Regras de Operação",
+          "items": [
             {
-              "title": "Mangueira",
-              "body": "Fibra sintética com revestimento de borracha; 15 ou 30 m (30 m não é mais usado).",
-              "image": "assets/fotos/mangueira.jpg",
-              "imageAlt": "Mangueira de incêndio"
+              "icon": "📋",
+              "title": "Checklist:",
+              "text": "faça antes de iniciar a atividade."
             },
             {
-              "title": "Hidrante / abrigo",
-              "body": "Chapa de aço, porta com ventilação e visor “Incêndio”, suporte em meia-lua.",
-              "image": "assets/fotos/hidrante.png",
-              "imageAlt": "Hidrante e abrigo de incêndio"
+              "icon": "🔒",
+              "title": "Cinto de segurança:",
+              "text": "use sempre. Celular, nunca durante a operação."
+            },
+            {
+              "icon": "⚖️",
+              "title": "Capacidade e altura:",
+              "text": "transporte só a quantidade permitida e não exceda a altura da carga."
+            },
+            {
+              "icon": "🍴",
+              "title": "Garfos:",
+              "text": "fixe a carga e não ande com os garfos erguidos."
+            },
+            {
+              "icon": "🎁",
+              "title": "Carga solta:",
+              "text": "amarre com fitilho ou fita stretch."
+            },
+            {
+              "icon": "💧",
+              "title": "Piso:",
+              "text": "cheque sempre, pode estar molhado ou oleoso. Velocidade constante e carga estável."
+            },
+            {
+              "icon": "🚫",
+              "title": "Empilhadeira a gás:",
+              "text": "proibida dentro da loja e em lugares fechados."
             }
           ],
-          "transcript": "Mangueira e hidrante: equipamentos de apoio da brigada."
+          "transcript": "Regras de operação segura da empilhadeira."
+        },
+        {
+          "id": "m3-v-baterias",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Processo Seguro de Troca de Baterias",
+          "duration": "a definir",
+          "scene": "Filmagem real na área de troca e carga de baterias",
+          "brief": "Roteiro a completar com o passo a passo oficial do SESMT (slides de troca de baterias). Fecha com a conferência da trava de segurança.",
+          "body": "A troca de baterias tem um processo seguro, definido pelo SESMT, que deve ser seguido passo a passo. Ao terminar, confira se a bateria está bem fixa e se a trava de segurança está no lugar.",
+          "transcript": "Vídeo: processo seguro de troca de baterias."
+        },
+        {
+          "id": "m3-checklist-pta",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Checklist Diário e Plataforma Elevatória",
+          "cards": [
+            {
+              "icon": "📋",
+              "title": "Checklist diário",
+              "body": "Obrigatório em empilhadeira e PTA, antes de iniciar a atividade."
+            },
+            {
+              "icon": "🏗️",
+              "title": "PTA",
+              "body": "Só opera quem fez NR 35 e NR 18 (teoria e prática) e tem a carteirinha."
+            }
+          ],
+          "items": [
+            {
+              "icon": "🪪",
+              "title": "Equipamento motorizado:",
+              "text": "só depois de participar das formações e possuir a carteirinha correspondente."
+            }
+          ],
+          "transcript": "Checklist diário obrigatório e requisitos para usar a plataforma elevatória."
         },
         {
           "id": "m3-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Combinação Certa",
-          "count": 4,
-          "minCorrect": 3,
-          "icon": "🎯",
-          "body": "Combine a <strong>classe de incêndio</strong> com o <strong>agente extintor</strong> certo. Mínimo de <strong>3 acertos</strong>.",
-          "transcript": "Desafio do módulo 3: Combinação Certa."
+          "title": "Desafio — Checklist Relâmpago",
+          "count": 10,
+          "minCorrect": 8,
+          "icon": "✅",
+          "body": "10 situações, uma de cada vez. Marque <strong>Conforme</strong> ou <strong>Não conforme</strong> antes do tempo acabar. Mínimo de <strong>8 acertos</strong> para avançar.",
+          "transcript": "Desafio do módulo 3: Checklist Relâmpago."
         },
         {
           "id": "m3-q1",
           "type": "question",
-          "variant": "lista",
-          "question": "Classe A — papel, tecido, madeira. Qual agente?",
+          "variant": "duelo",
+          "question": "Situação 1 de 10 · Operador com o cinto de segurança afivelado.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Água",
+              "text": "Conforme",
               "correct": true
             },
             {
               "id": "b",
-              "text": "Pó Químico Seco",
-              "correct": false
-            },
-            {
-              "id": "c",
-              "text": "CO₂",
+              "text": "Não conforme",
               "correct": false
             }
           ],
-          "explanation": "Água é indicada para Classe A.",
-          "review": "Agente para Classe A",
-          "transcript": "Classe A — papel, tecido, madeira. Qual agente?",
-          "image": "assets/fotos/m3p1.png",
-          "imageAlt": "Materiais combustíveis de classe A: papel, tecido e madeira"
+          "explanation": "Cinto de segurança é obrigatório na operação.",
+          "review": "Cinto de segurança",
+          "transcript": "Situação 1 de 10 · Operador com o cinto de segurança afivelado."
         },
         {
           "id": "m3-q2",
           "type": "question",
-          "variant": "lista",
-          "question": "Classe B — álcool, gasolina, GLP. Qual agente?",
+          "variant": "duelo",
+          "question": "Situação 2 de 10 · Deslocamento com os garfos erguidos.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Água",
+              "text": "Conforme",
               "correct": false
             },
             {
               "id": "b",
-              "text": "Pó Químico Seco",
+              "text": "Não conforme",
               "correct": true
-            },
-            {
-              "id": "c",
-              "text": "Nenhum dos anteriores",
-              "correct": false
             }
           ],
-          "explanation": "PQS é indicado para Classes B e C. (CO₂ também serve em B/C; nesta rodada o gabarito do roteiro é PQS.)",
-          "review": "Agente para Classe B",
-          "transcript": "Classe B — álcool, gasolina, GLP. Qual agente?",
-          "image": "assets/fotos/m3p2.png",
-          "imageAlt": "Líquidos inflamáveis de classe B: álcool, gasolina e GLP"
+          "explanation": "Não ande com os garfos erguidos.",
+          "review": "Posição dos garfos",
+          "transcript": "Situação 2 de 10 · Deslocamento com os garfos erguidos."
         },
         {
           "id": "m3-q3",
           "type": "question",
-          "variant": "lista",
-          "question": "Classe C — quadro elétrico energizado. Qual agente?",
+          "variant": "duelo",
+          "question": "Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Água",
-              "correct": false
-            },
-            {
-              "id": "b",
-              "text": "CO₂",
+              "text": "Conforme",
               "correct": true
             },
             {
-              "id": "c",
-              "text": "Qualquer um, tanto faz",
+              "id": "b",
+              "text": "Não conforme",
               "correct": false
             }
           ],
-          "explanation": "CO₂ (ou PQS) para Classe C. Nunca água em equipamento energizado.",
-          "review": "Agente para Classe C",
-          "transcript": "Classe C — quadro elétrico energizado. Qual agente?",
-          "image": "assets/fotos/m3p3.png",
-          "imageAlt": "Quadro elétrico energizado, típico de incêndio classe C"
+          "explanation": "Peças soltas devem ser amarradas com fitilho ou fita stretch.",
+          "review": "Fixação da carga",
+          "transcript": "Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch."
         },
         {
           "id": "m3-q4",
           "type": "question",
-          "variant": "lista",
-          "question": "Classe D — raspas de metal. Qual agente?",
+          "variant": "duelo",
+          "question": "Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Agente extintor específico para metais",
+              "text": "Conforme",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Não conforme",
+              "correct": true
+            }
+          ],
+          "explanation": "Empilhadeira a gás não é permitida dentro da loja e em lugares fechados.",
+          "review": "Empilhadeira a gás em local fechado",
+          "transcript": "Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja."
+        },
+        {
+          "id": "m3-q5",
+          "type": "question",
+          "variant": "duelo",
+          "question": "Situação 5 de 10 · Operador respondendo mensagem no celular em movimento.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Conforme",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Não conforme",
+              "correct": true
+            }
+          ],
+          "explanation": "Não use o celular durante a operação.",
+          "review": "Celular na operação",
+          "transcript": "Situação 5 de 10 · Operador respondendo mensagem no celular em movimento."
+        },
+        {
+          "id": "m3-q6",
+          "type": "question",
+          "variant": "duelo",
+          "question": "Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Conforme",
               "correct": true
             },
             {
               "id": "b",
-              "text": "Água",
-              "correct": false
-            },
-            {
-              "id": "c",
-              "text": "Pó Químico Seco comum",
+              "text": "Não conforme",
               "correct": false
             }
           ],
-          "explanation": "Classe D exige agente específico para metais — não use água nem PQS comum.",
-          "review": "Agente para Classe D",
-          "transcript": "Classe D — raspas de metal. Qual agente?",
-          "image": "assets/fotos/m3p4.png",
-          "imageAlt": "Raspas e resíduos de metal, típicos de incêndio classe D"
+          "explanation": "O checklist diário é obrigatório antes de começar.",
+          "review": "Checklist diário",
+          "transcript": "Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade."
+        },
+        {
+          "id": "m3-q7",
+          "type": "question",
+          "variant": "duelo",
+          "question": "Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Conforme",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Não conforme",
+              "correct": true
+            }
+          ],
+          "explanation": "A velocidade máxima no Drive e na Logística é 6 km/h.",
+          "review": "Velocidade máxima",
+          "transcript": "Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive."
+        },
+        {
+          "id": "m3-q8",
+          "type": "question",
+          "variant": "duelo",
+          "question": "Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Conforme",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Não conforme",
+              "correct": false
+            }
+          ],
+          "explanation": "Transporte só a quantidade permitida e respeite a altura da carga.",
+          "review": "Capacidade e altura da carga",
+          "transcript": "Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas."
+        },
+        {
+          "id": "m3-q9",
+          "type": "question",
+          "variant": "duelo",
+          "question": "Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\".",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Conforme",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Não conforme",
+              "correct": true
+            }
+          ],
+          "explanation": "Equipamento em manutenção não deve ser utilizado.",
+          "review": "Equipamento em manutenção",
+          "transcript": "Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\"."
+        },
+        {
+          "id": "m3-q10",
+          "type": "question",
+          "variant": "duelo",
+          "question": "Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes de passar.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Conforme",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Não conforme",
+              "correct": false
+            }
+          ],
+          "explanation": "Cheque sempre o estado do piso, que pode estar molhado ou oleoso.",
+          "review": "Estado do piso",
+          "transcript": "Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes de passar."
         }
       ]
     },
     {
       "id": 4,
-      "title": "Prevenção, Riscos e Ação em Emergência",
-      "meta": "Vídeos + fotos + texto · Certo × errado + desafio Caça ao Risco",
+      "title": "Paleteiras e Pedestres: Dividindo o Mesmo Piso",
+      "meta": "Vídeos + texto · desafio Pode Parar Aqui?",
       "titleUnlock": {
-        "title": "OLHO NO RISCO",
-        "body": "Você previne no dia a dia e age nos primeiros segundos.",
-        "icon": "👁️"
+        "title": "PISTA LIVRE",
+        "body": "Você sabe onde parar o equipamento e como circular a pé.",
+        "icon": "🚧"
       },
       "screens": [
         {
           "id": "m4-cover",
           "type": "cover",
-          "title": "Módulo 4 — Prevenção, Riscos e Ação em Emergência",
-          "subtitle": "Hábitos de prevenção, primeiros segundos, rotas de fuga e riscos da edificação.",
-          "transcript": "Módulo 4: Prevenção, riscos da edificação e ação em emergência.",
-          "image": "assets/fotos/capa-modulo4.png",
-          "imageAlt": "Capa do módulo 4: prevenção, riscos e ação em emergência"
+          "title": "Módulo 4 — Paleteiras e Pedestres: Dividindo o Mesmo Piso",
+          "subtitle": "Transpaleteira elétrica, paleteira manual, onde nunca estacionar e as regras do pedestre.",
+          "transcript": "Módulo 4: Paleteiras e Pedestres: Dividindo o Mesmo Piso."
         },
         {
-          "id": "m4-v-prevenir",
+          "id": "m4-v-transpaleteira",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Como Prevenir um Incêndio no Dia a Dia",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a7feb7ef-d689-456d-8cfb-e83018ad7b75",
-          "playerId": "panda-a7feb7ef-d689-456d-8cfb-e83018ad7b75",
-          "scene": "Hábitos reais no ambiente Coca-Cola",
-          "brief": "Desligar carregadores, organizar cabos, lixeira limpa, checar equipamentos ao sair; alerta de gás.",
-          "body": "Não use lixo como cinzeiro. Desligue equipamentos da tomada. Não cubra fios com tapetes nem use plugues em T. Antes de sair, confira se nada ficou ligado. Cheiro de gás: ventile, não mexa em interruptores nem acenda fósforo.",
-          "transcript": "Vídeo: prevenção no dia a dia."
+          "title": "Transpaleteira Elétrica: Inspeção a Cada Turno",
+          "duration": "0:55",
+          "scene": "Filmagem real — close nos pontos de inspeção",
+          "brief": "Limpeza, placas de aviso e identificação, nível e fixação da bateria, trava de segurança e etiqueta de manutenção. Fecha com o operador conduzindo a pé.",
+          "body": "A transpaleteira elétrica carrega palete de até 1.500 kg. Inspecione no início de cada turno: limpeza, placas, bateria e trava. Equipamento na manutenção não se usa. Só opera quem tem NR 11 e carteirinha, e nunca no modo embarcado.",
+          "transcript": "Vídeo: transpaleteira elétrica, inspeção a cada turno."
         },
         {
-          "id": "m4-v-primeiros",
+          "id": "m4-v-manual",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Em Caso de Incêndio: Como Agir nos Primeiros Segundos",
-          "duration": "1:20",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=c71bdfa9-6ee9-4600-88b6-01926957e370",
-          "playerId": "panda-c71bdfa9-6ee9-4600-88b6-01926957e370",
-          "scene": "Alarme, escadas (nunca elevador) e abafar roupas em chamas",
-          "brief": "Avaliar à distância segura, dar alarme, ligar 193 se preciso; sair fechando portas sem trancar; rolar/cobertor se a roupa pegar fogo.",
-          "body": "Avalie à distância segura. Dê o alarme e, se preciso, ligue 193. Se não dominar o fogo, saia fechando portas/janelas sem trancar, desligue a eletricidade. Use escada, nunca elevador. Se a roupa pegar fogo: não corra — role no chão ou use cobertor.",
-          "transcript": "Vídeo: primeiros segundos em caso de incêndio."
+          "title": "Paleteira Manual: Empurre, Não Puxe",
+          "duration": "0:40",
+          "scene": "Filmagem real — plano lateral acompanhando o colaborador",
+          "brief": "Colaborador empurra a paleteira em ritmo de caminhada e para sem movimento brusco, sem pé na roda.",
+          "body": "Velocidade de uma pessoa caminhando, parada sem movimentos bruscos (nada de pé na roda nem girar a manopla de uma vez) e, sempre que possível, empurrar em vez de puxar.",
+          "transcript": "Vídeo: paleteira manual, empurre e não puxe."
         },
         {
-          "id": "m4-foto-consequencias",
-          "type": "content",
-          "kicker": "📷 Foto",
-          "title": "O Que Está em Jogo: Consequências de um Incêndio ou Explosão de Gás",
-          "cardAspect": "landscape",
-          "cards": [
-            {
-              "image": "assets/fotos/consequencias1.png",
-              "imageAlt": "Consequências de incêndio ou explosão — imagem 1"
-            },
-            {
-              "image": "assets/fotos/consequencias2.png",
-              "imageAlt": "Consequências de incêndio ou explosão — imagem 2"
-            }
-          ],
-          "transcript": "Foto: consequências de um incêndio ou explosão de gás."
+          "id": "m4-v-pedestres",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Pedestres na Logística",
+          "duration": "0:45",
+          "scene": "Lucas em câmera + cenas reais de pedestres em conduta correta",
+          "brief": "Pedestre na faixa pintada com celular guardado, parando diante de área isolada; gráfico de 5 m entre pedestre e equipamento em elevação.",
+          "body": "Ande só nas faixas de pedestres, sem celular, longe de equipamento em movimento e respeitando áreas isoladas. Na elevação de carga, distância mínima de 5 metros.",
+          "transcript": "Vídeo: pedestres na logística."
         },
         {
-          "id": "m4-foto-rotas",
-          "type": "image",
-          "layout": "stack",
-          "kicker": "📷 Foto",
-          "title": "Sinalização das Rotas de Fuga no Escritório",
-          "image": "assets/fotos/m4-sinalizacao1.png",
-          "imageAlt": "Sinalização de rota de fuga — imagem 1",
-          "imageFit": "contain",
-          "transcript": "Foto: sinalização das rotas de fuga no escritório."
-        },
-        {
-          "id": "m4-foto-rotas-2",
-          "type": "image",
-          "layout": "stack",
-          "kicker": "📷 Foto",
-          "title": "Sinalização das Rotas de Fuga no Escritório",
-          "image": "assets/fotos/m4-sinalizacao.png",
-          "imageAlt": "Sinalização de rota de fuga — imagem 2",
-          "imageFit": "contain",
-          "transcript": "Foto: sinalização das rotas de fuga — imagem 2."
-        },
-        {
-          "id": "m4-riscos",
+          "id": "m4-estacionar",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Riscos Específicos da Edificação",
-          "cardAspect": "square",
+          "title": "Onde Nunca Estacionar",
           "cards": [
             {
-              "title": "Estruturais",
-              "body": "Materiais inflamáveis, pé-direito baixo, ausência de rotas de fuga.",
-              "image": "assets/fotos/m4-estrutural.png",
-              "imageAlt": "Riscos estruturais"
+              "icon": "🚪",
+              "title": "Saída de emergência",
+              "body": "Nunca obstrua."
             },
             {
-              "title": "Operacionais",
-              "body": "Máquinas quentes, eletricidade, soldas, combustíveis.",
-              "image": "assets/fotos/m4-operacionais.png",
-              "imageAlt": "Riscos operacionais"
-            }
-          ],
-          "transcript": "Riscos estruturais e operacionais."
-        },
-        {
-          "id": "m4-riscos-2",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "title": "Riscos Específicos da Edificação",
-          "cardAspect": "square",
-          "cards": [
-            {
-              "title": "Ambientais",
-              "body": "Calor, ventilação inadequada, poeiras combustíveis.",
-              "image": "assets/fotos/m4-ambientais.png",
-              "imageAlt": "Riscos ambientais"
+              "icon": "🧯",
+              "title": "Hidrantes e extintor",
+              "body": "Mantenha livres."
             },
             {
-              "title": "Humanos",
-              "body": "Falta de treinamento, negligência, uso incorreto de EPIs.",
-              "image": "assets/fotos/m4-humanos.png",
-              "imageAlt": "Riscos humanos"
-            }
-          ],
-          "transcript": "Riscos ambientais e humanos."
-        },
-        {
-          "id": "m4-prevenir-brigada",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "title": "Prevenir e o Papel da Brigada",
-          "skin": "actions",
-          "cards": [
-            {
-              "icon": "🛡️",
-              "tone": "prevent",
-              "title": "Prevenir",
-              "lead": "Antes do fogo começar",
-              "points": [
-                {
-                  "icon": "🗺️",
-                  "text": "Mapear setores de risco"
-                },
-                {
-                  "icon": "🔍",
-                  "text": "Fazer inspeções periódicas"
-                },
-                {
-                  "icon": "🛢️",
-                  "text": "Armazenar inflamáveis corretamente"
-                },
-                {
-                  "icon": "⚡",
-                  "text": "Manter a elétrica em dia"
-                },
-                {
-                  "icon": "🧯",
-                  "text": "Conhecer extintores, hidrantes e saídas"
-                },
-                {
-                  "icon": "🏃",
-                  "text": "Treinar e simular evacuação"
-                }
-              ]
+              "icon": "⚡",
+              "title": "Painéis elétricos",
+              "body": "Acesso sempre desimpedido."
             },
             {
-              "icon": "👷",
-              "tone": "role",
-              "title": "Papel do brigadista",
-              "lead": "Quando a emergência chega",
-              "points": [
-                {
-                  "icon": "🚨",
-                  "text": "Agir primeiro, com segurança"
-                },
-                {
-                  "icon": "🔎",
-                  "text": "Identificar causas potenciais"
-                },
-                {
-                  "icon": "🛠️",
-                  "text": "Inspecionar áreas e equipamentos"
-                },
-                {
-                  "icon": "📋",
-                  "text": "Monitorar o cumprimento das normas"
-                },
-                {
-                  "icon": "📢",
-                  "text": "Comunicar irregularidades ao superior"
-                }
-              ]
-            }
-          ],
-          "transcript": "Prevenir riscos e o papel do brigadista."
-        },
-        {
-          "id": "m4-cmp-fios",
-          "type": "compare",
-          "title": "Certo × errado: fios elétricos",
-          "open": true,
-          "compare": [
-            {
-              "ok": true,
-              "label": "✓ Correto",
-              "image": "assets/fotos/certo.png",
-              "imageAlt": "Cabos organizados e à vista",
-              "text": "Cabos organizados e à vista, longe de tapetes e de passagem."
+              "icon": "🚶",
+              "title": "Trânsito de pessoas",
+              "body": "Não bloqueie faixas e passagens."
             },
             {
-              "ok": false,
-              "label": "✕ Evitar",
-              "image": "assets/fotos/errado.png",
-              "imageAlt": "Fio da cafeteira sob o tapete",
-              "text": "Fio sob o tapete esquenta sem ninguém ver e pode iniciar um incêndio."
-            }
-          ],
-          "transcript": "Certo ou errado: fios elétricos."
-        },
-        {
-          "id": "m4-cmp-tomadas",
-          "type": "compare",
-          "title": "Certo × errado: tomadas",
-          "open": true,
-          "compare": [
-            {
-              "ok": true,
-              "label": "✓ Correto",
-              "image": "assets/fotos/certop41.png",
-              "imageAlt": "Cada aparelho na sua tomada",
-              "text": "Cada aparelho na sua tomada. Ao fim do expediente, desligue o que não está em uso."
+              "icon": "🛣️",
+              "title": "Ruas de acesso",
+              "body": "Não estacione no meio da circulação."
             },
             {
-              "ok": false,
-              "label": "✕ Evitar",
-              "image": "assets/fotos/erradop41.png",
-              "imageAlt": "Vários aparelhos num plugue em T",
-              "text": "Vários aparelhos num plugue em T sobrecarregam a tomada e podem causar curto-circuito."
+              "icon": "🗄️",
+              "title": "Prateleiras",
+              "body": "Não bloqueie o acesso a elas."
             }
           ],
-          "transcript": "Certo ou errado: tomadas."
-        },
-        {
-          "id": "m4-cmp-gas",
-          "type": "compare",
-          "title": "Certo × errado: cheiro de gás",
-          "open": true,
-          "compare": [
+          "items": [
             {
-              "ok": true,
-              "label": "✓ Correto",
-              "image": "assets/fotos/certop42.png",
-              "imageAlt": "Abrir janelas e portas para ventilar",
-              "text": "Abra janelas e portas para ventilar, sem acionar nenhum interruptor."
+              "icon": "💦",
+              "title": "Sprinkler:",
+              "text": "nunca armazene produtos com altura que obstrua o sprinkler."
             },
             {
-              "ok": false,
-              "label": "✕ Evitar",
-              "image": "assets/fotos/erradop42.png",
-              "imageAlt": "Acender um fósforo para achar o vazamento",
-              "text": "Não acenda fósforo nem mexa em interruptores — a faísca pode provocar explosão."
+              "icon": "🚶",
+              "title": "Pedestres:",
+              "text": "só nas faixas, sem celular, longe do equipamento em movimento, em áreas isoladas e a 5 m na elevação."
             }
           ],
-          "transcript": "Certo ou errado: cheiro de gás."
+          "transcript": "Onde nunca estacionar o equipamento, a regra do sprinkler e as regras do pedestre."
         },
         {
           "id": "m4-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Caça ao Risco",
-          "count": 4,
-          "minCorrect": 3,
-          "icon": "🔎",
-          "body": "Identifique os riscos escondidos na cena (copa/reunião). A isca (extintor correto) <strong>não</strong> é risco. Mínimo de <strong>3 acertos</strong>.",
-          "transcript": "Desafio do módulo 4: Caça ao Risco."
+          "title": "Desafio — Pode Parar Aqui?",
+          "count": 6,
+          "minCorrect": 5,
+          "icon": "🚧",
+          "body": "6 situações. Em cada uma, escolha o <strong>local onde é proibido</strong> deixar o equipamento. Mínimo de <strong>5 acertos</strong> para avançar.",
+          "transcript": "Desafio do módulo 4: Pode Parar Aqui?."
         },
         {
           "id": "m4-q1",
           "type": "question",
           "variant": "cartoes",
-          "question": "Na copa: várias tomadas ligadas num único plugue em T atrás do micro-ondas. Isso é…",
+          "question": "Onde é proibido deixar a transpaleteira?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Risco — sobrecarga elétrica",
+              "text": "Em frente à saída de emergência",
               "correct": true
             },
             {
               "id": "b",
-              "text": "Situação segura e normal",
+              "text": "Na vaga demarcada para equipamentos",
               "correct": false
             },
             {
               "id": "c",
-              "text": "Isca — não é risco",
+              "text": "Na área de espera sinalizada",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "No ponto de carga de bateria",
               "correct": false
             }
           ],
-          "explanation": "Plugue em T sobrecarrega a tomada — risco real.",
-          "review": "Plugue em T na copa",
-          "transcript": "Na copa: várias tomadas ligadas num único plugue em T atrás do micro-ondas. Isso é…",
-          "image": "assets/fotos/m4p1.png",
-          "imageAlt": "Várias tomadas ligadas num plugue em T atrás do micro-ondas"
+          "explanation": "Saída de emergência nunca pode ser obstruída.",
+          "review": "Saída de emergência",
+          "transcript": "Onde é proibido deixar a transpaleteira?"
         },
         {
           "id": "m4-q2",
           "type": "question",
           "variant": "cartoes",
-          "question": "Fio da cafeteira passando por baixo de um tapete. Isso é…",
+          "question": "Qual destes locais NÃO pode ser obstruído pelo equipamento?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Risco — fio coberto / aquecimento",
-              "correct": true
+              "text": "Corredor sem uso, fora da circulação",
+              "correct": false
             },
             {
               "id": "b",
-              "text": "Organização correta de cabos",
+              "text": "Vaga demarcada para equipamentos",
               "correct": false
             },
             {
               "id": "c",
-              "text": "Isca — não é risco",
+              "text": "Hidrante e extintor de incêndio",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "Área de espera sinalizada",
               "correct": false
             }
           ],
-          "explanation": "Não se deve cobrir fios elétricos com tapetes.",
-          "review": "Fio sob o tapete",
-          "transcript": "Fio da cafeteira passando por baixo de um tapete. Isso é…",
-          "image": "assets/fotos/m4p2.png",
-          "imageAlt": "Fio da cafeteira passando por baixo de um tapete"
+          "explanation": "Hidrantes e extintores precisam estar sempre livres e acessíveis.",
+          "review": "Hidrantes e extintores",
+          "transcript": "Qual destes locais NÃO pode ser obstruído pelo equipamento?"
         },
         {
           "id": "m4-q3",
           "type": "question",
           "variant": "cartoes",
-          "question": "Extintor de PQS fixado na parede, com o pino no lugar. Isso é…",
+          "question": "Onde NÃO se deve parar a paleteira?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Risco — precisa remover",
+              "text": "Vaga demarcada para equipamentos",
               "correct": false
             },
             {
               "id": "b",
-              "text": "Isca — está correto, não é risco",
+              "text": "Em frente ao painel elétrico",
               "correct": true
             },
             {
               "id": "c",
-              "text": "Risco — falta sinalização",
+              "text": "Área de espera sinalizada",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Ao lado da bancada de embalagem, fora da passagem",
               "correct": false
             }
           ],
-          "explanation": "Extintor instalado corretamente é isca — não clique como risco.",
-          "review": "Extintor correto (isca)",
-          "transcript": "Extintor de PQS fixado na parede, com o pino no lugar. Isso é…",
-          "image": "assets/fotos/m4p3.png",
-          "imageAlt": "Extintor de pó químico seco fixado na parede, com o pino no lugar"
+          "explanation": "Painéis elétricos precisam de acesso desimpedido.",
+          "review": "Painéis elétricos",
+          "transcript": "Onde NÃO se deve parar a paleteira?"
         },
         {
           "id": "m4-q4",
           "type": "question",
           "variant": "cartoes",
-          "question": "Caixas de papelão empilhadas encostadas no quadro de distribuição elétrica. Isso é…",
+          "question": "Qual situação é proibida?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Risco — combustível junto à elétrica",
+              "text": "Equipamento na vaga demarcada",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Equipamento parado sobre a faixa de pedestres",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Equipamento na área de espera",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Equipamento recolhido no ponto de carga",
+              "correct": false
+            }
+          ],
+          "explanation": "Não bloqueie o trânsito de pessoas nem as faixas de pedestres.",
+          "review": "Trânsito de pessoas",
+          "transcript": "Qual situação é proibida?"
+        },
+        {
+          "id": "m4-q5",
+          "type": "question",
+          "variant": "cartoes",
+          "question": "Onde nunca deixar o equipamento estacionado?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "No meio da rua de acesso",
               "correct": true
             },
             {
               "id": "b",
-              "text": "Armazenamento adequado",
+              "text": "Na vaga demarcada",
               "correct": false
             },
             {
               "id": "c",
-              "text": "Isca — não é risco",
+              "text": "Na área de espera sinalizada",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "No ponto de carga",
               "correct": false
             }
           ],
-          "explanation": "Material combustível junto ao quadro elétrico é risco grave.",
-          "review": "Caixas no quadro elétrico",
-          "transcript": "Caixas de papelão empilhadas encostadas no quadro de distribuição elétrica. Isso é…",
-          "image": "assets/fotos/m4p4.png",
-          "imageAlt": "Caixas de papelão empilhadas encostadas no quadro elétrico"
+          "explanation": "Ruas de acesso são de circulação, e não de estacionamento.",
+          "review": "Ruas de acesso",
+          "transcript": "Onde nunca deixar o equipamento estacionado?"
+        },
+        {
+          "id": "m4-q6",
+          "type": "question",
+          "variant": "cartoes",
+          "question": "Qual armazenagem é proibida?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Altura que obstrui o sprinkler",
+              "correct": true
+            },
+            {
+              "id": "b",
+              "text": "Altura com folga até o sprinkler",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Palete no rack, dentro do limite",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Palete strechado e fitilhado",
+              "correct": false
+            }
+          ],
+          "explanation": "Nunca armazene produtos com altura que obstrua o sprinkler.",
+          "review": "Sprinkler",
+          "transcript": "Qual armazenagem é proibida?"
         }
       ]
     },
     {
       "id": 5,
-      "title": "Psicologia em Emergências",
-      "meta": "Vídeos + texto · Reconheça a reação + desafio Guerra de Palpites",
+      "title": "Movimentação Manual, Manipulador a Vácuo e Estilete",
+      "meta": "Vídeos + texto · desafio Balança da Decisão",
       "titleUnlock": {
-        "title": "LÍDER SERENO",
-        "body": "Você reconhece reações e lidera com calma.",
-        "icon": "🧠"
+        "title": "CORPO E CARGA",
+        "body": "Você decide bem quando levantar sozinho, pedir ajuda ou usar equipamento.",
+        "icon": "⚖️"
       },
       "screens": [
         {
           "id": "m5-cover",
           "type": "cover",
-          "title": "Módulo 5 — Psicologia em Emergências",
-          "subtitle": "Comportamento humano, reações ao perigo e liderança do brigadista.",
-          "transcript": "Módulo 5: Psicologia em Emergências.",
-          "image": "assets/fotos/capa-modulo5.png",
-          "imageAlt": "Capa do módulo 5: psicologia em emergências"
+          "title": "Módulo 5 — Movimentação Manual, Manipulador a Vácuo e Estilete",
+          "subtitle": "Postura e limites de peso, o manipulador de sacaria do Drive e o uso correto do estilete.",
+          "transcript": "Módulo 5: Movimentação Manual, Manipulador a Vácuo e Estilete."
         },
         {
-          "id": "m5-v-porque",
+          "id": "m5-v-manual",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Por Que Falar de Psicologia em Emergência?",
-          "duration": "0:35",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=02e9a463-3588-4b60-af48-2936299c4208",
-          "playerId": "panda-02e9a463-3588-4b60-af48-2936299c4208",
-          "scene": "Brigadista observando o open space com calma",
-          "brief": "Preparação técnica e emocional para manter a calma, orientar e liderar.",
-          "body": "Emergências provocam medo, estresse e reações instintivas. O comportamento humano impacta combate, evacuação e primeiros socorros. O brigadista precisa estar preparado técnica e emocionalmente.",
-          "transcript": "Vídeo: por que falar de psicologia em emergência."
+          "title": "Movimentação Manual de Cargas",
+          "duration": "1:10",
+          "scene": "Lucas em câmera + três cortes de demonstração de técnica",
+          "brief": "Agachar com a coluna reta e a carga junto ao corpo; dois colegas erguendo juntos; ajuste e afrouxamento da cinta lombar. Nenhuma lesão é mostrada.",
+          "body": "Pegue a carga de frente, sem torcer o tronco, o mais perto do corpo. Acima de 25 kg ou sem boa pega, peça ajuda. Mercadoria comprida e de difícil pega, a partir de 15 kg. Cinta lombar só durante o esforço. Cargas pesadas: transpaleteira elétrica.",
+          "transcript": "Vídeo: movimentação manual de cargas."
         },
         {
-          "id": "m5-v-reacoes",
+          "id": "m5-v-vacuo",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Reações Psicológicas: Medo, Pânico e Paralisia",
-          "duration": "1:15",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=1b8232e1-30c0-4b13-bfcb-1564808fc05d",
-          "playerId": "panda-1b8232e1-30c0-4b13-bfcb-1564808fc05d",
-          "scene": "Animação Pixar das reações",
-          "brief": "Negação, paralisia, pânico, obediência cega, histeria coletiva e heroísmo.",
-          "body": "Conceitos: emergência, estresse, pânico e resiliência. Reações: negação, paralisia, pânico, obediência cega, histeria coletiva e heroísmo. Reconhecer é o primeiro passo para agir.",
-          "transcript": "Vídeo: reações psicológicas em emergência."
+          "title": "Manipulador de Sacaria a Vácuo no Drive",
+          "duration": "0:55",
+          "scene": "Filmagem real no Drive — área isolada e close da ventosa",
+          "brief": "Só o operador dentro da marcação pintada; ventosa prende o saco por vácuo; cliente e colaboradores aguardam fora da linha.",
+          "body": "O manipulador reduz a fadiga, ganha performance e elimina o contato direto com a carga. Exige formação de NR 12. A área deve ser isolada, com sinalização no piso e placas, e só o operador fica nela.",
+          "transcript": "Vídeo: manipulador de sacaria a vácuo no Drive."
         },
         {
-          "id": "m5-v-lideranca",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "O Papel e a Liderança do Brigadista em Momentos de Crise",
-          "duration": "1:20",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=59365249-1853-4a68-a21d-e3f8019d0db9",
-          "playerId": "panda-59365249-1853-4a68-a21d-e3f8019d0db9",
-          "scene": "Simulação de apoio emocional entre colegas",
-          "brief": "Referência de calma: respiração guiada, contato visual, comandos simples, sem agressividade.",
-          "body": "Pessoas seguem quem demonstra controle. Técnicas: respiração guiada, contato visual/verbal, comandos simples e diretos, evitar confrontos. Identificar colapso emocional evita o caos.",
-          "transcript": "Vídeo: liderança do brigadista em crise."
+          "id": "m5-foto-estilete",
+          "type": "image",
+          "layout": "stack",
+          "kicker": "📷 Foto",
+          "title": "Uso do Estilete: Forma Correta",
+          "image": "assets/fotos/m5-estilete.png",
+          "imageAlt": "Estilete homologado sendo usado da forma correta e da forma incorreta",
+          "imageFit": "contain",
+          "bullets": [
+            "O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado.",
+            "Use apenas ferramentas homologadas para corte de embalagens."
+          ],
+          "transcript": "Foto: uso do estilete, forma correta. O estilete não é um EPI, mas você é responsável pelo uso adequado."
         },
         {
-          "id": "m5-cuidado",
+          "id": "m5-regras",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Cuidando de Quem Cuida: Saúde Emocional do Brigadista",
+          "title": "Regras da Movimentação Manual",
           "items": [
             {
-              "icon": "🧭",
-              "text": "Reconhecer os próprios limites emocionais"
+              "icon": "🙋",
+              "title": "Acima de 25 kg ou sem boa pega:",
+              "text": "peça ajuda a um colega e redobre a atenção com a postura."
             },
             {
-              "icon": "🧘",
-              "text": "Controlar o estresse, manter o foco e a calma"
+              "icon": "📏",
+              "title": "Mercadoria comprida e de difícil pega:",
+              "text": "peça ajuda a partir de 15 kg."
             },
             {
-              "icon": "🤝",
-              "text": "Buscar apoio psicológico após eventos críticos"
+              "icon": "🏋️",
+              "title": "Postura:",
+              "text": "apanhe a carga de frente, sem torcer o tronco e o mais próximo do corpo."
+            },
+            {
+              "icon": "🧰",
+              "title": "Ferramentas:",
+              "text": "use EPIs e ferramentas homologadas para movimentar, abastecer e cortar embalagens."
+            },
+            {
+              "icon": "🪜",
+              "title": "Escada:",
+              "text": "no abastecimento ou na pega, use o capacete."
+            },
+            {
+              "icon": "🩹",
+              "title": "Cinta lombar:",
+              "text": "ajuste só durante a movimentação e afrouxe os velcros nas pausas."
+            },
+            {
+              "icon": "🛒",
+              "title": "Cargas mais pesadas:",
+              "text": "use a transpaleteira elétrica."
             }
           ],
-          "quote": "Liderar em crise tem custo emocional real — reconhecer isso não é fraqueza, é preparo.",
-          "transcript": "Saúde emocional do próprio brigadista."
-        },
-        {
-          "id": "m5-refl-paralisia",
-          "type": "reflect",
-          "title": "Reconheça a reação",
-          "prompt": "Durante o alarme, um colega para no meio do corredor e não consegue decidir nem se mover.",
-          "promptAccent": "Que reação é essa?",
-          "choices": [
-            {
-              "icon": "🙅",
-              "text": "Negação",
-              "correct": false
-            },
-            {
-              "icon": "🧊",
-              "text": "Paralisia",
-              "correct": true
-            },
-            {
-              "icon": "🏃",
-              "text": "Pânico",
-              "correct": false
-            }
-          ],
-          "answer": "É a paralisia: a pessoa fica incapaz de tomar decisões ou de se mover. Aproxime-se com calma, mantenha contato visual e use comandos simples e diretos.",
-          "transcript": "Reconheça a reação: um colega paralisado no corredor."
-        },
-        {
-          "id": "m5-refl-negacao",
-          "type": "reflect",
-          "title": "Reconheça a reação",
-          "prompt": "Um colega diz “deve ser só um teste” e continua na mesa, ignorando o alarme.",
-          "promptAccent": "Que reação é essa?",
-          "choices": [
-            {
-              "icon": "🙈",
-              "text": "Negação",
-              "correct": true
-            },
-            {
-              "icon": "🐑",
-              "text": "Obediência cega",
-              "correct": false
-            },
-            {
-              "icon": "😱",
-              "text": "Histeria coletiva",
-              "correct": false
-            }
-          ],
-          "answer": "É a negação: a pessoa se recusa a acreditar na gravidade da situação. Fale de forma clara e direta, sem discutir nem impor ordens com agressividade, e conduza-a à saída.",
-          "transcript": "Reconheça a reação: um colega que ignora o alarme."
+          "transcript": "Regras da movimentação manual de cargas."
         },
         {
           "id": "m5-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Guerra de Palpites",
-          "count": 4,
-          "minCorrect": 3,
-          "icon": "🗳️",
-          "body": "Verdadeiro ou falso. Mínimo de <strong>3 acertos</strong>. (Uma rodada era bônus 2× no roteiro.)",
-          "transcript": "Desafio do módulo 5: Guerra de Palpites."
+          "title": "Desafio — Balança da Decisão",
+          "count": 8,
+          "minCorrect": 6,
+          "icon": "⚖️",
+          "body": "8 cargas. Para cada uma, decida: levantar <strong>sozinho</strong>, <strong>com um colega</strong> ou <strong>com equipamento</strong>. Mínimo de <strong>6 acertos</strong> para avançar.",
+          "transcript": "Desafio do módulo 5: Balança da Decisão."
         },
         {
           "id": "m5-q1",
           "type": "question",
-          "variant": "duelo",
-          "question": "O pânico é sempre a pior reação possível numa emergência e deve ser eliminado a qualquer custo.",
+          "variant": "lista",
+          "question": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Verdadeiro",
-              "correct": false
+              "text": "Sozinho",
+              "correct": true
             },
             {
               "id": "b",
-              "text": "Falso",
-              "correct": true
+              "text": "Com um colega",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
+              "correct": false
             }
           ],
-          "explanation": "Pânico é uma reação intensa e desorganizada — o foco é reconhecê-la e conter com calma, não “eliminar a qualquer custo”.",
-          "review": "Afirmativa sobre pânico",
-          "transcript": "O pânico é sempre a pior reação possível numa emergência e deve ser eliminado a qualquer custo.",
-          "image": "assets/fotos/m5-p1.png",
-          "imageAlt": "Cena ilustrando reação de pânico em emergência"
+          "explanation": "Leve, boa pega e distância curta: basta a postura correta.",
+          "review": "Carga leve",
+          "transcript": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado."
         },
         {
           "id": "m5-q2",
           "type": "question",
-          "variant": "duelo",
-          "question": "Um brigadista calmo pode evitar o pânico se espalhar entre as outras pessoas.",
+          "variant": "lista",
+          "question": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Verdadeiro",
-              "correct": true
+              "text": "Sozinho",
+              "correct": false
             },
             {
               "id": "b",
-              "text": "Falso",
+              "text": "Com um colega",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
               "correct": false
             }
           ],
-          "explanation": "Pessoas tendem a seguir quem demonstra controle e calma.",
-          "review": "Calma do brigadista",
-          "transcript": "Um brigadista calmo pode evitar o pânico se espalhar entre as outras pessoas.",
-          "image": "assets/fotos/m5-p2.png",
-          "imageAlt": "Brigadista calmo orientando outras pessoas"
+          "explanation": "Acima de 25 kg, peça ajuda a um colega.",
+          "review": "Carga acima de 25 kg",
+          "transcript": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado."
         },
         {
           "id": "m5-q3",
           "type": "question",
-          "variant": "duelo",
-          "question": "A obediência cega, seguir ordens sem questionar, é sempre uma reação positiva numa emergência.",
+          "variant": "lista",
+          "question": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Verdadeiro",
+              "text": "Sozinho",
               "correct": false
             },
             {
               "id": "b",
-              "text": "Falso",
+              "text": "Com um colega",
               "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
+              "correct": false
             }
           ],
-          "explanation": "Obediência cega é uma reação possível — não é sempre positiva; o brigadista precisa de comunicação clara e segura.",
-          "review": "Obediência cega",
-          "transcript": "A obediência cega, seguir ordens sem questionar, é sempre uma reação positiva numa emergência.",
-          "image": "assets/fotos/m5-p3.png",
-          "imageAlt": "Pessoas seguindo ordens em situação de emergência"
+          "explanation": "Mercadoria comprida e de difícil pega, acima de 15 kg: peça ajuda.",
+          "review": "Carga comprida e de difícil pega",
+          "transcript": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar."
         },
         {
           "id": "m5-q4",
           "type": "question",
-          "variant": "duelo",
-          "question": "O brigadista também deve buscar apoio psicológico após viver um evento crítico.",
+          "variant": "lista",
+          "question": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros.",
           "alternatives": [
             {
               "id": "a",
-              "text": "Verdadeiro",
+              "text": "Sozinho",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Com um colega",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
+              "correct": true
+            }
+          ],
+          "explanation": "Para distâncias acima de 2 m, use carrinho ou paleteira manual.",
+          "review": "Distância acima de 2 metros",
+          "transcript": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros."
+        },
+        {
+          "id": "m5-q5",
+          "type": "question",
+          "variant": "lista",
+          "question": "Carga 5 de 8 · Palete fechado de 600 kg.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Sozinho",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Com um colega",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
+              "correct": true
+            }
+          ],
+          "explanation": "Carga pesada em palete: transpaleteira elétrica.",
+          "review": "Palete pesado",
+          "transcript": "Carga 5 de 8 · Palete fechado de 600 kg."
+        },
+        {
+          "id": "m5-q6",
+          "type": "question",
+          "variant": "lista",
+          "question": "Carga 6 de 8 · Saco de 50 kg no Drive.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Sozinho",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Com um colega",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
+              "correct": true
+            }
+          ],
+          "explanation": "Sacaria no Drive: manipulador a vácuo, por operador com NR 12.",
+          "review": "Sacaria no Drive",
+          "transcript": "Carga 6 de 8 · Saco de 50 kg no Drive."
+        },
+        {
+          "id": "m5-q7",
+          "type": "question",
+          "variant": "lista",
+          "question": "Carga 7 de 8 · Chapa de madeira inteira.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Sozinho",
+              "correct": false
+            },
+            {
+              "id": "b",
+              "text": "Com um colega",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
+              "correct": true
+            }
+          ],
+          "explanation": "Use o carrinho de transporte de chapas, conforme o informativo do SESMT.",
+          "review": "Chapas de madeira",
+          "transcript": "Carga 7 de 8 · Chapa de madeira inteira."
+        },
+        {
+          "id": "m5-q8",
+          "type": "question",
+          "variant": "lista",
+          "question": "Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Sozinho",
               "correct": true
             },
             {
               "id": "b",
-              "text": "Falso",
+              "text": "Com um colega",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "Com equipamento",
               "correct": false
             }
           ],
-          "explanation": "Cuidar de quem cuida faz parte do preparo.",
-          "review": "Apoio psicológico após evento crítico",
-          "transcript": "O brigadista também deve buscar apoio psicológico após viver um evento crítico.",
-          "image": "assets/fotos/m5-p4.png",
-          "imageAlt": "Brigadista buscando apoio após evento crítico"
+          "explanation": "Dentro dos limites: pegue de frente, junto ao corpo, sem torcer o tronco.",
+          "review": "Carga dentro dos limites",
+          "transcript": "Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento."
         }
       ]
     },
     {
       "id": 6,
-      "title": "Sistema de Controle de Incidentes (SCI)",
-      "meta": "Texto + reflexão · 4 perguntas Comando Estruturado",
+      "title": "Armazenagem, Docas e Encerramento",
+      "meta": "Vídeos + texto · desafio Na Medida",
       "titleUnlock": {
-        "title": "COMANDO ESTRUTURADO",
-        "body": "Você sabe como o SCI organiza a resposta a qualquer emergência.",
-        "icon": "🧭"
+        "title": "MEDIDA CERTA",
+        "body": "Você domina as medidas e regras da armazenagem e das docas.",
+        "icon": "📐"
       },
       "screens": [
         {
-          "id": "m7-cover",
+          "id": "m6-cover",
           "type": "cover",
-          "title": "Módulo 6 — Sistema de Controle de Incidentes (SCI)",
-          "subtitle": "Como organizar comando, comunicação e resposta em qualquer emergência.",
-          "transcript": "Módulo 6: Sistema de Controle de Incidentes.",
-          "image": "assets/fotos/capamodulo7.png",
-          "imageAlt": "Capa do módulo 6: Sistema de Controle de Incidentes"
+          "title": "Módulo 6 — Armazenagem, Docas e Encerramento",
+          "subtitle": "Palete aéreo, longarinas e palete PBR, equipamento certo para cada produto, docas e manuais de segurança.",
+          "transcript": "Módulo 6: Armazenagem, Docas e Encerramento."
         },
         {
-          "id": "m7-v-oque",
+          "id": "m6-v-armazenagem",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "O Que É o Sistema de Controle de Incidentes?",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
-          "playerId": "panda-d5156676-8200-4fd5-a6ea-cfc774ceb8d8",
-          "scene": "Brigadista apresentando o conceito, com um organograma simples ao fundo",
-          "brief": "SCI: modelo de gestão que padroniza organização, comando e comunicação em emergências de qualquer natureza.",
-          "body": "O Sistema de Controle de Incidentes (SCI) é um modelo de gestão de emergências. Ele padroniza a organização, o comando e a comunicação em situações críticas, e é usado em emergências de qualquer natureza: incêndios, desabamentos, vazamentos químicos, entre outros.",
-          "transcript": "Vídeo: o que é o Sistema de Controle de Incidentes."
+          "title": "Palete Aéreo e Armazenagem Segura",
+          "duration": "1:15",
+          "scene": "Filmagem real com cotas gráficas sobre a imagem",
+          "brief": "Palete stretchado e fitilhado no alto do rack; cotas de 50 cm, 1 m e 50 cm; placa de capacidade da longarina; palete PBR em bom estado e tocos apoiados.",
+          "body": "Paletes aéreos stretchados e fitilhados; altura até 50 cm do limitador; 1 m do sistema de incêndio e da infraestrutura elétrica; 50 cm da parede. Verifique a capacidade das longarinas e o estado do palete PBR.",
+          "transcript": "Vídeo: palete aéreo e armazenagem segura."
         },
         {
-          "id": "m7-principios",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "steps": true,
-          "stepSkin": "principles",
-          "stepUnit": "Princípio",
-          "stepNext": "Próximo princípio",
-          "stepFinish": "Concluir",
-          "title": "Princípios Básicos do SCI",
-          "items": [
-            {
-              "n": 1,
-              "icon": "🪜",
-              "title": "Hierarquia clara:",
-              "text": "Uma cadeia de comando definida, sem ambiguidade sobre quem decide."
-            },
-            {
-              "n": 2,
-              "icon": "🎯",
-              "title": "Funções bem definidas:",
-              "text": "Cada pessoa sabe exatamente qual é o seu papel."
-            },
-            {
-              "n": 3,
-              "icon": "🧩",
-              "title": "Organização modular:",
-              "text": "A estrutura cresce ou diminui conforme o tamanho da emergência."
-            },
-            {
-              "n": 4,
-              "icon": "🗣️",
-              "title": "Linguagem comum:",
-              "text": "Termos simples e de fácil entendimento entre todos os envolvidos."
-            },
-            {
-              "n": 5,
-              "icon": "🔄",
-              "title": "Flexibilidade e escalabilidade:",
-              "text": "O sistema se adapta a diferentes tipos e portes de incidente."
-            },
-            {
-              "n": 6,
-              "icon": "🤝",
-              "title": "Integração:",
-              "text": "Entre equipes internas e órgãos externos, como Bombeiros e SAMU."
-            },
-            {
-              "n": 7,
-              "icon": "📋",
-              "title": "Objetivos claros:",
-              "text": "Planos operacionais bem definidos, sem depender de improviso."
-            }
-          ],
-          "transcript": "Princípios básicos do Sistema de Controle de Incidentes."
-        },
-        {
-          "id": "m7-estrutura",
+          "id": "m6-v-docas",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Estrutura Básica do SCI",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=f7ea888a-8b32-4cf0-b971-4d7fff35255d",
-          "playerId": "panda-f7ea888a-8b32-4cf0-b971-4d7fff35255d",
-          "scene": "Brigadista explicando diante de um organograma simples: Comandante no topo, quatro seções abaixo",
-          "brief": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
-          "body": "No topo está o Comandante do Incidente. Abaixo dele, quatro seções dividem o trabalho: Operações executa as ações diretas de resposta; Planejamento analisa a situação e antecipa os próximos cenários; Logística fornece os recursos e o apoio necessários; e Administração e Finanças cuida dos custos e dos registros do incidente.",
-          "transcript": "Estrutura básica do SCI: comandante e quatro seções operacionais."
+          "title": "Equipamento Certo e Segurança nas Docas",
+          "duration": "0:55",
+          "scene": "Filmagem real em dois blocos: corredor de estoque e doca",
+          "brief": "Colaborador usa carrinho em vez de carregar no braço; rampa elevada e livre; caminhão encosta, a rampa apoia na carroceria e a paleteira elétrica atravessa.",
+          "body": "Use o equipamento adequado, confira antes de usar, não arraste mercadorias e use carrinho ou paleteira acima de 2 m. Na doca, a rampa não guarda produtos, fica elevada quando parada e só se usa apoiada no caminhão.",
+          "transcript": "Vídeo: equipamento certo e segurança nas docas."
         },
         {
-          "id": "m7-funcoes",
+          "id": "m6-armazenagem",
           "type": "content",
           "kicker": "📄 Texto",
-          "steps": true,
-          "stepSkin": "funcoes",
-          "stepUnit": "Função",
-          "stepNext": "Próxima função",
-          "stepFinish": "Concluir",
-          "title": "Funções do Brigadista Dentro do SCI",
-          "items": [
+          "title": "Armazenagem: Medidas e Cuidados",
+          "cards": [
             {
-              "n": 1,
-              "icon": "📣",
-              "title": "Apoiar o comando:",
-              "text": "Informar o Comandante do Incidente sobre a situação local."
+              "icon": "📏",
+              "title": "Altura",
+              "body": "Até 50 cm acima do limitador do rack."
             },
             {
-              "n": 2,
-              "icon": "✅",
-              "title": "Executar sua função:",
-              "text": "Agir de acordo com o papel que lhe foi atribuído."
-            },
-            {
-              "n": 3,
-              "icon": "📡",
-              "title": "Manter a comunicação:",
-              "text": "Com os líderes e com o restante da equipe."
-            },
-            {
-              "n": 4,
-              "icon": "⚠️",
-              "title": "Relatar riscos:",
-              "text": "Avisar imediatamente sobre riscos e necessidades que encontrar."
-            },
-            {
-              "n": 5,
-              "icon": "🆘",
-              "title": "Auxiliar vítimas:",
-              "text": "Apoiar a evacuação e o atendimento de quem precisar."
-            }
-          ],
-          "review": "Funções do brigadista dentro do SCI",
-          "transcript": "Funções essenciais do brigadista dentro do SCI."
-        },
-        {
-          "id": "m7-procedimento",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Procedimentos do SCI em Ação",
-          "duration": "1:00",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
-          "playerId": "panda-a6f9a34e-7257-42b4-b5e2-270d0bc551c1",
-          "scene": "Brigadista narrando o passo a passo, com os números das etapas aparecendo na tela conforme fala",
-          "brief": "Avaliação inicial → comando → funções → planejamento → execução → monitoramento.",
-          "body": "O passo a passo de como o sistema entra em funcionamento: avaliação inicial da situação assim que ela é identificada; estabelecimento do comando, definindo quem é o Comandante do Incidente; definição das funções e responsabilidades de cada pessoa envolvida; planejamento das ações, com objetivos e estratégias; execução da resposta; e monitoramento constante, com ajustes e comunicação ao longo de todo o processo.",
-          "transcript": "Procedimentos do SCI em ação, passo a passo."
-        },
-        {
-          "id": "m7-vantagens",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "layout": "benefits-grid",
-          "title": "Vantagens de Implantar o SCI",
-          "body": "Quatro ganhos quando o SCI está implantado na operação:",
-          "items": [
-            {
-              "n": 1,
-              "icon": "⚡",
-              "title": "Agilidade:",
-              "text": "Organização que acelera a resposta em incidentes."
-            },
-            {
-              "n": 2,
-              "icon": "🎯",
-              "title": "Menos improviso:",
-              "text": "Reduz falhas causadas por decisões de última hora."
-            },
-            {
-              "n": 3,
-              "icon": "🛡️",
-              "title": "Mais segurança:",
-              "text": "Para as equipes envolvidas e para as vítimas."
-            },
-            {
-              "n": 4,
-              "icon": "🤝",
-              "title": "Coordenação:",
-              "text": "Entre diferentes setores da empresa ou instituições externas."
-            }
-          ],
-          "transcript": "Vantagens da implantação do SCI."
-        },
-        {
-          "id": "m7-reflexao",
-          "type": "reflect",
-          "kicker": "💭 Reflexão",
-          "title": "Reflexão Sobre o SCI",
-          "prompt": "Por que o treinamento contínuo é tão importante para o SCI funcionar de verdade?",
-          "answer": "O SCI é uma ferramenta essencial para uma atuação organizada, mas só funciona se todo mundo souber usá-la na hora certa. O treinamento contínuo é a chave para isso — e a Brigada de Incêndio é peça fundamental para aplicar o SCI com sucesso.",
-          "transcript": "Reflexão sobre a importância do SCI e do treinamento contínuo."
-        },
-        {
-          "id": "m7-quiz-intro",
-          "type": "quiz-intro",
-          "title": "Desafio — Comando Estruturado",
-          "count": 4,
-          "minCorrect": 3,
-          "icon": "🧭",
-          "body": "4 perguntas pra fechar o módulo: objetivo, estrutura, funções do brigadista e princípios do SCI. Mínimo de <strong>3 acertos</strong>.",
-          "transcript": "Desafio do módulo: Comando Estruturado. Quatro perguntas."
-        },
-        {
-          "id": "m7-q1",
-          "type": "question",
-          "question": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)?",
-          "alternatives": [
-            {
-              "text": "Substituir a brigada em situações de emergência.",
-              "correct": false
-            },
-            {
-              "text": "Garantir que todas as emergências sejam resolvidas sem apoio externo.",
-              "correct": false
-            },
-            {
-              "text": "Organizar e coordenar a resposta a emergências de forma estruturada.",
-              "correct": true
-            }
-          ],
-          "explanation": "O SCI não substitui a brigada nem dispensa apoio externo — ele organiza e coordena a resposta, com comando claro e funções bem definidas.",
-          "review": "Objetivo do SCI",
-          "transcript": "Pergunta: qual é o principal objetivo do SCI?",
-          "image": "assets/fotos/modulo7-pergunta1.png",
-          "imageAlt": "Equipe organizada respondendo a uma emergência com comando claro"
-        },
-        {
-          "id": "m7-q2",
-          "type": "question",
-          "question": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo?",
-          "alternatives": [
-            {
-              "text": "Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.",
-              "correct": true
-            },
-            {
-              "text": "Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.",
-              "correct": false
-            },
-            {
-              "text": "Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.",
-              "correct": false
-            }
-          ],
-          "explanation": "O Comandante do Incidente lidera a resposta. As quatro seções — Operações, Planejamento, Logística e Administração/Finanças — dividem o trabalho sob o comando.",
-          "review": "Estrutura básica do SCI",
-          "transcript": "Pergunta: na estrutura do SCI, quem fica no topo e quais são as quatro seções?",
-          "image": "assets/fotos/modulo7-pergunta2.png",
-          "imageAlt": "Organograma do SCI: Comandante do Incidente e quatro seções"
-        },
-        {
-          "id": "m7-q3",
-          "type": "question",
-          "question": "Qual destas é uma função do brigadista dentro do SCI?",
-          "alternatives": [
-            {
-              "text": "Assumir sozinho o comando de toda a emergência, sem informar ninguém.",
-              "correct": false
-            },
-            {
-              "text": "Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.",
-              "correct": true
-            },
-            {
-              "text": "Decidir sozinho o orçamento e os registros financeiros do incidente.",
-              "correct": false
-            }
-          ],
-          "explanation": "O brigadista apoia o Comandante, executa o papel atribuído, mantém a comunicação, relata riscos e auxilia vítimas — não age por conta própria fora da estrutura.",
-          "review": "Funções do brigadista no SCI",
-          "transcript": "Pergunta: qual é uma função do brigadista dentro do SCI?",
-          "image": "assets/fotos/modulo7-pergunta3.png",
-          "imageAlt": "Brigadista comunicando a situação ao comando durante emergência"
-        },
-        {
-          "id": "m7-q4",
-          "type": "question",
-          "question": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência?",
-          "alternatives": [
-            {
-              "text": "Linguagem comum — termos simples e de fácil entendimento entre todos.",
-              "correct": true
-            },
-            {
-              "text": "Organização modular — a estrutura cresce ou diminui conforme o incidente.",
-              "correct": false
-            },
-            {
-              "text": "Flexibilidade e escalabilidade — o sistema se adapta a diferentes portes.",
-              "correct": false
-            }
-          ],
-          "explanation": "Linguagem comum garante que todos se entendam. Organização modular e flexibilidade são princípios importantes, mas tratam do tamanho e da adaptação da estrutura — não do vocabulário.",
-          "review": "Princípio da linguagem comum",
-          "transcript": "Pergunta: qual princípio do SCI evita confusão de termos entre as equipes?",
-          "image": "assets/fotos/modulo7-pergunta4.png",
-          "imageAlt": "Equipes internas e externas se comunicando com linguagem comum na emergência"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "title": "Primeiros Socorros, RCP e Encerramento",
-      "meta": "Vídeos + ficha · Corrente de Decisão + Roleta da RCP + certificado",
-      "titleUnlock": {
-        "title": "PRONTO PARA AGIR",
-        "body": "Você domina primeiros socorros, reconhece AVC/infarto, sabe a RCP e quem ligar.",
-        "icon": "❤️"
-      },
-      "screens": [
-        {
-          "id": "m8-cover",
-          "type": "cover",
-          "title": "Módulo 7 — Primeiros Socorros, RCP e Encerramento",
-          "subtitle": "Traumas, emergências clínicas, AVC, infarto, RCP, números de emergência e certificado.",
-          "transcript": "Módulo 7: Primeiros Socorros, RCP e Encerramento.",
-          "image": "assets/fotos/capa-modulo6.png",
-          "imageAlt": "Capa do módulo 7: primeiros socorros, RCP e encerramento"
-        },
-        {
-          "id": "m6-v-intro",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Primeiros Socorros: Você é a Primeira Resposta",
-          "duration": "0:35",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=36b10970-e9af-465a-8602-7cb065262ed6",
-          "playerId": "panda-36b10970-e9af-465a-8602-7cb065262ed6",
-          "scene": "Brigadista organizando kit de primeiros socorros",
-          "brief": "Procedimentos simples e imediatos até o atendimento especializado — não é atendimento médico.",
-          "body": "Primeiros socorros são procedimentos simples e imediatos no local do acidente ou mal súbito, até o atendimento especializado. Não é atendimento médico — mas salva vidas.",
-          "transcript": "Vídeo: introdução aos primeiros socorros."
-        },
-        {
-          "id": "m6-v-queimaduras",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Queimaduras: Causas, Classificação e Conduta",
-          "duration": "1:25",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=653c55b2-e6e4-43f8-a3e9-f62ef4187ced",
-          "playerId": "panda-653c55b2-e6e4-43f8-a3e9-f62ef4187ced",
-          "scene": "Animação das camadas da pele + conduta com pano úmido",
-          "brief": "Graus 1–4; abafar/rolar; enxaguar químicos; cobrir úmido; nunca furar bolhas, gelo, pomada ou puxar roupa grudada.",
-          "body": "Causas: físicas, químicas ou mecânicas. Graus: 1 eritema; 2 bolhas; 3 todas as camadas; 4 musculatura. Conduta: abafar/rolar; químicos → água corrente; cobrir com pano limpo e úmido; chamar socorro. Nunca: furar bolhas, gelo, pomadas, retirar roupa grudada.",
-          "transcript": "Vídeo: queimaduras."
-        },
-        {
-          "id": "m6-v-choque-hemorragia",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Choque Elétrico e Hemorragias: Agindo Rápido",
-          "duration": "1:25",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=a6325ac5-7971-42e4-bcb0-471d0e6dda95",
-          "playerId": "panda-a6325ac5-7971-42e4-bcb0-471d0e6dda95",
-          "scene": "Desligar energia antes do contato; curativo compressivo",
-          "brief": "Choque: desligar energia → respiração/pulso → cobrir → SAMU. Hemorragia: compressão com gaze e socorro.",
-          "body": "Choque: desligue a eletricidade antes de tocar; se não der, use material não condutor seco. Verifique respiração e pulso, cubra a área, chame o SAMU. Hemorragia: curativo compressivo e socorro imediato.",
-          "transcript": "Vídeo: choque elétrico e hemorragias."
-        },
-        {
-          "id": "m6-hemorragia-controle",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "steps": true,
-          "stepUnit": "Passo",
-          "stepNext": "Próximo passo",
-          "stepFinish": "Concluir",
-          "title": "Hemorragia: Como Controlar o Sangramento",
-          "body": "Controle o sangramento externo nesta ordem — do mais urgente ao último recurso.",
-          "items": [
-            {
-              "n": 1,
-              "icon": "📞",
-              "title": "Ligue para a emergência:",
-              "text": "SAMU 192 ou Bombeiros 193, imediatamente.",
-              "image": "assets/fotos/p65-1.png",
-              "imageAlt": "Profissional de saúde ligando para emergência no celular"
-            },
-            {
-              "n": 2,
-              "icon": "🧤",
-              "title": "Proteja-se:",
-              "text": "use luvas descartáveis, se tiver, antes de tocar no sangue.",
-              "image": "assets/fotos/p65-2.png",
-              "imageAlt": "Uso de luvas descartáveis antes de tocar no sangue"
-            },
-            {
-              "n": 3,
-              "icon": "🩹",
-              "title": "Comprima a ferida:",
-              "text": "cubra com pano limpo, toalha ou gaze e pressione com firmeza por 10 a 20 minutos.",
-              "image": "assets/fotos/p65-3.png",
-              "imageAlt": "Compressão da ferida com gaze no braço do trabalhador"
-            },
-            {
-              "n": 4,
-              "icon": "🚫",
-              "title": "Não retire panos encharcados:",
-              "text": "se o sangue passar, coloque outro pano limpo por cima, sem tirar o primeiro.",
-              "image": "assets/fotos/p65-4.png",
-              "imageAlt": "Novo pano limpo colocado sobre o curativo encharcado, sem retirar o primeiro"
-            },
-            {
-              "n": 5,
-              "icon": "⬆️",
-              "title": "Eleve o membro:",
-              "text": "braço ou perna acima do nível do coração, se não houver suspeita de fratura grave.",
-              "image": "assets/fotos/p65-5.png",
-              "imageAlt": "Elevação do membro ferido acima do nível do coração"
-            },
-            {
-              "n": 6,
-              "icon": "⚠️",
-              "title": "Torniquete como último recurso:",
-              "text": "só se a pressão direta não for suficiente num sangramento grave em membro.",
-              "warn": "Último recurso — só em sangramento grave de membro.",
-              "image": "assets/fotos/p65-6.png",
-              "imageAlt": "Aplicação de torniquete no braço como último recurso"
-            }
-          ],
-          "review": "Como controlar hemorragia externa",
-          "transcript": "Hemorragia: como controlar o sangramento externo."
-        },
-        {
-          "id": "m6-hemorragia-torniquete",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "steps": true,
-          "stepUnit": "Passo",
-          "stepNext": "Próximo passo",
-          "stepFinish": "Concluir",
-          "title": "Torniquete: Passo a Passo",
-          "body": "Só use o torniquete quando a pressão direta não for suficiente para parar o sangramento.",
-          "items": [
-            {
-              "n": 1,
-              "icon": "📍",
-              "title": "Posicione:",
-              "text": "5 a 7 cm acima da ferida, na direção do tronco. Nunca sobre uma articulação; sem saber o local exato, coloque o mais alto possível no membro.",
-              "image": "assets/fotos/p66-1.png",
-              "imageAlt": "Posicionamento do torniquete acima da ferida"
-            },
-            {
-              "n": 2,
-              "icon": "🔒",
-              "title": "Ajuste:",
-              "text": "passe a fita ao redor do membro e puxe o velcro com firmeza, sem folga nenhuma.",
-              "image": "assets/fotos/p66-2.png",
-              "imageAlt": "Ajuste firme da fita do torniquete no membro"
-            },
-            {
-              "n": 3,
-              "icon": "🔄",
-              "title": "Torça:",
-              "text": "gire a barra de torção até o sangramento parar totalmente e o pulso sumir. Dói bastante, mas é necessário.",
-              "image": "assets/fotos/p66-3.png",
-              "imageAlt": "Torção da barra do torniquete até estancar o sangramento"
-            },
-            {
-              "n": 4,
-              "icon": "🧷",
-              "title": "Trave:",
-              "text": "prenda a barra no clipe de fixação e cubra com a tira de segurança.",
-              "image": "assets/fotos/p66-4.png",
-              "imageAlt": "Barra do torniquete travada no clipe de fixação"
-            },
-            {
-              "n": 5,
-              "icon": "🕒",
-              "title": "Anote o horário:",
-              "text": "registre a hora exata da aplicação, no próprio torniquete ou num papel visível na vítima.",
-              "image": "assets/fotos/p66-5.png",
-              "imageAlt": "Registro do horário de aplicação do torniquete"
-            },
-            {
-              "n": 6,
-              "icon": "⛔",
-              "title": "Nunca afrouxe:",
-              "text": "só uma equipe médica no hospital pode remover o torniquete.",
-              "warn": "Não afrouxe nem remova — só a equipe médica no hospital.",
-              "image": "assets/fotos/p66-6.jpeg",
-              "imageAlt": "Torniquete mantido no lugar até o atendimento hospitalar"
-            }
-          ],
-          "review": "Como aplicar um torniquete",
-          "transcript": "Torniquete: passo a passo de aplicação."
-        },
-        {
-          "id": "m6-v-desmaio-engasgo",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Desmaio e Engasgo (Adulto e Bebê)",
-          "duration": "1:30",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=d0d81cb8-3942-424e-b275-1eb08ccecd49",
-          "playerId": "panda-d0d81cb8-3942-424e-b275-1eb08ccecd49",
-          "scene": "Posição de recuperação; Heimlich; manequim infantil",
-          "brief": "Desmaio: arejado, pernas elevadas. Adulto: tosse → Heimlich → SAMU/RCP. Bebê: bruços no antebraço + palmadas nas costas.",
-          "body": "Desmaio: local arejado, deitar de costas com pernas elevadas, afrouxar roupas, água após recuperar. Engasgo adulto: tossir → Heimlich → SAMU → RCP se necessário. Bebê: bruços no antebraço, palmadas leves nas costas (manequim no vídeo).",
-          "transcript": "Vídeo: desmaio e engasgo."
-        },
-        {
-          "id": "m6-engasgo-criancas-adultos",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "title": "Engasgo em Crianças (+1 ano) e Adultos",
-          "body": "A sequência certa alterna pancadas nas costas com compressões abdominais.",
-          "items": [
-            {
-              "n": 1,
-              "title": "Posicione-se:",
-              "text": "atrás da vítima."
-            },
-            {
-              "n": 2,
-              "title": "5 pancadas nas costas:",
-              "text": "golpes firmes entre as escápulas."
-            },
-            {
-              "n": 3,
-              "title": "Não saiu? Heimlich:",
-              "text": "5 compressões abdominais."
-            },
-            {
-              "n": 4,
-              "title": "Repita:",
-              "text": "até o objeto sair ou a pessoa desmaiar. Se desmaiar, inicie a RCP."
-            }
-          ],
-          "review": "Engasgo em crianças e adultos: pancadas + Heimlich",
-          "transcript": "Engasgo em crianças acima de um ano e adultos."
-        },
-        {
-          "id": "m6-engasgo-criancas-adultos-foto",
-          "type": "content",
-          "layout": "stack",
-          "kicker": "📷 Foto",
-          "title": "Engasgo em Crianças (+1 ano) e Adultos",
-          "image": "assets/fotos/p68.png",
-          "imageAlt": "Infográfico da manobra Heimlich para desengasgar: posicionar-se atrás, fechar o punho, comprimir entre umbigo e tórax e empurrar para dentro e para cima",
-          "imageFit": "contain",
-          "review": "Manobra Heimlich para desengasgar",
-          "transcript": "Infográfico: a manobra Heimlich para desengasgar."
-        },
-        {
-          "id": "m6-engasgo-bebe",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "title": "Engasgo em Bebês (menos de 1 ano)",
-          "items": [
-            {
-              "icon": "🚫",
-              "title": "Proibido:",
-              "text": "compressão abdominal em bebês — o risco de ferir os órgãos internos é grande."
-            },
-            {
-              "n": 1,
-              "title": "De bruços no antebraço:",
-              "text": "cabeça mais baixa que o corpo, e 5 pancadas firmes nas costas."
-            },
-            {
-              "n": 2,
-              "title": "Vire de barriga para cima:",
-              "text": "5 compressões torácicas no centro do peito, com a base da mão."
-            },
-            {
-              "n": 3,
-              "title": "Alterne os ciclos:",
-              "text": "até o bebê expelir o objeto ou perder a consciência."
-            }
-          ],
-          "review": "Engasgo em bebês: pancadas + compressões torácicas",
-          "transcript": "Engasgo em bebês com menos de um ano."
-        },
-        {
-          "id": "m6-engasgo-bebe-foto",
-          "type": "content",
-          "layout": "stack",
-          "kicker": "📷 Foto",
-          "title": "Engasgo em Bebês (menos de 1 ano)",
-          "image": "assets/fotos/pg71.png",
-          "imageAlt": "Infográfico de desengasgo em bebês: bruços no antebraço com palmadas nas costas, verificar respiração, chamar SAMU 192 e iniciar RCP se necessário",
-          "imageFit": "contain",
-          "review": "Desengasgo em bebês",
-          "transcript": "Infográfico: desengasgo em bebês."
-        },
-        {
-          "id": "m6-v-convulsao",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Convulsão: Cuidados e Como Proteger a Vítima",
-          "duration": "0:50",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=4d8c6cfe-a1a8-45a5-b3f7-75ac69cc11aa",
-          "playerId": "panda-4d8c6cfe-a1a8-45a5-b3f7-75ac69cc11aa",
-          "scene": "Proteger cabeça, afastar objetos, pano entre os dentes com cuidado",
-          "brief": "Não dar medicação/líquido/alimento; não deixar sozinha; chamar SAMU.",
-          "body": "Deite no chão, afaste objetos, proteja a cabeça inclinada lateralmente, coloque pano entre os dentes com cuidado, chame o SAMU. Nunca medicação, líquido ou alimento; nunca deixe sozinha.",
-          "transcript": "Vídeo: convulsão."
-        },
-        {
-          "id": "m6-ficha",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "steps": true,
-          "stepUnit": "Emergência",
-          "stepNext": "Próxima emergência",
-          "stepFinish": "Concluir ficha",
-          "title": "Ficha Rápida: O Que Fazer em Cada Emergência",
-          "items": [
-            {
-              "n": 1,
               "icon": "🔥",
-              "title": "Queimaduras",
-              "text": "Abafar/rolar; químico → água; cobrir úmido; socorro.",
-              "warn": "Nunca furar bolhas, usar pomada ou puxar roupa grudada.",
-              "tone": "e1",
-              "image": "assets/fotos/queimaduras.png",
-              "imageAlt": "Atendimento a queimadura"
+              "title": "Sistema de incêndio e elétrica",
+              "body": "Empilhar a 1 m de distância."
             },
             {
-              "n": 2,
-              "icon": "⚡",
-              "title": "Choque elétrico",
-              "text": "Desligar energia primeiro; checar respiração/pulso; cobrir; SAMU.",
-              "tone": "e2",
-              "image": "assets/fotos/choque.png",
-              "imageAlt": "Atendimento a choque elétrico"
+              "icon": "🧱",
+              "title": "Parede",
+              "body": "Manter 50 cm de distância."
             },
             {
-              "n": 3,
-              "icon": "🩸",
-              "title": "Hemorragia",
-              "text": "Curativo compressivo; chamar socorro.",
-              "tone": "e3",
-              "image": "assets/fotos/hemorragia.png",
-              "imageAlt": "Controle de hemorragia"
-            },
-            {
-              "n": 4,
-              "icon": "😵",
-              "title": "Desmaio",
-              "text": "Local arejado; deitar com pernas elevadas; afrouxar roupas.",
-              "tone": "e4",
-              "image": "assets/fotos/desmaio.png",
-              "imageAlt": "Atendimento a desmaio"
-            },
-            {
-              "n": 5,
-              "icon": "🫁",
-              "title": "Engasgo adulto",
-              "text": "Tosse → Heimlich → SAMU → RCP se necessário.",
-              "tone": "e5",
-              "image": "assets/fotos/engasgo-adulto.png",
-              "imageAlt": "Manobra de desengasgo em adulto"
-            },
-            {
-              "n": 6,
-              "icon": "👶",
-              "title": "Engasgo bebê",
-              "text": "Bruços no antebraço + palmadas nas costas → SAMU → RCP se necessário.",
-              "tone": "e6",
-              "image": "assets/fotos/engasgo-bebe.png",
-              "imageAlt": "Manobra de desengasgo em bebê"
-            },
-            {
-              "n": 7,
-              "icon": "🧠",
-              "title": "Convulsão",
-              "text": "Proteger a cabeça; afastar objetos; pano entre os dentes.",
-              "warn": "Nunca medicação/líquido; nunca deixar sozinha.",
-              "tone": "e7",
-              "image": "assets/fotos/convulsao.png",
-              "imageAlt": "Atendimento a convulsão"
+              "icon": "🪵",
+              "title": "Palete PBR",
+              "body": "1,20 m × 1,00 m, padrão nacional."
             }
           ],
-          "transcript": "Ficha rápida de conduta em cada emergência. Avance emergência por emergência."
+          "items": [
+            {
+              "icon": "🔩",
+              "title": "Longarinas:",
+              "text": "verifique a capacidade de carga antes de armazenar. O vão é de 1,00 m."
+            },
+            {
+              "icon": "🪵",
+              "title": "Tocos:",
+              "text": "são eles que ficam apoiados na longarina, e não as ripas."
+            },
+            {
+              "icon": "🔎",
+              "title": "Palete PBR:",
+              "text": "sem ripas quebradas e sem tocos faltando."
+            }
+          ],
+          "transcript": "Medidas e cuidados da armazenagem em racks."
+        },
+        {
+          "id": "m6-docas",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Dicas de Equipamentos e Docas",
+          "items": [
+            {
+              "icon": "🧰",
+              "title": "Equipamento:",
+              "text": "use o adequado para cada produto e verifique as condições antes de usar."
+            },
+            {
+              "icon": "🚫",
+              "title": "Não arraste",
+              "text": "mercadorias pelo piso. Peça ajuda em mercadorias comprida e de difícil pega."
+            },
+            {
+              "icon": "🛒",
+              "title": "Distâncias acima de 2 m:",
+              "text": "use carrinhos ou paleteiras manuais."
+            },
+            {
+              "icon": "⛔",
+              "title": "Rampa da doca:",
+              "text": "não guarde produtos nela e deixe elevada quando não estiver em uso."
+            },
+            {
+              "icon": "🚚",
+              "title": "Uso da rampa:",
+              "text": "somente apoiada no caminhão, para a correta distribuição de peso."
+            },
+            {
+              "icon": "🔌",
+              "title": "Na doca:",
+              "text": "prefira a paleteira elétrica à manual."
+            }
+          ],
+          "transcript": "Dicas de equipamentos e de segurança nas docas."
+        },
+        {
+          "id": "m6-manuais",
+          "type": "content",
+          "kicker": "📄 Texto",
+          "title": "Manuais de Segurança e SESMT",
+          "items": [
+            {
+              "icon": "📘",
+              "title": "Manual de Segurança — Logística:",
+              "text": "disponível no Google Drive, pasta SESMT para todos - LMB, subpasta MANUAIS."
+            },
+            {
+              "icon": "📗",
+              "title": "Manual de Segurança — Drive:",
+              "text": "disponível na mesma pasta, subpasta MANUAIS."
+            },
+            {
+              "icon": "✉️",
+              "title": "Dúvidas:",
+              "text": "sesmt@leroymerlin.com.br"
+            }
+          ],
+          "transcript": "Os manuais de segurança da Logística e do Drive estão no Google Drive. Dúvidas: SESMT."
+        },
+        {
+          "id": "m6-v-encerramento",
+          "type": "video",
+          "kicker": "🎥 Vídeo",
+          "title": "Logística Segura É com Você",
+          "duration": "0:35",
+          "scene": "Lucas em câmera, mesmo enquadramento da abertura",
+          "brief": "Um corte de apoio: equipe reunida no início do turno, todos de EPI. E-mail do SESMT em texto na tela.",
+          "body": "Agora você sabe quem pode operar cada equipamento, quais EPIs usar, como circular, levantar peso e armazenar com segurança. Nada disso funciona sozinho: depende de você, todos os dias.",
+          "transcript": "Vídeo de encerramento: logística segura é com você."
         },
         {
           "id": "m6-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Corrente de Decisão",
-          "count": 3,
-          "minCorrect": 2,
-          "icon": "⛓️",
-          "body": "Cenário de choque elétrico: 3 decisões em sequência, e cada erro mostra a consequência. Mínimo de <strong>2 acertos</strong>.",
-          "transcript": "Desafio do módulo 6: Corrente de Decisão."
+          "title": "Desafio — Na Medida",
+          "count": 7,
+          "minCorrect": 5,
+          "icon": "📐",
+          "body": "7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de <strong>5 acertos</strong> para concluir.",
+          "transcript": "Desafio do módulo 6: Na Medida."
         },
         {
           "id": "m6-q1",
           "type": "question",
-          "variant": "confirmar",
-          "question": "Decisão 1 de 3 · Colega caído perto de uma tomada, aparentemente após choque. O que fazer primeiro?",
+          "question": "Qual é a velocidade máxima no Drive e na Logística?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Desligar a energia elétrica antes de qualquer contato",
-              "correct": true
+              "text": "3 km/h",
+              "correct": false
             },
             {
               "id": "b",
-              "text": "Puxar a vítima pelo braço para afastá-la da tomada",
+              "text": "6 km/h",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "10 km/h",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "15 km/h",
               "correct": false
             }
           ],
-          "explanation": "Se você puxar a vítima com a energia ligada, a corrente passa para você também. Desligue a eletricidade antes de qualquer contato.",
-          "review": "Primeira decisão — choque elétrico",
-          "transcript": "Decisão 1 de 3 · Colega caído perto de uma tomada, aparentemente após choque. O que fazer primeiro?",
-          "image": "assets/fotos/m6-p1.png",
-          "imageAlt": "Colega caído perto de uma tomada após choque elétrico"
+          "explanation": "A velocidade máxima é de 6 km/h.",
+          "review": "Velocidade máxima",
+          "transcript": "Qual é a velocidade máxima no Drive e na Logística?"
         },
         {
           "id": "m6-q2",
           "type": "question",
-          "variant": "confirmar",
-          "question": "Decisão 2 de 3 · Energia desligada. Próximo passo?",
+          "question": "A que distância mínima o pedestre fica do equipamento em elevação?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Verificar a respiração e a pulsação da vítima",
-              "correct": true
+              "text": "1 metro",
+              "correct": false
             },
             {
               "id": "b",
-              "text": "Aplicar pomada na área da queimadura imediatamente",
+              "text": "2 metros",
+              "correct": false
+            },
+            {
+              "id": "c",
+              "text": "5 metros",
+              "correct": true
+            },
+            {
+              "id": "d",
+              "text": "10 metros",
               "correct": false
             }
           ],
-          "explanation": "Pomadas em queimaduras podem piorar a lesão — a orientação nunca é essa. Primeiro, verifique a respiração e a pulsação.",
-          "review": "Segunda decisão — avaliação",
-          "transcript": "Decisão 2 de 3 · Energia desligada. Próximo passo?",
-          "image": "assets/fotos/m6-p2.png",
-          "imageAlt": "Energia desligada, pronto para o próximo passo do atendimento"
+          "explanation": "Distância mínima de 5 metros.",
+          "review": "Distância do pedestre na elevação",
+          "transcript": "A que distância mínima o pedestre fica do equipamento em elevação?"
         },
         {
           "id": "m6-q3",
           "type": "question",
-          "variant": "confirmar",
-          "question": "Decisão 3 de 3 · Vítima respirando, com queimadura visível no braço. Ação final?",
+          "question": "Quanto a carga do palete aéreo pode passar do limitador do rack?",
           "alternatives": [
             {
               "id": "a",
-              "text": "Cobrir com compressa limpa e úmida e chamar o SAMU",
-              "correct": true
+              "text": "Até 20 cm",
+              "correct": false
             },
             {
               "id": "b",
-              "text": "Colocar gelo diretamente sobre a queimadura",
+              "text": "Até 50 cm",
+              "correct": true
+            },
+            {
+              "id": "c",
+              "text": "Até 1 metro",
+              "correct": false
+            },
+            {
+              "id": "d",
+              "text": "Não há limite",
               "correct": false
             }
           ],
-          "explanation": "Gelo direto na lesão agrava o dano nos tecidos — nunca aplique. Cubra com compressa limpa e úmida e chame o SAMU.",
-          "review": "Terceira decisão — conduta final",
-          "transcript": "Decisão 3 de 3 · Vítima respirando, com queimadura visível no braço. Ação final?",
-          "image": "assets/fotos/m6-p3.png",
-          "imageAlt": "Vítima respirando com queimadura visível no braço"
+          "explanation": "A altura não pode ultrapassar 50 cm do limitador do rack.",
+          "review": "Altura do palete aéreo",
+          "transcript": "Quanto a carga do palete aéreo pode passar do limitador do rack?"
         },
         {
-          "id": "m8-v-avc-infarto",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Reconhecendo o AVC e o Infarto",
-          "duration": "1:30",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=edb28361-0ffe-4dc0-b6b4-189e7127c048",
-          "playerId": "panda-edb28361-0ffe-4dc0-b6b4-189e7127c048",
-          "scene": "Sinais observáveis + animação de vaso bloqueado",
-          "brief": "AVC: face/membros, fala, visão, dor de cabeça. Infarto: dor no peito irradiando. Conduta: acalmar, não deixar só, SAMU.",
-          "body": "AVC: entupimento ou rompimento de vaso no cérebro — perda de força, fala, visão, cefaleia súbita, vertigem. Infarto: fluxo bloqueado no coração — dor no peito irradiando, ansiedade, sudorese. Em ambos: acalme, não deixe sozinha, chame o SAMU.",
-          "transcript": "Vídeo: reconhecendo AVC e infarto."
-        },
-        {
-          "id": "m8-v-rcp",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "RCP: O Passo a Passo Que Salva Vidas",
-          "duration": "1:30",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=08a5d2a9-7776-46b9-9e0a-518c0f81145f",
-          "playerId": "panda-08a5d2a9-7776-46b9-9e0a-518c0f81145f",
-          "scene": "Demonstração em manequim de treinamento",
-          "brief": "Responsividade → vias aéreas → respiração/pulso (≤10 s) → chamar 192/193 → compressões.",
-          "body": "PCR: interrupção abrupta de batimentos e respiração com perda de consciência. Avalie responsividade, abra vias aéreas, veja/ouça/sinta até 10 s, chame ajuda (192/193) e inicie compressões torácicas em superfície rígida, braços a 90°.",
-          "transcript": "Vídeo: RCP passo a passo."
-        },
-        {
-          "id": "m8-rcp-antes",
-          "type": "content",
-          "layout": "stack",
-          "kicker": "📷 Foto",
-          "title": "RCP: Antes de Começar",
-          "image": "assets/fotos/pagina81.png",
-          "imageFit": "contain",
-          "items": [
+          "id": "m6-q4",
+          "type": "question",
+          "question": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica?",
+          "alternatives": [
             {
-              "n": 1,
-              "title": "Verifique o local:",
-              "text": "o ambiente precisa ser seguro pra você e pra vítima."
+              "id": "a",
+              "text": "10 cm",
+              "correct": false
             },
             {
-              "n": 2,
-              "title": "Cheque a resposta:",
-              "text": "toque nos ombros e pergunte em voz alta se ela está bem."
+              "id": "b",
+              "text": "50 cm",
+              "correct": false
             },
             {
-              "n": 3,
-              "title": "Chame ajuda:",
-              "text": "192 (SAMU), e peça um DEA se houver um por perto."
+              "id": "c",
+              "text": "1 metro",
+              "correct": true
             },
             {
-              "n": 4,
-              "title": "Observe a respiração:",
-              "text": "o tórax se move? Por no máximo 10 segundos."
-            },
-            {
-              "n": 5,
-              "title": "Posicione a vítima:",
-              "text": "de barriga para cima, sobre uma superfície firme e plana."
+              "id": "d",
+              "text": "2 metros",
+              "correct": false
             }
           ],
-          "review": "Antes de começar a RCP",
-          "transcript": "RCP: os passos antes de iniciar as compressões."
+          "explanation": "Mantenha 1 metro de distância.",
+          "review": "Distância do sistema de incêndio",
+          "transcript": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica?"
         },
         {
-          "id": "m8-rcp-compressoes",
-          "type": "content",
-          "layout": "stack",
-          "kicker": "📷 Foto",
-          "title": "RCP: Como Fazer as Compressões",
-          "image": "assets/fotos/pagina82.jpeg",
-          "imageFit": "contain",
-          "items": [
+          "id": "m6-q5",
+          "type": "question",
+          "question": "E a distância do empilhamento até a parede?",
+          "alternatives": [
             {
-              "n": 1,
-              "title": "Posição das mãos:",
-              "text": "ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito."
+              "id": "a",
+              "text": "10 cm",
+              "correct": false
             },
             {
-              "n": 2,
-              "title": "Postura:",
-              "text": "braços esticados, use o peso do corpo, ângulo de 90° com o tórax."
+              "id": "b",
+              "text": "25 cm",
+              "correct": false
             },
             {
-              "n": 3,
-              "title": "Frequência:",
-              "text": "100 a 120 compressões por minuto, no ritmo de \"Stayin' Alive\", dos Bee Gees."
+              "id": "c",
+              "text": "50 cm",
+              "correct": true
             },
             {
-              "n": 4,
-              "title": "Profundidade:",
-              "text": "pelo menos 5 a 6 cm em adultos."
-            },
-            {
-              "n": 5,
-              "title": "Retorno do tórax:",
-              "text": "deixe o peito voltar à posição normal entre uma compressão e outra."
+              "id": "d",
+              "text": "1 metro",
+              "correct": false
             }
           ],
-          "review": "Como fazer as compressões da RCP",
-          "transcript": "RCP: técnica correta das compressões torácicas."
+          "explanation": "Mantenha 50 cm de distância da parede.",
+          "review": "Distância da parede",
+          "transcript": "E a distância do empilhamento até a parede?"
         },
         {
-          "id": "m8-numeros",
-          "type": "content",
-          "kicker": "📄 Texto",
-          "title": "Números de Emergência: Saiba Quem Chamar",
-          "stats": [
+          "id": "m6-q6",
+          "type": "question",
+          "question": "Qual a capacidade máxima da transpaleteira elétrica?",
+          "alternatives": [
             {
-              "num": "193",
-              "label": "Bombeiros",
-              "tone": "featured"
+              "id": "a",
+              "text": "500 kg",
+              "correct": false
             },
             {
-              "num": "199",
-              "label": "Defesa Civil"
+              "id": "b",
+              "text": "1.000 kg",
+              "correct": false
             },
             {
-              "num": "194",
-              "label": "Polícia Federal"
+              "id": "c",
+              "text": "1.500 kg",
+              "correct": true
             },
             {
-              "num": "192",
-              "label": "SAMU"
-            },
-            {
-              "num": "191",
-              "label": "Polícia Rodoviária Federal"
-            },
-            {
-              "num": "190",
-              "label": "Polícia Militar"
-            },
-            {
-              "num": "198 ou 191",
-              "label": "Polícia Militar Rodoviária Estadual"
-            },
-            {
-              "num": "8427 1052",
-              "label": "Guarda Municipal"
-            },
-            {
-              "num": "0800 643 5252",
-              "label": "Centro de Informações Toxicológicas"
+              "id": "d",
+              "text": "3.000 kg",
+              "correct": false
             }
           ],
-          "transcript": "Números de emergência: Bombeiros 193, Defesa Civil 199, Polícia Federal 194, SAMU 192, Polícia Rodoviária Federal 191, Polícia Militar 190, Polícia Militar Rodoviária Estadual 198 ou 191, Guarda Municipal 8427 1052, e Centro de Informações Toxicológicas 0800 643 5252."
+          "explanation": "Transporta cargas em palete de até 1.500 kg.",
+          "review": "Capacidade da transpaleteira",
+          "transcript": "Qual a capacidade máxima da transpaleteira elétrica?"
         },
         {
-          "id": "m8-v-encerramento",
-          "type": "video",
-          "kicker": "🎥 Vídeo",
-          "title": "Encerramento: Você Está Pronto",
-          "duration": "0:30",
-          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=1c064b32-8c57-4593-aa50-3704026c3fd8",
-          "playerId": "panda-1c064b32-8c57-4593-aa50-3704026c3fd8",
-          "scene": "Brigadista confiante no corredor + logo Coca-Cola",
-          "brief": "Mensagem final e frase de fechamento do material NR 23.",
-          "body": "Todos têm o direito de viver em um ambiente seguro, sem correr riscos desnecessários e sem receios de danos à sua saúde e vida. Você concluiu o NR 23 Avançado — esteja sempre pronto.",
-          "transcript": "Vídeo de encerramento."
-        },
-        {
-          "id": "m8-quiz-intro",
-          "type": "quiz-intro",
-          "title": "Desafio — Roleta da RCP",
-          "count": 2,
-          "minCorrect": 2,
-          "icon": "⚡",
-          "body": "2 desafios: monte a <strong>sequência da RCP</strong> e depois toque no <strong>ritmo das compressões</strong>.",
-          "transcript": "Desafio final: Roleta da RCP."
-        },
-        {
-          "id": "m8-order-rcp",
-          "type": "order",
-          "kicker": "🔢 Roleta da RCP",
-          "title": "Ordene as etapas da RCP",
-          "body": "Toque nas etapas na ordem correta do procedimento.",
-          "time": 30,
-          "items": [
+          "id": "m6-q7",
+          "type": "question",
+          "question": "Quais as medidas do palete PBR padrão nacional?",
+          "alternatives": [
             {
-              "key": "resp",
-              "text": "Avaliar a responsividade — encostar e chamar alto",
-              "rank": 0
+              "id": "a",
+              "text": "0,80 m × 0,80 m",
+              "correct": false
             },
             {
-              "key": "vias",
-              "text": "Abrir as vias aéreas",
-              "rank": 1
+              "id": "b",
+              "text": "1,00 m × 1,00 m",
+              "correct": false
             },
             {
-              "key": "pulso",
-              "text": "Avaliar a respiração e o pulso (no máximo 10 segundos)",
-              "rank": 2
+              "id": "c",
+              "text": "1,20 m × 1,00 m",
+              "correct": true
             },
             {
-              "key": "ajuda",
-              "text": "Chamar ajuda — 192 (SAMU) ou 193 (Bombeiros)",
-              "rank": 3
-            },
-            {
-              "key": "comp",
-              "text": "Iniciar as compressões torácicas",
-              "rank": 4
+              "id": "d",
+              "text": "1,20 m × 1,20 m",
+              "correct": false
             }
           ],
-          "review": "Sequência correta da RCP",
-          "transcript": "Ordene as 5 etapas da RCP."
+          "explanation": "O palete PBR mede 1,20 m × 1,00 m.",
+          "review": "Medidas do palete PBR",
+          "transcript": "Quais as medidas do palete PBR padrão nacional?"
         },
         {
-          "id": "m8-rhythm",
-          "type": "rhythm",
-          "kicker": "🫀 Ritmo da compressão",
-          "title": "Ritmo da compressão",
-          "body": "Compressões de 100 a 120 por minuto. Acompanhe a pulsação e depois toque 8 vezes no mesmo ritmo.",
-          "bpmMin": 100,
-          "bpmMax": 120,
-          "guideBpm": 110,
-          "taps": 8,
-          "tries": 5,
-          "tolerance": 10,
-          "review": "Ritmo das compressões torácicas",
-          "transcript": "Toque no ritmo das compressões torácicas: de 100 a 120 por minuto."
-        },
-        {
-          "id": "m8-finale",
+          "id": "m6-finale",
           "type": "finale",
           "kicker": "🏆 Conclusão",
           "eyebrow": "Certificado de conclusão",
           "title": "Parabéns",
-          "body": "Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado).",
-          "quote": "Segurança não é sorte: é prevenção, preparo e atitude no momento certo. Agora você está pronto para proteger vidas.",
+          "body": "Você concluiu o treinamento NR 11 – Logística para Todos.",
+          "quote": "Segurança é ter as pessoas em primeiro lugar, em cada movimento.",
           "chips": [
-            "NR 23",
-            "Brigada de Incêndio",
-            "Nível Avançado"
+            "NR 11",
+            "Logística para Todos",
+            "Leroy Merlin"
           ],
-          "transcript": "Parabéns. Você finalizou o NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Segurança não é sorte: é prevenção, preparo e atitude no momento certo. Agora você está pronto para proteger vidas.",
-          "image": "assets/fotos/capafinal.png",
-          "imageAlt": "Imagem final de parabéns pelo treinamento concluído"
+          "transcript": "Parabéns. Você finalizou o NR 11, Logística para Todos."
         }
       ]
     }

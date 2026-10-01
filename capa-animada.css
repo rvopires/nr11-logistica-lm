@@ -1,10 +1,8 @@
 /* ==========================================================================
-   CAPA ANIMADA (AVANÇADO) — tablet e rádio na mesa, em primeiro plano: tela
-   do tablet "ligada" pulsando, luz de status piscando no rádio e ondas de
-   transmissão saindo da antena.
+   CAPA ANIMADA — NR 11 Logística para Todos
    O JS (capa-animada.js) cria a camada .qs-fx exatamente sobre a foto
-   (mesmo enquadramento do object-fit: cover), então as posições abaixo são
-   % da foto original (1672×941) e os tamanhos usam cqw (largura da camada).
+   (mesmo enquadramento do object-fit: cover), então as posições são % da foto
+   original (1280×720) e os tamanhos usam cqw (largura da camada).
    Para desfazer: remova o <link> e o <script>.
    ========================================================================== */
 .qs-fx {
@@ -20,92 +18,151 @@
   will-change: transform, opacity;
 }
 
-/* retângulo da tela do tablet — recorta o brilho e a varredura por dentro */
-.qs-fx-tablet {
-  border-radius: 4%;
-  overflow: hidden;
-  transform: rotate(-4deg);
-}
-.qs-fx-tablet-glow {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 50% 40%, rgba(90, 170, 255, .55) 0%, rgba(50, 110, 220, .28) 55%, transparent 85%);
+/* ── luz das lâmpadas do teto ── */
+.qs-fx-lamp {
+  width: var(--s); height: var(--s);
+  margin: calc(var(--s) / -2) 0 0 calc(var(--s) / -2);
+  background: radial-gradient(circle, rgba(255, 244, 214, .95) 0%, rgba(255, 226, 150, .45) 38%, transparent 70%);
   mix-blend-mode: screen;
-  animation: qsFxTabletGlow 2.6s ease-in-out infinite alternate;
+  animation: qsFxLamp 3.6s ease-in-out infinite;
+  animation-delay: var(--dl);
 }
-@keyframes qsFxTabletGlow {
-  0%   { opacity: .55; }
-  100% { opacity: 1; }
-}
-.qs-fx-tablet-scan {
-  position: absolute;
-  left: 0; right: 0;
-  height: 22%;
-  background: linear-gradient(180deg, transparent 0%, rgba(160, 210, 255, .45) 50%, transparent 100%);
-  animation: qsFxTabletScan 3.2s ease-in-out infinite;
-}
-@keyframes qsFxTabletScan {
-  0%   { top: -25%; opacity: 0; }
-  10%  { opacity: .9; }
-  90%  { opacity: .9; }
-  100% { top: 100%; opacity: 0; }
+@keyframes qsFxLamp {
+  0%, 100% { opacity: .5; transform: scale(.9); }
+  50%      { opacity: 1;  transform: scale(1.15); }
 }
 
-/* luz de status piscando no corpo do rádio */
-.qs-fx-led {
-  width: .5cqw; height: .5cqw;
-  margin: -.25cqw 0 0 -.25cqw;
-  background: #ff5a4d;
-  box-shadow: 0 0 6px 2px rgba(255, 90, 77, .9);
+/* ── brilho em estrela nas lâmpadas mais próximas ── */
+.qs-fx-star {
+  width: 9cqw; height: 9cqw;
+  margin: -4.5cqw 0 0 -4.5cqw;
+  border-radius: 0 !important;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(255, 250, 232, .95) 50%, transparent 100%) center / 100% .35cqw no-repeat,
+    linear-gradient(0deg,  transparent 0%, rgba(255, 250, 232, .95) 50%, transparent 100%) center / .35cqw 100% no-repeat;
+  mix-blend-mode: screen;
+  filter: blur(.12cqw);
   opacity: 0;
-  animation: qsFxLed 1.3s ease-in-out infinite;
+  animation: qsFxStar 5s ease-in-out infinite;
+  animation-delay: var(--dl);
 }
-@keyframes qsFxLed {
-  0%, 100% { opacity: 0; }
+@keyframes qsFxStar {
+  0%, 62%, 100% { opacity: 0;   transform: scale(.4) rotate(0deg); }
+  78%           { opacity: .95; transform: scale(1)  rotate(22deg); }
+  92%           { opacity: 0;   transform: scale(.6) rotate(45deg); }
+}
+
+/* ── reflexo no piso molhado ── */
+.qs-fx-shine {
+  width: var(--w);
+  margin-left: calc(var(--w) / -2);
+  border-radius: 40% / 8%;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 244, 214, .55) 18%, rgba(255, 244, 214, .25) 62%, transparent 100%);
+  mix-blend-mode: screen;
+  filter: blur(.25cqw);
+  animation: qsFxShine 5.2s ease-in-out infinite;
+  animation-delay: var(--dl);
+}
+@keyframes qsFxShine {
+  0%, 100% { opacity: .12; }
+  50%      { opacity: .6; }
+}
+
+/* ── sirene da empilhadeira: giroflex em (70,6%; 35,9%) da foto ── */
+.qs-fx-beacon,
+.qs-fx-beacon-halo,
+.qs-fx-beacon-sweep {
+  left: 70.6%; top: 35.9%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+.qs-fx-beacon {
+  width: 1.5cqw; height: 1.5cqw;
+  background: radial-gradient(circle, #fff6e0 0%, #ffb347 42%, rgba(255, 120, 20, 0) 75%);
+  animation: qsFxBeacon 1.4s ease-in-out infinite;
+}
+.qs-fx-beacon-halo {
+  width: 9cqw; height: 9cqw;
+  background: radial-gradient(circle, rgba(255, 140, 30, .65) 0%, rgba(255, 90, 0, .25) 38%, transparent 68%);
+  animation: qsFxHalo 1.4s ease-in-out infinite;
+}
+/* facho de luz girando em volta do giroflex, como numa luz rotativa de verdade */
+.qs-fx-beacon-sweep {
+  width: 20cqw; height: 20cqw;
+  background: conic-gradient(from 0deg,
+    rgba(255, 150, 40, .6) 0deg, rgba(255, 150, 40, 0) 36deg,
+    transparent 180deg,
+    rgba(255, 150, 40, .6) 180deg, rgba(255, 150, 40, 0) 216deg,
+    transparent 360deg);
+  -webkit-mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,.5) 28%, transparent 60%);
+          mask-image: radial-gradient(circle, #000 0%, rgba(0,0,0,.5) 28%, transparent 60%);
+  opacity: .6;
+  animation: qsFxRotate 2.8s linear infinite;
+}
+/* a luz também tinge o chão sob a empilhadeira, no mesmo ritmo do giroflex */
+.qs-fx-floorglow {
+  left: 66.4%; top: 68%;
+  width: 22cqw; height: 6cqw;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse at center, rgba(255, 120, 20, .55) 0%, rgba(255, 90, 0, .2) 45%, transparent 72%);
+  mix-blend-mode: screen;
+  animation: qsFxFloor 1.4s ease-in-out infinite;
+}
+@keyframes qsFxBeacon {
+  0%, 100% { opacity: .35; }
   50%      { opacity: 1; }
 }
-
-/* ondas de transmissão saindo da ponta da antena do rádio */
-.qs-fx-ring {
-  width: 1.2cqw; height: 1.2cqw;
-  margin: -.6cqw 0 0 -.6cqw;
-  border: 1.5px solid rgba(255, 255, 255, .6);
-  opacity: 0;
-  animation: qsFxRingPulse 2.2s ease-out var(--dl, 0s) infinite;
+@keyframes qsFxHalo {
+  0%, 100% { opacity: .1;  transform: translate(-50%, -50%) scale(.8); }
+  50%      { opacity: .95; transform: translate(-50%, -50%) scale(1.15); }
 }
-@keyframes qsFxRingPulse {
-  0%   { opacity: 0;  transform: scale(.3); }
-  18%  { opacity: .8; }
-  100% { opacity: 0;  transform: scale(6); }
+@keyframes qsFxRotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes qsFxFloor {
+  0%, 100% { opacity: .1; }
+  50%      { opacity: .75; }
 }
 
-/* pulso de localização (ping) no ponto do mapa de papel onde a caneta aponta */
-.qs-fx-pin-dot {
-  width: 1cqw; height: 1cqw;
-  margin: -.5cqw 0 0 -.5cqw;
-  background: radial-gradient(circle at 35% 30%, #fff 0%, #F4D242 45%, #D4B020 100%);
-  box-shadow: 0 0 10px 3px rgba(244, 210, 66, .75);
-  animation: qsFxPinDot 1.6s ease-in-out infinite;
-}
-@keyframes qsFxPinDot {
-  0%, 100% { transform: scale(.85); }
-  50%      { transform: scale(1.15); }
-}
-.qs-fx-pin-ring {
-  width: 1cqw; height: 1cqw;
-  margin: -.5cqw 0 0 -.5cqw;
-  border: 2px solid rgba(244, 210, 66, .55);
+/* ── balão de fala da personagem (cabeça em ~85% / 35% da foto) ── */
+.qs-fx-bubble {
+  position: absolute;
+  right: 18.6%; top: 23%;
+  max-width: 17cqw;
+  padding: .75cqw 1.1cqw;
+  background: #fff;
+  color: #14233F;
+  font: 700 1.2cqw/1.3 'Montserrat', 'Open Sans', sans-serif;
+  border: .2cqw solid #FE5600;
+  border-radius: 1.2cqw;
+  box-shadow: 0 .6cqw 1.6cqw rgba(4, 10, 24, .35);
+  min-height: 2.6cqw;
+  transform-origin: 100% 100%;
   opacity: 0;
-  animation: qsFxPinRing 1.8s ease-out var(--dl, 0s) infinite;
+  transform: scale(.6) translateY(1cqw);
+  transition: opacity .25s ease, transform .4s cubic-bezier(.2, 1.5, .4, 1);
 }
-@keyframes qsFxPinRing {
-  0%   { opacity: 0;  transform: scale(.4); }
-  20%  { opacity: .8; }
-  100% { opacity: 0;  transform: scale(4.5); }
+.qs-fx-bubble.is-on {
+  opacity: 1;
+  transform: none;
+}
+.qs-fx-bubble::after {
+  content: "";
+  position: absolute;
+  right: -.8cqw; bottom: 1cqw;
+  width: 1.3cqw; height: 1.3cqw;
+  background: #fff;
+  border-top: .2cqw solid #FE5600;
+  border-right: .2cqw solid #FE5600;
+  transform: rotate(45deg);
+}
+@media (max-width: 760px) {
+  .qs-fx-bubble { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .qs-fx > i, .qs-fx-tablet-scan, .qs-fx-tablet-glow { animation: none !important; }
-  .qs-fx-tablet-scan, .qs-fx-led, .qs-fx-ring, .qs-fx-pin-ring { display: none; }
-  .qs-fx-tablet-glow { opacity: .55; }
+  .qs-fx *,
+  .qs-fx > * { animation: none !important; }
+  .qs-fx-star { display: none; }
 }

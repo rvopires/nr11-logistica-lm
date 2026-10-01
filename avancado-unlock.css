@@ -19,8 +19,8 @@
   padding: 32px;
   text-align: center;
   background:
-    radial-gradient(ellipse 70% 60% at 50% 38%, rgba(184, 206, 79, 0.16) 0%, transparent 60%),
-    linear-gradient(165deg, #5C1A0C 0%, #3D1208 60%, #2A0C05 100%);
+    radial-gradient(ellipse 70% 60% at 50% 38%, rgba(254, 86, 0, 0.16) 0%, transparent 60%),
+    linear-gradient(165deg, #0E1A30 0%, #0A1224 60%, #080F1C 100%);
   cursor: pointer;
   animation: qsUnlockIn 0.5s ease both;
 }
@@ -36,9 +36,9 @@
   border-radius: 50%;
   background:
     radial-gradient(circle at 35% 30%, #fff 0%, transparent 30%),
-    linear-gradient(145deg, #D0E07A, #9AAF3A 55%, #FF5E32 130%);
+    linear-gradient(145deg, #FF8347, #D94900 55%, #1C3560 130%);
   box-shadow:
-    0 0 0 10px rgba(184, 206, 79, 0.16),
+    0 0 0 10px rgba(254, 86, 0, 0.16),
     0 18px 40px rgba(0, 0, 0, 0.45);
   animation: qsUnlockBadgePop 0.8s cubic-bezier(0.2, 1.4, 0.4, 1) 0.15s both,
              qsUnlockBadgeGlow 2.2s ease-in-out 1s infinite;
@@ -54,7 +54,7 @@
   font-size: 0.78rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #B8CE4F;
+  color: #FE5600;
   opacity: 0;
   animation: qsUnlockFadeUp 0.5s ease 0.55s both;
 }
@@ -84,14 +84,14 @@
   font-size: 0.85rem;
   color: rgba(253, 248, 234, 0.65);
   background: transparent;
-  border: 1.5px solid rgba(184, 206, 79, 0.4);
+  border: 1.5px solid rgba(254, 86, 0, 0.4);
   border-radius: 999px;
   padding: 10px 22px;
   cursor: pointer;
   opacity: 0;
   animation: qsUnlockFadeUp 0.55s ease 1.05s both;
 }
-.qs-unlock-skip:hover { border-color: #B8CE4F; color: #fdf8ea; }
+.qs-unlock-skip:hover { border-color: #FE5600; color: #fdf8ea; }
 
 @keyframes qsUnlockIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes qsUnlockOut { to { opacity: 0; } }
@@ -101,8 +101,8 @@
   to   { transform: scale(1) rotate(0); opacity: 1; }
 }
 @keyframes qsUnlockBadgeGlow {
-  0%, 100% { box-shadow: 0 0 0 10px rgba(184, 206, 79, 0.16), 0 18px 40px rgba(0, 0, 0, 0.45); }
-  50%      { box-shadow: 0 0 0 16px rgba(184, 206, 79, 0.26), 0 18px 44px rgba(0, 0, 0, 0.5); }
+  0%, 100% { box-shadow: 0 0 0 10px rgba(254, 86, 0, 0.16), 0 18px 40px rgba(0, 0, 0, 0.45); }
+  50%      { box-shadow: 0 0 0 16px rgba(254, 86, 0, 0.26), 0 18px 44px rgba(0, 0, 0, 0.5); }
 }
 @keyframes qsUnlockFadeUp {
   from { opacity: 0; transform: translateY(8px); }

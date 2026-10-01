@@ -4,48 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="referrer" content="no-referrer">
-  <title>NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado)</title>
+  <title>NR 11 – Logística para Todos</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="question-screen.css?v=homeVeilTiger">
+  <link rel="stylesheet" href="capa-animada.css?v=nr11">
   <link rel="stylesheet" href="fundo-novo.css?v=tigerFlame">
   <link rel="stylesheet" href="menu-compacto.css?v=tigerFlame">
   <link rel="stylesheet" href="atividades.css?v=quickcards4">
   <link rel="stylesheet" href="avancado-unlock.css?v=1">
-  <link rel="stylesheet" href="capa-animada.css?v=14">
   <style>
     html, body { margin: 0; height: 100%; overflow: hidden; }
   </style>
 </head>
 <body>
   <div class="qs-app" id="app">
-    <!-- Selo "Bem-vindo ao Nível Avançado" — sempre depois da capa (página 1),
+    <!-- Selo "Bem-vindo ao treinamento" — sempre depois da capa (página 1),
          antes do menu. Toque/clique ou 6s para continuar. -->
-    <section class="qs-unlock" id="unlockIntro" hidden aria-label="Bem-vindo ao Nível Avançado">
+    <section class="qs-unlock" id="unlockIntro" hidden aria-label="Bem-vindo ao treinamento">
       <div class="qs-unlock-badge" aria-hidden="true">
-        <span class="qs-unlock-badge-face">🧭</span>
+        <span class="qs-unlock-badge-face">🚜</span>
       </div>
-      <div class="qs-unlock-tag">NR 23 — NÍVEL AVANÇADO</div>
-      <h1 class="qs-unlock-title">Bem-vindo ao<br>Nível Avançado</h1>
-      <p class="qs-unlock-sub">Mais preparo para agir com segurança nas situações de emergência.</p>
+      <div class="qs-unlock-tag">NR 11 — LOGÍSTICA PARA TODOS</div>
+      <h1 class="qs-unlock-title">Bem-vindo ao<br>treinamento</h1>
+      <p class="qs-unlock-sub">Mais segurança para quem trabalha na Logística e no Drive.</p>
       <button type="button" class="qs-unlock-skip" id="btnUnlockSkip">Toque para continuar</button>
     </section>
 
     <!-- Capa (igual à referência) -->
     <section class="qs-home" id="home" aria-label="Abertura do treinamento">
       <div class="qs-home-photo" aria-hidden="true">
-        <img class="qs-home-photo-img" id="homePhotoImg" src="assets/fotos/capa.png" alt="Capa do treinamento: brigadistas em ação no ambiente de trabalho">
+        <img class="qs-home-photo-img" id="homePhotoImg" src="assets/fotos/capa.png" alt="Capa do treinamento: logística e Drive da Leroy Merlin">
         <div class="qs-home-veil"></div>
       </div>
       <div class="qs-home-inner">
         <div class="qs-home-card">
           <div class="qs-home-tag">SEGURANÇA DO TRABALHO</div>
-          <h1><em>NR 23 –</em> Proteção Contra Incêndios</h1>
-          <p class="qs-home-level">Brigada de Incêndio · Nível Avançado</p>
-          <p>Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação e prestar os primeiros socorros no ambiente Coca-Cola.</p>
+          <h1><em>NR 11 –</em> Logística para Todos</h1>
+          <p class="qs-home-level">Logística e Drive · Leroy Merlin</p>
+          <p>Aprenda a operar, circular e armazenar com segurança na Logística e no Drive da Leroy Merlin.</p>
           <div class="qs-home-badges">
             <div class="qs-home-badge">
               <div>
-                <strong>7 Módulos</strong>
+                <strong>6 Módulos</strong>
                 <span>Conteúdo completo</span>
               </div>
             </div>
@@ -71,7 +71,7 @@
       </div>
       <div class="qs-wave" aria-hidden="true">
         <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-          <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(184, 206, 79, 0.07)" />
+          <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(254, 86, 0, 0.07)" />
         </svg>
       </div>
     </section>
@@ -126,7 +126,7 @@
 
     <div class="qs-wave qs-wave-session" id="sessionWave" aria-hidden="true" hidden>
       <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(184, 206, 79, 0.07)" />
+        <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(254, 86, 0, 0.07)" />
       </svg>
     </div>
   </div>
@@ -166,7 +166,7 @@
 
   <script src="question-screen-data.js?v=finaleQuoteOnly"></script>
   <script src="question-screen.js?v=principlesSteps80"></script>
-  <script src="capa-animada.js?v=13"></script>
+  <script src="capa-animada.js?v=nr11"></script>
   <script src="narration-text.js?v=mergeFirstAid7"></script>
   <script src="narration.js?v=tts6"></script>
   <script>
@@ -390,7 +390,7 @@
 
   /* Progresso dos módulos só vale nesta sessão (memória).
      F5 / Ctrl+F5 zera tudo e volta pra capa — como antes. */
-  var RESUME_KEY = 'nr23-sessao-aprender-resume';
+  var RESUME_KEY = 'nr11-sessao-aprender-resume';
   var progress = { unlockedUpTo: 0, completed: {} };
 
   function saveResume() {
@@ -400,7 +400,7 @@
   try { localStorage.removeItem(RESUME_KEY); } catch (err) {}
 
   var demoMode = false;
-  try { demoMode = sessionStorage.getItem('nr17-demoMode') === '1'; } catch (err) {}
+  try { demoMode = sessionStorage.getItem('nr11-demoMode') === '1'; } catch (err) {}
 
   function isUnlocked(i) {
     if (demoMode) return true;
@@ -470,7 +470,7 @@
   var brandTxt = null;
   var bgMusic = document.getElementById('bg-music');
 
-  if (brandTxt) brandTxt.textContent = (session.meta && session.meta.title) || 'NR 23';
+  if (brandTxt) brandTxt.textContent = (session.meta && session.meta.title) || 'NR 11';
   if (bgMusic) {
     bgMusic.src = (session.meta && session.meta.musicSrc) || 'musica/musica_foco.mp3';
     bgMusic.volume = 0.35;
@@ -727,13 +727,13 @@
     clearAutoAdvance();
     resetQuizState();
     if (qs) { qs.destroy(); qs = null; }
-    if (brandTxt) brandTxt.textContent = (session.meta && session.meta.title) || 'NR 23';
+    if (brandTxt) brandTxt.textContent = (session.meta && session.meta.title) || 'NR 11';
     setChrome(true);
     var callout = menuCallout();
     shell.innerHTML =
       '<div class="qs-menu">' +
-        '<h1><span class="qs-menu-norm">NR 23 –</span> Proteção Contra Incêndios</h1>' +
-        '<p class="qs-menu-level">Brigada de Incêndio · Nível Avançado</p>' +
+        '<h1><span class="qs-menu-norm">NR 11 –</span> Logística para Todos</h1>' +
+        '<p class="qs-menu-level">Logística e Drive · Leroy Merlin</p>' +
         '<p class="qs-menu-lead">Conteúdo programático completo.</p>' +
         '<div class="qs-start-callout" role="status">' +
           '<strong>' + callout.title + '</strong>' +
@@ -1256,7 +1256,7 @@
   function toggleDemoMode() {
     demoMode = !demoMode;
     try {
-      sessionStorage.setItem('nr17-demoMode', demoMode ? '1' : '0');
+      sessionStorage.setItem('nr11-demoMode', demoMode ? '1' : '0');
       sessionStorage.removeItem('nr17-demoBtnVisible');
     } catch (err) {}
     applyDemoUI();
@@ -1413,7 +1413,7 @@
     }
   });
 
-  /* Selo "Bem-vindo ao Nível Avançado": sempre entre a capa (página 1) e o menu. */
+  /* Selo "Bem-vindo ao treinamento": sempre entre a capa (página 1) e o menu. */
   function goToMenuWithUnlockIntro() {
     var el = document.getElementById('unlockIntro');
     if (!el) { showMenu(); return; }

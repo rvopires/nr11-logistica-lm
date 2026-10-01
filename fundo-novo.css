@@ -1,12 +1,7 @@
-/* Fundo novo — degradê limpo, do laranja ao yellow-green (Tiger Flame #FF5E32 → Yellow Green #B8CE4F).
+/* Fundo novo — degradê azul-marinho limpo (NR 11).
    Carregado depois de question-screen.css. Para voltar ao visual antigo, remova o <link> dele. */
 
-.qs-app {
-  /* fallback (navegadores sem interpolação em oklab) */
-  background: linear-gradient(165deg, #E04A22 0%, #FF5E32 28%, #FF8A5C 66%, #B8CE4F 100%);
-  /* interpolação em oklab: a mistura fica limpa, sem passar por um tom "sujo" */
-  background: linear-gradient(in oklab 165deg, #E04A22 0%, #FF5E32 28%, #B8CE4F 100%);
-}
+.qs-app { background: linear-gradient(165deg, #0E1A30 0%, #14233F 55%, #1C3560 100%); }
 
 /* remove as decorações do fundo antigo (listras, brilho e onda amarela) */
 .qs-app::before,
@@ -23,5 +18,5 @@
 
 /* sombra discreta pro cartão branco "descolar" do fundo */
 .qs-screen {
-  box-shadow: 0 24px 60px rgba(60, 18, 8, 0.28);
+  box-shadow: 0 24px 60px rgba(4, 10, 24, 0.4);
 }

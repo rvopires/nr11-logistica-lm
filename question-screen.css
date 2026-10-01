@@ -1,25 +1,25 @@
-/* QuestionScreen — NR 23: laranja Tiger Flame #FF5E32 + Yellow Green #B8CE4F */
+/* QuestionScreen — NR 11: azul-marinho #14233F + laranja #FE5600 */
 
 :root {
-  --qs-green: #FF5E32;
-  --qs-green-2: #E04A22;
-  --qs-green-3: #B8381A;
-  --qs-green-4: #5C1A0C;
-  --qs-navy: #B8381A;
-  --qs-navy-2: #E04A22;
-  --qs-navy-3: #FF5E32;
-  --qs-red: #B8CE4F;
-  --qs-red-dk: #9AAF3A;
-  --qs-red-lt: #D0E07A;
-  --qs-accent: #B8CE4F;
-  --qs-accent-dk: #9AAF3A;
-  --qs-accent-lt: #D0E07A;
+  --qs-green: #1C3560;
+  --qs-green-2: #14233F;
+  --qs-green-3: #0E1A30;
+  --qs-green-4: #0E1A30;
+  --qs-navy: #0E1A30;
+  --qs-navy-2: #14233F;
+  --qs-navy-3: #1C3560;
+  --qs-red: #FE5600;
+  --qs-red-dk: #D94900;
+  --qs-red-lt: #FF8347;
+  --qs-accent: #FE5600;
+  --qs-accent-dk: #D94900;
+  --qs-accent-lt: #FF8347;
   --qs-ok: #1f9d55;
   --qs-ok-dk: #167a41;
-  --qs-ink: #5C1A0C;
-  --qs-muted: #6B5548;
+  --qs-ink: #0E1A30;
+  --qs-muted: #4A5A78;
   --qs-paper: #ffffff;
-  --qs-soft: #FFF0EB;
+  --qs-soft: #EAF0FA;
   --qs-font-h: 'Montserrat', sans-serif;
   --qs-font-b: 'Open Sans', sans-serif;
   --qs-radius: 22px;
@@ -37,7 +37,7 @@
   z-index: 30;
   display: flex;
   flex-direction: column;
-  background: #5C1A0C;
+  background: #0E1A30;
   overflow: hidden;
 }
 .qs-home[hidden] { display: none !important; }
@@ -81,13 +81,11 @@
   background-image:
     linear-gradient(
       90deg,
-      rgba(92, 26, 12, 0.92) 0%,
-      rgba(184, 56, 26, 0.72) 22%,
-      rgba(224, 74, 34, 0.35) 42%,
-      rgba(255, 94, 50, 0.12) 50%,
-      transparent 58%
-    ),
-    radial-gradient(ellipse at 18% 55%, rgba(184, 206, 79, 0.18) 0%, transparent 48%);
+      rgba(14, 26, 48, 0.68) 0%,
+      rgba(20, 35, 63, 0.38) 28%,
+      rgba(28, 53, 96, 0.14) 48%,
+      transparent 62%
+    );
 }
 .qs-home-screen-fx {
   position: absolute;
@@ -135,28 +133,28 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: linear-gradient(160deg, #FF5E32 0%, #E04A22 35%, #B8381A 72%, #5C1A0C 100%);
-  border: 1px solid rgba(184, 206, 79, 0.45);
+  background: linear-gradient(160deg, #1C3560 0%, #14233F 35%, #0E1A30 72%, #0E1A30 100%);
+  border: 1px solid rgba(254, 86, 0, 0.45);
   border-radius: 22px;
   padding: clamp(24px, 2.8vw, 34px);
   box-shadow:
     0 24px 60px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(184, 206, 79, 0.14) inset,
-    0 0 60px rgba(184, 206, 79, 0.2);
+    0 0 0 1px rgba(254, 86, 0, 0.14) inset,
+    0 0 60px rgba(254, 86, 0, 0.2);
 }
 .qs-home-tag {
   font-family: var(--qs-font-h);
   font-size: clamp(10px, 1vw, 12px);
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: #D0E07A;
+  color: #FF8347;
   text-transform: uppercase;
   margin-bottom: 12px;
-  background: rgba(184, 206, 79, 0.18);
+  background: rgba(254, 86, 0, 0.18);
   border: 1px solid rgba(255, 112, 120, 0.55);
   border-radius: 999px;
   padding: 7px 16px;
-  box-shadow: 0 0 22px rgba(184, 206, 79, 0.22);
+  box-shadow: 0 0 22px rgba(254, 86, 0, 0.22);
 }
 .qs-home-card h1 {
   font-family: var(--qs-font-h);
@@ -167,9 +165,9 @@
   margin: 0 0 8px;
 }
 .qs-home-card h1 em {
-  color: #D0E07A;
+  color: #FF8347;
   font-style: normal;
-  text-shadow: 0 0 28px rgba(184, 206, 79, 0.5);
+  text-shadow: 0 0 28px rgba(254, 86, 0, 0.5);
 }
 .qs-home-level {
   margin: 0 0 14px !important;
@@ -177,7 +175,7 @@
   font-size: clamp(13px, 1.2vw, 15px) !important;
   font-weight: 700 !important;
   letter-spacing: 0.02em;
-  color: #D0E07A !important;
+  color: #FF8347 !important;
   line-height: 1.35 !important;
 }
 .qs-home-card > p {
@@ -203,10 +201,10 @@
   text-align: center;
   gap: 10px;
   padding: 12px 14px;
-  background: rgba(184, 206, 79, 0.14);
-  border: 1px solid rgba(184, 206, 79, 0.38);
+  background: rgba(254, 86, 0, 0.14);
+  border: 1px solid rgba(254, 86, 0, 0.38);
   border-radius: 12px;
-  color: #D0E07A;
+  color: #FF8347;
 }
 .qs-home-badge strong {
   display: block;
@@ -240,8 +238,8 @@
   gap: 10px;
   padding: 16px 20px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #B8CE4F, #9AAF3A);
-  color: #5C1A0C;
+  background: linear-gradient(135deg, #FE5600, #D94900);
+  color: #0E1A30;
   font-family: var(--qs-font-h);
   font-weight: 900;
   font-size: 1.02rem;
@@ -270,10 +268,10 @@
 
 @keyframes qsStartPulse {
   0%, 100% {
-    box-shadow: 0 10px 26px rgba(184, 206, 79, 0.42), 0 0 0 0 rgba(184, 206, 79, 0.5);
+    box-shadow: 0 10px 26px rgba(254, 86, 0, 0.42), 0 0 0 0 rgba(254, 86, 0, 0.5);
   }
   50% {
-    box-shadow: 0 13px 32px rgba(184, 206, 79, 0.52), 0 0 0 13px rgba(184, 206, 79, 0);
+    box-shadow: 0 13px 32px rgba(254, 86, 0, 0.52), 0 0 0 13px rgba(254, 86, 0, 0);
   }
 }
 @keyframes qsStartShine {
@@ -282,9 +280,9 @@
 }
 .qs-home-tutorial {
   width: 100%;
-  border: 1.5px solid rgba(184, 206, 79, 0.45);
-  background: rgba(184, 206, 79, 0.12);
-  color: #D0E07A;
+  border: 1.5px solid rgba(254, 86, 0, 0.45);
+  background: rgba(254, 86, 0, 0.12);
+  color: #FF8347;
   cursor: pointer;
   font-family: var(--qs-font-h);
   font-weight: 800;
@@ -294,8 +292,8 @@
   transition: background 0.15s ease, border-color 0.15s ease;
 }
 .qs-home-tutorial:hover {
-  background: rgba(184, 206, 79, 0.22);
-  border-color: rgba(184, 206, 79, 0.7);
+  background: rgba(254, 86, 0, 0.22);
+  border-color: rgba(254, 86, 0, 0.7);
 }
 
 /* Tutorial modal */
@@ -318,11 +316,11 @@
   padding: 24px;
   border-radius: 16px;
   background:
-    radial-gradient(ellipse at 15% 0%, rgba(184, 206, 79, 0.18) 0%, transparent 48%),
-    radial-gradient(ellipse at 100% 100%, rgba(255, 94, 50, 0.55) 0%, transparent 50%),
-    #FF5E32;
-  border: 1px solid rgba(184, 206, 79, 0.35);
-  box-shadow: 0 20px 80px rgba(0,0,0,0.8), 0 0 40px rgba(184, 206, 79, 0.15);
+    radial-gradient(ellipse at 15% 0%, rgba(254, 86, 0, 0.18) 0%, transparent 48%),
+    radial-gradient(ellipse at 100% 100%, rgba(28, 53, 96, 0.55) 0%, transparent 50%),
+    #1C3560;
+  border: 1px solid rgba(254, 86, 0, 0.35);
+  box-shadow: 0 20px 80px rgba(0,0,0,0.8), 0 0 40px rgba(254, 86, 0, 0.15);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -332,19 +330,19 @@
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 4px;
-  background: #B8CE4F;
+  background: #FE5600;
 }
 .qs-tut-badge {
   align-self: flex-start;
-  background: rgba(184, 206, 79, 0.12);
-  color: #B8CE4F;
+  background: rgba(254, 86, 0, 0.12);
+  color: #FE5600;
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border: 1px solid rgba(184, 206, 79, 0.4);
+  border: 1px solid rgba(254, 86, 0, 0.4);
   font-family: var(--qs-font-h);
 }
 .qs-tut-card h2 {
@@ -354,7 +352,7 @@
   font-weight: 800;
   line-height: 1.2;
 }
-.qs-tut-card h2 span { color: #B8CE4F; }
+.qs-tut-card h2 span { color: #FE5600; }
 .qs-tut-card > p {
   margin: 0;
   color: rgba(255,255,255,0.75);
@@ -384,14 +382,14 @@
 .qs-tut-close {
   border: 0;
   cursor: pointer;
-  background: linear-gradient(135deg, #B8CE4F, #9AAF3A);
-  color: #5C1A0C;
+  background: linear-gradient(135deg, #FE5600, #D94900);
+  color: #0E1A30;
   font-family: var(--qs-font-h);
   font-weight: 800;
   font-size: 0.95rem;
   padding: 12px 22px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(184, 206, 79, 0.35);
+  box-shadow: 0 4px 15px rgba(254, 86, 0, 0.35);
 }
 .qs-tut-close:hover { filter: brightness(1.06); }
 
@@ -434,8 +432,8 @@
   flex-direction: column;
   position: relative;
   background:
-    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(184, 206, 79, 0.12) 0%, transparent 62%),
-    radial-gradient(circle at center, #FF5E32 0%, #B8381A 100%);
+    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(254, 86, 0, 0.12) 0%, transparent 62%),
+    radial-gradient(circle at center, #1C3560 0%, #0E1A30 100%);
   color: #fff;
   font-family: var(--qs-font-b);
   overflow: hidden;
@@ -448,11 +446,11 @@
   pointer-events: none;
   z-index: 0;
   background-image:
-    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(184, 206, 79, 0.18) 0%, transparent 62%),
+    radial-gradient(ellipse 90% 70% at 50% 0%, rgba(254, 86, 0, 0.18) 0%, transparent 62%),
     repeating-linear-gradient(
       to bottom,
-      rgba(184, 206, 79, 0.08) 0px,
-      rgba(184, 206, 79, 0.08) 1px,
+      rgba(254, 86, 0, 0.08) 0px,
+      rgba(254, 86, 0, 0.08) 1px,
       transparent 1px,
       transparent 4px
     );
@@ -577,7 +575,7 @@
 
 /* Acerto: o placar brilha em verde, dá um pulo e sobe o +N. */
 .qs-pts.is-gain {
-  color: #5C1A0C;
+  color: #0E1A30;
   background: linear-gradient(135deg, #7CFFB2, #2bb673);
   border-color: rgba(255, 255, 255, 0.55);
   box-shadow:
@@ -628,7 +626,7 @@
 .qs-progress i.done { background: rgba(255, 255, 255, 0.72); }
 .qs-progress i.cur {
   background: var(--qs-red);
-  box-shadow: 0 0 0 2px rgba(184, 206, 79, 0.35);
+  box-shadow: 0 0 0 2px rgba(254, 86, 0, 0.35);
   transform: scaleY(1.35);
 }
 
@@ -663,8 +661,8 @@
 }
 .qs-tools button:active { transform: translateY(1px); }
 .qs-tools button.is-on {
-  background: rgba(184, 206, 79, 0.32);
-  border-color: rgba(184, 206, 79, 0.72);
+  background: rgba(254, 86, 0, 0.32);
+  border-color: rgba(254, 86, 0, 0.72);
 }
 
 /* ferramentas: disco redondo só com o ícone e a legenda solta embaixo */
@@ -693,8 +691,8 @@
   border-color: rgba(255, 255, 255, 0.36);
 }
 .qs-tool-btn.is-on .qs-tool-disc {
-  background: rgba(184, 206, 79, 0.34);
-  border-color: rgba(184, 206, 79, 0.75);
+  background: rgba(254, 86, 0, 0.34);
+  border-color: rgba(254, 86, 0, 0.75);
 }
 
 .qs-tool-ico {
@@ -712,13 +710,13 @@
 
 /* narração em andamento: o disco pulsa enquanto carrega e fala */
 #btnTranscript.is-speaking .qs-tool-disc {
-  background: rgba(184, 206, 79, 0.34);
-  border-color: rgba(184, 206, 79, 0.75);
+  background: rgba(254, 86, 0, 0.34);
+  border-color: rgba(254, 86, 0, 0.75);
   animation: qsSpeakPulse 1.1s ease-in-out infinite;
 }
 @keyframes qsSpeakPulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(184, 206, 79, 0.45); }
-  50% { box-shadow: 0 0 0 7px rgba(184, 206, 79, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(254, 86, 0, 0.45); }
+  50% { box-shadow: 0 0 0 7px rgba(254, 86, 0, 0); }
 }
 
 /* alterna o ícone de som conforme a música está ligada */
@@ -789,11 +787,11 @@
   font-size: 0.62rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #5C1A0C;
-  background: #B8CE4F;
+  color: #0E1A30;
+  background: #FE5600;
   border-radius: 999px;
   padding: 6px 10px;
-  box-shadow: 0 8px 18px rgba(184, 206, 79, 0.35);
+  box-shadow: 0 8px 18px rgba(254, 86, 0, 0.35);
 }
 .qs-jump-fab[hidden] { display: none !important; }
 
@@ -820,7 +818,7 @@
   justify-content: space-between;
   gap: 6px;
   padding: 8px 8px 6px 10px;
-  background: linear-gradient(160deg, #FF5E32, #B8381A);
+  background: linear-gradient(160deg, #1C3560, #0E1A30);
   color: #fff;
 }
 .qs-jump header strong {
@@ -877,7 +875,7 @@
 .qs-jump-item:hover { background: var(--qs-soft); }
 .qs-jump-item.is-cur {
   background: #e8f7ee;
-  box-shadow: inset 0 0 0 1px rgba(255, 94, 50, 0.28);
+  box-shadow: inset 0 0 0 1px rgba(28, 53, 96, 0.28);
 }
 .qs-jump-n {
   font-family: var(--qs-font-h);
@@ -904,7 +902,7 @@
 .qs-jump-off {
   margin: 0 6px 6px;
   border: 0;
-  background: #FFF8E0;
+  background: #FFF0E6;
   color: var(--qs-red-dk);
   font-family: var(--qs-font-h);
   font-weight: 800;
@@ -927,7 +925,7 @@
   font-size: 0.92rem;
   padding: 12px 18px;
   border-radius: 14px;
-  border: 1px solid rgba(184, 206, 79, 0.4);
+  border: 1px solid rgba(254, 86, 0, 0.4);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
   opacity: 0;
   pointer-events: none;
@@ -1039,7 +1037,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
-  color: #5C1A0C;
+  color: #0E1A30;
   background: rgba(255, 255, 255, 0.92);
   box-shadow: 0 2px 10px rgba(0, 30, 24, 0.28);
   transition: transform 0.15s ease, background 0.15s ease;
@@ -1049,7 +1047,7 @@
   background: #fff;
 }
 .qs-zoom-btn:focus-visible {
-  outline: 2px solid var(--qs-yellow, #B8CE4F);
+  outline: 2px solid var(--qs-yellow, #FE5600);
   outline-offset: 2px;
 }
 .qs-card-media .qs-zoom-btn,
@@ -1075,17 +1073,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 8px;
   padding: 8px;
-  background: #5C1A0C;
+  background: #0E1A30;
 }
 .qs-media-gallery .qs-zoom-wrap {
   border-radius: 12px;
   overflow: hidden;
-  background: #B8381A;
+  background: #0E1A30;
   min-height: 0;
 }
 .qs-media-gallery .qs-img {
   object-fit: contain;
-  background: #B8381A;
+  background: #0E1A30;
 }
 .qs-lightbox {
   position: fixed;
@@ -1120,7 +1118,7 @@
   font-size: 1.6rem;
   line-height: 1;
   cursor: pointer;
-  color: #5C1A0C;
+  color: #0E1A30;
   background: #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
@@ -1130,7 +1128,7 @@ html.qs-lightbox-open body {
 }
 .qs-media .qs-img-contain {
   object-fit: contain;
-  background: #B8381A;
+  background: #0E1A30;
   padding: 8px;
 }
 /* O quadro de "imagem quebrada" só entra quando a foto falha. Os dois nomes
@@ -1142,7 +1140,7 @@ html.qs-lightbox-open body {
 
 .qs-media-md { flex: 0 0 46%; min-height: 160px; max-height: 52%; }
 .qs-media-lg { flex: 1 1 58%; min-height: 200px; }
-.qs-media-video { flex: 1 1 62%; min-height: 220px; background: #5C1A0C; }
+.qs-media-video { flex: 1 1 62%; min-height: 220px; background: #0E1A30; }
 
 .qs-panel-tight { flex: 0 0 auto; max-height: 34%; }
 
@@ -1179,7 +1177,7 @@ html.qs-lightbox-open body {
 
 /* vídeo com player: título FORA do player */
 .qs-screen.is-video.has-player {
-  background: #B8381A;
+  background: #0E1A30;
 }
 .qs-screen.is-video.has-player .qs-media-video {
   flex: 1 1 auto;
@@ -1210,7 +1208,7 @@ html.qs-lightbox-open body {
 }
 .qs-video-pill {
   background: var(--qs-red);
-  color: #5C1A0C;
+  color: #0E1A30;
   font-family: var(--qs-font-h);
   font-weight: 900;
   font-size: 0.72rem;
@@ -1338,8 +1336,8 @@ html.qs-lightbox-open body {
   padding: 20px 24px;
   text-align: center;
   background:
-    radial-gradient(ellipse at 50% 20%, rgba(184, 206, 79, 0.18) 0%, transparent 55%),
-    linear-gradient(160deg, #FF5E32 0%, #E04A22 60%, #B8381A 100%);
+    radial-gradient(ellipse at 50% 20%, rgba(254, 86, 0, 0.18) 0%, transparent 55%),
+    linear-gradient(160deg, #1C3560 0%, #14233F 60%, #0E1A30 100%);
 }
 .qs-vbadge {
   font-family: var(--qs-font-h);
@@ -1347,7 +1345,7 @@ html.qs-lightbox-open body {
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #5C1A0C;
+  color: #0E1A30;
   background: var(--qs-red);
   padding: 5px 14px;
   border-radius: 999px;
@@ -1358,7 +1356,7 @@ html.qs-lightbox-open body {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: rgba(184, 206, 79, 0.16);
+  background: rgba(254, 86, 0, 0.16);
   border: 2px solid var(--qs-red);
   color: var(--qs-red);
   font-size: 1.4rem;
@@ -1415,7 +1413,7 @@ html.qs-lightbox-open body {
 /* Páginas normativas densas (NR 17.5): tudo visível sem scroll */
 .qs-screen.is-norm-compact.has-split .qs-media-split {
   position: relative;
-  background: #B8381A;
+  background: #0E1A30;
   overflow: hidden;
 }
 .qs-screen.is-norm-compact.has-split .qs-img,
@@ -1527,11 +1525,11 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-norm-stats .qs-stat {
   position: relative;
-  background: linear-gradient(180deg, #FF5E32 0%, #E04A22 100%);
+  background: linear-gradient(180deg, #1C3560 0%, #14233F 100%);
   border: none;
   border-radius: 14px;
   padding: 14px 8px 13px;
-  box-shadow: 0 8px 20px rgba(255, 94, 50, 0.28);
+  box-shadow: 0 8px 20px rgba(28, 53, 96, 0.28);
   overflow: hidden;
 }
 .qs-screen.is-norm-stats .qs-stat::before {
@@ -1576,7 +1574,7 @@ html.qs-lightbox-open body {
   background: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid rgba(255, 94, 50, 0.16);
+  border-bottom: 1px solid rgba(28, 53, 96, 0.16);
   padding: 9px 2px 9px 10px;
   box-shadow: none;
   height: auto;
@@ -1631,7 +1629,7 @@ html.qs-lightbox-open body {
   background: var(--qs-red);
   border: none;
   color: #fff;
-  box-shadow: 0 8px 18px rgba(184, 206, 79, 0.32);
+  box-shadow: 0 8px 18px rgba(254, 86, 0, 0.32);
 }
 .qs-screen.is-norm-stats .qs-note-label {
   font-family: var(--qs-font-h);
@@ -1706,7 +1704,7 @@ html.qs-lightbox-open body {
   background: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid rgba(255, 94, 50, 0.16);
+  border-bottom: 1px solid rgba(28, 53, 96, 0.16);
   padding: 12px 4px 12px 12px;
   box-shadow: none;
   overflow: visible;
@@ -1759,7 +1757,7 @@ html.qs-lightbox-open body {
   border: none;
   color: #fff;
   flex: 0 0 auto;
-  box-shadow: 0 8px 18px rgba(184, 206, 79, 0.32);
+  box-shadow: 0 8px 18px rgba(254, 86, 0, 0.32);
 }
 .qs-screen.is-norm-rules .qs-note-label {
   font-family: var(--qs-font-h);
@@ -1794,7 +1792,7 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-image.has-split .qs-media-split {
   position: relative;
-  background: #B8381A;
+  background: #0E1A30;
   overflow: hidden;
 }
 .qs-screen.is-image.has-split .qs-img,
@@ -1973,7 +1971,7 @@ html.qs-lightbox-open body {
 
 .qs-screen.is-finale {
   position: relative;
-  background: #FF5E32;
+  background: #1C3560;
   overflow: hidden;
 }
 .qs-finale-photo {
@@ -1990,8 +1988,8 @@ html.qs-lightbox-open body {
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(184, 206, 79, 0.2) 0%, transparent 62%),
-    linear-gradient(180deg, rgba(45, 12, 6, 0.4) 0%, rgba(255, 94, 50, 0.28) 45%, rgba(45, 12, 6, 0.55) 100%);
+    radial-gradient(ellipse 70% 55% at 50% 42%, rgba(254, 86, 0, 0.2) 0%, transparent 62%),
+    linear-gradient(180deg, rgba(45, 12, 6, 0.4) 0%, rgba(28, 53, 96, 0.28) 45%, rgba(45, 12, 6, 0.55) 100%);
 }
 .qs-finale-glow {
   position: absolute;
@@ -2003,8 +2001,8 @@ html.qs-lightbox-open body {
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 50% 40%, rgba(255, 94, 50, 0.32) 0%, transparent 42%),
-    radial-gradient(circle at 50% 55%, rgba(184, 206, 79, 0.26) 0%, transparent 55%);
+    radial-gradient(circle at 50% 40%, rgba(28, 53, 96, 0.32) 0%, transparent 42%),
+    radial-gradient(circle at 50% 55%, rgba(254, 86, 0, 0.26) 0%, transparent 55%);
   filter: blur(8px);
   animation: qsFinaleGlow 3.6s ease-in-out infinite alternate;
 }
@@ -2030,15 +2028,15 @@ html.qs-lightbox-open body {
   padding: 22px 22px 20px;
   background:
     linear-gradient(155deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.04) 28%, transparent 52%),
-    linear-gradient(180deg, rgba(184, 206, 79, 0.16) 0%, transparent 38%),
-    linear-gradient(160deg, #FF5E32 0%, #E04A22 32%, #B8381A 68%, #5C1A0C 100%);
-  border: 1.5px solid rgba(184, 206, 79, 0.5);
+    linear-gradient(180deg, rgba(254, 86, 0, 0.16) 0%, transparent 38%),
+    linear-gradient(160deg, #1C3560 0%, #14233F 32%, #0E1A30 68%, #0E1A30 100%);
+  border: 1.5px solid rgba(254, 86, 0, 0.5);
   border-radius: 20px;
   box-shadow:
     0 22px 48px rgba(0, 0, 0, 0.38),
     0 0 0 1px rgba(255, 255, 255, 0.18) inset,
-    0 0 48px rgba(255, 94, 50, 0.32),
-    0 0 80px rgba(184, 206, 79, 0.18);
+    0 0 48px rgba(28, 53, 96, 0.32),
+    0 0 80px rgba(254, 86, 0, 0.18);
   animation: qsFinaleIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 .qs-finale-shine {
@@ -2068,9 +2066,9 @@ html.qs-lightbox-open body {
   margin-bottom: 10px;
   padding: 5px 12px;
   border-radius: 99px;
-  background: linear-gradient(135deg, rgba(184, 206, 79, 0.5), rgba(255, 94, 50, 0.28));
+  background: linear-gradient(135deg, rgba(254, 86, 0, 0.5), rgba(28, 53, 96, 0.28));
   border: 1px solid rgba(255, 200, 180, 0.55);
-  box-shadow: 0 0 18px rgba(184, 206, 79, 0.28);
+  box-shadow: 0 0 18px rgba(254, 86, 0, 0.28);
 }
 .qs-finale-trophy {
   position: relative;
@@ -2081,12 +2079,12 @@ html.qs-lightbox-open body {
   display: grid;
   place-items: center;
   font-size: 30px;
-  background: linear-gradient(145deg, #D0E07A, #B8CE4F 38%, #FF5E32 100%);
+  background: linear-gradient(145deg, #FF8347, #FE5600 38%, #1C3560 100%);
   box-shadow:
     0 0 0 4px rgba(255, 255, 255, 0.22),
-    0 0 0 7px rgba(184, 206, 79, 0.35),
-    0 8px 28px rgba(255, 94, 50, 0.4),
-    0 0 36px rgba(184, 206, 79, 0.35);
+    0 0 0 7px rgba(254, 86, 0, 0.35),
+    0 8px 28px rgba(28, 53, 96, 0.4),
+    0 0 36px rgba(254, 86, 0, 0.35);
   animation: qsFinaleTrophy 2.4s ease-in-out infinite;
 }
 .qs-finale-title {
@@ -2098,18 +2096,18 @@ html.qs-lightbox-open body {
   font-weight: 800;
   letter-spacing: 0.02em;
   text-shadow:
-    0 0 24px rgba(255, 94, 50, 0.4),
-    0 2px 18px rgba(184, 206, 79, 0.28);
+    0 0 24px rgba(28, 53, 96, 0.4),
+    0 2px 18px rgba(254, 86, 0, 0.28);
 }
-.qs-finale-title span { color: #D0E07A; }
+.qs-finale-title span { color: #FF8347; }
 .qs-finale-line {
   position: relative;
   width: 64px;
   height: 3px;
   margin: 0 auto 12px;
   border-radius: 3px;
-  background: linear-gradient(90deg, transparent, #FF8A5C, #B8CE4F, #D0E07A, transparent);
-  box-shadow: 0 0 12px rgba(184, 206, 79, 0.55);
+  background: linear-gradient(90deg, transparent, #2A4A85, #FE5600, #FF8347, transparent);
+  box-shadow: 0 0 12px rgba(254, 86, 0, 0.55);
 }
 .qs-finale-medal-name {
   position: relative;
@@ -2118,9 +2116,9 @@ html.qs-lightbox-open body {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #D0E07A;
+  color: #FF8347;
   margin: 0 0 4px;
-  text-shadow: 0 0 14px rgba(184, 206, 79, 0.55);
+  text-shadow: 0 0 14px rgba(254, 86, 0, 0.55);
 }
 .qs-finale-card.medal-silver .qs-finale-medal-name { color: #e8f0f8; }
 .qs-finale-card.medal-bronze .qs-finale-medal-name { color: #f0c29a; }
@@ -2133,7 +2131,7 @@ html.qs-lightbox-open body {
   line-height: 1;
   margin: 2px 0 4px;
   text-shadow:
-    0 0 22px rgba(184, 206, 79, 0.55),
+    0 0 22px rgba(254, 86, 0, 0.55),
     0 2px 14px rgba(0, 0, 0, 0.35);
 }
 .qs-finale-score small {
@@ -2171,16 +2169,16 @@ html.qs-lightbox-open body {
   font-style: italic;
   line-height: 1.45;
   color: #FFF8F0;
-  background: linear-gradient(135deg, rgba(184, 206, 79, 0.22), rgba(255, 94, 50, 0.14));
-  border: 1px solid rgba(184, 206, 79, 0.45);
+  background: linear-gradient(135deg, rgba(254, 86, 0, 0.22), rgba(28, 53, 96, 0.14));
+  border: 1px solid rgba(254, 86, 0, 0.45);
   border-radius: 14px;
   box-shadow:
-    0 0 24px rgba(184, 206, 79, 0.16),
+    0 0 24px rgba(254, 86, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 .qs-finale-quote span {
-  color: #D0E07A;
+  color: #FF8347;
   font-style: normal;
   font-weight: 900;
   font-size: 1.05em;
@@ -2200,13 +2198,13 @@ html.qs-lightbox-open body {
   text-transform: uppercase;
   color: #fff;
   background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(184, 206, 79, 0.4);
+  border: 1px solid rgba(254, 86, 0, 0.4);
   border-radius: 99px;
   padding: 5px 10px;
-  box-shadow: 0 0 12px rgba(255, 94, 50, 0.14);
+  box-shadow: 0 0 12px rgba(28, 53, 96, 0.14);
 }
 .qs-finale-chip:first-child {
-  background: linear-gradient(135deg, rgba(184, 206, 79, 0.5), rgba(255, 94, 50, 0.22));
+  background: linear-gradient(135deg, rgba(254, 86, 0, 0.5), rgba(28, 53, 96, 0.22));
   border-color: rgba(255, 180, 160, 0.55);
   color: #FFF8F0;
 }
@@ -2238,7 +2236,7 @@ html.qs-lightbox-open body {
   animation: qsResultWash 0.45s ease both;
 }
 .qs-media.is-answered.is-ok::after {
-  background: rgba(255, 94, 50, 0.72);
+  background: rgba(28, 53, 96, 0.72);
 }
 .qs-media.is-answered.is-nok::after {
   background: rgba(224, 40, 56, 0.72);
@@ -2544,8 +2542,8 @@ html.qs-lightbox-open body {
 /* Pergunta sem foto — layout limpo (lista), sem área de imagem */
 .qs-screen.is-question.no-photo {
   background:
-    radial-gradient(ellipse 70% 45% at 50% -8%, rgba(255, 94, 50, 0.1), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.14), transparent 50%),
+    radial-gradient(ellipse 70% 45% at 50% -8%, rgba(28, 53, 96, 0.1), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(254, 86, 0, 0.14), transparent 50%),
     linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
 }
 .qs-screen.is-question.no-photo .qs-q-head {
@@ -2573,7 +2571,7 @@ html.qs-lightbox-open body {
 .qs-screen.is-question.no-photo .qs-qbar {
   background: #fff;
   box-shadow: 0 8px 22px rgba(60, 18, 8, 0.1);
-  border: 1px solid rgba(255, 94, 50, 0.1);
+  border: 1px solid rgba(28, 53, 96, 0.1);
 }
 .qs-screen.is-question.no-photo .qs-opts {
   flex: 1 1 auto;
@@ -2591,7 +2589,7 @@ html.qs-lightbox-open body {
 .qs-timer {
   display: none;
   flex: 0 0 6px;
-  background: rgba(255, 94, 50, 0.15);
+  background: rgba(28, 53, 96, 0.15);
   overflow: hidden;
 }
 .qs-screen.is-timed .qs-timer { display: block; }
@@ -2636,8 +2634,8 @@ html.qs-lightbox-open body {
 .qs-quiz-intro,
 .qs-quiz-result {
   background:
-    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(184, 206, 79, 0.1), transparent 58%),
-    radial-gradient(ellipse 55% 40% at 100% 100%, rgba(255, 94, 50, 0.08), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(254, 86, 0, 0.1), transparent 58%),
+    radial-gradient(ellipse 55% 40% at 100% 100%, rgba(28, 53, 96, 0.08), transparent 55%),
     var(--qs-paper);
 }
 .qs-quiz-intro::before,
@@ -2670,15 +2668,15 @@ html.qs-lightbox-open body {
 .qs-quiz-intro::after {
   bottom: -80px;
   left: -70px;
-  background: radial-gradient(circle, rgba(255, 94, 50, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(28, 53, 96, 0.1) 0%, transparent 70%);
 }
 .qs-quiz-result::after {
   bottom: -80px;
   right: -70px;
-  background: radial-gradient(circle, rgba(184, 206, 79, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(254, 86, 0, 0.1) 0%, transparent 70%);
 }
 .qs-quiz-result.is-pass::after {
-  background: radial-gradient(circle, rgba(255, 94, 50, 0.14) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(28, 53, 96, 0.14) 0%, transparent 70%);
 }
 .qs-quiz-intro > *,
 .qs-quiz-result > * { position: relative; z-index: 1; }
@@ -2694,8 +2692,8 @@ html.qs-lightbox-open body {
   justify-content: center;
   margin: 0 auto 22px;
   box-shadow:
-    0 0 0 8px rgba(184, 206, 79, 0.12),
-    0 12px 24px rgba(184, 206, 79, 0.28);
+    0 0 0 8px rgba(254, 86, 0, 0.12),
+    0 12px 24px rgba(254, 86, 0, 0.28);
 }
 .qs-quiz-intro-title {
   margin: 0 0 12px;
@@ -2724,25 +2722,25 @@ html.qs-lightbox-open body {
   min-height: 56px;
   padding: 16px 40px;
   background: var(--qs-red);
-  color: #5C1A0C;
+  color: #0E1A30;
   font-family: var(--qs-font-h);
   font-size: 1rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 8px 0 var(--qs-red-dk), 0 14px 28px rgba(184, 206, 79, 0.28);
+  box-shadow: 0 8px 0 var(--qs-red-dk), 0 14px 28px rgba(254, 86, 0, 0.28);
   transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
   animation: qsPulse 1.8s ease-in-out infinite;
 }
 .qs-quiz-intro-btn:hover { filter: brightness(1.05); }
 .qs-quiz-intro-btn:active {
   transform: translateY(4px);
-  box-shadow: 0 4px 0 var(--qs-red-dk), 0 8px 16px rgba(184, 206, 79, 0.22);
+  box-shadow: 0 4px 0 var(--qs-red-dk), 0 8px 16px rgba(254, 86, 0, 0.22);
 }
 @keyframes qsPulse {
-  0%, 100% { box-shadow: 0 8px 0 var(--qs-red-dk), 0 14px 28px rgba(184, 206, 79, 0.22); }
-  50% { box-shadow: 0 8px 0 var(--qs-red-dk), 0 16px 36px rgba(184, 206, 79, 0.5); }
+  0%, 100% { box-shadow: 0 8px 0 var(--qs-red-dk), 0 14px 28px rgba(254, 86, 0, 0.22); }
+  50% { box-shadow: 0 8px 0 var(--qs-red-dk), 0 16px 36px rgba(254, 86, 0, 0.5); }
 }
 
 .qs-quiz-result-icon {
@@ -2781,14 +2779,14 @@ html.qs-lightbox-open body {
 }
 .qs-quiz-result.medal-none .qs-medal {
   background: linear-gradient(145deg, #eef6f2, #d5e8df);
-  box-shadow: 0 0 0 8px rgba(255, 94, 50, 0.08), 0 10px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 8px rgba(28, 53, 96, 0.08), 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 .qs-quiz-result.medal-title .qs-medal {
   background:
     radial-gradient(circle at 35% 30%, #fff 0%, transparent 28%),
-    linear-gradient(145deg, #D0E07A, #9AAF3A 55%, #c41e2a);
+    linear-gradient(145deg, #FF8347, #D94900 55%, #c41e2a);
   box-shadow:
-    0 0 0 8px rgba(184, 206, 79, 0.2),
+    0 0 0 8px rgba(254, 86, 0, 0.2),
     0 14px 28px rgba(192, 30, 42, 0.28);
 }
 .qs-medal-face {
@@ -2879,7 +2877,7 @@ html.qs-lightbox-open body {
 }
 .qs-quiz-result.is-pass .qs-quiz-intro-btn {
   background: var(--qs-green);
-  box-shadow: 0 8px 0 var(--qs-green-2), 0 14px 28px rgba(255, 94, 50, 0.28);
+  box-shadow: 0 8px 0 var(--qs-green-2), 0 14px 28px rgba(28, 53, 96, 0.28);
 }
 
 /* resultado com título conquistado — hierarquia limpa */
@@ -2924,7 +2922,7 @@ html.qs-lightbox-open body {
   padding: 10px 16px;
   border-radius: 999px;
   background: var(--qs-soft);
-  border: 1px solid rgba(255, 94, 50, 0.12);
+  border: 1px solid rgba(28, 53, 96, 0.12);
   font-family: var(--qs-font-h);
   font-size: 0.78rem;
   font-weight: 700;
@@ -2939,11 +2937,11 @@ html.qs-lightbox-open body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: rgba(255, 94, 50, 0.35);
+  background: rgba(28, 53, 96, 0.35);
 }
 .qs-quiz-result.is-fail .qs-result-scorebar {
-  background: #FFF8E0;
-  border-color: rgba(184, 206, 79, 0.18);
+  background: #FFF0E6;
+  border-color: rgba(254, 86, 0, 0.18);
 }
 .qs-quiz-result.is-fail .qs-result-scorebar b { color: var(--qs-red-dk); }
 
@@ -2954,8 +2952,8 @@ html.qs-lightbox-open body {
   padding: 14px 16px;
   border-radius: 14px;
   text-align: left;
-  background: #FFF8E0;
-  border: 1px solid rgba(184, 206, 79, 0.2);
+  background: #FFF0E6;
+  border: 1px solid rgba(254, 86, 0, 0.2);
   box-shadow: 0 6px 18px rgba(224, 40, 56, 0.08);
 }
 .qs-review-head {
@@ -3066,7 +3064,7 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-text {
   background:
-    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(184, 206, 79, 0.08) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(254, 86, 0, 0.08) 0%, transparent 55%),
     #fff;
 }
 .qs-panel-text {
@@ -3119,7 +3117,7 @@ html.qs-lightbox-open body {
 }
 .qs-stat {
   background: var(--qs-soft);
-  border: 1px solid rgba(255, 94, 50, 0.12);
+  border: 1px solid rgba(28, 53, 96, 0.12);
   border-radius: 16px;
   padding: 14px 12px 16px;
   text-align: center;
@@ -3148,7 +3146,7 @@ html.qs-lightbox-open body {
 }
 .qs-stat.tone-featured .qs-stat-num {
   font-size: clamp(2.4rem, 6vw, 3.4rem);
-  color: #B8CE4F;
+  color: #FE5600;
   line-height: 1;
 }
 .qs-stat-ico { font-size: 1.35rem; display: block; margin-bottom: 4px; }
@@ -3257,7 +3255,7 @@ html.qs-lightbox-open body {
   border-radius: 12px;
   overflow: hidden;
   aspect-ratio: 16 / 10;
-  background: #5C1A0C;
+  background: #0E1A30;
 }
 .qs-card-img {
   display: block;
@@ -3273,7 +3271,7 @@ html.qs-lightbox-open body {
   background: var(--qs-soft);
   border-radius: 16px;
   padding: 16px 14px 18px;
-  border: 1px solid rgba(255, 94, 50, 0.1);
+  border: 1px solid rgba(28, 53, 96, 0.1);
 }
 .qs-card-ico { font-size: 1.7rem; margin-bottom: 8px; }
 .qs-card h3 {
@@ -3294,8 +3292,8 @@ html.qs-lightbox-open body {
 /* Agente × classe — cards com foto e selo da classe */
 .qs-screen.is-agents {
   background:
-    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(255, 94, 50, 0.12), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.16), transparent 50%),
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(28, 53, 96, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(254, 86, 0, 0.16), transparent 50%),
     linear-gradient(165deg, #f7fbf9 0%, #eef6f2 55%, #e6f2ec 100%);
 }
 .qs-screen.is-agents .qs-panel-text {
@@ -3321,7 +3319,7 @@ html.qs-lightbox-open body {
   padding: 0;
   overflow: hidden;
   background: #fff;
-  border: 1px solid rgba(255, 94, 50, 0.1);
+  border: 1px solid rgba(28, 53, 96, 0.1);
   border-radius: 18px;
   box-shadow: 0 8px 24px rgba(60, 18, 8, 0.1);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -3335,7 +3333,7 @@ html.qs-lightbox-open body {
   border-radius: 0;
   aspect-ratio: 1 / 1;
   max-height: none;
-  background: #5C1A0C;
+  background: #0E1A30;
 }
 .qs-cards.is-agents .qs-card-img {
   object-fit: cover;
@@ -3377,13 +3375,13 @@ html.qs-lightbox-open body {
   background: var(--qs-green);
 }
 .qs-cards.is-agents .qs-card.tone-agua .qs-card-lead {
-  background: linear-gradient(135deg, #00a8b2, #008471);
+  background: linear-gradient(135deg, #00a8b2, #1C3560);
 }
 .qs-cards.is-agents .qs-card.tone-pqs .qs-card-lead {
   background: linear-gradient(135deg, #E04A38, #BC1A0D);
 }
 .qs-cards.is-agents .qs-card.tone-co2 .qs-card-lead {
-  background: linear-gradient(135deg, #006B5C, #00332C);
+  background: linear-gradient(135deg, #14233F, #0E1A30);
 }
 .qs-cards.is-agents .qs-card > p {
   padding: 8px 14px 16px;
@@ -3406,8 +3404,8 @@ html.qs-lightbox-open body {
 /* Princípios SCI — grade de cards com ícone (sem foto) */
 .qs-screen.is-principles {
   background:
-    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(255, 94, 50, 0.12), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.18), transparent 50%),
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(28, 53, 96, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(254, 86, 0, 0.18), transparent 50%),
     linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
 }
 .qs-screen.is-principles .qs-panel-text {
@@ -3448,7 +3446,7 @@ html.qs-lightbox-open body {
   gap: 0;
   padding: 16px 14px 18px;
   background: #fff;
-  border: 1px solid rgba(255, 94, 50, 0.1);
+  border: 1px solid rgba(28, 53, 96, 0.1);
   border-radius: 18px;
   box-shadow: 0 8px 22px rgba(60, 18, 8, 0.08);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -3488,8 +3486,8 @@ html.qs-lightbox-open body {
   line-height: 1;
   background:
     radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.75), transparent 55%),
-    linear-gradient(145deg, #D0E07A, #FF5E32);
-  box-shadow: 0 4px 12px rgba(255, 94, 50, 0.22);
+    linear-gradient(145deg, #FF8347, #1C3560);
+  box-shadow: 0 4px 12px rgba(28, 53, 96, 0.22);
 }
 .qs-cards.is-principles .qs-card-head {
   width: 100%;
@@ -3526,8 +3524,8 @@ html.qs-lightbox-open body {
 /* Prevenir × Papel — versão colorida */
 .qs-screen.is-actions {
   background:
-    radial-gradient(ellipse 70% 45% at 10% 0%, rgba(184, 206, 79, 0.28), transparent 55%),
-    radial-gradient(ellipse 60% 40% at 95% 100%, rgba(255, 94, 50, 0.2), transparent 50%),
+    radial-gradient(ellipse 70% 45% at 10% 0%, rgba(254, 86, 0, 0.28), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 95% 100%, rgba(28, 53, 96, 0.2), transparent 50%),
     linear-gradient(165deg, #fffef8 0%, #eef8f3 50%, #e4f3ec 100%);
 }
 .qs-screen.is-actions .qs-panel-text {
@@ -3536,7 +3534,7 @@ html.qs-lightbox-open body {
 .qs-screen.is-actions .qs-title {
   text-align: center;
   margin-bottom: 14px;
-  color: #5C1A0C;
+  color: #0E1A30;
 }
 .qs-cards.is-actions {
   max-width: 800px;
@@ -3568,10 +3566,10 @@ html.qs-lightbox-open body {
   padding: 12px 14px;
 }
 .qs-cards.is-actions .qs-card.tone-prevent .qs-card-top {
-  background: linear-gradient(135deg, #FFE27A, #B8CE4F 50%, #E8C020);
+  background: linear-gradient(135deg, #FFB88F, #FE5600 50%, #E85000);
 }
 .qs-cards.is-actions .qs-card.tone-role .qs-card-top {
-  background: linear-gradient(135deg, #2bb673, #FF5E32 55%, #E04A22);
+  background: linear-gradient(135deg, #2bb673, #1C3560 55%, #14233F);
   color: #fff;
 }
 .qs-cards.is-actions .qs-card-ico {
@@ -3598,7 +3596,7 @@ html.qs-lightbox-open body {
   color: inherit;
 }
 .qs-cards.is-actions .qs-card.tone-prevent h3 {
-  color: #5C1A0C;
+  color: #0E1A30;
 }
 .qs-cards.is-actions .qs-card-lead {
   display: inline-block;
@@ -3610,7 +3608,7 @@ html.qs-lightbox-open body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   background: rgba(0, 51, 44, 0.12);
-  color: #5C1A0C;
+  color: #0E1A30;
 }
 .qs-cards.is-actions .qs-card.tone-role .qs-card-lead {
   background: rgba(255, 255, 255, 0.22);
@@ -3631,7 +3629,7 @@ html.qs-lightbox-open body {
   padding: 7px 9px;
   border-radius: 11px;
   background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(255, 94, 50, 0.12);
+  border: 1px solid rgba(28, 53, 96, 0.12);
   box-shadow: 0 1px 4px rgba(45, 12, 6, 0.04);
 }
 .qs-cards.is-actions .qs-card.tone-prevent .qs-card-points li {
@@ -3648,15 +3646,15 @@ html.qs-lightbox-open body {
   font-size: 0.7rem;
   font-weight: 900;
   color: #fff;
-  background: #FF5E32;
+  background: #1C3560;
 }
 .qs-cards.is-actions .qs-card.tone-prevent .qs-point-num {
-  color: #5C1A0C;
-  background: #B8CE4F;
-  box-shadow: 0 0 0 2px rgba(184, 206, 79, 0.35);
+  color: #0E1A30;
+  background: #FE5600;
+  box-shadow: 0 0 0 2px rgba(254, 86, 0, 0.35);
 }
 .qs-cards.is-actions .qs-card.tone-role .qs-point-num {
-  box-shadow: 0 0 0 2px rgba(255, 94, 50, 0.25);
+  box-shadow: 0 0 0 2px rgba(28, 53, 96, 0.25);
 }
 .qs-cards.is-actions .qs-point-ico {
   flex: 0 0 22px;
@@ -3749,7 +3747,7 @@ html.qs-lightbox-open body {
   padding: 8px 12px;
   border-radius: 12px;
   background: linear-gradient(135deg, #f6fbf9 0%, #e9f4ef 100%);
-  border: 1px solid rgba(255, 94, 50, 0.14);
+  border: 1px solid rgba(28, 53, 96, 0.14);
   border-left: 3px solid var(--qs-green);
   animation: qsFichaIn 0.36s ease both;
 }
@@ -3812,13 +3810,13 @@ html.qs-lightbox-open body {
 }
 .qs-dose.is-time {
   color: var(--qs-green-2);
-  background: rgba(255, 94, 50, 0.11);
-  border: 1px solid rgba(255, 94, 50, 0.22);
+  background: rgba(28, 53, 96, 0.11);
+  border: 1px solid rgba(28, 53, 96, 0.22);
 }
 .qs-dose.is-rep {
   color: var(--qs-red-dk);
-  background: rgba(184, 206, 79, 0.1);
-  border: 1px solid rgba(184, 206, 79, 0.26);
+  background: rgba(254, 86, 0, 0.1);
+  border: 1px solid rgba(254, 86, 0, 0.26);
 }
 /* ressalva do exercício 8: é alerta, não dose — fica fora das etiquetas */
 .qs-item-warn {
@@ -3833,7 +3831,7 @@ html.qs-lightbox-open body {
 /* Ficha rápida — lista limpa no visual da marca */
 .qs-screen.is-ficha {
   background:
-    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(184, 206, 79, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(254, 86, 0, 0.12), transparent 55%),
     #fff;
 }
 .qs-screen.is-ficha .qs-panel-text {
@@ -3842,7 +3840,7 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-ficha .qs-title {
   margin: 0 0 14px;
-  color: #5C1A0C;
+  color: #0E1A30;
   font-size: var(--qs-title-size);
 }
 .qs-ficha-list {
@@ -3860,11 +3858,11 @@ html.qs-lightbox-open body {
   padding: 12px 14px;
   border-radius: 14px;
   background: linear-gradient(135deg, #f7fbf9 0%, #eef6f2 100%);
-  border: 1px solid rgba(255, 94, 50, 0.12);
+  border: 1px solid rgba(28, 53, 96, 0.12);
   border-left: 4px solid var(--qs-green);
 }
 .qs-ficha-item:nth-child(even) {
-  border-left-color: #B8CE4F;
+  border-left-color: #FE5600;
 }
 .qs-ficha-ico {
   flex: 0 0 40px;
@@ -3886,7 +3884,7 @@ html.qs-lightbox-open body {
   font-family: var(--qs-font-h);
   font-size: 0.95rem;
   font-weight: 800;
-  color: #5C1A0C;
+  color: #0E1A30;
   margin: 0 0 4px;
   line-height: 1.25;
 }
@@ -3958,8 +3956,8 @@ html.qs-lightbox-open body {
   align-items: center;
 }
 .qs-screen.is-text-steps .qs-step-media {
-  background: linear-gradient(160deg, #e8f7ee 0%, #d4efe3 55%, #fff3c4 100%);
-  border-color: rgba(255, 94, 50, 0.16);
+  background: linear-gradient(160deg, #e8f7ee 0%, #d4efe3 55%, #FFE6D6 100%);
+  border-color: rgba(28, 53, 96, 0.16);
   transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 /* Fotos da ficha (retrato ~4:5): card fixo, sem esticar na grade larga */
@@ -3994,8 +3992,8 @@ html.qs-lightbox-open body {
 /* Princípios SCI — um tópico por vez (sequência) */
 .qs-screen.is-principles-steps {
   background:
-    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(255, 94, 50, 0.12), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(184, 206, 79, 0.18), transparent 50%),
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(28, 53, 96, 0.12), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(254, 86, 0, 0.18), transparent 50%),
     linear-gradient(165deg, #fffef8 0%, #fff5f0 55%, #f7f8ec 100%);
 }
 .qs-screen.is-principles-steps .qs-steps-top .qs-title {
@@ -4042,23 +4040,23 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-principles-steps .qs-step-cta.is-finish {
   color: #fff;
-  background: linear-gradient(135deg, #FF5E32, #B8CE4F);
+  background: linear-gradient(135deg, #1C3560, #FE5600);
 }
 
 /* Funções do brigadista — cartão horizontal (página 82), distinto dos princípios */
 .qs-screen.is-funcoes-steps {
   background:
     radial-gradient(ellipse 70% 45% at 0% 0%, rgba(0, 107, 92, 0.14), transparent 55%),
-    radial-gradient(ellipse 55% 40% at 100% 100%, rgba(184, 206, 79, 0.22), transparent 50%),
+    radial-gradient(ellipse 55% 40% at 100% 100%, rgba(254, 86, 0, 0.22), transparent 50%),
     linear-gradient(165deg, #eef8f3 0%, #e2f0ea 55%, #f2f6e8 100%);
 }
 .qs-screen.is-funcoes-steps .qs-steps-top .qs-title {
-  color: #00332C;
+  color: #0E1A30;
 }
 .qs-screen.is-funcoes-steps .qs-steps-count {
-  background: #00332C;
-  color: #B8CE4F;
-  border-color: rgba(184, 206, 79, 0.35);
+  background: #0E1A30;
+  color: #FE5600;
+  border-color: rgba(254, 86, 0, 0.35);
 }
 .qs-screen.is-funcoes-steps .qs-step.is-funcoes-card {
   display: flex;
@@ -4081,7 +4079,7 @@ html.qs-lightbox-open body {
   align-items: center;
   gap: 12px;
   padding: 12px 18px;
-  background: linear-gradient(90deg, #00332C, #006B5C);
+  background: linear-gradient(90deg, #0E1A30, #14233F);
   color: #fff;
 }
 .qs-func-num {
@@ -4094,7 +4092,7 @@ html.qs-lightbox-open body {
   font-family: var(--qs-font-h);
   font-weight: 900;
   font-size: 1rem;
-  background: #FF5E32;
+  background: #1C3560;
   color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -4121,8 +4119,8 @@ html.qs-lightbox-open body {
   place-items: center;
   font-size: 2rem;
   line-height: 1;
-  background: linear-gradient(145deg, #D0E07A, #B8CE4F);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 8px 20px rgba(184, 206, 79, 0.35);
+  background: linear-gradient(145deg, #FF8347, #FE5600);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5), 0 8px 20px rgba(254, 86, 0, 0.35);
 }
 .qs-func-copy {
   flex: 1 1 auto;
@@ -4135,7 +4133,7 @@ html.qs-lightbox-open body {
   font-family: var(--qs-font-h);
   font-weight: 800;
   font-size: clamp(1.05rem, 2.5vw, 1.28rem);
-  color: #00332C;
+  color: #0E1A30;
   line-height: 1.25;
 }
 .qs-func-text {
@@ -4147,13 +4145,13 @@ html.qs-lightbox-open body {
   color: #3d554c;
 }
 .qs-screen.is-funcoes-steps .qs-step-cta {
-  background: linear-gradient(135deg, #006B5C, #00332C);
+  background: linear-gradient(135deg, #14233F, #0E1A30);
   color: #fff;
   box-shadow: 0 10px 28px rgba(0, 51, 44, 0.28);
 }
 .qs-screen.is-funcoes-steps .qs-step-cta.is-finish {
-  background: linear-gradient(135deg, #FF5E32, #E04A38);
-  box-shadow: 0 10px 28px rgba(255, 94, 50, 0.35);
+  background: linear-gradient(135deg, #1C3560, #E04A38);
+  box-shadow: 0 10px 28px rgba(28, 53, 96, 0.35);
 }
 @media (max-width: 520px) {
   .qs-func-body { flex-direction: column; align-items: center; text-align: center; }
@@ -4163,12 +4161,12 @@ html.qs-lightbox-open body {
 /* Vantagens do SCI — destaque central (página 84) */
 .qs-screen.is-vantagens-steps {
   background:
-    radial-gradient(ellipse 75% 55% at 50% -15%, rgba(255, 94, 50, 0.18), transparent 55%),
-    radial-gradient(ellipse 50% 45% at 100% 90%, rgba(184, 206, 79, 0.28), transparent 50%),
+    radial-gradient(ellipse 75% 55% at 50% -15%, rgba(28, 53, 96, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 100% 90%, rgba(254, 86, 0, 0.28), transparent 50%),
     linear-gradient(165deg, #fff8f2 0%, #fff3e8 50%, #f5f9e8 100%);
 }
 .qs-screen.is-vantagens-steps .qs-steps-top .qs-title {
-  color: #5C1A0C;
+  color: #0E1A30;
   text-align: center;
   flex: 1 1 auto;
 }
@@ -4179,7 +4177,7 @@ html.qs-lightbox-open body {
   gap: 8px;
 }
 .qs-screen.is-vantagens-steps .qs-steps-count {
-  background: linear-gradient(135deg, #FF5E32, #E04A38);
+  background: linear-gradient(135deg, #1C3560, #E04A38);
   color: #fff;
   border-color: rgba(255, 255, 255, 0.35);
 }
@@ -4196,9 +4194,9 @@ html.qs-lightbox-open body {
   text-align: center;
   background: #fff;
   border-radius: 24px;
-  border: 1px solid rgba(255, 94, 50, 0.14);
+  border: 1px solid rgba(28, 53, 96, 0.14);
   box-shadow:
-    0 0 0 4px rgba(184, 206, 79, 0.12),
+    0 0 0 4px rgba(254, 86, 0, 0.12),
     0 20px 48px rgba(92, 26, 12, 0.12);
 }
 .qs-ben-tag {
@@ -4211,9 +4209,9 @@ html.qs-lightbox-open body {
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #5C1A0C;
-  background: rgba(184, 206, 79, 0.35);
-  border: 1px solid rgba(184, 206, 79, 0.55);
+  color: #0E1A30;
+  background: rgba(254, 86, 0, 0.35);
+  border: 1px solid rgba(254, 86, 0, 0.55);
 }
 .qs-ben-ico-wrap {
   width: 96px;
@@ -4222,19 +4220,19 @@ html.qs-lightbox-open body {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(145deg, #FFE27A, #FF5E32);
-  box-shadow: 0 12px 32px rgba(255, 94, 50, 0.35);
+  background: linear-gradient(145deg, #FFB88F, #1C3560);
+  box-shadow: 0 12px 32px rgba(28, 53, 96, 0.35);
 }
 .qs-step[data-ben-tone="1"] .qs-ben-ico-wrap {
-  background: linear-gradient(145deg, #D0E07A, #B8CE4F);
-  box-shadow: 0 12px 32px rgba(184, 206, 79, 0.4);
+  background: linear-gradient(145deg, #FF8347, #FE5600);
+  box-shadow: 0 12px 32px rgba(254, 86, 0, 0.4);
 }
 .qs-step[data-ben-tone="2"] .qs-ben-ico-wrap {
   background: linear-gradient(145deg, #6b9cff, #1E4FA8);
   box-shadow: 0 12px 32px rgba(30, 79, 168, 0.35);
 }
 .qs-step[data-ben-tone="3"] .qs-ben-ico-wrap {
-  background: linear-gradient(145deg, #5eead4, #006B5C);
+  background: linear-gradient(145deg, #5eead4, #14233F);
   box-shadow: 0 12px 32px rgba(0, 107, 92, 0.35);
 }
 .qs-ben-ico {
@@ -4246,7 +4244,7 @@ html.qs-lightbox-open body {
   font-family: var(--qs-font-h);
   font-weight: 900;
   font-size: clamp(1.2rem, 3vw, 1.55rem);
-  color: #5C1A0C;
+  color: #0E1A30;
   line-height: 1.2;
 }
 .qs-ben-text {
@@ -4259,21 +4257,21 @@ html.qs-lightbox-open body {
   color: #3d554c;
 }
 .qs-screen.is-vantagens-steps .qs-step-cta {
-  background: linear-gradient(135deg, #FF5E32, #B8CE4F);
-  color: #5C1A0C;
+  background: linear-gradient(135deg, #1C3560, #FE5600);
+  color: #0E1A30;
   font-weight: 800;
-  box-shadow: 0 10px 28px rgba(255, 94, 50, 0.35);
+  box-shadow: 0 10px 28px rgba(28, 53, 96, 0.35);
 }
 .qs-screen.is-vantagens-steps .qs-step-cta.is-finish {
   color: #fff;
-  background: linear-gradient(135deg, #006B5C, #00332C);
+  background: linear-gradient(135deg, #14233F, #0E1A30);
   box-shadow: 0 10px 28px rgba(0, 51, 44, 0.3);
 }
 
 /* Vantagens SCI — grade 2×2 (página 84), tudo visível de uma vez */
 .qs-screen.is-benefits-grid {
   background:
-    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255, 94, 50, 0.14), transparent 58%),
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(28, 53, 96, 0.14), transparent 58%),
     linear-gradient(180deg, #fff9f4 0%, #f4f9ef 100%);
 }
 .qs-screen.is-benefits-grid .qs-panel-text {
@@ -4287,7 +4285,7 @@ html.qs-lightbox-open body {
   text-align: center;
   margin: 0 0 8px;
   font-size: clamp(1.18rem, 2.8vw, 1.48rem);
-  color: #5C1A0C;
+  color: #0E1A30;
 }
 .qs-ben-lead {
   margin: 0 0 16px;
@@ -4340,12 +4338,12 @@ html.qs-lightbox-open body {
   top: 0;
   height: 5px;
   width: 100%;
-  background: var(--qs-red, #FF5E32);
+  background: var(--qs-red, #1C3560);
 }
-.qs-ben-tile[data-tone="0"]::before { background: #FF5E32; }
-.qs-ben-tile[data-tone="1"]::before { background: #B8CE4F; }
+.qs-ben-tile[data-tone="0"]::before { background: #1C3560; }
+.qs-ben-tile[data-tone="1"]::before { background: #FE5600; }
 .qs-ben-tile[data-tone="2"]::before { background: #1E4FA8; }
-.qs-ben-tile[data-tone="3"]::before { background: #006B5C; }
+.qs-ben-tile[data-tone="3"]::before { background: #14233F; }
 .qs-ben-tile-num {
   order: -2;
   width: 26px;
@@ -4369,7 +4367,7 @@ html.qs-lightbox-open body {
   font-family: var(--qs-font-h);
   font-weight: 800;
   font-size: clamp(0.9rem, 2.1vw, 1rem);
-  color: #5C1A0C;
+  color: #0E1A30;
   line-height: 1.25;
   padding-right: 0;
   width: 100%;
@@ -4403,12 +4401,12 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-text-steps .qs-step.tone-e2 .qs-step-num {
   background: #c9a000;
-  color: #5C1A0C;
+  color: #0E1A30;
 }
 .qs-screen.is-text-steps .qs-step.tone-e2:not(.has-photo) .qs-step-media {
-  background: linear-gradient(160deg, #fff3c4 0%, #B8CE4F 100%);
+  background: linear-gradient(160deg, #FFE6D6 0%, #FE5600 100%);
   border-color: rgba(201, 160, 0, 0.35);
-  box-shadow: 0 10px 28px rgba(184, 206, 79, 0.28);
+  box-shadow: 0 10px 28px rgba(254, 86, 0, 0.28);
 }
 .qs-screen.is-text-steps .qs-step.tone-e3 .qs-step-num {
   background: #c41245;
@@ -4438,13 +4436,13 @@ html.qs-lightbox-open body {
   box-shadow: 0 10px 28px rgba(21, 88, 192, 0.16);
 }
 .qs-screen.is-text-steps .qs-step.tone-e6 .qs-step-num {
-  background: #FF5E32;
+  background: #1C3560;
   color: #fff;
 }
 .qs-screen.is-text-steps .qs-step.tone-e6:not(.has-photo) .qs-step-media {
   background: linear-gradient(160deg, #d4f5ee 0%, #2ec4a8 100%);
-  border-color: rgba(255, 94, 50, 0.28);
-  box-shadow: 0 10px 28px rgba(255, 94, 50, 0.16);
+  border-color: rgba(28, 53, 96, 0.28);
+  box-shadow: 0 10px 28px rgba(28, 53, 96, 0.16);
 }
 .qs-screen.is-text-steps .qs-step.tone-e7 .qs-step-num {
   background: #9b1d5c;
@@ -4462,8 +4460,8 @@ html.qs-lightbox-open body {
   font-weight: 800;
   font-size: 0.78rem;
   color: var(--qs-green-2);
-  background: rgba(255, 94, 50, 0.1);
-  border: 1px solid rgba(255, 94, 50, 0.2);
+  background: rgba(28, 53, 96, 0.1);
+  border: 1px solid rgba(28, 53, 96, 0.2);
   border-radius: 999px;
   padding: 5px 10px;
   letter-spacing: 0.04em;
@@ -4499,11 +4497,11 @@ html.qs-lightbox-open body {
   padding: 16px 28px;
   font-size: 1.05rem;
   letter-spacing: 0.04em;
-  color: #5C1A0C;
-  background: linear-gradient(135deg, #FFE27A 0%, #B8CE4F 45%, #E8C020 100%);
+  color: #0E1A30;
+  background: linear-gradient(135deg, #FFB88F 0%, #FE5600 45%, #E85000 100%);
   box-shadow:
-    0 0 0 3px rgba(184, 206, 79, 0.35),
-    0 10px 28px rgba(184, 206, 79, 0.55),
+    0 0 0 3px rgba(254, 86, 0, 0.35),
+    0 10px 28px rgba(254, 86, 0, 0.55),
     0 4px 12px rgba(0, 51, 44, 0.18);
   animation: qsStepCtaPulse 1.6s ease-in-out infinite;
 }
@@ -4511,16 +4509,16 @@ html.qs-lightbox-open body {
   filter: brightness(1.06);
   transform: translateY(-2px) scale(1.02);
   box-shadow:
-    0 0 0 4px rgba(184, 206, 79, 0.45),
-    0 14px 32px rgba(184, 206, 79, 0.6),
+    0 0 0 4px rgba(254, 86, 0, 0.45),
+    0 14px 32px rgba(254, 86, 0, 0.6),
     0 6px 14px rgba(0, 51, 44, 0.2);
 }
 .qs-screen.is-photo-steps .qs-step-cta.is-finish {
   color: #fff;
-  background: linear-gradient(135deg, #2bb673, #FF5E32);
+  background: linear-gradient(135deg, #2bb673, #1C3560);
   box-shadow:
-    0 0 0 3px rgba(255, 94, 50, 0.28),
-    0 10px 28px rgba(255, 94, 50, 0.4);
+    0 0 0 3px rgba(28, 53, 96, 0.28),
+    0 10px 28px rgba(28, 53, 96, 0.4);
   animation: none;
 }
 @keyframes qsStepCtaPulse {
@@ -4551,7 +4549,7 @@ html.qs-lightbox-open body {
   min-height: 0;
   border-radius: 18px;
   background: #fff;
-  border: 1px solid rgba(255, 94, 50, 0.12);
+  border: 1px solid rgba(28, 53, 96, 0.12);
   box-shadow: 0 10px 28px rgba(45, 12, 6, 0.1);
   display: grid;
   place-items: center;
@@ -4576,7 +4574,7 @@ html.qs-lightbox-open body {
   font-family: var(--qs-font-h);
   font-weight: 900;
   font-size: 3rem;
-  color: rgba(255, 94, 50, 0.25);
+  color: rgba(28, 53, 96, 0.25);
 }
 .qs-step-info {
   min-height: 0;
@@ -4641,7 +4639,7 @@ html.qs-lightbox-open body {
   cursor: pointer;
   color: #fff;
   background: linear-gradient(135deg, #178a68, var(--qs-green-2));
-  box-shadow: 0 8px 20px rgba(255, 94, 50, 0.32);
+  box-shadow: 0 8px 20px rgba(28, 53, 96, 0.32);
   transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
 }
 .qs-step-cta:hover { filter: brightness(1.05); transform: translateY(-1px); }
@@ -4710,7 +4708,7 @@ html.qs-lightbox-open body {
   border-radius: 11px;
   overflow: hidden;
   background: #fff;
-  border: 1px solid rgba(255, 94, 50, 0.14);
+  border: 1px solid rgba(28, 53, 96, 0.14);
   box-shadow: 0 2px 8px rgba(45, 12, 6, 0.08);
 }
 .qs-item-thumb img {
@@ -4766,8 +4764,8 @@ html.qs-lightbox-open body {
   border: 1px solid rgba(31, 157, 85, 0.28);
 }
 .qs-compare-col.is-bad {
-  background: #FFF3C4;
-  border: 1px solid rgba(184, 206, 79, 0.28);
+  background: #FFE6D6;
+  border: 1px solid rgba(254, 86, 0, 0.28);
 }
 .qs-compare-lbl {
   font-family: var(--qs-font-h);
@@ -4848,7 +4846,7 @@ html.qs-lightbox-open body {
   min-height: 140px;
   border-radius: 12px;
   overflow: hidden;
-  background: #5C1A0C;
+  background: #0E1A30;
   margin: 0 0 8px;
 }
 .qs-screen.is-compare.has-photos .qs-compare-media .qs-zoom-wrap {
@@ -4906,7 +4904,7 @@ html.qs-lightbox-open body {
   text-align: center;
   padding: clamp(18px, 3vw, 28px) clamp(16px, 3vw, 28px);
   background: linear-gradient(160deg, #f7fbf9 0%, #eef6f2 100%);
-  border: 1px solid rgba(255, 94, 50, 0.12);
+  border: 1px solid rgba(28, 53, 96, 0.12);
   border-radius: 20px;
   box-sizing: border-box;
   min-height: 0;
@@ -4964,7 +4962,7 @@ html.qs-lightbox-open body {
 .qs-reflect-tap {
   background: linear-gradient(135deg, var(--qs-red), var(--qs-red-dk));
   color: #fff;
-  box-shadow: 0 8px 20px rgba(184, 206, 79, 0.35);
+  box-shadow: 0 8px 20px rgba(254, 86, 0, 0.35);
   font-size: 0.95rem;
   letter-spacing: 0.02em;
 }
@@ -4982,9 +4980,9 @@ html.qs-lightbox-open body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid rgba(255, 94, 50, 0.14);
+  border: 1px solid rgba(28, 53, 96, 0.14);
   border-radius: 12px;
-  box-shadow: 0 4px 0 rgba(255, 94, 50, 0.08);
+  box-shadow: 0 4px 0 rgba(28, 53, 96, 0.08);
 }
 .qs-reflect-choice.is-chosen {
   background: var(--qs-green);
@@ -4998,8 +4996,8 @@ html.qs-lightbox-open body {
   box-shadow: 0 4px 0 rgba(184, 56, 26, 0.25);
 }
 .qs-reflect-choice.is-wrong {
-  background: #fff3c4;
-  color: #7a5f00;
+  background: #FFE6D6;
+  color: #8A2600;
   border-color: #c9a100;
   animation: qsReflectShake 0.35s ease;
 }
@@ -5014,7 +5012,7 @@ html.qs-lightbox-open body {
   max-width: 34em;
   padding: 16px 18px;
   background: #fff;
-  border: 1px solid rgba(184, 206, 79, 0.28);
+  border: 1px solid rgba(254, 86, 0, 0.28);
   border-left: 4px solid var(--qs-red);
   border-radius: 14px;
   font-weight: 600;
@@ -5032,7 +5030,7 @@ html.qs-lightbox-open body {
   align-items: center;
   gap: 10px;
   text-align: left;
-  border: 1px solid rgba(255, 94, 50, 0.14);
+  border: 1px solid rgba(28, 53, 96, 0.14);
   background: var(--qs-soft);
   border-radius: 12px;
   padding: 12px 14px;
@@ -5136,7 +5134,7 @@ html.qs-lightbox-open body {
 }
 .qs-seq-fb-list li { margin: 0 0 2px; }
 .qs-seq-fb.is-ok { background: #e8f7ee; color: var(--qs-ok-dk); }
-.qs-seq-fb.is-nok { background: #FFF3C4; color: #7a5f00; }
+.qs-seq-fb.is-nok { background: #FFE6D6; color: #8A2600; }
 .qs-seq-retry {
   display: inline-flex;
   align-items: center;
@@ -5195,7 +5193,7 @@ html.qs-lightbox-open body {
 .qs-match-item {
   width: 100%;
   text-align: left;
-  border: 1px solid rgba(255, 94, 50, 0.14);
+  border: 1px solid rgba(28, 53, 96, 0.14);
   background: #fff;
   border-radius: 10px;
   padding: 8px 10px;
@@ -5208,7 +5206,7 @@ html.qs-lightbox-open body {
 }
 .qs-match-item.is-selected { box-shadow: inset 0 0 0 2px var(--qs-red); }
 .qs-match-item.is-matched { background: #e8f7ee; color: var(--qs-ok-dk); cursor: default; }
-.qs-match-item.is-wrong { background: #FFF3C4; }
+.qs-match-item.is-wrong { background: #FFE6D6; }
 
 /* ===== Jogo de associação no celular =============================
    Empilhar as duas colunas obrigava a percorrer os oito exercícios
@@ -5245,7 +5243,7 @@ html.qs-lightbox-open body {
     padding: 8px 13px;
     border-radius: 999px;
     font-size: 0.76rem;
-    border-color: rgba(255, 94, 50, 0.3);
+    border-color: rgba(28, 53, 96, 0.3);
   }
   /* ficha usada sai da paleta: sobra espaço e sobram menos escolhas.
      O acerto continua visível no exercício, que fica verde. */
@@ -5365,8 +5363,8 @@ html.qs-lightbox-open body {
   margin: 0 0 16px;
   padding: 14px 16px;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(184, 206, 79, 0.12), rgba(255, 94, 50, 0.1));
-  border: 1.5px solid rgba(184, 206, 79, 0.35);
+  background: linear-gradient(135deg, rgba(254, 86, 0, 0.12), rgba(28, 53, 96, 0.1));
+  border: 1.5px solid rgba(254, 86, 0, 0.35);
 }
 .qs-start-callout strong {
   display: block;
@@ -5412,8 +5410,8 @@ html.qs-lightbox-open body {
   border-color: var(--qs-red);
   background: linear-gradient(165deg, #fffdf5 0%, #fff 55%);
   box-shadow:
-    0 12px 28px rgba(184, 206, 79, 0.28),
-    0 0 0 1px rgba(184, 206, 79, 0.14);
+    0 12px 28px rgba(254, 86, 0, 0.28),
+    0 0 0 1px rgba(254, 86, 0, 0.14);
   transform: translateY(-1px);
 }
 .qs-mod-card.is-open::before {
@@ -5423,12 +5421,12 @@ html.qs-lightbox-open body {
   top: 0;
   bottom: 0;
   width: 5px;
-  background: linear-gradient(180deg, #D0E07A, #B8CE4F 55%, #9AAF3A);
+  background: linear-gradient(180deg, #FF8347, #FE5600 55%, #D94900);
 }
 .qs-mod-card.is-open .qs-mod-num {
-  background: linear-gradient(135deg, #D0E07A, #B8CE4F);
+  background: linear-gradient(135deg, #FF8347, #FE5600);
   color: #0A2744;
-  box-shadow: 0 4px 12px rgba(184, 206, 79, 0.4);
+  box-shadow: 0 4px 12px rgba(254, 86, 0, 0.4);
 }
 .qs-mod-card.is-open .qs-mod-title {
   color: var(--qs-ink);
@@ -5441,10 +5439,10 @@ html.qs-lightbox-open body {
   margin-top: 2px;
   padding: 7px 12px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #D0E07A, #B8CE4F);
+  background: linear-gradient(135deg, #FF8347, #FE5600);
   color: #0A2744 !important;
   letter-spacing: 0.05em;
-  box-shadow: 0 6px 14px rgba(184, 206, 79, 0.35);
+  box-shadow: 0 6px 14px rgba(254, 86, 0, 0.35);
 }
 .qs-mod-card.is-open.is-pulse {
   animation: qsModGlow 1.7s ease-in-out infinite;
@@ -5453,27 +5451,27 @@ html.qs-lightbox-open body {
   0%, 100% {
     border-color: var(--qs-red);
     box-shadow:
-      0 0 0 0 rgba(184, 206, 79, 0.5),
-      0 12px 28px rgba(184, 206, 79, 0.28);
+      0 0 0 0 rgba(254, 86, 0, 0.5),
+      0 12px 28px rgba(254, 86, 0, 0.28);
     transform: translateY(-1px);
   }
   50% {
-    border-color: #D0E07A;
+    border-color: #FF8347;
     box-shadow:
-      0 0 0 7px rgba(184, 206, 79, 0),
-      0 16px 34px rgba(184, 206, 79, 0.45),
-      0 0 26px rgba(184, 206, 79, 0.4);
+      0 0 0 7px rgba(254, 86, 0, 0),
+      0 16px 34px rgba(254, 86, 0, 0.45),
+      0 0 26px rgba(254, 86, 0, 0.4);
     transform: translateY(-3px);
   }
 }
 .qs-mod-card.is-done {
   background: var(--qs-green);
   border-color: var(--qs-green-2);
-  box-shadow: 0 8px 18px rgba(255, 94, 50, 0.22);
+  box-shadow: 0 8px 18px rgba(28, 53, 96, 0.22);
 }
 .qs-mod-card.is-done:hover {
   border-color: var(--qs-green-2);
-  box-shadow: 0 12px 26px rgba(255, 94, 50, 0.3);
+  box-shadow: 0 12px 26px rgba(28, 53, 96, 0.3);
 }
 .qs-mod-card.is-done .qs-mod-num {
   background: rgba(255, 255, 255, 0.22);
@@ -5851,10 +5849,10 @@ html.qs-lightbox-open body {
   .qs-finale-shine,
   .qs-finale-trophy { animation: none !important; }
   .qs-mod-card.is-open.is-pulse {
-    box-shadow: 0 0 0 4px rgba(184, 206, 79, 0.25), 0 10px 24px rgba(184, 206, 79, 0.28);
+    box-shadow: 0 0 0 4px rgba(254, 86, 0, 0.25), 0 10px 24px rgba(254, 86, 0, 0.28);
   }
   .qs-pts.is-gain {
-    color: #5C1A0C;
+    color: #0E1A30;
     background: linear-gradient(135deg, #7CFFB2, #2bb673);
   }
   .qs-pts-fly.is-on { opacity: 0; }
