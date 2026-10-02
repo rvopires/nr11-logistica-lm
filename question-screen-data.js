@@ -38,7 +38,9 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 1 — Logística para Todos: Equipamentos e Quem Pode Operar",
           "subtitle": "Objetivos do treinamento, os cinco equipamentos da Logística e do Drive e a formação exigida para cada um.",
-          "transcript": "Módulo 1: Logística para Todos: Equipamentos e Quem Pode Operar."
+          "transcript": "Módulo 1: Logística para Todos: Equipamentos e Quem Pode Operar.",
+          "image": "assets/fotos/capamodulo1.png",
+          "imageAlt": "Capa do Módulo 1: equipamentos e quem pode operar na Logística e no Drive"
         },
         {
           "id": "m1-v-abertura",
@@ -290,7 +292,9 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 2 — EPI: Sua Primeira Barreira",
           "subtitle": "Os EPIs obrigatórios na logística, as responsabilidades do colaborador e os óculos com grau.",
-          "transcript": "Módulo 2: EPI: Sua Primeira Barreira."
+          "transcript": "Módulo 2: EPI: Sua Primeira Barreira.",
+          "image": "assets/fotos/capamodulo2.png",
+          "imageAlt": "Capa do Módulo 2: EPI — sua primeira barreira"
         },
         {
           "id": "m2-v-epi",
@@ -422,7 +426,9 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 3 — Empilhadeira e PTA: Operação Segura",
           "subtitle": "Riscos, limite de velocidade, regras de operação, checklist diário, troca de baterias e plataforma elevatória.",
-          "transcript": "Módulo 3: Empilhadeira e PTA: Operação Segura."
+          "transcript": "Módulo 3: Empilhadeira e PTA: Operação Segura.",
+          "image": "assets/fotos/capamodulo3.png",
+          "imageAlt": "Capa do Módulo 3: empilhadeira e PTA — operação segura"
         },
         {
           "id": "m3-v-riscos",
@@ -805,7 +811,9 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 4 — Paleteiras e Pedestres: Dividindo o Mesmo Piso",
           "subtitle": "Transpaleteira elétrica, paleteira manual, onde nunca estacionar e as regras do pedestre.",
-          "transcript": "Módulo 4: Paleteiras e Pedestres: Dividindo o Mesmo Piso."
+          "transcript": "Módulo 4: Paleteiras e Pedestres: Dividindo o Mesmo Piso.",
+          "image": "assets/fotos/capamodulo4.png",
+          "imageAlt": "Capa do Módulo 4: paleteiras e pedestres — dividindo o mesmo piso"
         },
         {
           "id": "m4-v-transpaleteira",
@@ -1104,7 +1112,9 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 5 — Movimentação Manual, Manipulador a Vácuo e Estilete",
           "subtitle": "Postura e limites de peso, o manipulador de sacaria do Drive e o uso correto do estilete.",
-          "transcript": "Módulo 5: Movimentação Manual, Manipulador a Vácuo e Estilete."
+          "transcript": "Módulo 5: Movimentação Manual, Manipulador a Vácuo e Estilete.",
+          "image": "assets/fotos/capamodulo5.png",
+          "imageAlt": "Capa do Módulo 5: movimentação manual, manipulador a vácuo e estilete"
         },
         {
           "id": "m5-v-manual",
@@ -1422,7 +1432,9 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 6 — Armazenagem, Docas e Encerramento",
           "subtitle": "Palete aéreo, longarinas e palete PBR, equipamento certo para cada produto, docas e manuais de segurança.",
-          "transcript": "Módulo 6: Armazenagem, Docas e Encerramento."
+          "transcript": "Módulo 6: Armazenagem, Docas e Encerramento.",
+          "image": "assets/fotos/capamodulo6.png",
+          "imageAlt": "Capa do Módulo 6: armazenagem, docas e encerramento"
         },
         {
           "id": "m6-v-armazenagem",
