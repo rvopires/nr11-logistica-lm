@@ -56,33 +56,41 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m1-objetivos",
           "type": "content",
+          "skin": "agents",
+          "banner": "assets/fotos/pagina5.png",
+          "bannerAlt": "Cinco ícones em verde: escudo, lâmpada, cofrinho, gráfico em alta e capacete",
           "kicker": "📄 Texto",
           "title": "Objetivos do Treinamento",
-          "items": [
+          "cards": [
             {
               "icon": "🛡️",
+              "lead": "Objetivo 1",
               "title": "Prevenção de acidentes",
-              "text": "agir antes que o risco vire ocorrência"
+              "body": "agir antes que o risco vire ocorrência"
             },
             {
               "icon": "💡",
+              "lead": "Objetivo 2",
               "title": "Conscientização dos colaboradores",
-              "text": "cada pessoa faz parte da segurança"
+              "body": "cada pessoa faz parte da segurança"
             },
             {
               "icon": "💰",
+              "lead": "Objetivo 3",
               "title": "Redução de custos",
-              "text": "menos acidentes, menos perdas e paradas"
+              "body": "menos acidentes, menos perdas e paradas"
             },
             {
               "icon": "📈",
+              "lead": "Objetivo 4",
               "title": "Maior produtividade",
-              "text": "operação segura é operação que flui"
+              "body": "operação segura é operação que flui"
             },
             {
               "icon": "🤝",
+              "lead": "Objetivo 5",
               "title": "Bem-estar e segurança",
-              "text": "um ambiente de trabalho melhor para todos"
+              "body": "um ambiente de trabalho melhor para todos"
             }
           ],
           "transcript": "Objetivos do treinamento: prevenção de acidentes, conscientização, redução de custos, maior produtividade, bem-estar e segurança."
@@ -101,49 +109,52 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m1-quem-opera",
           "type": "content",
-          "skin": "agents",
+          "steps": true,
+          "stepSkin": "equip",
+          "stepUnit": "Equipamento",
+          "stepNext": "Próximo equipamento",
+          "stepFinish": "Concluir",
           "kicker": "📄 Texto",
           "title": "Quem Pode Operar o Quê",
-          "body": "Cada equipamento tem formação obrigatória. Sem a carteirinha certa, não opera.",
-          "cards": [
+          "items": [
             {
+              "image": "assets/fotos/p7-1a.png",
               "icon": "🚜",
-              "lead": "CNH + formação",
-              "title": "Empilhadeira (gás e elétrica)",
-              "body": "CNH + treinamento teórico e prático.",
-              "tone": "co2"
+              "title": "Empilhadeira a gás",
+              "text": "CNH + treinamento teórico e prático."
             },
             {
+              "image": "assets/fotos/p7-1b.png",
+              "icon": "🔋",
+              "title": "Empilhadeira elétrica",
+              "text": "CNH + treinamento teórico e prático."
+            },
+            {
+              "image": "assets/fotos/p7-2.png",
               "icon": "🔌",
-              "lead": "Sem CNH",
               "title": "Empilhadeira elétrica patolada",
-              "body": "Treinamento teórico e prático. CNH não exigida.",
-              "tone": "agua"
+              "text": "Sem CNH: treinamento teórico e prático. CNH não exigida."
             },
             {
+              "image": "assets/fotos/p7-3.png",
               "icon": "🛒",
-              "lead": "NR 11",
               "title": "Paleteira / transpaleteira elétrica",
-              "body": "NR 11 Operador de Paleteira (teoria e prática) + carteirinha."
+              "text": "NR 11 Operador de Paleteira (teoria e prática) + carteirinha.",
+              "warn": "Atenção: não está autorizada a operação da transpaleteira no modo embarcado."
             },
             {
+              "image": "assets/fotos/p7-4.png",
               "icon": "🏗️",
-              "lead": "NR 35 + NR 18",
               "title": "Plataforma elevatória (PTA)",
-              "body": "NR 35 e NR 18 (teoria e prática) + carteirinha.",
-              "tone": "pqs"
+              "text": "NR 35 e NR 18 (teoria e prática) + carteirinha."
             },
             {
+              "image": "assets/fotos/p7-5.png",
               "icon": "🌬️",
-              "lead": "NR 12",
               "title": "Manipulador de sacaria a vácuo",
-              "body": "Formação de NR 12 obrigatória."
+              "text": "Formação de NR 12 obrigatória."
             }
           ],
-          "note": {
-            "label": "Atenção",
-            "text": "Não está autorizada a operação da transpaleteira no modo embarcado."
-          },
           "transcript": "Quem pode operar cada equipamento: a formação exigida e a carteirinha."
         },
         {

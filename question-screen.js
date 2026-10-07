@@ -380,6 +380,7 @@
   function contentBlocks(data) {
     var html = '';
     if (data.body) html += `<p class="qs-body">${esc(data.body)}</p>`;
+    if (data.banner) html += `<div class="qs-banner"><img src="${esc(data.banner)}" alt="${esc(data.bannerAlt || '')}" loading="eager" decoding="async"></div>`;
     if (Array.isArray(data.stats) && data.stats.length) {
       html += `<div class="qs-stats">${data.stats.map(function (s) {
         var tone = s.tone ? ' tone-' + esc(s.tone) : '';
@@ -397,6 +398,8 @@
       var skinClass = data.skin === 'actions' ? ' is-actions'
         : (data.skin === 'agents' ? ' is-agents'
         : (data.skin === 'principles' ? ' is-principles' : ''));
+      if (data.layout === 'list') skinClass += ' is-list';
+      if (data.layout === 'photos') skinClass += ' is-photos';
       html += `<div class="qs-cards count-${data.cards.length}${aspectClass}${skinClass}">${data.cards.map(function (c) {
         var imgOnly = !!(c.image && !c.title && !c.body && !c.icon && !(c.points && c.points.length));
         var img = c.image
@@ -414,9 +417,10 @@
             }).join('')}</ul>`
           : '';
         var tone = c.tone ? ' tone-' + esc(c.tone) : '';
-        return `<article class="qs-card${c.image ? ' has-img' : ''}${imgOnly ? ' is-img-only' : ''}${points ? ' has-points' : ''}${tone}">
+        return `<article class="qs-card${c.image ? ' has-img' : ''}${imgOnly ? ' is-img-only' : ''}${points ? ' has-points' : ''}${Array.isArray(c.thumbs) && c.thumbs.length ? ' has-thumbs' : ''}${tone}">
           ${img}
           <div class="qs-card-top">
+            ${Array.isArray(c.thumbs) && c.thumbs.length ? `<div class="qs-card-thumbs" aria-hidden="true">${c.thumbs.map(function (t) { return `<span class="qs-thumb"><span class="qs-thumb-ph">${esc(c.icon || '')}</span><img src="${esc(t)}" alt="" loading="eager" decoding="async" onerror="this.remove()"></span>`; }).join('')}</div>` : ''}
             ${c.icon && !c.image ? `<div class="qs-card-ico" aria-hidden="true">${esc(c.icon)}</div>` : ''}
             <div class="qs-card-head">
               ${c.title ? `<h3>${esc(c.title)}</h3>` : ''}
@@ -746,7 +750,7 @@
         </div>`
         : '';
       var mediaInner = it.image
-        ? `<img class="qs-step-img" src="${esc(it.image)}" alt="${esc(it.imageAlt || it.title || '')}" loading="${i < 2 ? 'eager' : 'lazy'}" decoding="async">`
+        ? `<img class="qs-step-img" src="${esc(it.image)}" alt="${esc(it.imageAlt || it.title || '')}" loading="${i < 2 ? 'eager' : 'lazy'}" decoding="async"${it.icon ? ' onerror="this.style.display=&quot;none&quot;;this.nextElementSibling.hidden=false"' : ''}>${it.icon ? `<div class="qs-step-fallback is-icon" hidden><span aria-hidden="true">${esc(it.icon)}</span></div>` : ''}`
         : (it.icon
           ? `<div class="qs-step-fallback is-icon"><span aria-hidden="true">${esc(it.icon)}</span></div>`
           : `<div class="qs-step-fallback">${esc(num)}</div>`);
@@ -759,7 +763,7 @@
     }).join('');
 
     return `
-      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}" data-qs-root data-type="content">
+      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}${data.stepSkin === 'equip' ? ' is-equip-steps' : ''}" data-qs-root data-type="content">
         <div class="qs-steps" data-qs-steps data-step-unit="${esc(unit)}" data-step-next="${esc(nextLbl)}" data-step-finish="${esc(data.stepFinish || 'Concluir sequência')}">
           <header class="qs-steps-top">
             <h2 class="qs-title">${esc(data.title || '')}</h2>
