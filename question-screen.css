@@ -2509,11 +2509,11 @@ html.qs-lightbox-open body {
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center center;
+  object-position: 50% 15%; /* mostra a parte de cima da imagem, onde fica o rosto do personagem */
   padding: 0;
   background: transparent;
   animation: qsImgExpand 14s ease-out forwards;
-  transform-origin: center center;
+  transform-origin: center top;
   will-change: transform;
 }
 @keyframes qsImgExpand {
@@ -3292,9 +3292,9 @@ html.qs-lightbox-open body {
 /* Agente × classe — cards com foto e selo da classe */
 .qs-screen.is-agents {
   background:
-    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(28, 53, 96, 0.12), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(254, 86, 0, 0.16), transparent 50%),
-    linear-gradient(165deg, #f7fbf9 0%, #eef6f2 55%, #e6f2ec 100%);
+    radial-gradient(ellipse 65% 50% at 50% -10%, rgba(28, 53, 96, 0.14), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(254, 86, 0, 0.14), transparent 50%),
+    linear-gradient(165deg, #EAF0FA 0%, #F7F9FC 55%, #FFF0E6 100%);
 }
 .qs-screen.is-agents .qs-panel-text {
   justify-content: center;
@@ -3302,8 +3302,16 @@ html.qs-lightbox-open body {
 }
 .qs-screen.is-agents .qs-title {
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   color: var(--qs-ink);
+}
+.qs-screen.is-agents .qs-body {
+  text-align: center;
+  max-width: 46ch;
+  margin: 0 auto 14px;
+  color: var(--qs-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 .qs-cards.is-agents {
   max-width: 920px;
@@ -3311,6 +3319,19 @@ html.qs-lightbox-open body {
   margin: 0 auto;
   gap: 14px;
   grid-template-columns: repeat(3, 1fr);
+}
+.qs-cards.is-agents.count-4,
+.qs-cards.is-agents.count-5 {
+  grid-template-columns: repeat(6, 1fr);
+  max-width: 880px;
+  gap: 12px;
+}
+.qs-cards.is-agents.count-4 .qs-card,
+.qs-cards.is-agents.count-5 .qs-card {
+  grid-column: span 3;
+}
+.qs-cards.is-agents.count-5 .qs-card:last-child {
+  grid-column: 2 / span 4;
 }
 .qs-cards.is-agents .qs-card {
   display: flex;
@@ -3321,12 +3342,18 @@ html.qs-lightbox-open body {
   background: #fff;
   border: 1px solid rgba(28, 53, 96, 0.1);
   border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(60, 18, 8, 0.1);
+  box-shadow: 0 8px 24px rgba(10, 18, 36, 0.1);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
+  animation: qsPrincipleIn 0.45s ease both;
 }
+.qs-cards.is-agents .qs-card:nth-child(1) { animation-delay: 0.02s; }
+.qs-cards.is-agents .qs-card:nth-child(2) { animation-delay: 0.06s; }
+.qs-cards.is-agents .qs-card:nth-child(3) { animation-delay: 0.10s; }
+.qs-cards.is-agents .qs-card:nth-child(4) { animation-delay: 0.14s; }
+.qs-cards.is-agents .qs-card:nth-child(5) { animation-delay: 0.18s; }
 .qs-cards.is-agents .qs-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 14px 32px rgba(60, 18, 8, 0.14);
+  box-shadow: 0 14px 32px rgba(10, 18, 36, 0.14);
 }
 .qs-cards.is-agents .qs-card-media {
   margin: 0;
@@ -3339,12 +3366,26 @@ html.qs-lightbox-open body {
   object-fit: cover;
   object-position: center 30%;
 }
+.qs-cards.is-agents .qs-card-ico {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  line-height: 1;
+  background:
+    radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.75), transparent 55%),
+    linear-gradient(145deg, #FF8347, #1C3560);
+  box-shadow: 0 4px 12px rgba(28, 53, 96, 0.22);
+}
 .qs-cards.is-agents .qs-card-top {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  gap: 8px;
-  padding: 14px 14px 0;
+  gap: 12px;
+  padding: 16px 16px 0;
 }
 .qs-cards.is-agents .qs-card-head {
   display: flex;
@@ -3352,10 +3393,11 @@ html.qs-lightbox-open body {
   align-items: flex-start;
   gap: 8px;
   width: 100%;
+  min-width: 0;
 }
 .qs-cards.is-agents .qs-card h3 {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.02rem;
   font-weight: 800;
   color: var(--qs-ink);
   line-height: 1.25;
@@ -3367,38 +3409,77 @@ html.qs-lightbox-open body {
   padding: 4px 10px;
   border-radius: 999px;
   font-family: var(--qs-font-h);
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #fff;
-  background: var(--qs-green);
+  background: #1C3560;
 }
 .qs-cards.is-agents .qs-card.tone-agua .qs-card-lead {
-  background: linear-gradient(135deg, #00a8b2, #1C3560);
+  background: linear-gradient(135deg, #2A4A85, #1C3560);
 }
 .qs-cards.is-agents .qs-card.tone-pqs .qs-card-lead {
-  background: linear-gradient(135deg, #E04A38, #BC1A0D);
+  background: linear-gradient(135deg, #FE5600, #D94900);
 }
 .qs-cards.is-agents .qs-card.tone-co2 .qs-card-lead {
   background: linear-gradient(135deg, #14233F, #0E1A30);
 }
 .qs-cards.is-agents .qs-card > p {
-  padding: 8px 14px 16px;
+  padding: 10px 16px 16px;
   margin: 0;
-  font-size: 0.86rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--qs-muted);
   line-height: 1.4;
 }
+.qs-screen.is-agents .qs-note,
+.qs-screen.is-agents .qs-note-card {
+  max-width: 640px;
+  width: 100%;
+  margin: 14px auto 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: #FFF0E6;
+  border: 1px solid rgba(254, 86, 0, 0.28);
+  box-shadow: 0 6px 18px rgba(254, 86, 0, 0.08);
+}
+.qs-screen.is-agents .qs-note-label {
+  font-family: var(--qs-font-h);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FE5600;
+}
+.qs-screen.is-agents .qs-note-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8A2600;
+  line-height: 1.4;
+}
 @media (max-width: 720px) {
-  .qs-cards.is-agents {
+  .qs-cards.is-agents,
+  .qs-cards.is-agents.count-4,
+  .qs-cards.is-agents.count-5 {
     grid-template-columns: 1fr;
     max-width: 360px;
+  }
+  .qs-cards.is-agents.count-4 .qs-card,
+  .qs-cards.is-agents.count-5 .qs-card,
+  .qs-cards.is-agents.count-5 .qs-card:last-child {
+    grid-column: auto;
   }
   .qs-cards.is-agents .qs-card-media {
     aspect-ratio: 16 / 10;
   }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qs-cards.is-agents .qs-card { animation: none !important; }
 }
 
 /* Princípios SCI — grade de cards com ícone (sem foto) */
@@ -5856,4 +5937,37 @@ html.qs-lightbox-open body {
     background: linear-gradient(135deg, #7CFFB2, #2bb673);
   }
   .qs-pts-fly.is-on { opacity: 0; }
+}
+
+/* ==========================================================================
+   Perguntas em telas baixas (notebooks): texto e botões menores para a imagem ter mais altura.
+   Sem isso a imagem da pergunta fica numa faixa de ~5:1 e é cortada. Com isto ela chega perto de 3,5:1,
+   que combina com as imagens das perguntas (3:1, 2400×800).
+   ========================================================================== */
+@media (min-width: 761px) and (max-height: 820px) {
+  .qs-app .qs-screen.is-question .qs-qbar {
+    font-size: 16px;
+    padding: 10px 18px;
+    line-height: 1.3;
+  }
+  .qs-app .qs-screen.is-question .qs-opts {
+    padding: 10px 22px 6px;
+    gap: 8px;
+  }
+  .qs-app .qs-screen.is-question .qs-opt {
+    min-height: 40px;
+    padding: 7px 14px;
+    font-size: 14.5px;
+    border-radius: 12px;
+  }
+  .qs-app .qs-screen.is-question .qs-foot {
+    padding-bottom: 12px;
+  }
+  .qs-app .qs-screen.is-question .qs-confirm {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+  .qs-app .qs-screen.is-question .qs-explain {
+    font-size: 13.5px;
+  }
 }

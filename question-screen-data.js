@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Conteúdo — NR 11 Logística para Todos · Leroy Merlin
  * Gerado a partir do roteiro "Roteiro NR 11 — Logística para Todos" (35 slides do SESMT).
  *
@@ -6,7 +6,7 @@
  *
  * Vídeos: SEM embed — só nome + scene/brief no frame "Vídeo a gravar".
  *         Depois cole embed/playerId Panda em cada tela type:"video".
- * Fotos: caminhos placeholder em assets/fotos/ — substitua pelos arquivos reais.
+ * Fotos: assets/fotos/mNpM.png (módulo N, pergunta M).
  *
  * Atividades por módulo (formatos do motor do curso):
  *  M1 Crachá Liberado?     → 6 question (confirmar): liberar ou barrar
@@ -101,42 +101,49 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m1-quem-opera",
           "type": "content",
+          "skin": "agents",
           "kicker": "📄 Texto",
           "title": "Quem Pode Operar o Quê",
+          "body": "Cada equipamento tem formação obrigatória. Sem a carteirinha certa, não opera.",
           "cards": [
             {
               "icon": "🚜",
+              "lead": "CNH + formação",
               "title": "Empilhadeira (gás e elétrica)",
-              "body": "CNH + treinamento teórico e prático."
+              "body": "CNH + treinamento teórico e prático.",
+              "tone": "co2"
             },
             {
               "icon": "🔌",
+              "lead": "Sem CNH",
               "title": "Empilhadeira elétrica patolada",
-              "body": "Treinamento teórico e prático. CNH não exigida."
+              "body": "Treinamento teórico e prático. CNH não exigida.",
+              "tone": "agua"
             },
             {
               "icon": "🛒",
+              "lead": "NR 11",
               "title": "Paleteira / transpaleteira elétrica",
               "body": "NR 11 Operador de Paleteira (teoria e prática) + carteirinha."
             },
             {
               "icon": "🏗️",
+              "lead": "NR 35 + NR 18",
               "title": "Plataforma elevatória (PTA)",
-              "body": "NR 35 e NR 18 (teoria e prática) + carteirinha."
-            }
-          ],
-          "items": [
-            {
-              "icon": "🌬️",
-              "title": "Manipulador de sacaria a vácuo:",
-              "text": "formação de NR 12 obrigatória."
+              "body": "NR 35 e NR 18 (teoria e prática) + carteirinha.",
+              "tone": "pqs"
             },
             {
-              "icon": "⛔",
-              "title": "Atenção:",
-              "text": "não está autorizada a operação da transpaleteira no modo embarcado."
+              "icon": "🌬️",
+              "lead": "NR 12",
+              "title": "Manipulador de sacaria a vácuo",
+              "body": "Formação de NR 12 obrigatória."
             }
           ],
+          "note": {
+            "label": "Atenção",
+            "text": "Não está autorizada a operação da transpaleteira no modo embarcado."
+          },
           "transcript": "Quem pode operar cada equipamento: a formação exigida e a carteirinha."
         },
         {
@@ -168,7 +175,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Liberado: CNH e treinamento teórico e prático completos.",
           "review": "Habilitação da empilhadeira",
-          "transcript": "Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás."
+          "transcript": "Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás.",
+          "image": "assets/fotos/m1p1.png",
+          "imageAlt": "Ilustração: Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a"
         },
         {
           "id": "m1-q2",
@@ -189,7 +198,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Barrado: a CNH é obrigatória para empilhadeira. A única exceção é a empilhadeira patolada.",
           "review": "CNH para empilhadeira",
-          "transcript": "Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica."
+          "transcript": "Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica.",
+          "image": "assets/fotos/m1p2.png",
+          "imageAlt": "Ilustração: Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhad"
         },
         {
           "id": "m1-q3",
@@ -210,7 +221,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Liberado: a patolada não exige CNH, só o treinamento teórico e prático.",
           "review": "Exceção da empilhadeira patolada",
-          "transcript": "Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada."
+          "transcript": "Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada.",
+          "image": "assets/fotos/m1p3.png",
+          "imageAlt": "Ilustração: Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira"
         },
         {
           "id": "m1-q4",
@@ -231,7 +244,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Barrado: a formação é teoria e prática, e é preciso ter a carteirinha.",
           "review": "Formação da paleteira elétrica",
-          "transcript": "Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica."
+          "transcript": "Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica.",
+          "image": "assets/fotos/m1p4.png",
+          "imageAlt": "Ilustração: Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha."
         },
         {
           "id": "m1-q5",
@@ -252,7 +267,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Liberado: as duas formações e a carteirinha em dia.",
           "review": "Requisitos da PTA",
-          "transcript": "Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA)."
+          "transcript": "Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA).",
+          "image": "assets/fotos/m1p5.png",
+          "imageAlt": "Ilustração: Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a"
         },
         {
           "id": "m1-q6",
@@ -273,7 +290,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Barrado: o modo embarcado não está autorizado para ninguém, por razões de segurança.",
           "review": "Modo embarcado da transpaleteira",
-          "transcript": "Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado."
+          "transcript": "Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado.",
+          "image": "assets/fotos/m1p6.png",
+          "imageAlt": "Ilustração: Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no "
         }
       ]
     },
@@ -603,7 +622,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Cinto de segurança é obrigatório na operação.",
           "review": "Cinto de segurança",
-          "transcript": "Situação 1 de 10 · Operador com o cinto de segurança afivelado."
+          "transcript": "Situação 1 de 10 · Operador com o cinto de segurança afivelado.",
+          "image": "assets/fotos/m3p1.png",
+          "imageAlt": "Ilustração: Situação 1 de 10 · Operador com o cinto de segurança afivelado."
         },
         {
           "id": "m3-q2",
@@ -624,7 +645,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não ande com os garfos erguidos.",
           "review": "Posição dos garfos",
-          "transcript": "Situação 2 de 10 · Deslocamento com os garfos erguidos."
+          "transcript": "Situação 2 de 10 · Deslocamento com os garfos erguidos.",
+          "image": "assets/fotos/m3p2.png",
+          "imageAlt": "Ilustração: Situação 2 de 10 · Deslocamento com os garfos erguidos."
         },
         {
           "id": "m3-q3",
@@ -645,7 +668,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Peças soltas devem ser amarradas com fitilho ou fita stretch.",
           "review": "Fixação da carga",
-          "transcript": "Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch."
+          "transcript": "Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch.",
+          "image": "assets/fotos/m3p3.png",
+          "imageAlt": "Ilustração: Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch."
         },
         {
           "id": "m3-q4",
@@ -666,7 +691,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Empilhadeira a gás não é permitida dentro da loja e em lugares fechados.",
           "review": "Empilhadeira a gás em local fechado",
-          "transcript": "Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja."
+          "transcript": "Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja.",
+          "image": "assets/fotos/m3p4.png",
+          "imageAlt": "Ilustração: Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja."
         },
         {
           "id": "m3-q5",
@@ -687,7 +714,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não use o celular durante a operação.",
           "review": "Celular na operação",
-          "transcript": "Situação 5 de 10 · Operador respondendo mensagem no celular em movimento."
+          "transcript": "Situação 5 de 10 · Operador respondendo mensagem no celular em movimento.",
+          "image": "assets/fotos/m3p5.png",
+          "imageAlt": "Ilustração: Situação 5 de 10 · Operador respondendo mensagem no celular em movimento."
         },
         {
           "id": "m3-q6",
@@ -708,7 +737,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "O checklist diário é obrigatório antes de começar.",
           "review": "Checklist diário",
-          "transcript": "Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade."
+          "transcript": "Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade.",
+          "image": "assets/fotos/m3p6.png",
+          "imageAlt": "Ilustração: Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade."
         },
         {
           "id": "m3-q7",
@@ -729,7 +760,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "A velocidade máxima no Drive e na Logística é 6 km/h.",
           "review": "Velocidade máxima",
-          "transcript": "Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive."
+          "transcript": "Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive.",
+          "image": "assets/fotos/m3p7.png",
+          "imageAlt": "Ilustração: Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive."
         },
         {
           "id": "m3-q8",
@@ -750,7 +783,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Transporte só a quantidade permitida e respeite a altura da carga.",
           "review": "Capacidade e altura da carga",
-          "transcript": "Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas."
+          "transcript": "Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas.",
+          "image": "assets/fotos/m3p8.png",
+          "imageAlt": "Ilustração: Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas."
         },
         {
           "id": "m3-q9",
@@ -771,7 +806,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Equipamento em manutenção não deve ser utilizado.",
           "review": "Equipamento em manutenção",
-          "transcript": "Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\"."
+          "transcript": "Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\".",
+          "image": "assets/fotos/m3p9.png",
+          "imageAlt": "Ilustração: Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\"."
         },
         {
           "id": "m3-q10",
@@ -792,7 +829,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Cheque sempre o estado do piso, que pode estar molhado ou oleoso.",
           "review": "Estado do piso",
-          "transcript": "Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes de passar."
+          "transcript": "Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes de passar.",
+          "image": "assets/fotos/m3p10.png",
+          "imageAlt": "Ilustração: Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes d"
         }
       ]
     },
@@ -938,7 +977,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Saída de emergência nunca pode ser obstruída.",
           "review": "Saída de emergência",
-          "transcript": "Onde é proibido deixar a transpaleteira?"
+          "transcript": "Onde é proibido deixar a transpaleteira?",
+          "image": "assets/fotos/m4p1.png",
+          "imageAlt": "Ilustração: Onde é proibido deixar a transpaleteira?"
         },
         {
           "id": "m4-q2",
@@ -969,7 +1010,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Hidrantes e extintores precisam estar sempre livres e acessíveis.",
           "review": "Hidrantes e extintores",
-          "transcript": "Qual destes locais NÃO pode ser obstruído pelo equipamento?"
+          "transcript": "Qual destes locais NÃO pode ser obstruído pelo equipamento?",
+          "image": "assets/fotos/m4p2.png",
+          "imageAlt": "Ilustração: Qual destes locais NÃO pode ser obstruído pelo equipamento?"
         },
         {
           "id": "m4-q3",
@@ -1000,7 +1043,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Painéis elétricos precisam de acesso desimpedido.",
           "review": "Painéis elétricos",
-          "transcript": "Onde NÃO se deve parar a paleteira?"
+          "transcript": "Onde NÃO se deve parar a paleteira?",
+          "image": "assets/fotos/m4p3.png",
+          "imageAlt": "Ilustração: Onde NÃO se deve parar a paleteira?"
         },
         {
           "id": "m4-q4",
@@ -1031,7 +1076,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não bloqueie o trânsito de pessoas nem as faixas de pedestres.",
           "review": "Trânsito de pessoas",
-          "transcript": "Qual situação é proibida?"
+          "transcript": "Qual situação é proibida?",
+          "image": "assets/fotos/m4p4.png",
+          "imageAlt": "Ilustração: Qual situação é proibida?"
         },
         {
           "id": "m4-q5",
@@ -1062,7 +1109,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Ruas de acesso são de circulação, e não de estacionamento.",
           "review": "Ruas de acesso",
-          "transcript": "Onde nunca deixar o equipamento estacionado?"
+          "transcript": "Onde nunca deixar o equipamento estacionado?",
+          "image": "assets/fotos/m4p5.png",
+          "imageAlt": "Ilustração: Onde nunca deixar o equipamento estacionado?"
         },
         {
           "id": "m4-q6",
@@ -1093,7 +1142,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Nunca armazene produtos com altura que obstrua o sprinkler.",
           "review": "Sprinkler",
-          "transcript": "Qual armazenagem é proibida?"
+          "transcript": "Qual armazenagem é proibida?",
+          "image": "assets/fotos/m4p6.png",
+          "imageAlt": "Ilustração: Qual armazenagem é proibida?"
         }
       ]
     },
@@ -1231,7 +1282,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Leve, boa pega e distância curta: basta a postura correta.",
           "review": "Carga leve",
-          "transcript": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado."
+          "transcript": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado.",
+          "image": "assets/fotos/m5p1.png",
+          "imageAlt": "Ilustração: Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado."
         },
         {
           "id": "m5-q2",
@@ -1257,7 +1310,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Acima de 25 kg, peça ajuda a um colega.",
           "review": "Carga acima de 25 kg",
-          "transcript": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado."
+          "transcript": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado.",
+          "image": "assets/fotos/m5p2.png",
+          "imageAlt": "Ilustração: Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado."
         },
         {
           "id": "m5-q3",
@@ -1283,7 +1338,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Mercadoria comprida e de difícil pega, acima de 15 kg: peça ajuda.",
           "review": "Carga comprida e de difícil pega",
-          "transcript": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar."
+          "transcript": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar.",
+          "image": "assets/fotos/m5p3.png",
+          "imageAlt": "Ilustração: Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar."
         },
         {
           "id": "m5-q4",
@@ -1309,7 +1366,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Para distâncias acima de 2 m, use carrinho ou paleteira manual.",
           "review": "Distância acima de 2 metros",
-          "transcript": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros."
+          "transcript": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros.",
+          "image": "assets/fotos/m5p4.png",
+          "imageAlt": "Ilustração: Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros."
         },
         {
           "id": "m5-q5",
@@ -1335,7 +1394,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Carga pesada em palete: transpaleteira elétrica.",
           "review": "Palete pesado",
-          "transcript": "Carga 5 de 8 · Palete fechado de 600 kg."
+          "transcript": "Carga 5 de 8 · Palete fechado de 600 kg.",
+          "image": "assets/fotos/m5p5.png",
+          "imageAlt": "Ilustração: Carga 5 de 8 · Palete fechado de 600 kg."
         },
         {
           "id": "m5-q6",
@@ -1361,7 +1422,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Sacaria no Drive: manipulador a vácuo, por operador com NR 12.",
           "review": "Sacaria no Drive",
-          "transcript": "Carga 6 de 8 · Saco de 50 kg no Drive."
+          "transcript": "Carga 6 de 8 · Saco de 50 kg no Drive.",
+          "image": "assets/fotos/m5p6.png",
+          "imageAlt": "Ilustração: Carga 6 de 8 · Saco de 50 kg no Drive."
         },
         {
           "id": "m5-q7",
@@ -1387,7 +1450,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Use o carrinho de transporte de chapas, conforme o informativo do SESMT.",
           "review": "Chapas de madeira",
-          "transcript": "Carga 7 de 8 · Chapa de madeira inteira."
+          "transcript": "Carga 7 de 8 · Chapa de madeira inteira.",
+          "image": "assets/fotos/m5p7.png",
+          "imageAlt": "Ilustração: Carga 7 de 8 · Chapa de madeira inteira."
         },
         {
           "id": "m5-q8",
@@ -1616,7 +1681,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "A velocidade máxima é de 6 km/h.",
           "review": "Velocidade máxima",
-          "transcript": "Qual é a velocidade máxima no Drive e na Logística?"
+          "transcript": "Qual é a velocidade máxima no Drive e na Logística?",
+          "image": "assets/fotos/m6p1.png",
+          "imageAlt": "Ilustração: Qual é a velocidade máxima no Drive e na Logística?"
         },
         {
           "id": "m6-q2",
@@ -1646,7 +1713,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Distância mínima de 5 metros.",
           "review": "Distância do pedestre na elevação",
-          "transcript": "A que distância mínima o pedestre fica do equipamento em elevação?"
+          "transcript": "A que distância mínima o pedestre fica do equipamento em elevação?",
+          "image": "assets/fotos/m6p2.png",
+          "imageAlt": "Ilustração: A que distância mínima o pedestre fica do equipamento em elevação?"
         },
         {
           "id": "m6-q3",
@@ -1676,7 +1745,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "A altura não pode ultrapassar 50 cm do limitador do rack.",
           "review": "Altura do palete aéreo",
-          "transcript": "Quanto a carga do palete aéreo pode passar do limitador do rack?"
+          "transcript": "Quanto a carga do palete aéreo pode passar do limitador do rack?",
+          "image": "assets/fotos/m6p3.png",
+          "imageAlt": "Ilustração: Quanto a carga do palete aéreo pode passar do limitador do rack?"
         },
         {
           "id": "m6-q4",
@@ -1706,7 +1777,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Mantenha 1 metro de distância.",
           "review": "Distância do sistema de incêndio",
-          "transcript": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica?"
+          "transcript": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica?",
+          "image": "assets/fotos/m6p4.png",
+          "imageAlt": "Ilustração: Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura el"
         },
         {
           "id": "m6-q5",
@@ -1736,7 +1809,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Mantenha 50 cm de distância da parede.",
           "review": "Distância da parede",
-          "transcript": "E a distância do empilhamento até a parede?"
+          "transcript": "E a distância do empilhamento até a parede?",
+          "image": "assets/fotos/m6p5.png",
+          "imageAlt": "Ilustração: E a distância do empilhamento até a parede?"
         },
         {
           "id": "m6-q6",
@@ -1766,7 +1841,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Transporta cargas em palete de até 1.500 kg.",
           "review": "Capacidade da transpaleteira",
-          "transcript": "Qual a capacidade máxima da transpaleteira elétrica?"
+          "transcript": "Qual a capacidade máxima da transpaleteira elétrica?",
+          "image": "assets/fotos/m6p6.png",
+          "imageAlt": "Ilustração: Qual a capacidade máxima da transpaleteira elétrica?"
         },
         {
           "id": "m6-q7",
@@ -1796,7 +1873,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "O palete PBR mede 1,20 m × 1,00 m.",
           "review": "Medidas do palete PBR",
-          "transcript": "Quais as medidas do palete PBR padrão nacional?"
+          "transcript": "Quais as medidas do palete PBR padrão nacional?",
+          "image": "assets/fotos/m6p7.png",
+          "imageAlt": "Ilustração: Quais as medidas do palete PBR padrão nacional?"
         },
         {
           "id": "m6-finale",
