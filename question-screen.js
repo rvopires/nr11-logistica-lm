@@ -595,7 +595,7 @@
       : (data.skin === 'agents' ? ' is-agents'
       : (data.skin === 'principles' ? ' is-principles' : ''));
     return `
-      <article class="qs-screen is-content is-text${dense ? ' is-dense' : ''}${skin}${data.layout === 'resp' || data.layout === 'resp-risk' ? ' is-resp' : ''}${data.layout === 'resp-risk' ? ' is-resp-risk' : ''}" data-qs-root data-type="content">
+      <article class="qs-screen is-content is-text${dense ? ' is-dense' : ''}${skin}${data.layout === 'resp' || data.layout === 'resp-risk' ? ' is-resp' : ''}${data.layout === 'resp-risk' ? ' is-resp-risk' : ''}${data.layout === 'duo' ? ' is-duo' : ''}" data-qs-root data-type="content">
         <div class="qs-panel qs-panel-text">
           ${head}
         </div>
@@ -626,20 +626,179 @@
       '</article>';
   }
 
+  /* Cartão grande que vira (data.qcStyle === 'deck'): um cartão de cada vez, em tamanho grande,
+     com a lista das regras ao lado para escolher qual ver. */
+  function deckHTML(data) {
+    var items = data.items || [];
+    if (data.qcStyle === 'checklist') return checklistHTML(data);
+    var cards = items.map(function (it, i) {
+      var title = esc((it.title || '').replace(/:\s*$/, ''));
+      var text = esc(it.text || it.body || '');
+      var photo = it.image
+        ? '<img class="qs-qc-photo" src="' + esc(it.image) + '" alt="' + esc(it.imageAlt || title) + '" loading="eager" decoding="async" onerror="this.hidden=true;this.parentNode.classList.add(&quot;is-ico-fallback&quot;)">'
+        : '';
+      return '' +
+        '<button type="button" class="qs-qc qs-deck-card has-img' + (i === 0 ? ' is-current' : '') + '" data-deck-i="' + i + '" data-tone="' + (i % 7) + '" aria-pressed="false" aria-label="' + title + '. Toque para ver a conduta">' +
+          '<span class="qs-qc-inner">' +
+            '<span class="qs-qc-face qs-qc-front has-photo">' +
+              photo +
+              '<span class="qs-qc-fallback-ico" aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
+              '<span class="qs-qc-caption">' +
+                '<b class="qs-qc-title">' + title + '</b>' +
+                '<span class="qs-qc-hint">Toque para ver a conduta</span>' +
+              '</span>' +
+            '</span>' +
+            '<span class="qs-qc-face qs-qc-back">' +
+              '<span class="qs-deck-num">' + (i + 1) + ' de ' + items.length + '</span>' +
+              '<b class="qs-qc-title">' + title + '</b>' +
+              '<p class="qs-qc-text">' + text + '</p>' +
+            '</span>' +
+          '</span>' +
+        '</button>';
+    }).join('');
+    var tabs = items.map(function (it, i) {
+      var title = esc((it.title || '').replace(/:\s*$/, ''));
+      return '' +
+        '<button type="button" class="qs-deck-tab' + (i === 0 ? ' is-current' : '') + '" data-qs-deck="' + i + '" aria-label="' + title + '">' +
+          '<span class="qs-deck-thumb"><span class="qs-deck-thumb-ico" aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
+            (it.image ? '<img src="' + esc(it.image) + '" alt="" loading="eager" decoding="async" onerror="this.hidden=true">' : '') +
+          '</span>' +
+          '<span class="qs-deck-name">' + title + '</span>' +
+          '<span class="qs-deck-check" aria-hidden="true">✓</span>' +
+        '</button>';
+    }).join('');
+    return '' +
+      '<article class="qs-screen is-content is-text is-quickcards is-qc-photos is-qc-deck" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text">' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          '<p class="qs-qc-hintbar">🔄 Toque no cartão para virar e escolha a regra na lista</p>' +
+          '<div class="qs-deck" data-qs-deckroot>' +
+            '<div class="qs-deck-stage">' +
+              '<button type="button" class="qs-deck-arrow is-prev" data-qs-deck-step="-1" aria-label="Regra anterior">‹</button>' +
+              '<div class="qs-deck-cards">' + cards + '</div>' +
+              '<button type="button" class="qs-deck-arrow is-next" data-qs-deck-step="1" aria-label="Próxima regra">›</button>' +
+            '</div>' +
+            '<div class="qs-deck-rail">' + tabs + '</div>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
+  /* Checklist ilustrado (data.qcStyle === 'checklist'): cada regra já aparece com a foto e o texto;
+     a pessoa vai marcando "Entendi" e a foto de cada regra aparece na lista. */
+  function checklistHTML(data) {
+    var items = data.items || [];
+    var n = items.length;
+    var cards = items.map(function (it, i) {
+      var title = esc((it.title || '').replace(/:\s*$/, ''));
+      var text = esc(it.text || it.body || '');
+      var photo = it.image
+        ? '<img class="qs-qc-photo" src="' + esc(it.image) + '" alt="' + esc(it.imageAlt || title) + '" loading="eager" decoding="async" onerror="this.hidden=true;this.parentNode.classList.add(&quot;is-ico-fallback&quot;)">'
+        : '';
+      return '' +
+        '<div class="qs-deck-card qs-deck-slide has-img' + (i === 0 ? ' is-current' : '') + '" data-deck-i="' + i + '">' +
+          '<span class="qs-qc-face qs-qc-front has-photo">' +
+            photo +
+            '<span class="qs-qc-fallback-ico" aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
+            '<span class="qs-deck-dot" aria-hidden="true"><b>' + (i + 1) + '</b><i>✓</i></span>' +
+            '<span class="qs-qc-caption">' +
+              '<b class="qs-qc-title">' + title + '</b>' +
+              '<span class="qs-deck-rule">' + text + '</span>' +
+            '</span>' +
+          '</span>' +
+        '</div>';
+    }).join('');
+    var tabs = items.map(function (it, i) {
+      var title = esc((it.title || '').replace(/:\s*$/, ''));
+      return '' +
+        '<button type="button" class="qs-deck-tab' + (i === 0 ? ' is-current' : ' is-locked') + '" data-qs-deck="' + i + '" aria-label="' + title + '">' +
+          '<span class="qs-deck-box" aria-hidden="true">✓</span>' +
+          '<span class="qs-deck-name">' + title + '</span>' +
+          '<span class="qs-deck-thumb"><span class="qs-deck-thumb-ico" aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
+            (it.image ? '<img src="' + esc(it.image) + '" alt="" loading="eager" decoding="async" onerror="this.hidden=true">' : '') +
+          '</span>' +
+        '</button>';
+    }).join('');
+    return '' +
+      '<article class="qs-screen is-content is-text is-quickcards is-qc-photos is-qc-deck is-qc-check" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text">' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          '<p class="qs-qc-hintbar">✅ Leia cada regra e marque como entendida, como num checklist</p>' +
+          '<div class="qs-deck" data-qs-deckroot data-total="' + n + '">' +
+            '<div class="qs-deck-stage">' +
+              '<div class="qs-deck-cards">' + cards + '</div>' +
+              '<button type="button" class="qs-deck-cta" data-qs-check>✓ Entendi, próxima regra</button>' +
+            '</div>' +
+            '<div class="qs-deck-rail">' + tabs + '</div>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
+  function deckCheck(root) {
+    var cards = root.querySelectorAll('.qs-deck-card');
+    var tabs = root.querySelectorAll('.qs-deck-tab');
+    var cta = root.querySelector('[data-qs-check]');
+    var n = cards.length, cur = 0, i;
+    for (i = 0; i < n; i++) if (cards[i].classList.contains('is-current')) cur = i;
+    tabs[cur].classList.add('is-done');
+    tabs[cur].classList.remove('is-locked');
+    cards[cur].classList.add('is-done');
+    var next = -1;
+    for (i = 1; i <= n; i++) {
+      var j = (cur + i) % n;
+      if (!tabs[j].classList.contains('is-done')) { next = j; break; }
+    }
+    if (next < 0) {
+      root.classList.add('is-complete');
+      if (cta) { cta.textContent = '✓ Checklist completo'; cta.disabled = true; }
+      return true;
+    }
+    tabs[next].classList.remove('is-locked');
+    deckShow(root, next);
+    if (cta) cta.textContent = (next === n - 1 || root.querySelectorAll('.qs-deck-tab.is-done').length === n - 1) ? '✓ Entendi, concluir checklist' : '✓ Entendi, próxima regra';
+  }
+
+  function deckShow(root, idx) {
+    var cards = root.querySelectorAll('.qs-deck-card');
+    var tabs = root.querySelectorAll('.qs-deck-tab');
+    var n = cards.length;
+    if (!n) return;
+    idx = ((idx % n) + n) % n;
+    cards.forEach(function (c, i) { c.classList.toggle('is-current', i === idx); });
+    tabs.forEach(function (t, i) { t.classList.toggle('is-current', i === idx); });
+  }
+
   function quickCardsHTML(data) {
     var items = data.items || [];
+    if (data.qcStyle === 'deck' || data.qcStyle === 'checklist') return deckHTML(data);
+    var hasPhotos = items.some(function (it) { return !!it.image; });
     var cards = items.map(function (it, i) {
       var tone = i % 7;
       var title = esc((it.title || '').replace(/:\s*$/, ''));
       var text = esc(it.text || it.body || '');
       var icoHtml = it.icon ? ('<span class="qs-qc-ico" aria-hidden="true">' + esc(it.icon) + '</span>') : '';
+      var frontInner;
+      if (it.image) {
+        var alt = esc(it.imageAlt || (it.title || '').replace(/:\s*$/, '') || '');
+        frontInner =
+          '<img class="qs-qc-photo" src="' + esc(it.image) + '" alt="' + alt + '" loading="' + (i < 4 ? 'eager' : 'lazy') + '" decoding="async" onerror="this.hidden=true;var f=this.nextElementSibling;if(f){f.hidden=false;}this.parentNode.classList.add(\'is-ico-fallback\')">' +
+          '<span class="qs-qc-ico qs-qc-fallback" hidden aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
+          '<span class="qs-qc-caption">' +
+            '<b class="qs-qc-title">' + title + '</b>' +
+            '<span class="qs-qc-hint">Toque para ver a conduta</span>' +
+          '</span>';
+      } else {
+        frontInner =
+          icoHtml +
+          '<b class="qs-qc-title">' + title + '</b>' +
+          '<span class="qs-qc-hint">Toque para ver a conduta</span>';
+      }
       return '' +
-        '<button type="button" class="qs-qc" data-tone="' + tone + '" aria-pressed="false" aria-label="' + title + '. Toque para ver a conduta">' +
+        '<button type="button" class="qs-qc' + (it.image ? ' has-img' : '') + '" data-tone="' + tone + '" aria-pressed="false" aria-label="' + title + '. Toque para ver a conduta">' +
           '<span class="qs-qc-inner">' +
-            '<span class="qs-qc-face qs-qc-front">' +
-              icoHtml +
-              '<b class="qs-qc-title">' + title + '</b>' +
-              '<span class="qs-qc-hint">Toque para ver a conduta</span>' +
+            '<span class="qs-qc-face qs-qc-front' + (it.image ? ' has-photo' : '') + '">' +
+              frontInner +
             '</span>' +
             '<span class="qs-qc-face qs-qc-back">' +
               '<b class="qs-qc-title">' + title + '</b>' +
@@ -649,12 +808,12 @@
         '</button>';
     }).join('');
     return '' +
-      '<article class="qs-screen is-content is-text is-quickcards" data-qs-root data-type="content">' +
+      '<article class="qs-screen is-content is-text is-quickcards' + (hasPhotos ? ' is-qc-photos' : '') + '" data-qs-root data-type="content">' +
         '<div class="qs-panel qs-panel-text">' +
           '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
           (data.body ? ('<p class="qs-body">' + esc(data.body) + '</p>') : '') +
           '<p class="qs-qc-hintbar">🔄 Toque em cada cartão para ver o que fazer</p>' +
-          '<div class="qs-qc-grid">' + cards + '</div>' +
+          '<div class="qs-qc-grid' + (hasPhotos ? ' is-photos count-' + items.length : '') + '">' + cards + '</div>' +
         '</div>' +
       '</article>';
   }
@@ -701,7 +860,8 @@
     var isFuncoes = data.stepSkin === 'funcoes';
     var isVantagens = data.stepSkin === 'vantagens';
     var isEquip = data.stepSkin === 'equip';
-    var customSteps = isFuncoes || isVantagens || isEquip;
+    var isRisk = data.stepSkin === 'risk';
+    var customSteps = isFuncoes || isVantagens || isEquip || isRisk;
     var slides = items.map(function (it, i) {
       var raw = it.text || it.body || '';
       var d = splitDose(raw);
@@ -768,21 +928,21 @@
       }
       var tone = it.tone || (textLayout ? ('e' + ((i % 7) + 1)) : '');
       var toneClass = tone ? ' tone-' + esc(tone) : '';
-      var equipBadge = isEquip
+      var slideBadge = (isEquip || isRisk)
         ? `<span class="qs-steps-count">${esc(unit)} ${i + 1} de ${items.length}</span>`
         : '';
       return `<div class="qs-step${i === 0 ? ' is-on' : ''}${photoOnly ? ' is-photo' : ''}${textLayout ? ' is-text' : ''}${it.image ? ' has-photo' : ''}${toneClass}" data-qs-step="${i}"${i === 0 ? '' : ' hidden'}>
-        <div class="qs-step-media">${mediaInner}${equipBadge}</div>
+        <div class="qs-step-media">${mediaInner}${slideBadge}</div>
         ${info}
       </div>`;
     }).join('');
 
     return `
-      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}${isEquip ? ' is-equip-steps' : ''}" data-qs-root data-type="content">
+      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}${isEquip ? ' is-equip-steps' : ''}${isRisk ? ' is-risk-steps' : ''}" data-qs-root data-type="content">
         <div class="qs-steps" data-qs-steps data-step-unit="${esc(unit)}" data-step-next="${esc(nextLbl)}" data-step-finish="${esc(data.stepFinish || 'Concluir sequência')}">
           <header class="qs-steps-top">
             <h2 class="qs-title">${esc(data.title || '')}</h2>
-            ${isEquip ? '' : `<span class="qs-steps-count" data-qs-step-count>${esc(unit)} 1 de ${items.length}</span>`}
+            ${isEquip || isRisk ? '' : `<span class="qs-steps-count" data-qs-step-count>${esc(unit)} 1 de ${items.length}</span>`}
           </header>
           <div class="qs-steps-track">${slides}</div>
           <div class="qs-steps-actions">
@@ -1438,11 +1598,35 @@
       openLightbox(zoomBtn.getAttribute('data-qs-zoom'), zImg ? zImg.alt : '');
       return;
     }
+    var deckChk = e.target.closest('[data-qs-check]');
+    if (deckChk) {
+      if (!deckChk.disabled) { beep(deckCheck(deckChk.closest('[data-qs-deckroot]')) ? 'end' : 'click'); }
+      return;
+    }
+    var deckTab = e.target.closest('[data-qs-deck]');
+    var deckStep = e.target.closest('[data-qs-deck-step]');
+    if (deckTab && deckTab.classList.contains('is-locked')) return;
+    if (deckTab || deckStep) {
+      beep('click');
+      var dRoot = (deckTab || deckStep).closest('[data-qs-deckroot]');
+      var cur = 0;
+      dRoot.querySelectorAll('.qs-deck-card').forEach(function (c, i) { if (c.classList.contains('is-current')) cur = i; });
+      deckShow(dRoot, deckTab ? +deckTab.getAttribute('data-qs-deck') : cur + (+deckStep.getAttribute('data-qs-deck-step')));
+      return;
+    }
     var qc = e.target.closest('.qs-qc');
     if (qc) {
       beep('click');
       var flip = qc.classList.toggle('is-flip');
       qc.setAttribute('aria-pressed', flip ? 'true' : 'false');
+      if (flip) {
+        qc.classList.add('is-seen');
+        var dIdx = qc.getAttribute('data-deck-i');
+        if (dIdx != null) {
+          var dTab = this.el.querySelector('.qs-deck-tab[data-qs-deck="' + dIdx + '"]');
+          if (dTab) dTab.classList.add('is-seen');
+        }
+      }
       return;
     }
     var opt = e.target.closest('.qs-opt');

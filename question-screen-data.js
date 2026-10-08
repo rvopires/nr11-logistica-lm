@@ -521,44 +521,64 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m3-riscos",
           "type": "content",
-          "layout": "resp-risk",
+          "steps": true,
+          "stepSkin": "risk",
+          "stepUnit": "Risco",
+          "stepNext": "Próximo risco",
+          "stepFinish": "Ver avisos importantes",
           "kicker": "📄 Texto",
           "title": "Riscos da empilhadeira e suas causas",
-          "cards": [
+          "items": [
             {
               "icon": "⚠️",
               "title": "Tombamentos",
-              "body": "Excesso de carga, manobras arriscadas, obstáculos no caminho."
+              "text": "Excesso de carga, manobras arriscadas, obstáculos no caminho.",
+              "image": "assets/fotos/tombamento.png",
+              "imageAlt": "Tombamentos de empilhadeira"
             },
             {
               "icon": "💥",
               "title": "Colisões",
-              "body": "Pontos cegos, excesso de velocidade."
+              "text": "Pontos cegos, excesso de velocidade.",
+              "image": "assets/fotos/colisao.png",
+              "imageAlt": "Colisões com empilhadeira"
             },
             {
               "icon": "🚶",
               "title": "Atropelamentos",
-              "body": "Falta de sinalização, distração, pontos cegos, perda de controle."
+              "text": "Falta de sinalização, distração, pontos cegos, perda de controle.",
+              "image": "assets/fotos/atropelamento.png",
+              "imageAlt": "Atropelamentos"
             },
             {
               "icon": "📦",
               "title": "Quedas",
-              "body": "Material sem stretch, falta do cinto de segurança."
+              "text": "Material sem stretch, falta do cinto de segurança.",
+              "image": "assets/fotos/quedas.png",
+              "imageAlt": "Quedas de material ou operador"
             }
           ],
+          "transcript": "Os riscos da empilhadeira e suas causas: tombamentos, colisões, atropelamentos e quedas."
+        },
+        {
+          "id": "m3-riscos-avisos",
+          "type": "content",
+          "layout": "resp-risk",
+          "kicker": "📄 Texto",
+          "title": "Dois avisos que salvam a operação",
           "items": [
             {
               "icon": "🔧",
-              "title": "Falta de manutenção:",
+              "title": "Falta de manutenção",
               "text": "transforma qualquer equipamento em um risco."
             },
             {
               "icon": "🐢",
-              "title": "Velocidade máxima:",
+              "title": "Velocidade máxima",
               "text": "6 km/h no Drive e na Logística."
             }
           ],
-          "transcript": "Os riscos da empilhadeira e suas causas. Velocidade máxima de seis quilômetros por hora."
+          "transcript": "Falta de manutenção transforma qualquer equipamento em risco. Velocidade máxima: seis quilômetros por hora."
         },
         {
           "id": "m3-v-operacao",
@@ -574,43 +594,59 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m3-operacao",
           "type": "content",
+          "layout": "quickcards",
+          "qcStyle": "checklist",
           "kicker": "📄 Texto",
           "title": "Regras de operação",
           "items": [
             {
               "icon": "📋",
-              "title": "Checklist:",
-              "text": "faça antes de iniciar a atividade."
+              "title": "Checklist",
+              "text": "Faça antes de iniciar a atividade.",
+              "image": "assets/fotos/27.1.png",
+              "imageAlt": "Checklist antes de iniciar a atividade"
             },
             {
               "icon": "🔒",
-              "title": "Cinto de segurança:",
-              "text": "use sempre. Celular, nunca durante a operação."
+              "title": "Cinto de segurança",
+              "text": "Use sempre. Celular, nunca durante a operação.",
+              "image": "assets/fotos/27.2.png",
+              "imageAlt": "Cinto de segurança na operação"
             },
             {
               "icon": "⚖️",
-              "title": "Capacidade e altura:",
-              "text": "transporte só a quantidade permitida e não exceda a altura da carga."
+              "title": "Capacidade e altura",
+              "text": "Transporte só a quantidade permitida e não exceda a altura da carga.",
+              "image": "assets/fotos/27.3.png",
+              "imageAlt": "Capacidade e altura da carga"
             },
             {
               "icon": "🍴",
-              "title": "Garfos:",
-              "text": "fixe a carga e não ande com os garfos erguidos."
+              "title": "Garfos",
+              "text": "Fixe a carga e não ande com os garfos erguidos.",
+              "image": "assets/fotos/27.4.png",
+              "imageAlt": "Garfos da empilhadeira"
             },
             {
               "icon": "🎁",
-              "title": "Carga solta:",
-              "text": "amarre com fitilho ou fita stretch."
+              "title": "Carga solta",
+              "text": "Amarre com fitilho ou fita stretch.",
+              "image": "assets/fotos/27.5.png",
+              "imageAlt": "Carga amarrada com stretch"
             },
             {
               "icon": "💧",
-              "title": "Piso:",
-              "text": "cheque sempre, pode estar molhado ou oleoso. Velocidade constante e carga estável."
+              "title": "Piso",
+              "text": "Cheque sempre, pode estar molhado ou oleoso. Velocidade constante e carga estável.",
+              "image": "assets/fotos/27.6.png",
+              "imageAlt": "Atenção ao piso molhado ou oleoso"
             },
             {
               "icon": "🚫",
-              "title": "Empilhadeira a gás:",
-              "text": "proibida dentro da loja e em lugares fechados."
+              "title": "Empilhadeira a gás",
+              "text": "Proibida dentro da loja e em lugares fechados.",
+              "image": "assets/fotos/27.7.png",
+              "imageAlt": "Empilhadeira a gás proibida em locais fechados"
             }
           ],
           "transcript": "Regras de operação segura da empilhadeira."
@@ -629,16 +665,21 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m3-checklist-pta",
           "type": "content",
+          "layout": "duo",
           "kicker": "📄 Texto",
           "title": "Checklist diário e plataforma elevatória",
           "cards": [
             {
               "icon": "📋",
+              "thumbs": ["assets/fotos/p29.1.png"],
+              "lead": "Todos os dias",
               "title": "Checklist diário",
               "body": "Obrigatório em empilhadeira e PTA, antes de iniciar a atividade."
             },
             {
               "icon": "🏗️",
+              "thumbs": ["assets/fotos/p29.2.png"],
+              "lead": "NR 35 + NR 18",
               "title": "PTA",
               "body": "Só opera quem fez NR 35 e NR 18 (teoria e prática) e tem a carteirinha."
             }
@@ -647,7 +688,7 @@ window.QUESTION_SCREEN_SESSION = {
             {
               "icon": "🪪",
               "title": "Equipamento motorizado:",
-              "text": "só depois de participar das formações e possuir a carteirinha correspondente."
+              "text": "Só depois de participar das formações e possuir a carteirinha correspondente."
             }
           ],
           "transcript": "Checklist diário obrigatório e requisitos para usar a plataforma elevatória."
