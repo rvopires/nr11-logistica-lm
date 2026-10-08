@@ -990,53 +990,93 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m4-estacionar",
           "type": "content",
+          "layout": "zonas",
           "kicker": "📄 Texto",
           "title": "Onde nunca estacionar",
-          "cards": [
-            {
-              "icon": "🚪",
-              "title": "Saída de emergência",
-              "body": "Nunca obstrua."
-            },
+          "part": "Parte 1 de 2",
+          "groups": [
             {
               "icon": "🧯",
-              "title": "Hidrantes e extintor",
-              "body": "Mantenha livres."
-            },
-            {
-              "icon": "⚡",
-              "title": "Painéis elétricos",
-              "body": "Acesso sempre desimpedido."
-            },
-            {
-              "icon": "🚶",
-              "title": "Trânsito de pessoas",
-              "body": "Não bloqueie faixas e passagens."
-            },
-            {
-              "icon": "🛣️",
-              "title": "Ruas de acesso",
-              "body": "Não estacione no meio da circulação."
-            },
-            {
-              "icon": "🗄️",
-              "title": "Prateleiras",
-              "body": "Não bloqueie o acesso a elas."
+              "label": "Equipamentos de emergência",
+              "items": [
+                {
+                  "icon": "🚪",
+                  "image": "assets/fotos/p45.1.png",
+                  "title": "Saída de emergência",
+                  "tag": "🚫 Nunca obstrua",
+                  "text": "Nunca obstrua."
+                },
+                {
+                  "icon": "🧯",
+                  "image": "assets/fotos/p45.2.png",
+                  "title": "Hidrantes e extintor",
+                  "tag": "🚫 Mantenha livres",
+                  "text": "Mantenha livres."
+                },
+                {
+                  "icon": "⚡",
+                  "image": "assets/fotos/p45.3.png",
+                  "title": "Painéis elétricos",
+                  "tag": "🚫 Acesso livre",
+                  "text": "Acesso sempre desimpedido."
+                },
+                {
+                  "icon": "💦",
+                  "image": "assets/fotos/p45.7.png",
+                  "title": "Sprinkler",
+                  "tag": "🚫 Nunca obstrua",
+                  "text": "Nunca armazene produtos com altura que obstrua o sprinkler."
+                }
+              ]
             }
           ],
-          "items": [
-            {
-              "icon": "💦",
-              "title": "Sprinkler:",
-              "text": "nunca armazene produtos com altura que obstrua o sprinkler."
-            },
+          "transcript": "Onde nunca estacionar o equipamento: saída de emergência, hidrantes e extintor, painéis elétricos e sprinkler."
+        },
+        {
+          "id": "m4-estacionar-2",
+          "type": "content",
+          "layout": "zonas",
+          "kicker": "📄 Texto",
+          "title": "Onde nunca estacionar",
+          "part": "Parte 2 de 2",
+          "groups": [
             {
               "icon": "🚶",
-              "title": "Pedestres:",
-              "text": "só nas faixas, sem celular, longe do equipamento em movimento, em áreas isoladas e a 5 m na elevação."
+              "label": "Circulação e pedestres",
+              "items": [
+                {
+                  "icon": "🚶",
+                  "image": "assets/fotos/p45.4.png",
+                  "title": "Trânsito de pessoas",
+                  "tag": "🚫 Não bloqueie",
+                  "text": "Não bloqueie faixas e passagens."
+                },
+                {
+                  "icon": "🛣️",
+                  "image": "assets/fotos/p45.5.png",
+                  "title": "Ruas de acesso",
+                  "tag": "🚫 Não estacione",
+                  "text": "Não estacione no meio da circulação."
+                },
+                {
+                  "icon": "🗄️",
+                  "image": "assets/fotos/p45.6.png",
+                  "title": "Prateleiras",
+                  "tag": "🚫 Acesso livre",
+                  "text": "Não bloqueie o acesso a elas."
+                },
+                {
+                  "icon": "🦺",
+                  "image": "assets/fotos/p45.8.png",
+                  "title": "Pedestres",
+                  "tag": "Regra do pedestre",
+                  "text": "Só nas faixas, sem celular, longe do equipamento em movimento, em áreas isoladas e a 5 m na elevação.",
+                  "tone": "blue"
+                }
+              ]
             }
           ],
-          "transcript": "Onde nunca estacionar o equipamento, a regra do sprinkler e as regras do pedestre."
+          "transcript": "Onde nunca estacionar o equipamento: trânsito de pessoas, ruas de acesso, prateleiras e as regras do pedestre."
         },
         {
           "id": "m4-quiz-intro",
@@ -1292,12 +1332,26 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-foto-estilete",
           "type": "image",
-          "layout": "stack",
+          "layout": "destaque",
           "kicker": "📷 Foto",
           "title": "Uso do estilete: forma correta",
-          "image": "assets/fotos/m5-estilete.png",
-          "imageAlt": "Estilete homologado sendo usado da forma correta e da forma incorreta",
+          "image": "assets/fotos/pg.57.png",
+          "imageAlt": "Estilete homologado sendo usado da forma correta para cortar embalagens",
           "imageFit": "contain",
+          "notes": [
+            {
+              "icon": "⚠️",
+              "label": "Atenção",
+              "text": "O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado.",
+              "tone": "info"
+            },
+            {
+              "icon": "✅",
+              "label": "Regra",
+              "text": "Use apenas ferramentas homologadas para corte de embalagens.",
+              "tone": "rule"
+            }
+          ],
           "bullets": [
             "O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado.",
             "Use apenas ferramentas homologadas para corte de embalagens."
@@ -1307,46 +1361,89 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-regras",
           "type": "content",
+          "layout": "lista-foto",
           "kicker": "📄 Texto",
           "title": "Regras da movimentação manual",
-          "items": [
+          "part": "Parte 1 de 2",
+          "help": "Leia cada regra e clique em Próxima regra para ver a foto dela. Na última, clique em Concluir.",
+          "startAt": 1,
+          "groups": [
             {
               "icon": "🙋",
-              "title": "Acima de 25 kg ou sem boa pega:",
-              "text": "peça ajuda a um colega e redobre a atenção com a postura."
-            },
-            {
-              "icon": "📏",
-              "title": "Mercadoria comprida e de difícil pega:",
-              "text": "peça ajuda a partir de 15 kg."
-            },
-            {
-              "icon": "🏋️",
-              "title": "Postura:",
-              "text": "apanhe a carga de frente, sem torcer o tronco e o mais próximo do corpo."
-            },
-            {
-              "icon": "🧰",
-              "title": "Ferramentas:",
-              "text": "use EPIs e ferramentas homologadas para movimentar, abastecer e cortar embalagens."
-            },
-            {
-              "icon": "🪜",
-              "title": "Escada:",
-              "text": "no abastecimento ou na pega, use o capacete."
-            },
-            {
-              "icon": "🩹",
-              "title": "Cinta lombar:",
-              "text": "ajuste só durante a movimentação e afrouxe os velcros nas pausas."
-            },
-            {
-              "icon": "🛒",
-              "title": "Cargas mais pesadas:",
-              "text": "use a transpaleteira elétrica."
+              "label": "Como carregar com segurança",
+              "items": [
+                {
+                  "icon": "🙋",
+                  "image": "assets/fotos/p58.1.png",
+                  "title": "Acima de 25 kg ou sem boa pega",
+                  "tone": "green",
+                  "text": "Peça ajuda a um colega e redobre a atenção com a postura."
+                },
+                {
+                  "icon": "📏",
+                  "image": "assets/fotos/p58.2.png",
+                  "title": "Mercadoria comprida e de difícil pega",
+                  "tone": "blue",
+                  "text": "Peça ajuda a partir de 15 kg."
+                },
+                {
+                  "icon": "🏋️",
+                  "image": "assets/fotos/p58.3.png",
+                  "title": "Postura",
+                  "tone": "orange",
+                  "text": "Apanhe a carga de frente, sem torcer o tronco e o mais próximo do corpo."
+                },
+                {
+                  "icon": "🧰",
+                  "image": "assets/fotos/p58.4.png",
+                  "title": "Ferramentas",
+                  "tone": "purple",
+                  "text": "Use EPIs e ferramentas homologadas para movimentar, abastecer e cortar embalagens."
+                }
+              ]
             }
           ],
-          "transcript": "Regras da movimentação manual de cargas."
+          "transcript": "Regras da movimentação manual de cargas: peça ajuda acima de vinte e cinco quilos, mercadoria comprida, postura e ferramentas."
+        },
+        {
+          "id": "m5-regras-2",
+          "type": "content",
+          "layout": "lista-foto",
+          "kicker": "📄 Texto",
+          "title": "Regras da movimentação manual",
+          "part": "Parte 2 de 2",
+          "help": "Leia cada regra e clique em Próxima regra para ver a foto dela. Na última, clique em Concluir.",
+          "startAt": 5,
+          "groups": [
+            {
+              "icon": "🛒",
+              "label": "Equipamentos de apoio",
+              "items": [
+                {
+                  "icon": "🪜",
+                  "image": "assets/fotos/p58.5.png",
+                  "title": "Escada",
+                  "tone": "pink",
+                  "text": "No abastecimento ou na pega, use o capacete."
+                },
+                {
+                  "icon": "🩹",
+                  "image": "assets/fotos/p58.6.png",
+                  "title": "Cinta lombar",
+                  "tone": "teal",
+                  "text": "Ajuste só durante a movimentação e afrouxe os velcros nas pausas."
+                },
+                {
+                  "icon": "🛒",
+                  "image": "assets/fotos/p58.7.png",
+                  "title": "Cargas mais pesadas",
+                  "tone": "gold",
+                  "text": "Use a transpaleteira elétrica."
+                }
+              ]
+            }
+          ],
+          "transcript": "Regras da movimentação manual de cargas: escada, cinta lombar e transpaleteira para cargas mais pesadas."
         },
         {
           "id": "m5-quiz-intro",
@@ -1361,7 +1458,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q1",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado.",
           "alternatives": [
             {
@@ -1389,7 +1486,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q2",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado.",
           "alternatives": [
             {
@@ -1417,7 +1514,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q3",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar.",
           "alternatives": [
             {
@@ -1445,7 +1542,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q4",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros.",
           "alternatives": [
             {
@@ -1473,7 +1570,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q5",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 5 de 8 · Palete fechado de 600 kg.",
           "alternatives": [
             {
@@ -1501,7 +1598,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q6",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 6 de 8 · Saco de 50 kg no Drive.",
           "alternatives": [
             {
@@ -1529,7 +1626,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q7",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 7 de 8 · Chapa de madeira inteira.",
           "alternatives": [
             {
@@ -1557,7 +1654,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-q8",
           "type": "question",
-          "variant": "lista",
+          "variant": "balanca",
           "question": "Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento.",
           "alternatives": [
             {

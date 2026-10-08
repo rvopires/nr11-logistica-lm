@@ -1,7 +1,8 @@
-/* Fundo novo — degradê azul-marinho limpo (NR 11).
+/* Fundo novo — degradê azul-marinho e laranja (NR 11).
    Carregado depois de question-screen.css. Para voltar ao visual antigo, remova o <link> dele. */
 
-.qs-app { background: linear-gradient(165deg, #0E1A30 0%, #14233F 55%, #1C3560 100%); }
+/* Fundo em degradê: azul-marinho de um lado e laranja do outro (as duas cores principais do curso). */
+.qs-app { background: linear-gradient(135deg, #0E1A30 0%, #14233F 28%, #1C3560 46%, #A8451C 72%, #FE5600 100%); }
 
 /* remove as decorações do fundo antigo (listras, brilho e onda amarela) */
 .qs-app::before,
