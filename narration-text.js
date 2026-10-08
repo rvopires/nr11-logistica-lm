@@ -19,7 +19,7 @@
   var HOME_TEXT = [
     'Abertura do treinamento.',
     'Segurança do trabalho.',
-    'NR 11, Logística para Todos.',
+    'NR 11, Logística para todos.',
     'Aprenda a operar, circular e armazenar com segurança na Logística e no Drive da Leroy Merlin.',
     'São seis módulos, com conteúdo completo, em treinamento cem por cento online.',
     'Na imagem: capa do treinamento, logística e Drive da Leroy Merlin.',
@@ -250,7 +250,7 @@
   function buildMenuText(session, nextModule) {
     var mods = (session && session.modules) || [];
     var parts = [
-      'NR 11, Logística para Todos.',
+      'NR 11, Logística para todos.',
       'Conteúdo programático completo.'
     ];
     mods.forEach(function (m) {

@@ -387,6 +387,24 @@
 .qs-screen[data-variant="confirmar"] .qs-opt:hover:not(:disabled) { background: #eef3fd; }
 .qs-screen[data-variant="confirmar"] .qs-opt.is-selected:not(.is-revealed) { background: #1E4FA8; color: #fff; }
 .qs-screen[data-variant="confirmar"] .qs-opt.is-selected:not(.is-revealed) .qs-num::before { color: #FE5600; }
+/* duas opções (ex.: Liberar / Barrar): botões grandes lado a lado, texto centralizado */
+.qs-screen[data-variant="confirmar"] .qs-opts.count-2 { grid-template-columns: 1fr 1fr; gap: 12px; }
+.qs-screen[data-variant="confirmar"] .qs-opts.count-2 .qs-opt {
+  justify-content: center;
+  text-align: center;
+  min-height: 58px;
+  font-family: var(--qs-font-h);
+  font-weight: 800;
+  font-size: clamp(1rem, 1.9vw, 1.2rem);
+  letter-spacing: .01em;
+  border-radius: 16px;
+  box-shadow: 0 4px 0 rgba(30, 79, 168, .28);
+}
+.qs-screen[data-variant="confirmar"] .qs-opts.count-2 .qs-opt .qs-txt { flex: 0 1 auto; }
+.qs-screen[data-variant="confirmar"] .qs-opts.count-2 .qs-opt.is-selected:not(.is-revealed) { transform: translateY(2px); box-shadow: 0 2px 0 rgba(30, 79, 168, .4); }
+@media (max-width: 480px) {
+  .qs-screen[data-variant="confirmar"] .qs-opts.count-2 .qs-opt .qs-num { display: none; }
+}
 .qs-confirm {
   display: block;
   width: 100%;

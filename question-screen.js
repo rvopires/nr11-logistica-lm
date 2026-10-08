@@ -400,6 +400,7 @@
         : (data.skin === 'principles' ? ' is-principles' : ''));
       if (data.layout === 'list') skinClass += ' is-list';
       if (data.layout === 'photos') skinClass += ' is-photos';
+      if (data.layout === 'gallery') skinClass += ' is-gallery';
       html += `<div class="qs-cards count-${data.cards.length}${aspectClass}${skinClass}">${data.cards.map(function (c) {
         var imgOnly = !!(c.image && !c.title && !c.body && !c.icon && !(c.points && c.points.length));
         var img = c.image
@@ -420,7 +421,10 @@
         return `<article class="qs-card${c.image ? ' has-img' : ''}${imgOnly ? ' is-img-only' : ''}${points ? ' has-points' : ''}${Array.isArray(c.thumbs) && c.thumbs.length ? ' has-thumbs' : ''}${tone}">
           ${img}
           <div class="qs-card-top">
-            ${Array.isArray(c.thumbs) && c.thumbs.length ? `<div class="qs-card-thumbs" aria-hidden="true">${c.thumbs.map(function (t) { return `<span class="qs-thumb"><span class="qs-thumb-ph">${esc(c.icon || '')}</span><img src="${esc(t)}" alt="" loading="eager" decoding="async" onerror="this.remove()"></span>`; }).join('')}</div>` : ''}
+            ${Array.isArray(c.thumbs) && c.thumbs.length ? `<div class="qs-card-thumbs">${c.thumbs.map(function (t) {
+              var thumbImg = `<span class="qs-thumb-ph">${esc(c.icon || '')}</span><img src="${esc(t)}" alt="${esc(c.title || '')}" loading="eager" decoding="async" onerror="this.remove()">`;
+              return `<span class="qs-thumb">${zoomWrap(t, thumbImg)}</span>`;
+            }).join('')}</div>` : ''}
             ${c.icon && !c.image ? `<div class="qs-card-ico" aria-hidden="true">${esc(c.icon)}</div>` : ''}
             <div class="qs-card-head">
               ${c.title ? `<h3>${esc(c.title)}</h3>` : ''}
@@ -466,8 +470,11 @@
         var mark = it.icon ? `<span class="qs-item-ico" aria-hidden="true">${esc(it.icon)}</span>` : '';
         var warn = it.warn ? `<span class="qs-item-warn">${esc(it.warn)}</span>` : '';
         if (it.title) {
-          return `<div class="qs-item has-title${it.icon ? ' has-ico' : ''}">
-            ${mark}
+          var tipThumb = it.image
+            ? `<div class="qs-item-thumb">${zoomWrap(it.image, `<img src="${esc(it.image)}" alt="${esc(it.imageAlt || it.title || '')}" loading="eager" decoding="async">`)}</div>`
+            : mark;
+          return `<div class="qs-item has-title${it.icon ? ' has-ico' : ''}${it.image ? ' has-thumb' : ''}">
+            ${tipThumb}
             <div class="qs-item-txt">
               <b class="qs-item-title">${esc(String(it.title).replace(/:\s*$/, ''))}</b>
               <p>${esc(raw)}</p>
@@ -588,7 +595,7 @@
       : (data.skin === 'agents' ? ' is-agents'
       : (data.skin === 'principles' ? ' is-principles' : ''));
     return `
-      <article class="qs-screen is-content is-text${dense ? ' is-dense' : ''}${skin}" data-qs-root data-type="content">
+      <article class="qs-screen is-content is-text${dense ? ' is-dense' : ''}${skin}${data.layout === 'resp' || data.layout === 'resp-risk' ? ' is-resp' : ''}${data.layout === 'resp-risk' ? ' is-resp-risk' : ''}" data-qs-root data-type="content">
         <div class="qs-panel qs-panel-text">
           ${head}
         </div>
@@ -693,7 +700,8 @@
     });
     var isFuncoes = data.stepSkin === 'funcoes';
     var isVantagens = data.stepSkin === 'vantagens';
-    var customSteps = isFuncoes || isVantagens;
+    var isEquip = data.stepSkin === 'equip';
+    var customSteps = isFuncoes || isVantagens || isEquip;
     var slides = items.map(function (it, i) {
       var raw = it.text || it.body || '';
       var d = splitDose(raw);
@@ -749,25 +757,32 @@
           ${warn ? `<span class="qs-item-warn">${esc(warn)}</span>` : ''}
         </div>`
         : '';
-      var mediaInner = it.image
-        ? `<img class="qs-step-img" src="${esc(it.image)}" alt="${esc(it.imageAlt || it.title || '')}" loading="${i < 2 ? 'eager' : 'lazy'}" decoding="async"${it.icon ? ' onerror="this.style.display=&quot;none&quot;;this.nextElementSibling.hidden=false"' : ''}>${it.icon ? `<div class="qs-step-fallback is-icon" hidden><span aria-hidden="true">${esc(it.icon)}</span></div>` : ''}`
-        : (it.icon
-          ? `<div class="qs-step-fallback is-icon"><span aria-hidden="true">${esc(it.icon)}</span></div>`
-          : `<div class="qs-step-fallback">${esc(num)}</div>`);
+      var mediaInner;
+      if (it.image) {
+        var stepImg = `<img class="qs-step-img" src="${esc(it.image)}" alt="${esc(it.imageAlt || it.title || '')}" loading="${i < 2 ? 'eager' : 'lazy'}" decoding="async"${it.icon ? ' onerror="this.style.display=&quot;none&quot;;this.nextElementSibling.hidden=false"' : ''}>${it.icon ? `<div class="qs-step-fallback is-icon" hidden><span aria-hidden="true">${esc(it.icon)}</span></div>` : ''}`;
+        mediaInner = zoomWrap(it.image, stepImg);
+      } else if (it.icon) {
+        mediaInner = `<div class="qs-step-fallback is-icon"><span aria-hidden="true">${esc(it.icon)}</span></div>`;
+      } else {
+        mediaInner = `<div class="qs-step-fallback">${esc(num)}</div>`;
+      }
       var tone = it.tone || (textLayout ? ('e' + ((i % 7) + 1)) : '');
       var toneClass = tone ? ' tone-' + esc(tone) : '';
+      var equipBadge = isEquip
+        ? `<span class="qs-steps-count">${esc(unit)} ${i + 1} de ${items.length}</span>`
+        : '';
       return `<div class="qs-step${i === 0 ? ' is-on' : ''}${photoOnly ? ' is-photo' : ''}${textLayout ? ' is-text' : ''}${it.image ? ' has-photo' : ''}${toneClass}" data-qs-step="${i}"${i === 0 ? '' : ' hidden'}>
-        <div class="qs-step-media">${mediaInner}</div>
+        <div class="qs-step-media">${mediaInner}${equipBadge}</div>
         ${info}
       </div>`;
     }).join('');
 
     return `
-      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}${data.stepSkin === 'equip' ? ' is-equip-steps' : ''}" data-qs-root data-type="content">
+      <article class="qs-screen is-content is-steps${photoOnly ? ' is-photo-steps' : ''}${textLayout && !customSteps ? ' is-text-steps' : ''}${data.stepSkin === 'principles' ? ' is-principles-steps' : ''}${isFuncoes ? ' is-funcoes-steps' : ''}${isVantagens ? ' is-vantagens-steps' : ''}${isEquip ? ' is-equip-steps' : ''}" data-qs-root data-type="content">
         <div class="qs-steps" data-qs-steps data-step-unit="${esc(unit)}" data-step-next="${esc(nextLbl)}" data-step-finish="${esc(data.stepFinish || 'Concluir sequência')}">
           <header class="qs-steps-top">
             <h2 class="qs-title">${esc(data.title || '')}</h2>
-            <span class="qs-steps-count" data-qs-step-count>${esc(unit)} 1 de ${items.length}</span>
+            ${isEquip ? '' : `<span class="qs-steps-count" data-qs-step-count>${esc(unit)} 1 de ${items.length}</span>`}
           </header>
           <div class="qs-steps-track">${slides}</div>
           <div class="qs-steps-actions">
@@ -1608,18 +1623,22 @@
       if (prev) prev.hidden = i <= 0;
 
       if (!next) return;
+      /* Depois de concluir, ainda dá para folhear; só some o botão
+         de concluir no último slide (já foi). No 1º slide o Próximo
+         precisa continuar visível — senão some junto com o Anterior. */
+      if (i < total - 1) {
+        next.hidden = false;
+        next.textContent = nextLbl;
+        next.classList.remove('is-finish');
+        return;
+      }
       if (self.state.answered) {
         next.hidden = true;
         return;
       }
       next.hidden = false;
-      if (i < total - 1) {
-        next.textContent = nextLbl;
-        next.classList.remove('is-finish');
-      } else {
-        next.textContent = finishLbl;
-        next.classList.add('is-finish');
-      }
+      next.textContent = finishLbl;
+      next.classList.add('is-finish');
     }
 
     function goTo(n) {

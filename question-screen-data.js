@@ -18,14 +18,14 @@
  */
 window.QUESTION_SCREEN_SESSION = {
   "meta": {
-    "title": "NR 11 – Logística para Todos",
+    "title": "NR 11 – Logística para todos",
     "brand": "TecnoCursos",
     "musicSrc": "musica/musica_foco.mp3"
   },
   "modules": [
     {
       "id": 1,
-      "title": "Logística para Todos: Equipamentos e Quem Pode Operar",
+      "title": "Logística para todos: equipamentos e quem pode operar",
       "meta": "Vídeos + texto · desafio Crachá Liberado?",
       "titleUnlock": {
         "title": "OPERADOR HABILITADO",
@@ -36,7 +36,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m1-cover",
           "type": "cover",
-          "title": "Módulo 1 — Logística para Todos: Equipamentos e Quem Pode Operar",
+          "title": "Módulo 1 — Logística para todos: equipamentos e quem pode operar",
           "subtitle": "Objetivos do treinamento, os cinco equipamentos da Logística e do Drive e a formação exigida para cada um.",
           "transcript": "Módulo 1: Logística para Todos: Equipamentos e Quem Pode Operar.",
           "image": "assets/fotos/capamodulo1.png",
@@ -46,7 +46,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m1-v-abertura",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Logística Segura Começa por Você",
+          "title": "Logística segura começa por você",
           "duration": "0:40",
           "scene": "Abertura com o instrutor Lucas + takes na logística da Leroy Merlin",
           "brief": "Lucas se apresenta; cortes rápidos: paleteira manual, pedestre na faixa pintada, operador afivelando o cinto; título do treinamento sobre o galpão.",
@@ -60,7 +60,7 @@ window.QUESTION_SCREEN_SESSION = {
           "banner": "assets/fotos/pagina5.png",
           "bannerAlt": "Cinco ícones em verde: escudo, lâmpada, cofrinho, gráfico em alta e capacete",
           "kicker": "📄 Texto",
-          "title": "Objetivos do Treinamento",
+          "title": "Objetivos do treinamento",
           "cards": [
             {
               "icon": "🛡️",
@@ -99,7 +99,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m1-v-equipamentos",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Os Cinco Equipamentos da Logística e do Drive",
+          "title": "Os cinco equipamentos da Logística e do Drive",
           "duration": "0:45",
           "scene": "Filmagem real — um plano por equipamento, todos parados",
           "brief": "Empilhadeira, empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA, cada um com o nome em legenda; último plano com os cinco lado a lado.",
@@ -115,7 +115,7 @@ window.QUESTION_SCREEN_SESSION = {
           "stepNext": "Próximo equipamento",
           "stepFinish": "Concluir",
           "kicker": "📄 Texto",
-          "title": "Quem Pode Operar o Quê",
+          "title": "Quem pode operar o quê",
           "items": [
             {
               "image": "assets/fotos/p7-1a.png",
@@ -160,7 +160,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m1-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Crachá Liberado?",
+          "title": "Desafio — Crachá liberado?",
           "count": 6,
           "minCorrect": 5,
           "icon": "🪪",
@@ -309,7 +309,7 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 2,
-      "title": "EPI: Sua Primeira Barreira",
+      "title": "EPI: sua primeira barreira",
       "meta": "Vídeo + fotos + texto · desafio Vista o Operador",
       "titleUnlock": {
         "title": "EPI EM DIA",
@@ -320,8 +320,8 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m2-cover",
           "type": "cover",
-          "title": "Módulo 2 — EPI: Sua Primeira Barreira",
-          "subtitle": "Os EPIs obrigatórios na logística, as responsabilidades do colaborador e os óculos com grau.",
+          "title": "Módulo 2 — EPI: sua primeira barreira",
+          "subtitle": "Os EPIs obrigatórios na Logística, as responsabilidades do colaborador e os óculos com grau.",
           "transcript": "Módulo 2: EPI: Sua Primeira Barreira.",
           "image": "assets/fotos/capamodulo2.png",
           "imageAlt": "Capa do Módulo 2: EPI — sua primeira barreira"
@@ -330,7 +330,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m2-v-epi",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "EPI: Obrigatório e de Acordo com a Tarefa",
+          "title": "EPI: obrigatório e de acordo com a tarefa",
           "duration": "0:50",
           "scene": "Lucas em câmera + cortes de demonstração real",
           "brief": "Quatro responsabilidades aparecem como texto na tela: usar, guardar e conservar, higienizar, comunicar. Cortes: inspeção do capacete e EPIs guardados no armário.",
@@ -339,28 +339,63 @@ window.QUESTION_SCREEN_SESSION = {
         },
         {
           "id": "m2-foto-epis",
-          "type": "image",
-          "layout": "stack",
+          "type": "content",
+          "skin": "agents",
+          "layout": "gallery",
           "kicker": "📷 Foto",
-          "title": "Os EPIs da Logística, Um a Um",
-          "image": "assets/fotos/m2-epis.png",
-          "imageAlt": "Galeria dos EPIs da logística: capacete, óculos, luva, calçado, cinta lombar e protetor auricular",
-          "imageFit": "contain",
-          "bullets": [
-            "Capacete de segurança com jugular",
-            "Óculos de segurança (empilhadeira)",
-            "Luva de proteção (atividades manuais)",
-            "Calçado de segurança",
-            "Cinta lombar",
-            "Protetor auricular (empilhadeira a gás)"
+          "title": "Os EPIs da Logística, um a um",
+          "cards": [
+            {
+              "icon": "⛑️",
+              "thumbs": [
+                "assets/fotos/p17-1.png"
+              ],
+              "title": "Capacete de segurança com jugular"
+            },
+            {
+              "icon": "🥽",
+              "thumbs": [
+                "assets/fotos/p17-2.png"
+              ],
+              "title": "Óculos de segurança (empilhadeira)"
+            },
+            {
+              "icon": "🧤",
+              "thumbs": [
+                "assets/fotos/p17-3.png"
+              ],
+              "title": "Luva de proteção (atividades manuais)"
+            },
+            {
+              "icon": "🥾",
+              "thumbs": [
+                "assets/fotos/p17-4.png"
+              ],
+              "title": "Calçado de segurança"
+            },
+            {
+              "icon": "🦺",
+              "thumbs": [
+                "assets/fotos/p17-5.png"
+              ],
+              "title": "Cinta lombar"
+            },
+            {
+              "icon": "🎧",
+              "thumbs": [
+                "assets/fotos/p17-6.png"
+              ],
+              "title": "Protetor auricular (empilhadeira a gás)"
+            }
           ],
           "transcript": "Foto: os EPIs da logística. Capacete com jugular, óculos, luva, calçado, cinta lombar e protetor auricular."
         },
         {
           "id": "m2-responsabilidades",
           "type": "content",
+          "layout": "resp",
           "kicker": "📄 Texto",
-          "title": "Responsabilidades e Óculos com Grau",
+          "title": "Responsabilidades com o EPI",
           "cards": [
             {
               "icon": "🧤",
@@ -383,24 +418,36 @@ window.QUESTION_SCREEN_SESSION = {
               "body": "Avise quando estiver impróprio para uso."
             }
           ],
+          "transcript": "Responsabilidades do colaborador com o EPI: usar, guardar, higienizar e comunicar."
+        },
+        {
+          "id": "m2-oculos-checagem",
+          "type": "content",
+          "layout": "resp",
+          "kicker": "📄 Texto",
+          "title": "Dois cuidados que não podem faltar",
           "items": [
             {
               "icon": "👓",
-              "title": "Óculos com grau:",
-              "text": "a empresa fornece. Entregue a receita médica atualizada ao seu líder, que envia ao RH para fazer a solicitação."
+              "title": "Óculos com grau",
+              "text": "a empresa fornece. Entregue a receita médica atualizada ao seu líder, que envia ao RH para fazer a solicitação.",
+              "image": "assets/fotos/oculos grau.png",
+              "imageAlt": "Óculos de segurança com grau"
             },
             {
               "icon": "🔎",
-              "title": "Antes da atividade:",
-              "text": "avalie os EPIs e veja se estão em condições de uso."
+              "title": "Antes da atividade",
+              "text": "avalie os EPIs e veja se estão em condições de uso.",
+              "image": "assets/fotos/verificar.png",
+              "imageAlt": "Verificação dos EPIs antes da atividade"
             }
           ],
-          "transcript": "Responsabilidades do colaborador com o EPI e como pedir óculos com grau."
+          "transcript": "Óculos com grau: a empresa fornece; entregue a receita ao líder. Antes da atividade, avalie se os EPIs estão em condições de uso."
         },
         {
           "id": "m2-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Vista o Operador",
+          "title": "Desafio — Vista o operador",
           "count": 1,
           "minCorrect": 1,
           "icon": "🦺",
@@ -410,7 +457,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m2-match",
           "type": "match",
-          "title": "Vista o Operador",
+          "title": "Vista o operador",
           "body": "Toque numa tarefa e depois no EPI que ela exige.",
           "leftTitle": "Tarefa",
           "rightTitle": "EPI exigido",
@@ -443,7 +490,7 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 3,
-      "title": "Empilhadeira e PTA: Operação Segura",
+      "title": "Empilhadeira e PTA: operação segura",
       "meta": "Vídeos + texto · desafio Checklist Relâmpago",
       "titleUnlock": {
         "title": "CHECKLIST SEM FALHA",
@@ -454,7 +501,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m3-cover",
           "type": "cover",
-          "title": "Módulo 3 — Empilhadeira e PTA: Operação Segura",
+          "title": "Módulo 3 — Empilhadeira e PTA: operação segura",
           "subtitle": "Riscos, limite de velocidade, regras de operação, checklist diário, troca de baterias e plataforma elevatória.",
           "transcript": "Módulo 3: Empilhadeira e PTA: Operação Segura.",
           "image": "assets/fotos/capamodulo3.png",
@@ -464,7 +511,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m3-v-riscos",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Os Riscos da Empilhadeira",
+          "title": "Os riscos da empilhadeira",
           "duration": "1:05",
           "scene": "Lucas em câmera + animações estilo Pixar (acidente não se filma)",
           "brief": "Tombamento, colisão, atropelamento e queda de carga em animação, sempre parando antes do impacto. No fim, \"6 km/h\" ocupa a tela.",
@@ -474,8 +521,9 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m3-riscos",
           "type": "content",
+          "layout": "resp-risk",
           "kicker": "📄 Texto",
-          "title": "Riscos da Empilhadeira e suas Causas",
+          "title": "Riscos da empilhadeira e suas causas",
           "cards": [
             {
               "icon": "⚠️",
@@ -516,7 +564,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m3-v-operacao",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Operação Segura, do Checklist ao Estacionamento",
+          "title": "Operação segura, do checklist ao estacionamento",
           "duration": "1:10",
           "scene": "Filmagem real acompanhando um operador em sequência",
           "brief": "Checklist assinado, cinto afivelado, celular guardado, palete com stretch, garfos baixos, redução diante de piso molhado sinalizado.",
@@ -527,7 +575,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m3-operacao",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Regras de Operação",
+          "title": "Regras de operação",
           "items": [
             {
               "icon": "📋",
@@ -571,7 +619,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m3-v-baterias",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Processo Seguro de Troca de Baterias",
+          "title": "Processo seguro de troca de baterias",
           "duration": "a definir",
           "scene": "Filmagem real na área de troca e carga de baterias",
           "brief": "Roteiro a completar com o passo a passo oficial do SESMT (slides de troca de baterias). Fecha com a conferência da trava de segurança.",
@@ -582,7 +630,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m3-checklist-pta",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Checklist Diário e Plataforma Elevatória",
+          "title": "Checklist diário e plataforma elevatória",
           "cards": [
             {
               "icon": "📋",
@@ -607,7 +655,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m3-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Checklist Relâmpago",
+          "title": "Desafio — Checklist relâmpago",
           "count": 10,
           "minCorrect": 8,
           "icon": "✅",
@@ -848,7 +896,7 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 4,
-      "title": "Paleteiras e Pedestres: Dividindo o Mesmo Piso",
+      "title": "Paleteiras e pedestres: dividindo o mesmo piso",
       "meta": "Vídeos + texto · desafio Pode Parar Aqui?",
       "titleUnlock": {
         "title": "PISTA LIVRE",
@@ -859,7 +907,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m4-cover",
           "type": "cover",
-          "title": "Módulo 4 — Paleteiras e Pedestres: Dividindo o Mesmo Piso",
+          "title": "Módulo 4 — Paleteiras e pedestres: dividindo o mesmo piso",
           "subtitle": "Transpaleteira elétrica, paleteira manual, onde nunca estacionar e as regras do pedestre.",
           "transcript": "Módulo 4: Paleteiras e Pedestres: Dividindo o Mesmo Piso.",
           "image": "assets/fotos/capamodulo4.png",
@@ -869,7 +917,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m4-v-transpaleteira",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Transpaleteira Elétrica: Inspeção a Cada Turno",
+          "title": "Transpaleteira elétrica: inspeção a cada turno",
           "duration": "0:55",
           "scene": "Filmagem real — close nos pontos de inspeção",
           "brief": "Limpeza, placas de aviso e identificação, nível e fixação da bateria, trava de segurança e etiqueta de manutenção. Fecha com o operador conduzindo a pé.",
@@ -880,7 +928,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m4-v-manual",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Paleteira Manual: Empurre, Não Puxe",
+          "title": "Paleteira manual: empurre, não puxe",
           "duration": "0:40",
           "scene": "Filmagem real — plano lateral acompanhando o colaborador",
           "brief": "Colaborador empurra a paleteira em ritmo de caminhada e para sem movimento brusco, sem pé na roda.",
@@ -902,7 +950,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m4-estacionar",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Onde Nunca Estacionar",
+          "title": "Onde nunca estacionar",
           "cards": [
             {
               "icon": "🚪",
@@ -952,7 +1000,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m4-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Pode Parar Aqui?",
+          "title": "Desafio — Pode parar aqui?",
           "count": 6,
           "minCorrect": 5,
           "icon": "🚧",
@@ -1161,7 +1209,7 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 5,
-      "title": "Movimentação Manual, Manipulador a Vácuo e Estilete",
+      "title": "Movimentação manual, manipulador a vácuo e estilete",
       "meta": "Vídeos + texto · desafio Balança da Decisão",
       "titleUnlock": {
         "title": "CORPO E CARGA",
@@ -1172,7 +1220,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-cover",
           "type": "cover",
-          "title": "Módulo 5 — Movimentação Manual, Manipulador a Vácuo e Estilete",
+          "title": "Módulo 5 — Movimentação manual, manipulador a vácuo e estilete",
           "subtitle": "Postura e limites de peso, o manipulador de sacaria do Drive e o uso correto do estilete.",
           "transcript": "Módulo 5: Movimentação Manual, Manipulador a Vácuo e Estilete.",
           "image": "assets/fotos/capamodulo5.png",
@@ -1182,7 +1230,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m5-v-manual",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Movimentação Manual de Cargas",
+          "title": "Movimentação manual de cargas",
           "duration": "1:10",
           "scene": "Lucas em câmera + três cortes de demonstração de técnica",
           "brief": "Agachar com a coluna reta e a carga junto ao corpo; dois colegas erguendo juntos; ajuste e afrouxamento da cinta lombar. Nenhuma lesão é mostrada.",
@@ -1193,7 +1241,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m5-v-vacuo",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Manipulador de Sacaria a Vácuo no Drive",
+          "title": "Manipulador de sacaria a vácuo no Drive",
           "duration": "0:55",
           "scene": "Filmagem real no Drive — área isolada e close da ventosa",
           "brief": "Só o operador dentro da marcação pintada; ventosa prende o saco por vácuo; cliente e colaboradores aguardam fora da linha.",
@@ -1205,7 +1253,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "image",
           "layout": "stack",
           "kicker": "📷 Foto",
-          "title": "Uso do Estilete: Forma Correta",
+          "title": "Uso do estilete: forma correta",
           "image": "assets/fotos/m5-estilete.png",
           "imageAlt": "Estilete homologado sendo usado da forma correta e da forma incorreta",
           "imageFit": "contain",
@@ -1219,7 +1267,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m5-regras",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Regras da Movimentação Manual",
+          "title": "Regras da movimentação manual",
           "items": [
             {
               "icon": "🙋",
@@ -1262,7 +1310,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m5-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Balança da Decisão",
+          "title": "Desafio — Balança da decisão",
           "count": 8,
           "minCorrect": 6,
           "icon": "⚖️",
@@ -1495,7 +1543,7 @@ window.QUESTION_SCREEN_SESSION = {
     },
     {
       "id": 6,
-      "title": "Armazenagem, Docas e Encerramento",
+      "title": "Armazenagem, docas e encerramento",
       "meta": "Vídeos + texto · desafio Na Medida",
       "titleUnlock": {
         "title": "MEDIDA CERTA",
@@ -1506,7 +1554,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m6-cover",
           "type": "cover",
-          "title": "Módulo 6 — Armazenagem, Docas e Encerramento",
+          "title": "Módulo 6 — Armazenagem, docas e encerramento",
           "subtitle": "Palete aéreo, longarinas e palete PBR, equipamento certo para cada produto, docas e manuais de segurança.",
           "transcript": "Módulo 6: Armazenagem, Docas e Encerramento.",
           "image": "assets/fotos/capamodulo6.png",
@@ -1516,7 +1564,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m6-v-armazenagem",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Palete Aéreo e Armazenagem Segura",
+          "title": "Palete aéreo e armazenagem segura",
           "duration": "1:15",
           "scene": "Filmagem real com cotas gráficas sobre a imagem",
           "brief": "Palete stretchado e fitilhado no alto do rack; cotas de 50 cm, 1 m e 50 cm; placa de capacidade da longarina; palete PBR em bom estado e tocos apoiados.",
@@ -1527,7 +1575,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m6-v-docas",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Equipamento Certo e Segurança nas Docas",
+          "title": "Equipamento certo e segurança nas docas",
           "duration": "0:55",
           "scene": "Filmagem real em dois blocos: corredor de estoque e doca",
           "brief": "Colaborador usa carrinho em vez de carregar no braço; rampa elevada e livre; caminhão encosta, a rampa apoia na carroceria e a paleteira elétrica atravessa.",
@@ -1538,7 +1586,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m6-armazenagem",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Armazenagem: Medidas e Cuidados",
+          "title": "Armazenagem: medidas e cuidados",
           "cards": [
             {
               "icon": "📏",
@@ -1584,7 +1632,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m6-docas",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Dicas de Equipamentos e Docas",
+          "title": "Dicas de equipamentos e docas",
           "items": [
             {
               "icon": "🧰",
@@ -1623,16 +1671,16 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m6-manuais",
           "type": "content",
           "kicker": "📄 Texto",
-          "title": "Manuais de Segurança e SESMT",
+          "title": "Manuais de segurança e SESMT",
           "items": [
             {
               "icon": "📘",
-              "title": "Manual de Segurança — Logística:",
+              "title": "Manual de segurança — Logística:",
               "text": "disponível no Google Drive, pasta SESMT para todos - LMB, subpasta MANUAIS."
             },
             {
               "icon": "📗",
-              "title": "Manual de Segurança — Drive:",
+              "title": "Manual de segurança — Drive:",
               "text": "disponível na mesma pasta, subpasta MANUAIS."
             },
             {
@@ -1647,7 +1695,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m6-v-encerramento",
           "type": "video",
           "kicker": "🎥 Vídeo",
-          "title": "Logística Segura É com Você",
+          "title": "Logística segura é com você",
           "duration": "0:35",
           "scene": "Lucas em câmera, mesmo enquadramento da abertura",
           "brief": "Um corte de apoio: equipe reunida no início do turno, todos de EPI. E-mail do SESMT em texto na tela.",
@@ -1657,7 +1705,7 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m6-quiz-intro",
           "type": "quiz-intro",
-          "title": "Desafio — Na Medida",
+          "title": "Desafio — Na medida",
           "count": 7,
           "minCorrect": 5,
           "icon": "📐",
