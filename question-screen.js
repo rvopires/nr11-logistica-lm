@@ -39,6 +39,16 @@
     return duration > VIDEO_UNLOCK_MARGIN ? duration - VIDEO_UNLOCK_MARGIN : duration * 0.85;
   }
 
+  /* Telas de regras/atividades interativas: a seta só libera depois de concluir. */
+  function isInteractContent(data) {
+    if (!data || data.type !== 'content') return false;
+    if (data.steps || data.skin === 'ficha') return true;
+    var layout = data.layout;
+    if (layout === 'lista-foto' || layout === 'acordeao' || layout === 'mural') return true;
+    if (layout === 'quickcards' && (data.qcStyle === 'checklist' || data.qcStyle === 'deck')) return true;
+    return false;
+  }
+
   var sfxCtx = null;
   function ensureSfx() {
     var AC = window.AudioContext || window.webkitAudioContext;
@@ -1620,8 +1630,8 @@
     ensureLightbox();
 
     var lockedVideo = type === 'video' && !!(this.data.embed || this.data.panda || this.data.video);
-    var fichaGate = type === 'content' && this.data && this.data.skin === 'ficha';
-    var gated = type === 'question' || type === 'order' || type === 'match' || type === 'rhythm' || type === 'reflect' || type === 'compare' || lockedVideo || (type === 'content' && !!(this.data && this.data.steps)) || fichaGate;
+    var interactGate = isInteractContent(this.data);
+    var gated = type === 'question' || type === 'order' || type === 'match' || type === 'rhythm' || type === 'reflect' || type === 'compare' || lockedVideo || interactGate;
     if (!gated) this.state.answered = true;
 
     if (type === 'video' && (this.data.embed || this.data.panda || this.data.youtube || this.data.video)) {
@@ -1633,7 +1643,7 @@
     if (type === 'match') this._bindMatch();
     if (type === 'rhythm') this._bindRhythm();
     if (type === 'content' && this.data && this.data.steps) this._bindSteps();
-    if (fichaGate) this._bindFicha();
+    if (type === 'content' && this.data && this.data.skin === 'ficha') this._bindFicha();
 
     if ((type === 'question' || type === 'order') && this.options.quizScoring) {
       if (this.root) this.root.classList.add('is-timed');
@@ -1954,6 +1964,7 @@
         cDone.setAttribute('role', 'status');
         cDone.innerHTML = '<span class="qs-ac-done-ico" aria-hidden="true">✓</span><span class="qs-ac-done-txt"><b>Concluído!</b> Você já sabe onde achar os manuais. Siga para a próxima página.</span>';
         cmNext.replaceWith(cDone);
+        this._complete({ kind: 'caminho' });
       }
       return;
     }
@@ -1976,6 +1987,7 @@
         mDone.setAttribute('role', 'status');
         mDone.innerHTML = '<span class="qs-ac-done-ico" aria-hidden="true">✓</span><span class="qs-ac-done-txt"><b>Concluído!</b> Você viu todas as dicas. Siga para a próxima página.</span>';
         muNext.replaceWith(mDone);
+        this._complete({ kind: 'mural' });
       }
       return;
     }
@@ -2007,6 +2019,7 @@
         aDone.setAttribute('role', 'status');
         aDone.innerHTML = '<span class="qs-ac-done-ico" aria-hidden="true">✓</span><span class="qs-ac-done-txt"><b>Concluído!</b> Siga para a próxima página.</span>';
         acNext.replaceWith(aDone);
+        this._complete({ kind: 'acordeao' });
       }
       return;
     }
@@ -2037,6 +2050,7 @@
         lfNext.innerHTML = '✓ Concluído';
         var nHelp = nRoot.querySelector('.qs-lf-help span:last-child');
         if (nHelp) nHelp.textContent = 'Muito bem! Você viu todas as regras desta parte. Use a seta para seguir para a próxima página.';
+        this._complete({ kind: 'lista-foto' });
       }
       return;
     }
@@ -2079,7 +2093,11 @@
     }
     var deckChk = e.target.closest('[data-qs-check]');
     if (deckChk) {
-      if (!deckChk.disabled) { beep(deckCheck(deckChk.closest('[data-qs-deckroot]')) ? 'end' : 'click'); }
+      if (!deckChk.disabled) {
+        var checkDone = deckCheck(deckChk.closest('[data-qs-deckroot]'));
+        beep(checkDone ? 'end' : 'click');
+        if (checkDone) this._complete({ kind: 'checklist' });
+      }
       return;
     }
     var deckTab = e.target.closest('[data-qs-deck]');

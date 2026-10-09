@@ -6,7 +6,7 @@
   <meta name="referrer" content="no-referrer">
   <title>NR 11 – Logística para todos</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="question-screen.css?v=logoTap5">
+  <link rel="stylesheet" href="question-screen.css?v=regrasGate2">
   <link rel="stylesheet" href="capa-animada.css?v=nr11">
   <link rel="stylesheet" href="fundo-novo.css?v=gradLaranja1">
   <link rel="stylesheet" href="menu-compacto.css?v=tres3">
@@ -166,7 +166,7 @@
   <audio id="bg-music" loop preload="metadata" aria-hidden="true"></audio>
 
   <script src="question-screen-data.js?v=cm6"></script>
-  <script src="question-screen.js?v=cm6"></script>
+  <script src="question-screen.js?v=regrasGate3"></script>
   <script src="capa-animada.js?v=nr11"></script>
   <script src="narration-text.js?v=mergeFirstAid7"></script>
   <script src="narration.js?v=tts6"></script>
@@ -242,9 +242,14 @@
   function isGateType(type) {
     return isScoreType(type) || type === 'reflect' || type === 'compare';
   }
-  // ficha com sequência de fotos / cartões: a seta só libera depois de ver todas
+  // regras/atividades interativas: a seta só libera depois de concluir a sequência
   function isStepsGate(s) {
-    return !!(s && s.type === 'content' && (s.steps || s.skin === 'ficha'));
+    if (!s || s.type !== 'content') return false;
+    if (s.steps || s.skin === 'ficha') return true;
+    var layout = s.layout;
+    if (layout === 'lista-foto' || layout === 'acordeao' || layout === 'mural') return true;
+    if (layout === 'quickcards' && (s.qcStyle === 'checklist' || s.qcStyle === 'deck')) return true;
+    return false;
   }
   // vídeo com player: só libera o avanço faltando ~8s para o fim
   function isVideoGate(s) {
