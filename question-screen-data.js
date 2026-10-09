@@ -2174,6 +2174,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🏆 Conclusão",
           "eyebrow": "Certificado de conclusão",
           "title": "Parabéns",
+          "image": "assets/fotos/capa parabens.png",
+          "imageAlt": "Capa de parabéns — conclusão do treinamento",
           "body": "Você concluiu o treinamento NR 11 – Logística para Todos.",
           "quote": "Segurança é ter as pessoas em primeiro lugar, em cada movimento.",
           "chips": [
