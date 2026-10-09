@@ -1102,7 +1102,8 @@
   transition: transform .14s ease, box-shadow .14s ease, background .14s ease, border-color .14s ease;
 }
 .qs-app .qs-screen.is-question[data-variant="balanca"] .qs-opt[data-tone="1"] { --tone: #FE5600; --tone-d: rgba(194, 65, 12, .35); --tone-bg: #FFF0E6; }
-.qs-app .qs-screen.is-question[data-variant="balanca"] .qs-opt[data-tone="2"] { --tone: #1F8A4C; --tone-d: rgba(21, 110, 60, .35); --tone-bg: #E6F7EC; }
+/* Tom 2: magenta — nunca verde/vermelho nas alternativas (só no feedback de acerto/erro) */
+.qs-app .qs-screen.is-question[data-variant="balanca"] .qs-opt[data-tone="2"] { --tone: #DB2777; --tone-d: rgba(157, 23, 77, .35); --tone-bg: #FCE7F3; }
 .qs-app .qs-screen.is-question[data-variant="balanca"] .qs-opt::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 9px; background: var(--tone); }
 .qs-app .qs-screen.is-question[data-variant="balanca"] .qs-opt .qs-num {
   position: static; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--tone); color: #fff; font-size: 1.2rem; font-weight: 900;

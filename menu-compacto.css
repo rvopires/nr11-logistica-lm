@@ -83,3 +83,8 @@
   .qs-mod-card .qs-lock,
   .qs-mod-card .qs-done { align-self: center; padding-top: 0; }
 }
+
+/* 6 módulos: 3 em cima e 3 embaixo (no celular segue em uma coluna) */
+@media (min-width: 600px) {
+  .qs-mod-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

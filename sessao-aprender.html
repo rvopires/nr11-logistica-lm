@@ -6,10 +6,10 @@
   <meta name="referrer" content="no-referrer">
   <title>NR 11 – Logística para todos</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="question-screen.css?v=semresize2">
+  <link rel="stylesheet" href="question-screen.css?v=logoTap5">
   <link rel="stylesheet" href="capa-animada.css?v=nr11">
   <link rel="stylesheet" href="fundo-novo.css?v=gradLaranja1">
-  <link rel="stylesheet" href="menu-compacto.css?v=tigerFlame">
+  <link rel="stylesheet" href="menu-compacto.css?v=tres3">
   <link rel="stylesheet" href="atividades.css?v=balanca1">
   <link rel="stylesheet" href="avancado-unlock.css?v=1">
   <style>
@@ -164,8 +164,8 @@
 
   <audio id="bg-music" loop preload="metadata" aria-hidden="true"></audio>
 
-  <script src="question-screen-data.js?v=qcOperacaoFotos"></script>
-  <script src="question-screen.js?v=balanca1"></script>
+  <script src="question-screen-data.js?v=cm6"></script>
+  <script src="question-screen.js?v=cm6"></script>
   <script src="capa-animada.js?v=nr11"></script>
   <script src="narration-text.js?v=mergeFirstAid7"></script>
   <script src="narration.js?v=tts6"></script>
@@ -1370,11 +1370,19 @@
      longo do treinamento não irem se somando até ligar a simulação sozinha. */
   (function initLogoShortcut() {
     var TOQUES = 5;
-    var PAUSA = 1200;
+    var PAUSA = 2200;
     var conta = 0;
     var ultimo = 0;
+    var lastEvt = 0;
 
-    function toque() {
+    function toque(e) {
+      if (e) {
+        if (e.pointerType === 'mouse' && e.button != null && e.button !== 0) return;
+        /* pointerup + click sintético no mesmo toque: conta só uma vez */
+        var agoraEvt = Date.now();
+        if (agoraEvt - lastEvt < 80) return;
+        lastEvt = agoraEvt;
+      }
       var agora = Date.now();
       conta = (agora - ultimo > PAUSA) ? 1 : conta + 1;
       ultimo = agora;
@@ -1383,9 +1391,22 @@
       toggleDemoMode();
     }
 
-    var logos = document.querySelectorAll('.qs-home-logo img, .qs-brand img');
-    Array.prototype.forEach.call(logos, function (el) {
-      el.addEventListener('click', toque);
+    /* Ouve o container (área maior), não só o <img> — no celular a logo
+       encolhe e o toque precisava acertar o pixel. */
+    var alvos = document.querySelectorAll('.qs-home-logo, .qs-brand');
+    Array.prototype.forEach.call(alvos, function (el) {
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', 'TecnoCursos');
+      el.tabIndex = 0;
+      if (window.PointerEvent) {
+        el.addEventListener('pointerup', toque);
+      } else {
+        el.addEventListener('touchend', function (ev) {
+          ev.preventDefault();
+          toque(ev);
+        }, { passive: false });
+        el.addEventListener('click', toque);
+      }
     });
   })();
 

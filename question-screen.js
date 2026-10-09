@@ -583,6 +583,15 @@
     if (data.layout === 'quickcards' && Array.isArray(data.items) && data.items.length) {
       return quickCardsHTML(data);
     }
+    if (data.layout === 'mural' && Array.isArray(data.items) && data.items.length) {
+      return muralHTML(data);
+    }
+    if (data.layout === 'caminho' && Array.isArray(data.items) && data.items.length) {
+      return caminhoHTML(data);
+    }
+    if (data.layout === 'acordeao' && Array.isArray(data.groups) && data.groups.length) {
+      return acordeaoHTML(data);
+    }
     if (data.layout === 'lista-foto' && Array.isArray(data.groups) && data.groups.length) {
       return listaFotoHTML(data);
     }
@@ -731,6 +740,7 @@
             photo +
             '<span class="qs-qc-fallback-ico" aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
             '<span class="qs-deck-dot" aria-hidden="true"><b>' + (i + 1) + '</b><i>✓</i></span>' +
+            (it.image ? '<span class="qs-zoom-btn qs-zoom-mini" role="button" tabindex="0" data-qs-zoom="' + esc(it.image) + '" aria-label="Ampliar imagem">' + ZOOM_ICON + '</span>' : '') +
             '<span class="qs-qc-caption">' +
               '<b class="qs-qc-title">' + title + '</b>' +
               '<span class="qs-deck-rule">' + text + '</span>' +
@@ -823,6 +833,152 @@
     }
   }
 
+  /* Sanfonado horizontal (data.layout === 'acordeao'): cada tópico é uma faixa colorida em pé; o aberto mostra a imagem inteira e o texto */
+  function acSelect(root, idx) {
+    var items = root.querySelectorAll('[data-qs-ac]');
+    var btn = root.querySelector('[data-qs-acnext]');
+    if (idx < 0 || idx >= items.length) return;
+    items.forEach(function (it, i) {
+      var on = i === idx;
+      it.classList.toggle('is-on', on);
+      it.setAttribute('aria-expanded', on ? 'true' : 'false');
+      if (on) it.classList.add('is-seen');
+    });
+    if (btn && !root.classList.contains('is-complete')) {
+      var lbl = btn.getAttribute('data-label') || 'Próxima regra';
+      btn.innerHTML = idx === items.length - 1 ? '✓ Concluir' : esc(lbl) + ' <span aria-hidden="true">›</span>';
+    }
+  }
+
+  function acordeaoHTML(data) {
+    var g = (data.groups || [])[0] || { items: [] };
+    var items = g.items || [];
+    var startAt = +data.startAt || 1;
+    var total = items.length;
+    var label = data.nextLabel || 'Próxima regra';
+    var cols = items.map(function (it, i) {
+      var title = esc((it.title || '').replace(/:\s*$/, ''));
+      var img = it.image
+        ? '<img class="qs-ac-img" src="' + esc(it.image) + '" alt="' + esc(it.imageAlt || title) + '" loading="eager" decoding="async" onerror="this.hidden=true;this.parentNode.classList.add(&quot;is-fallback&quot;)">'
+        : '';
+      return '<section class="qs-ac-item' + (i === 0 ? ' is-on is-seen' : '') + (it.tone ? ' tone-' + esc(it.tone) : '') + '" data-qs-ac="' + i + '" role="button" tabindex="0" aria-expanded="' + (i === 0 ? 'true' : 'false') + '" aria-label="' + title + '">' +
+        '<span class="qs-ac-strip"><span class="qs-ac-n" aria-hidden="true"><i>' + (startAt + i) + '</i><em>✓</em></span><span class="qs-ac-vt">' + title + '</span></span>' +
+        '<span class="qs-ac-body">' +
+          '<span class="qs-ac-photo' + (it.image ? '' : ' is-fallback') + '">' + img + '<span class="qs-ac-fb" aria-hidden="true">' + esc(it.icon || '•') + '</span>' + (it.image ? '<span class="qs-zoom-btn qs-zoom-mini" role="button" tabindex="0" data-qs-zoom="' + esc(it.image) + '" aria-label="Ampliar imagem">' + ZOOM_ICON + '</span>' : '') + '</span>' +
+          '<span class="qs-ac-txt"><span class="qs-ac-count">' + (i + 1) + ' de ' + total + '</span><b>' + title + '</b><span class="qs-ac-rule">' + esc(it.text || it.body || '') + '</span></span>' +
+        '</span>' +
+      '</section>';
+    }).join('');
+    var head = '<p class="qs-zn-part"><span class="qs-zn-part-ico" aria-hidden="true">' + esc(g.icon || '') + '</span>' + (data.part ? '<span class="qs-zn-part-n">' + esc(data.part) + '</span>' : '') + '<span>' + esc(g.label || '') + '</span></p>';
+    return '' +
+      '<article class="qs-screen is-content is-text is-zonas is-single is-ac" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text" data-qs-acroot>' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          head +
+          '<div class="qs-zn-panel is-on">' +
+            '<p class="qs-lf-help"><span class="qs-lf-help-ico" aria-hidden="true">👉</span><span>' + esc(data.help || 'Toque numa faixa colorida, ou clique em Próxima, para abrir cada tópico. Na última, clique em Concluir.') + '</span></p>' +
+            '<div class="qs-ac" style="--n:' + total + '">' + cols + '</div>' +
+            '<button type="button" class="qs-lf-next qs-ac-next" data-qs-acnext data-label="' + esc(label) + '">' + esc(label) + ' <span aria-hidden="true">›</span></button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
+  /* Mural (data.layout === 'mural'): cartões com foto inteira sempre visíveis; o botão passa o destaque de um para o outro */
+  function muSelect(root, idx) {
+    var cards = root.querySelectorAll('[data-qs-mu]');
+    var btn = root.querySelector('[data-qs-munext]');
+    if (idx < 0 || idx >= cards.length) return;
+    cards.forEach(function (c, i) {
+      var on = i === idx;
+      c.classList.toggle('is-on', on);
+      c.setAttribute('aria-pressed', on ? 'true' : 'false');
+      if (on) c.classList.add('is-seen');
+    });
+    if (btn && !root.classList.contains('is-complete')) {
+      btn.innerHTML = idx === cards.length - 1 ? '✓ Concluir' : 'Próxima dica <span aria-hidden="true">›</span>';
+    }
+  }
+
+  function muralHTML(data) {
+    var items = data.items || [];
+    var cards = items.map(function (it, i) {
+      var title = esc(it.title || '');
+      var img = it.image
+        ? '<img class="qs-mu-img" src="' + esc(it.image) + '" alt="' + esc(it.imageAlt || it.title || '') + '" loading="eager" decoding="async">'
+        : '';
+      return '<button type="button" class="qs-mu-card tone-' + esc(it.tone || 'green') + (i === 0 ? ' is-on is-seen' : '') + '" data-qs-mu="' + i + '" aria-pressed="' + (i === 0 ? 'true' : 'false') + '">' +
+        '<span class="qs-mu-ph">' + img + (it.image ? '<span class="qs-zoom-btn qs-zoom-mini" role="button" tabindex="0" data-qs-zoom="' + esc(it.image) + '" aria-label="Ampliar imagem">' + ZOOM_ICON + '</span>' : '') + '<span class="qs-mu-n" aria-hidden="true"><i>' + (i + 1) + '</i><em>✓</em></span></span>' +
+        '<span class="qs-mu-txt"><b>' + title + '</b> ' + esc(it.text || '') + '</span>' +
+      '</button>';
+    }).join('');
+    var hero = data.hero
+      ? '<span class="qs-mu-hero"><img src="' + esc(data.hero) + '" alt="' + esc(data.heroAlt || 'Doca de carga') + '" loading="eager" decoding="async"><button type="button" class="qs-zoom-btn" data-qs-zoom="' + esc(data.hero) + '" aria-label="Ampliar a foto da doca">' + ZOOM_ICON + '</button></span>'
+      : '<span class="qs-lf-help-ico" aria-hidden="true">👉</span>';
+    return '' +
+      '<article class="qs-screen is-content is-text is-zonas is-single is-mu" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text" data-qs-muroot>' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          '<p class="qs-zn-part"><span class="qs-zn-part-ico" aria-hidden="true">🚚</span><span>' + esc(data.chip || 'Doca de carga') + '</span></p>' +
+          '<div class="qs-zn-panel is-on">' +
+            '<p class="qs-lf-help qs-mu-help">' + hero + '<span>' + esc(data.help || 'Leia as 6 dicas. Clique em Próxima dica para destacar cada uma e, na última, em Concluir.') + '</span></p>' +
+            '<div class="qs-mu">' + cards + '</div>' +
+            '<button type="button" class="qs-lf-next qs-ac-next" data-qs-munext>Próxima dica <span aria-hidden="true">›</span></button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
+  /* Caminho (data.layout === 'caminho'): trilha de paradas que acendem uma a uma + cartões de texto sempre visíveis + copiar e-mail */
+  function cmSelect(root, idx) {
+    var stops = root.querySelectorAll('[data-qs-cm]');
+    var btn = root.querySelector('[data-qs-cmnext]');
+    if (idx < 0 || idx >= stops.length) return;
+    stops.forEach(function (st, i) {
+      st.classList.toggle('is-on', i === idx);
+      if (i <= idx) st.classList.add('is-seen');
+    });
+    root.classList.toggle('is-arrived', idx === stops.length - 1);
+    if (btn && !root.classList.contains('is-complete')) {
+      btn.innerHTML = idx === stops.length - 1 ? '✓ Concluir' : 'Próximo passo <span aria-hidden="true">›</span>';
+    }
+  }
+
+  function caminhoHTML(data) {
+    var path = data.path || [];
+    var items = data.items || [];
+    var stops = path.map(function (p, i) {
+      return (i ? '<span class="qs-cm-arrow" aria-hidden="true">›</span>' : '') +
+        '<span class="qs-cm-stop' + (i === 0 ? ' is-on is-seen' : '') + '" data-qs-cm="' + i + '">' +
+          '<span class="qs-cm-sico" aria-hidden="true"><i>' + esc(p.icon || '') + '</i><em>✓</em></span>' +
+          '<span class="qs-cm-slbl">' + esc(p.label || '') + '</span>' +
+        '</span>';
+    }).join('');
+    var cards = items.map(function (it, i) {
+      var title = esc(it.title || '');
+      var text = esc(it.text || '');
+      var isMail = /@/.test(it.text || '');
+      if (it.link) title = esc((it.title || '').replace(/:s*$/, ''));
+      var body = '<span class="qs-cm-cico" aria-hidden="true">' + esc(it.icon || '') + '</span>' +
+        '<span class="qs-cm-ctxt"><b>' + title + '</b> ' + (isMail ? '<strong class="qs-cm-mail">' + text + '</strong>' : text) + '</span>' +
+        (it.link ? '<a class="qs-cm-open" href="' + esc(it.link) + '" target="_blank" rel="noopener noreferrer">Abrir manual <span aria-hidden="true">↗</span></a>' : '');
+      var copy = isMail ? '<button type="button" class="qs-cm-copy" data-qs-copy="' + esc(it.text) + '">Copiar e-mail</button>' : '';
+      return '<div class="qs-cm-card ' + (isMail ? 'is-mail ' : 'is-manual ') + 'tone-' + esc(it.tone || 'green') + '">' + body + copy + '</div>';
+    }).join('');
+    var manuals = '<div class="qs-cm-manuals">' + cards.split('<div class="qs-cm-card is-mail').shift() + '</div>';
+    var mailPart = cards.indexOf('<div class="qs-cm-card is-mail') >= 0 ? cards.slice(cards.indexOf('<div class="qs-cm-card is-mail')) : '';
+    return '' +
+      '<article class="qs-screen is-content is-text is-zonas is-single is-cm" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text" data-qs-cmroot>' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          '<div class="qs-zn-panel is-on">' +
+            (data.intro ? '<p class="qs-cm-intro">' + esc(data.intro) + '</p>' : '') +
+            '<div class="qs-cm">' + manuals + mailPart + '</div>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
   function listaFotoHTML(data) {
     var g = (data.groups || [])[0] || { items: [] };
     var items = g.items || [];
@@ -840,7 +996,7 @@
       var img = it.image
         ? '<img class="qs-lf-img" src="' + esc(it.image) + '" alt="' + esc(it.imageAlt || title) + '" loading="eager" decoding="async" onerror="this.hidden=true;this.parentNode.classList.add(&quot;is-fallback&quot;)">'
         : '';
-      return '<div class="qs-lf-slide' + (i === 0 ? ' is-on' : '') + (it.tone ? ' tone-' + esc(it.tone) : '') + '" data-lf-slide="' + i + '">' + img + '<span class="qs-lf-fb" aria-hidden="true">' + esc(it.icon || '•') + '</span></div>';
+      return '<div class="qs-lf-slide' + (i === 0 ? ' is-on' : '') + (it.tone ? ' tone-' + esc(it.tone) : '') + '" data-lf-slide="' + i + '">' + img + '<span class="qs-lf-fb" aria-hidden="true">' + esc(it.icon || '•') + '</span>' + (it.image ? '<span class="qs-zoom-btn qs-zoom-mini" role="button" tabindex="0" data-qs-zoom="' + esc(it.image) + '" aria-label="Ampliar imagem">' + ZOOM_ICON + '</span>' : '') + '</div>';
     }).join('');
     var head = '<p class="qs-zn-part"><span class="qs-zn-part-ico" aria-hidden="true">' + esc(g.icon || '') + '</span>' + (data.part ? '<span class="qs-zn-part-n">' + esc(data.part) + '</span>' : '') + '<span>' + esc(g.label || '') + '</span></p>';
     return '' +
@@ -910,6 +1066,7 @@
           '<div class="qs-zn-photo' + (it.image ? '' : ' is-fallback') + '">' + img +
             '<span class="qs-zn-fb" aria-hidden="true">' + esc(it.icon || '•') + '</span>' +
             (it.tag ? '<span class="qs-zn-tag">' + esc(it.tag) + '</span>' : '') +
+            (it.image ? '<span class="qs-zoom-btn qs-zoom-mini" role="button" tabindex="0" data-qs-zoom="' + esc(it.image) + '" aria-label="Ampliar imagem">' + ZOOM_ICON + '</span>' : '') +
           '</div>' +
           '<div class="qs-zn-info"><span class="qs-zn-seal" aria-hidden="true">' + esc(it.icon || '') + '</span><h3>' + title + '</h3><p>' + esc(it.text || it.body || '') + '</p></div>' +
         '</article>';
@@ -1757,6 +1914,109 @@
       e.stopPropagation();
       var zImg = zoomBtn.parentNode && zoomBtn.parentNode.querySelector('img');
       openLightbox(zoomBtn.getAttribute('data-qs-zoom'), zImg ? zImg.alt : '');
+      return;
+    }
+    var cmCopy = e.target.closest('[data-qs-copy]');
+    if (cmCopy) {
+      var mail = cmCopy.getAttribute('data-qs-copy');
+      var okCopy = function () {
+        beep('ok');
+        cmCopy.classList.add('is-copied');
+        cmCopy.textContent = '✓ Copiado!';
+        setTimeout(function () { cmCopy.classList.remove('is-copied'); cmCopy.textContent = 'Copiar e-mail'; }, 2200);
+      };
+      var fallbackCopy = function () {
+        var ta = document.createElement('textarea');
+        ta.value = mail; ta.setAttribute('readonly', ''); ta.style.cssText = 'position:fixed;opacity:0;left:-9999px';
+        document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        document.body.removeChild(ta);
+        okCopy();
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(mail).then(okCopy, fallbackCopy); else fallbackCopy();
+      return;
+    }
+    var cmNext = e.target.closest('[data-qs-cmnext]');
+    if (cmNext) {
+      var cRoot = cmNext.closest('[data-qs-cmroot]');
+      if (cRoot.classList.contains('is-complete')) return;
+      var cStops = cRoot.querySelectorAll('[data-qs-cm]');
+      var cCur = 0;
+      cStops.forEach(function (r, i) { if (r.classList.contains('is-on')) cCur = i; });
+      if (cCur < cStops.length - 1) {
+        beep('click');
+        cmSelect(cRoot, cCur + 1);
+      } else {
+        beep('end');
+        cRoot.classList.add('is-complete');
+        var cDone = document.createElement('div');
+        cDone.className = 'qs-ac-done';
+        cDone.setAttribute('role', 'status');
+        cDone.innerHTML = '<span class="qs-ac-done-ico" aria-hidden="true">✓</span><span class="qs-ac-done-txt"><b>Concluído!</b> Você já sabe onde achar os manuais. Siga para a próxima página.</span>';
+        cmNext.replaceWith(cDone);
+      }
+      return;
+    }
+    var muNext = e.target.closest('[data-qs-munext]');
+    if (muNext) {
+      var mRoot = muNext.closest('[data-qs-muroot]');
+      if (mRoot.classList.contains('is-complete')) return;
+      var mCards = mRoot.querySelectorAll('[data-qs-mu]');
+      var mCur = 0;
+      mCards.forEach(function (r, i) { if (r.classList.contains('is-on')) mCur = i; });
+      if (mCur < mCards.length - 1) {
+        beep('click');
+        muSelect(mRoot, mCur + 1);
+      } else {
+        beep('end');
+        mRoot.classList.add('is-complete');
+        mCards.forEach(function (r) { r.classList.add('is-seen'); });
+        var mDone = document.createElement('div');
+        mDone.className = 'qs-ac-done';
+        mDone.setAttribute('role', 'status');
+        mDone.innerHTML = '<span class="qs-ac-done-ico" aria-hidden="true">✓</span><span class="qs-ac-done-txt"><b>Concluído!</b> Você viu todas as dicas. Siga para a próxima página.</span>';
+        muNext.replaceWith(mDone);
+      }
+      return;
+    }
+    var muCard = e.target.closest('[data-qs-mu]');
+    if (muCard) {
+      var mRoot2 = muCard.closest('[data-qs-muroot]');
+      if (!muCard.classList.contains('is-on') && !mRoot2.classList.contains('is-complete')) {
+        beep('click');
+        muSelect(mRoot2, +muCard.getAttribute('data-qs-mu'));
+      }
+      return;
+    }
+    var acNext = e.target.closest('[data-qs-acnext]');
+    if (acNext) {
+      var aRoot = acNext.closest('[data-qs-acroot]');
+      if (aRoot.classList.contains('is-complete')) return;
+      var aItems = aRoot.querySelectorAll('[data-qs-ac]');
+      var aCur = 0;
+      aItems.forEach(function (r, i) { if (r.classList.contains('is-on')) aCur = i; });
+      if (aCur < aItems.length - 1) {
+        beep('click');
+        acSelect(aRoot, aCur + 1);
+      } else {
+        beep('end');
+        aRoot.classList.add('is-complete');
+        aItems.forEach(function (r) { r.classList.add('is-seen'); });
+        var aDone = document.createElement('div');
+        aDone.className = 'qs-ac-done';
+        aDone.setAttribute('role', 'status');
+        aDone.innerHTML = '<span class="qs-ac-done-ico" aria-hidden="true">✓</span><span class="qs-ac-done-txt"><b>Concluído!</b> Siga para a próxima página.</span>';
+        acNext.replaceWith(aDone);
+      }
+      return;
+    }
+    var acItem = e.target.closest('[data-qs-ac]');
+    if (acItem) {
+      var aRoot2 = acItem.closest('[data-qs-acroot]');
+      if (!acItem.classList.contains('is-on')) {
+        beep('click');
+        acSelect(aRoot2, +acItem.getAttribute('data-qs-ac'));
+      }
       return;
     }
     var lfNext = e.target.closest('[data-qs-lfnext]');

@@ -4,8 +4,7 @@
  *
  * Tipos: cover | content | video | image | quiz-intro | question | order | match | compare | reflect | finale
  *
- * Vídeos: SEM embed — só nome + scene/brief no frame "Vídeo a gravar".
- *         Depois cole embed/playerId Panda em cada tela type:"video".
+ * Vídeos: embed/playerId Panda em cada tela type:"video" (M = módulo, V = ordem do vídeo).
  * Fotos: assets/fotos/mNpM.png (módulo N, pergunta M).
  *
  * Atividades por módulo (formatos do motor do curso):
@@ -48,6 +47,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Logística segura começa por você",
           "duration": "0:40",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=c2d8746f-fcda-41ce-8698-0fefb0d4b842",
+          "playerId": "panda-c2d8746f-fcda-41ce-8698-0fefb0d4b842",
           "scene": "Abertura com o instrutor Lucas + takes na logística da Leroy Merlin",
           "brief": "Lucas se apresenta; cortes rápidos: paleteira manual, pedestre na faixa pintada, operador afivelando o cinto; título do treinamento sobre o galpão.",
           "body": "Todo dia, toneladas de mercadorias passam pela logística e pelo Drive. Este treinamento existe para prevenir acidentes, conscientizar, reduzir custos, aumentar a produtividade e promover bem-estar e segurança no trabalho.",
@@ -101,6 +102,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Os cinco equipamentos da Logística e do Drive",
           "duration": "0:45",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=35bc2f31-781a-44db-8365-dd813959c2b8",
+          "playerId": "panda-35bc2f31-781a-44db-8365-dd813959c2b8",
           "scene": "Filmagem real — um plano por equipamento, todos parados",
           "brief": "Empilhadeira, empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA, cada um com o nome em legenda; último plano com os cinco lado a lado.",
           "body": "Cinco equipamentos fazem o trabalho pesado: empilhadeira (a gás ou elétrica), empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA. Cada um tem suas regras, e nem todo mundo pode operar todos.",
@@ -332,6 +335,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "EPI: obrigatório e de acordo com a tarefa",
           "duration": "0:50",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=374582cb-3908-4e8c-93e8-1ef4a405bc39",
+          "playerId": "panda-374582cb-3908-4e8c-93e8-1ef4a405bc39",
           "scene": "Lucas em câmera + cortes de demonstração real",
           "brief": "Quatro responsabilidades aparecem como texto na tela: usar, guardar e conservar, higienizar, comunicar. Cortes: inspeção do capacete e EPIs guardados no armário.",
           "body": "O EPI é de uso obrigatório e varia conforme o local e a tarefa. Suas responsabilidades: usar adequadamente, guardar e conservar, higienizar e comunicar quando impróprio. Antes de cada atividade, avalie se estão em condições de uso.",
@@ -513,6 +518,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Os riscos da empilhadeira",
           "duration": "1:05",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=87bc84e7-cb7e-48ac-8ebe-78d16094b54e",
+          "playerId": "panda-87bc84e7-cb7e-48ac-8ebe-78d16094b54e",
           "scene": "Lucas em câmera + animações estilo Pixar (acidente não se filma)",
           "brief": "Tombamento, colisão, atropelamento e queda de carga em animação, sempre parando antes do impacto. No fim, \"6 km/h\" ocupa a tela.",
           "body": "Tombamento, colisão, atropelamento, queda e falta de manutenção são os riscos principais. A velocidade máxima no Drive e na Logística é de 6 km/h.",
@@ -586,6 +593,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Operação segura, do checklist ao estacionamento",
           "duration": "1:10",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=e361d2c9-16f5-476a-a6c8-ffb8546e7da2",
+          "playerId": "panda-e361d2c9-16f5-476a-a6c8-ffb8546e7da2",
           "scene": "Filmagem real acompanhando um operador em sequência",
           "brief": "Checklist assinado, cinto afivelado, celular guardado, palete com stretch, garfos baixos, redução diante de piso molhado sinalizado.",
           "body": "Faça o checklist, use o cinto, não use o celular, respeite capacidade e altura da carga, fixe a carga, não ande com garfos erguidos e cheque o piso. Empilhadeira a gás não entra na loja nem em lugares fechados.",
@@ -657,6 +666,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Processo seguro de troca de baterias",
           "duration": "a definir",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=bc12761e-343f-4090-aa99-51a169a085c8",
+          "playerId": "panda-bc12761e-343f-4090-aa99-51a169a085c8",
           "scene": "Filmagem real na área de troca e carga de baterias",
           "brief": "Roteiro a completar com o passo a passo oficial do SESMT (slides de troca de baterias). Fecha com a conferência da trava de segurança.",
           "body": "A troca de baterias tem um processo seguro, definido pelo SESMT, que deve ser seguido passo a passo. Ao terminar, confira se a bateria está bem fixa e se a trava de segurança está no lugar.",
@@ -960,6 +971,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Transpaleteira elétrica: inspeção a cada turno",
           "duration": "0:55",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=59013310-669e-4a4f-a4e0-54477be1ab14",
+          "playerId": "panda-59013310-669e-4a4f-a4e0-54477be1ab14",
           "scene": "Filmagem real — close nos pontos de inspeção",
           "brief": "Limpeza, placas de aviso e identificação, nível e fixação da bateria, trava de segurança e etiqueta de manutenção. Fecha com o operador conduzindo a pé.",
           "body": "A transpaleteira elétrica carrega palete de até 1.500 kg. Inspecione no início de cada turno: limpeza, placas, bateria e trava. Equipamento na manutenção não se usa. Só opera quem tem NR 11 e carteirinha, e nunca no modo embarcado.",
@@ -971,6 +984,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Paleteira manual: empurre, não puxe",
           "duration": "0:40",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=ed71477c-da14-41b4-b811-29f5d5be173e",
+          "playerId": "panda-ed71477c-da14-41b4-b811-29f5d5be173e",
           "scene": "Filmagem real — plano lateral acompanhando o colaborador",
           "brief": "Colaborador empurra a paleteira em ritmo de caminhada e para sem movimento brusco, sem pé na roda.",
           "body": "Velocidade de uma pessoa caminhando, parada sem movimentos bruscos (nada de pé na roda nem girar a manopla de uma vez) e, sempre que possível, empurrar em vez de puxar.",
@@ -982,6 +997,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Pedestres na Logística",
           "duration": "0:45",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=ef87ff66-69f7-4b8f-af76-cc117df53658",
+          "playerId": "panda-ef87ff66-69f7-4b8f-af76-cc117df53658",
           "scene": "Lucas em câmera + cenas reais de pedestres em conduta correta",
           "brief": "Pedestre na faixa pintada com celular guardado, parando diante de área isolada; gráfico de 5 m entre pedestre e equipamento em elevação.",
           "body": "Ande só nas faixas de pedestres, sem celular, longe de equipamento em movimento e respeitando áreas isoladas. Na elevação de carga, distância mínima de 5 metros.",
@@ -1313,6 +1330,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Movimentação manual de cargas",
           "duration": "1:10",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=15b94b77-c394-443b-b22c-5c0ef2485df7",
+          "playerId": "panda-15b94b77-c394-443b-b22c-5c0ef2485df7",
           "scene": "Lucas em câmera + três cortes de demonstração de técnica",
           "brief": "Agachar com a coluna reta e a carga junto ao corpo; dois colegas erguendo juntos; ajuste e afrouxamento da cinta lombar. Nenhuma lesão é mostrada.",
           "body": "Pegue a carga de frente, sem torcer o tronco, o mais perto do corpo. Acima de 25 kg ou sem boa pega, peça ajuda. Mercadoria comprida e de difícil pega, a partir de 15 kg. Cinta lombar só durante o esforço. Cargas pesadas: transpaleteira elétrica.",
@@ -1324,6 +1343,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Manipulador de sacaria a vácuo no Drive",
           "duration": "0:55",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=0d160275-185b-4053-9f28-a885fd325e33",
+          "playerId": "panda-0d160275-185b-4053-9f28-a885fd325e33",
           "scene": "Filmagem real no Drive — área isolada e close da ventosa",
           "brief": "Só o operador dentro da marcação pintada; ventosa prende o saco por vácuo; cliente e colaboradores aguardam fora da linha.",
           "body": "O manipulador reduz a fadiga, ganha performance e elimina o contato direto com a carga. Exige formação de NR 12. A área deve ser isolada, com sinalização no piso e placas, e só o operador fica nela.",
@@ -1480,7 +1501,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Leve, boa pega e distância curta: basta a postura correta.",
           "review": "Carga leve",
           "transcript": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado.",
-          "image": "assets/fotos/m5p1.png",
+          "image": "assets/fotos/m5-carga1.png",
           "imageAlt": "Ilustração: Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado."
         },
         {
@@ -1508,7 +1529,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Acima de 25 kg, peça ajuda a um colega.",
           "review": "Carga acima de 25 kg",
           "transcript": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado.",
-          "image": "assets/fotos/m5p2.png",
+          "image": "assets/fotos/m5p1.png",
           "imageAlt": "Ilustração: Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado."
         },
         {
@@ -1536,7 +1557,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Mercadoria comprida e de difícil pega, acima de 15 kg: peça ajuda.",
           "review": "Carga comprida e de difícil pega",
           "transcript": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar.",
-          "image": "assets/fotos/m5p3.png",
+          "image": "assets/fotos/m5p2.png",
           "imageAlt": "Ilustração: Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar."
         },
         {
@@ -1564,7 +1585,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Para distâncias acima de 2 m, use carrinho ou paleteira manual.",
           "review": "Distância acima de 2 metros",
           "transcript": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros.",
-          "image": "assets/fotos/m5p4.png",
+          "image": "assets/fotos/m5p3.png",
           "imageAlt": "Ilustração: Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros."
         },
         {
@@ -1592,7 +1613,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Carga pesada em palete: transpaleteira elétrica.",
           "review": "Palete pesado",
           "transcript": "Carga 5 de 8 · Palete fechado de 600 kg.",
-          "image": "assets/fotos/m5p5.png",
+          "image": "assets/fotos/m5p4.png",
           "imageAlt": "Ilustração: Carga 5 de 8 · Palete fechado de 600 kg."
         },
         {
@@ -1620,7 +1641,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Sacaria no Drive: manipulador a vácuo, por operador com NR 12.",
           "review": "Sacaria no Drive",
           "transcript": "Carga 6 de 8 · Saco de 50 kg no Drive.",
-          "image": "assets/fotos/m5p6.png",
+          "image": "assets/fotos/m5p5.png",
           "imageAlt": "Ilustração: Carga 6 de 8 · Saco de 50 kg no Drive."
         },
         {
@@ -1648,7 +1669,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Use o carrinho de transporte de chapas, conforme o informativo do SESMT.",
           "review": "Chapas de madeira",
           "transcript": "Carga 7 de 8 · Chapa de madeira inteira.",
-          "image": "assets/fotos/m5p7.png",
+          "image": "assets/fotos/m5p6.png",
           "imageAlt": "Ilustração: Carga 7 de 8 · Chapa de madeira inteira."
         },
         {
@@ -1675,7 +1696,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Dentro dos limites: pegue de frente, junto ao corpo, sem torcer o tronco.",
           "review": "Carga dentro dos limites",
-          "transcript": "Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento."
+          "transcript": "Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento.",
+          "image": "assets/fotos/m5p7.png",
+          "imageAlt": "Ilustração: Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento."
         }
       ]
     },
@@ -1704,6 +1727,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Palete aéreo e armazenagem segura",
           "duration": "1:15",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=c77e9824-2594-4a65-90ea-2c71a1dc80af",
+          "playerId": "panda-c77e9824-2594-4a65-90ea-2c71a1dc80af",
           "scene": "Filmagem real com cotas gráficas sobre a imagem",
           "brief": "Palete stretchado e fitilhado no alto do rack; cotas de 50 cm, 1 m e 50 cm; placa de capacidade da longarina; palete PBR em bom estado e tocos apoiados.",
           "body": "Paletes aéreos stretchados e fitilhados; altura até 50 cm do limitador; 1 m do sistema de incêndio e da infraestrutura elétrica; 50 cm da parede. Verifique a capacidade das longarinas e o estado do palete PBR.",
@@ -1715,6 +1740,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Equipamento certo e segurança nas docas",
           "duration": "0:55",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=7b713d9d-a4fe-4421-b835-3b821a759c15",
+          "playerId": "panda-7b713d9d-a4fe-4421-b835-3b821a759c15",
           "scene": "Filmagem real em dois blocos: corredor de estoque e doca",
           "brief": "Colaborador usa carrinho em vez de carregar no braço; rampa elevada e livre; caminhão encosta, a rampa apoia na carroceria e a paleteira elétrica atravessa.",
           "body": "Use o equipamento adequado, confira antes de usar, não arraste mercadorias e use carrinho ou paleteira acima de 2 m. Na doca, a rampa não guarda produtos, fica elevada quando parada e só se usa apoiada no caminhão.",
@@ -1723,82 +1750,141 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m6-armazenagem",
           "type": "content",
+          "layout": "acordeao",
           "kicker": "📄 Texto",
           "title": "Armazenagem: medidas e cuidados",
-          "cards": [
+          "part": "Parte 1 de 2",
+          "startAt": 1,
+          "help": "Toque numa faixa colorida, ou clique em Próxima medida, para abrir cada medida. Na última, clique em Concluir.",
+          "nextLabel": "Próxima medida",
+          "groups": [
             {
               "icon": "📏",
-              "title": "Altura",
-              "body": "Até 50 cm acima do limitador do rack."
-            },
-            {
-              "icon": "🔥",
-              "title": "Sistema de incêndio e elétrica",
-              "body": "Empilhar a 1 m de distância."
-            },
-            {
-              "icon": "🧱",
-              "title": "Parede",
-              "body": "Manter 50 cm de distância."
-            },
-            {
-              "icon": "🪵",
-              "title": "Palete PBR",
-              "body": "1,20 m × 1,00 m, padrão nacional."
+              "label": "As medidas",
+              "items": [
+                {
+                  "icon": "📏",
+                  "image": "assets/fotos/p72.1.png",
+                  "imageAlt": "Altura",
+                  "title": "Altura",
+                  "tone": "green",
+                  "text": "Até 50 cm acima do limitador do rack."
+                },
+                {
+                  "icon": "🔥",
+                  "image": "assets/fotos/p72.2.png",
+                  "imageAlt": "Sistema de incêndio e elétrica",
+                  "title": "Sistema de incêndio e elétrica",
+                  "tone": "blue",
+                  "text": "Empilhar a 1 m de distância."
+                },
+                {
+                  "icon": "🧱",
+                  "image": "assets/fotos/p72.3.png",
+                  "imageAlt": "Parede",
+                  "title": "Parede",
+                  "tone": "orange",
+                  "text": "Manter 50 cm de distância."
+                },
+                {
+                  "icon": "🪵",
+                  "image": "assets/fotos/p72.4.png",
+                  "imageAlt": "Palete PBR",
+                  "title": "Palete PBR",
+                  "tone": "purple",
+                  "text": "1,20 m × 1,00 m, padrão nacional."
+                }
+              ]
             }
           ],
-          "items": [
+          "transcript": "Medidas da armazenagem em racks: altura, sistema de incêndio e elétrica, parede e palete PBR."
+        },
+        {
+          "id": "m6-armazenagem-2",
+          "type": "content",
+          "layout": "acordeao",
+          "kicker": "📄 Texto",
+          "title": "Armazenagem: medidas e cuidados",
+          "part": "Parte 2 de 2",
+          "startAt": 5,
+          "help": "Toque numa faixa colorida, ou clique em Próximo cuidado, para abrir cada cuidado. Na última, clique em Concluir.",
+          "nextLabel": "Próximo cuidado",
+          "groups": [
             {
               "icon": "🔩",
-              "title": "Longarinas:",
-              "text": "verifique a capacidade de carga antes de armazenar. O vão é de 1,00 m."
-            },
-            {
-              "icon": "🪵",
-              "title": "Tocos:",
-              "text": "são eles que ficam apoiados na longarina, e não as ripas."
-            },
-            {
-              "icon": "🔎",
-              "title": "Palete PBR:",
-              "text": "sem ripas quebradas e sem tocos faltando."
+              "label": "Longarinas e palete",
+              "items": [
+                {
+                  "icon": "🔩",
+                  "image": "assets/fotos/p72.5.png",
+                  "imageAlt": "Longarinas",
+                  "title": "Longarinas",
+                  "tone": "pink",
+                  "text": "Verifique a capacidade de carga antes de armazenar. O vão é de 1,00 m."
+                },
+                {
+                  "icon": "🪵",
+                  "image": "assets/fotos/p72.6.png",
+                  "imageAlt": "Tocos",
+                  "title": "Tocos",
+                  "tone": "teal",
+                  "text": "São eles que ficam apoiados na longarina, e não as ripas."
+                },
+                {
+                  "icon": "🔎",
+                  "image": "assets/fotos/p72.7.png",
+                  "imageAlt": "Palete PBR em bom estado",
+                  "title": "Palete PBR em bom estado",
+                  "tone": "gold",
+                  "text": "Sem ripas quebradas e sem tocos faltando."
+                }
+              ]
             }
           ],
-          "transcript": "Medidas e cuidados da armazenagem em racks."
+          "transcript": "Cuidados da armazenagem em racks: longarinas, tocos e estado do palete PBR."
         },
         {
           "id": "m6-docas",
           "type": "content",
+          "layout": "mural",
+          "hero": "assets/fotos/P74.7.png",
+          "chip": "Doca de carga",
           "kicker": "📄 Texto",
           "title": "Dicas de equipamentos e docas",
           "items": [
             {
-              "icon": "🧰",
+              "image": "assets/fotos/P74.1.png",
+              "tone": "green",
               "title": "Equipamento:",
               "text": "use o adequado para cada produto e verifique as condições antes de usar."
             },
             {
-              "icon": "🚫",
+              "image": "assets/fotos/P74.2.png",
+              "tone": "blue",
               "title": "Não arraste",
               "text": "mercadorias pelo piso. Peça ajuda em mercadorias comprida e de difícil pega."
             },
             {
-              "icon": "🛒",
+              "image": "assets/fotos/P74.3.png",
+              "tone": "orange",
               "title": "Distâncias acima de 2 m:",
               "text": "use carrinhos ou paleteiras manuais."
             },
             {
-              "icon": "⛔",
+              "image": "assets/fotos/P74.4.png",
+              "tone": "purple",
               "title": "Rampa da doca:",
               "text": "não guarde produtos nela e deixe elevada quando não estiver em uso."
             },
             {
-              "icon": "🚚",
+              "image": "assets/fotos/P74.5.png",
+              "tone": "pink",
               "title": "Uso da rampa:",
               "text": "somente apoiada no caminhão, para a correta distribuição de peso."
             },
             {
-              "icon": "🔌",
+              "image": "assets/fotos/P74.6.png",
+              "tone": "teal",
               "title": "Na doca:",
               "text": "prefira a paleteira elétrica à manual."
             }
@@ -1808,21 +1894,27 @@ window.QUESTION_SCREEN_SESSION = {
         {
           "id": "m6-manuais",
           "type": "content",
+          "layout": "caminho",
           "kicker": "📄 Texto",
           "title": "Manuais de segurança e SESMT",
           "items": [
             {
               "icon": "📘",
+              "tone": "blue",
               "title": "Manual de segurança — Logística:",
+              "link": "https://drive.google.com/file/d/1UmbjKqiv1f6IDeeJbRqS9wFIBVJMLpj6/view?usp=sharing",
               "text": "disponível no Google Drive, pasta SESMT para todos - LMB, subpasta MANUAIS."
             },
             {
               "icon": "📗",
+              "tone": "green",
               "title": "Manual de segurança — Drive:",
+              "link": "https://drive.google.com/file/d/1BC1ton7IiuBNAkVilW1FdLXA6s7b5OyS/view?usp=sharing",
               "text": "disponível na mesma pasta, subpasta MANUAIS."
             },
             {
               "icon": "✉️",
+              "tone": "orange",
               "title": "Dúvidas:",
               "text": "sesmt@leroymerlin.com.br"
             }
@@ -1835,6 +1927,8 @@ window.QUESTION_SCREEN_SESSION = {
           "kicker": "🎥 Vídeo",
           "title": "Logística segura é com você",
           "duration": "0:35",
+          "embed": "https://player-vz-d35edf2a-8e7.tv.pandavideo.com.br/embed/?v=1032ef3a-6664-4dfd-a0f6-d044f049963e",
+          "playerId": "panda-1032ef3a-6664-4dfd-a0f6-d044f049963e",
           "scene": "Lucas em câmera, mesmo enquadramento da abertura",
           "brief": "Um corte de apoio: equipe reunida no início do turno, todos de EPI. E-mail do SESMT em texto na tela.",
           "body": "Agora você sabe quem pode operar cada equipamento, quais EPIs usar, como circular, levantar peso e armazenar com segurança. Nada disso funciona sozinho: depende de você, todos os dias.",
@@ -1943,7 +2037,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "A altura não pode ultrapassar 50 cm do limitador do rack.",
           "review": "Altura do palete aéreo",
           "transcript": "Quanto a carga do palete aéreo pode passar do limitador do rack?",
-          "image": "assets/fotos/m6p3.png",
+          "image": "assets/fotos/m6p5.png",
           "imageAlt": "Ilustração: Quanto a carga do palete aéreo pode passar do limitador do rack?"
         },
         {
@@ -1975,7 +2069,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Mantenha 1 metro de distância.",
           "review": "Distância do sistema de incêndio",
           "transcript": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica?",
-          "image": "assets/fotos/m6p4.png",
+          "image": "assets/fotos/m6p7.png",
           "imageAlt": "Ilustração: Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura el"
         },
         {
@@ -2007,7 +2101,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Mantenha 50 cm de distância da parede.",
           "review": "Distância da parede",
           "transcript": "E a distância do empilhamento até a parede?",
-          "image": "assets/fotos/m6p5.png",
+          "image": "assets/fotos/m6p4.png",
           "imageAlt": "Ilustração: E a distância do empilhamento até a parede?"
         },
         {
@@ -2039,7 +2133,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "Transporta cargas em palete de até 1.500 kg.",
           "review": "Capacidade da transpaleteira",
           "transcript": "Qual a capacidade máxima da transpaleteira elétrica?",
-          "image": "assets/fotos/m6p6.png",
+          "image": "assets/fotos/m6p3.png",
           "imageAlt": "Ilustração: Qual a capacidade máxima da transpaleteira elétrica?"
         },
         {
@@ -2071,7 +2165,7 @@ window.QUESTION_SCREEN_SESSION = {
           "explanation": "O palete PBR mede 1,20 m × 1,00 m.",
           "review": "Medidas do palete PBR",
           "transcript": "Quais as medidas do palete PBR padrão nacional?",
-          "image": "assets/fotos/m6p7.png",
+          "image": "assets/fotos/m6p6.png",
           "imageAlt": "Ilustração: Quais as medidas do palete PBR padrão nacional?"
         },
         {
