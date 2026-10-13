@@ -159,10 +159,14 @@
   function stopSpeech() {
     clearTimeout(state.timer);
     state.timer = null;
+    /* Incrementa antes de pausar/limpar: o browser dispara error ao zerar
+       src; com playId novo o handler ignora e não mostra toast falso. */
     state.playId++;
     if (state.audio) {
       try { state.audio.pause(); } catch (e) {}
-      state.audio.src = '';
+      try { state.audio.removeAttribute('src'); state.audio.load(); } catch (e2) {
+        try { state.audio.src = ''; } catch (e3) {}
+      }
       state.audio = null;
     }
     if (state.objectUrl) {
@@ -288,15 +292,18 @@
       if (id === state.playId) stopSpeech();
     }, { once: true });
     audio.addEventListener('error', function () {
+      /* Ignora erro pós-stop (src limpo no fim da leitura / hush do vídeo). */
+      if (id !== state.playId) return;
       notifyMissingAudio(key, url);
-      if (id === state.playId) stopSpeech();
+      stopSpeech();
     }, { once: true });
     return audio.play()
       .then(function () { return true; })
       .catch(function (err) {
+        if (id !== state.playId) return false;
         console.warn('[narração] não tocou ' + url + ':', err && err.message ? err.message : err);
         notifyMissingAudio(key, url);
-        if (id === state.playId) stopSpeech();
+        stopSpeech();
         return false;
       });
   }

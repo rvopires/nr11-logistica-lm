@@ -27,7 +27,7 @@
     },
     "m1-quiz-intro": {
       "file": "assets/audio/m1-quiz-intro.mp3",
-      "text": "Desafio, Crachá liberado?. 6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: libere ou barre. Mínimo de 5 acertos para avançar."
+      "text": "Desafio, Crachá liberado?. 6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: libere ou barre. Mínimo de 3 acertos para avançar."
     },
     "m1-v-abertura": {
       "file": "assets/audio/m1-v-abertura.mp3",
@@ -155,7 +155,7 @@
     },
     "m3-quiz-intro": {
       "file": "assets/audio/m3-quiz-intro.mp3",
-      "text": "Desafio, Checklist relâmpago. 10 situações, uma de cada vez. Marque Conforme ou Não conforme antes do tempo acabar. Mínimo de 8 acertos para avançar."
+      "text": "Desafio, Checklist relâmpago. 10 situações, uma de cada vez. Marque Conforme ou Não conforme antes do tempo acabar. Mínimo de 5 acertos para avançar."
     },
     "m3-q1": {
       "file": "assets/audio/m3-q1.mp3",
@@ -235,7 +235,7 @@
     },
     "m4-quiz-intro": {
       "file": "assets/audio/m4-quiz-intro.mp3",
-      "text": "Desafio, Pode parar aqui?. 6 situações. Em cada uma, escolha o local onde é proibido deixar o equipamento. Mínimo de 5 acertos para avançar."
+      "text": "Desafio, Pode parar aqui?. 6 situações. Em cada uma, escolha o local onde é proibido deixar o equipamento. Mínimo de 3 acertos para avançar."
     },
     "m4-q1": {
       "file": "assets/audio/m4-q1.mp3",
@@ -299,7 +299,7 @@
     },
     "m5-quiz-intro": {
       "file": "assets/audio/m5-quiz-intro.mp3",
-      "text": "Desafio, Balança da decisão. 8 cargas. Para cada uma, decida: levantar sozinho, com um colega ou com equipamento. Mínimo de 6 acertos para avançar."
+      "text": "Desafio, Balança da decisão. 8 cargas. Para cada uma, decida: levantar sozinho, com um colega ou com equipamento. Mínimo de 4 acertos para avançar."
     },
     "m5-q1": {
       "file": "assets/audio/m5-q1.mp3",
@@ -383,7 +383,7 @@
     },
     "m6-quiz-intro": {
       "file": "assets/audio/m6-quiz-intro.mp3",
-      "text": "Desafio, Na medida. 7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de 5 acertos para concluir."
+      "text": "Desafio, Na medida. 7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de 4 acertos para concluir."
     },
     "m6-q1": {
       "file": "assets/audio/m6-q1.mp3",

@@ -186,10 +186,10 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "quiz-intro",
           "title": "Desafio — Crachá liberado?",
           "count": 6,
-          "minCorrect": 5,
+          "minCorrect": 3,
           "icon": "🪪",
-          "body": "6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: <strong>libere</strong> ou <strong>barre</strong>. Mínimo de <strong>5 acertos</strong> para avançar.",
-          "transcript": "Desafio, Crachá liberado?. 6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: libere ou barre. Mínimo de 5 acertos para avançar."
+          "body": "6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: <strong>libere</strong> ou <strong>barre</strong>. Mínimo de <strong>3 acertos</strong> para avançar.",
+          "transcript": "Desafio, Crachá liberado?. 6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: libere ou barre. Mínimo de 3 acertos para avançar."
         },
         {
           "id": "m1-q1",
@@ -779,10 +779,10 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "quiz-intro",
           "title": "Desafio — Checklist relâmpago",
           "count": 10,
-          "minCorrect": 8,
+          "minCorrect": 5,
           "icon": "✅",
-          "body": "10 situações, uma de cada vez. Marque <strong>Conforme</strong> ou <strong>Não conforme</strong> antes do tempo acabar. Mínimo de <strong>8 acertos</strong> para avançar.",
-          "transcript": "Desafio, Checklist relâmpago. 10 situações, uma de cada vez. Marque Conforme ou Não conforme antes do tempo acabar. Mínimo de 8 acertos para avançar."
+          "body": "10 situações, uma de cada vez. Marque <strong>Conforme</strong> ou <strong>Não conforme</strong> antes do tempo acabar. Mínimo de <strong>5 acertos</strong> para avançar.",
+          "transcript": "Desafio, Checklist relâmpago. 10 situações, uma de cada vez. Marque Conforme ou Não conforme antes do tempo acabar. Mínimo de 5 acertos para avançar."
         },
         {
           "id": "m3-q1",
@@ -1170,10 +1170,10 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "quiz-intro",
           "title": "Desafio — Pode parar aqui?",
           "count": 6,
-          "minCorrect": 5,
+          "minCorrect": 3,
           "icon": "🚧",
-          "body": "6 situações. Em cada uma, escolha o <strong>local onde é proibido</strong> deixar o equipamento. Mínimo de <strong>5 acertos</strong> para avançar.",
-          "transcript": "Desafio, Pode parar aqui?. 6 situações. Em cada uma, escolha o local onde é proibido deixar o equipamento. Mínimo de 5 acertos para avançar."
+          "body": "6 situações. Em cada uma, escolha o <strong>local onde é proibido</strong> deixar o equipamento. Mínimo de <strong>3 acertos</strong> para avançar.",
+          "transcript": "Desafio, Pode parar aqui?. 6 situações. Em cada uma, escolha o local onde é proibido deixar o equipamento. Mínimo de 3 acertos para avançar."
         },
         {
           "id": "m4-q1",
@@ -1541,10 +1541,10 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "quiz-intro",
           "title": "Desafio — Balança da decisão",
           "count": 8,
-          "minCorrect": 6,
+          "minCorrect": 4,
           "icon": "⚖️",
-          "body": "8 cargas. Para cada uma, decida: levantar <strong>sozinho</strong>, <strong>com um colega</strong> ou <strong>com equipamento</strong>. Mínimo de <strong>6 acertos</strong> para avançar.",
-          "transcript": "Desafio, Balança da decisão. 8 cargas. Para cada uma, decida: levantar sozinho, com um colega ou com equipamento. Mínimo de 6 acertos para avançar."
+          "body": "8 cargas. Para cada uma, decida: levantar <strong>sozinho</strong>, <strong>com um colega</strong> ou <strong>com equipamento</strong>. Mínimo de <strong>4 acertos</strong> para avançar.",
+          "transcript": "Desafio, Balança da decisão. 8 cargas. Para cada uma, decida: levantar sozinho, com um colega ou com equipamento. Mínimo de 4 acertos para avançar."
         },
         {
           "id": "m5-q1",
@@ -2009,10 +2009,10 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "quiz-intro",
           "title": "Desafio — Na medida",
           "count": 7,
-          "minCorrect": 5,
+          "minCorrect": 4,
           "icon": "📐",
-          "body": "7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de <strong>5 acertos</strong> para concluir.",
-          "transcript": "Desafio, Na medida. 7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de 5 acertos para concluir."
+          "body": "7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de <strong>4 acertos</strong> para concluir.",
+          "transcript": "Desafio, Na medida. 7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de 4 acertos para concluir."
         },
         {
           "id": "m6-q1",
