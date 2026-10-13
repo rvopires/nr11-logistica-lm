@@ -322,8 +322,33 @@
       '</article>';
   }
 
+  /* Documentos lado a lado (data.layout === 'docs'): formulários, carteirinha etc. Cada imagem aparece inteira, com legenda e lupa. */
+  function docsHTML(data) {
+    var imgs = Array.isArray(data.images) ? data.images : [];
+    var figs = imgs.map(function (im, i) {
+      var src = typeof im === 'string' ? im : (im.src || im.image || '');
+      var alt = typeof im === 'string' ? (data.title || '') : (im.alt || im.label || data.title || '');
+      var label = typeof im === 'string' ? '' : (im.label || '');
+      return '<figure class="qs-docs-fig">' +
+        '<div class="qs-docs-frame"><img src="' + esc(src) + '" alt="' + esc(alt) + '" loading="eager" decoding="async">' +
+          '<span class="qs-zoom-btn qs-zoom-mini" role="button" tabindex="0" data-qs-zoom="' + esc(src) + '" aria-label="Ampliar imagem">' + ZOOM_ICON + '</span></div>' +
+        (label ? '<figcaption>' + esc(label) + '</figcaption>' : '') +
+      '</figure>';
+    }).join('');
+    var note = data.body ? '<p class="qs-docs-note"><span aria-hidden="true">⚠️</span><span>' + esc(data.body) + '</span></p>' : '';
+    return '' +
+      '<article class="qs-screen is-image is-docs" data-qs-root data-type="image">' +
+        '<div class="qs-panel qs-panel-docs">' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          '<div class="qs-docs count-' + imgs.length + '">' + figs + '</div>' +
+          note +
+        '</div>' +
+      '</article>';
+  }
+
   function imageHTML(data) {
     if (data.layout === 'destaque') return destaqueHTML(data);
+    if (data.layout === 'docs') return docsHTML(data);
     var bullets = Array.isArray(data.bullets) && data.bullets.length
       ? `<ul class="qs-bullets">${data.bullets.map(function (b) {
           return `<li>${esc(b)}</li>`;
@@ -592,6 +617,9 @@
     /* Ficha rápida / princípios: cartões que viram ao tocar. */
     if (data.layout === 'quickcards' && Array.isArray(data.items) && data.items.length) {
       return quickCardsHTML(data);
+    }
+    if (data.layout === 'fatores' && Array.isArray(data.cards) && data.cards.length) {
+      return fatoresHTML(data);
     }
     if (data.layout === 'mural' && Array.isArray(data.items) && data.items.length) {
       return muralHTML(data);
@@ -890,6 +918,27 @@
             '<div class="qs-ac" style="--n:' + total + '">' + cols + '</div>' +
             '<button type="button" class="qs-lf-next qs-ac-next" data-qs-acnext data-label="' + esc(label) + '">' + esc(label) + ' <span aria-hidden="true">›</span></button>' +
           '</div>' +
+        '</div>' +
+      '</article>';
+  }
+
+  /* Fatores de risco (data.layout === 'fatores'): três cartões altos, cada um com faixa colorida, ícone, nome e definição */
+  function fatoresHTML(data) {
+    var cards = (data.cards || []).map(function (c, i) {
+      return '<article class="qs-ft-card tone-' + esc(c.tone || 'orange') + '" style="--i:' + i + '">' +
+        '<div class="qs-ft-band"><span class="qs-ft-ico" aria-hidden="true">' + esc(c.icon || '') + '</span></div>' +
+        '<div class="qs-ft-body">' +
+          '<h3>' + esc(c.title || '') + '</h3>' +
+          '<span class="qs-ft-tag">' + esc(data.tag || 'Definição') + '</span>' +
+          '<p>' + esc(c.body || '') + '</p>' +
+        '</div>' +
+      '</article>';
+    }).join('');
+    return '' +
+      '<article class="qs-screen is-content is-text is-fatores" data-qs-root data-type="content">' +
+        '<div class="qs-panel qs-panel-text">' +
+          '<h2 class="qs-title">' + esc(data.title || '') + '</h2>' +
+          '<div class="qs-ft count-' + (data.cards || []).length + '">' + cards + '</div>' +
         '</div>' +
       '</article>';
   }

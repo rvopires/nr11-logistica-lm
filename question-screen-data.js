@@ -161,6 +161,27 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Quem pode operar cada equipamento: a formação exigida e a carteirinha."
         },
         {
+          "id": "m1-carteirinha",
+          "type": "image",
+          "layout": "docs",
+          "kicker": "📷 Foto",
+          "title": "A carteirinha do operador: frente e verso",
+          "images": [
+            {
+              "src": "assets/fotos/carteirinha-frente.png",
+                "label": "Frente",
+              "alt": "Frente da carteirinha: nome do colaborador, matrícula, validade do ASO e operador de equipamentos móveis"
+            },
+            {
+              "src": "assets/fotos/carteirinha-verso.png",
+                "label": "Verso",
+              "alt": "Verso da carteirinha: equipamentos motorizados autorizados e validade do treinamento de cada um"
+            }
+          ],
+          "body": "Se não tiver a validade do treinamento, não há autorização para a operação do equipamento.",
+          "transcript": "A carteirinha do operador: a frente identifica o colaborador e o verso mostra os equipamentos autorizados e a validade do treinamento."
+        },
+        {
           "id": "m1-quiz-intro",
           "type": "quiz-intro",
           "title": "Desafio — Crachá liberado?",
@@ -588,6 +609,35 @@ window.QUESTION_SCREEN_SESSION = {
           "transcript": "Falta de manutenção transforma qualquer equipamento em risco. Velocidade máxima: seis quilômetros por hora."
         },
         {
+          "id": "m3-fatores",
+          "type": "content",
+          "layout": "fatores",
+          "tag": "Definição",
+          "kicker": "📄 Texto",
+          "title": "Fatores de risco: definição",
+          "cards": [
+            {
+              "icon": "🙈",
+              "tone": "orange",
+              "title": "Negligência",
+              "body": "Falta de cuidado e desleixo proposital em determinada situação."
+            },
+            {
+              "icon": "⚡",
+              "tone": "blue",
+              "title": "Imprudência",
+              "body": "Falta de reflexão ou precipitação em tomar atitudes diferentes daquelas aprendidas ou esperadas."
+            },
+            {
+              "icon": "🎓",
+              "tone": "purple",
+              "title": "Imperícia",
+              "body": "Falta de conhecimento ou habilidade específica para o desenvolvimento de uma atividade científica ou técnica."
+            }
+          ],
+          "transcript": "Fatores de risco: negligência, imprudência e imperícia."
+        },
+        {
           "id": "m3-v-operacao",
           "type": "video",
           "kicker": "🎥 Vídeo",
@@ -703,6 +753,26 @@ window.QUESTION_SCREEN_SESSION = {
             }
           ],
           "transcript": "Checklist diário obrigatório e requisitos para usar a plataforma elevatória."
+        },
+        {
+          "id": "m3-checklist-obrigatorio",
+          "type": "image",
+          "layout": "docs",
+          "kicker": "📷 Foto",
+          "title": "Obrigatoriedade do checklist diário em empilhadeira / PTA",
+          "images": [
+            {
+              "src": "assets/fotos/checklist-pta.png",
+                "label": "Check list de inspeção de uso da PTA",
+              "alt": "Check list de inspeção de uso da PTA, plataforma de trabalho aéreo"
+            },
+            {
+              "src": "assets/fotos/ficha-inspecao-diaria.png",
+                "label": "Ficha de inspeção diária",
+              "alt": "Ficha de inspeção diária da empilhadeira"
+            }
+          ],
+          "transcript": "Obrigatoriedade do checklist diário em empilhadeira e PTA."
         },
         {
           "id": "m3-quiz-intro",
