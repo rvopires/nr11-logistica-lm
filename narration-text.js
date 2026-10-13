@@ -102,22 +102,44 @@
   }
 
   /* Blocos de conteúdo na mesma ordem em que o contentBlocks() os desenha:
-     corpo, números, cards, itens, comparação, tópicos, regras, citação, nota. */
+     corpo, números, cards, itens, grupos (zonas/lista-foto/acordeão),
+     comparação, tópicos, regras, avisos, citação, nota, imagens de docs. */
   function contentParts(screen) {
     var parts = [];
 
     if (screen.body) parts.push(sentence(screen.body));
+    if (screen.part) parts.push(sentence(screen.part));
+    /* help fica de fora: é instrução de interface ("clique em Próxima"), não conteúdo. */
+    if (screen.bannerAlt) parts.push('Na imagem: ' + clean(screen.bannerAlt) + '.');
 
     list(screen.stats).forEach(function (s) {
       parts.push(sentence(joinParts([clean(s.num), clean(s.label)])));
     });
     list(screen.cards).forEach(function (c) {
-      parts.push(labelled(c.title, c.body));
+      if (c.lead && c.title) {
+        parts.push(sentence(c.lead));
+        parts.push(labelled(c.title, c.body || c.text));
+      } else {
+        parts.push(labelled(c.title || c.lead, c.body || c.text));
+      }
       if (c.imageAlt) parts.push('Na imagem: ' + clean(c.imageAlt) + '.');
     });
     list(screen.items).forEach(function (it) {
       parts.push(labelled(it.title, it.text || it.body));
       if (it.imageAlt) parts.push('Na imagem: ' + clean(it.imageAlt) + '.');
+      if (it.link) parts.push(sentence('Link: ' + it.link));
+    });
+    /* Grupos: estacionar (zonas), regras (lista-foto), armazenagem (acordeão) */
+    list(screen.groups).forEach(function (g) {
+      if (g.label) parts.push(sentence(g.label));
+      list(g.items).forEach(function (it) {
+        var tag = clean(it.tag || '');
+        var body = clean(it.text || it.body || '');
+        /* Evita "Nunca obstrua. Nunca obstrua." quando tag e texto repetem. */
+        if (tag && body && body.toLowerCase().indexOf(tag.toLowerCase()) !== -1) tag = '';
+        parts.push(labelled(it.title, tag ? (tag + '. ' + (it.text || it.body || '')) : (it.text || it.body || '')));
+        if (it.imageAlt) parts.push('Na imagem: ' + clean(it.imageAlt) + '.');
+      });
     });
     list(screen.compare).forEach(function (c) {
       parts.push(labelled(c.label, c.text || c.body));
@@ -128,6 +150,16 @@
     });
     list(screen.rules).forEach(function (r) {
       parts.push(sentence(r.text || r.body));
+    });
+    list(screen.notes).forEach(function (n) {
+      parts.push(labelled(n.label, n.text || n.body));
+    });
+    /* Docs (carteirinha, checklist): frente/verso ou fichas lado a lado */
+    list(screen.images).forEach(function (img) {
+      var src = typeof img === 'string' ? img : (img.src || img.image || '');
+      var alt = typeof img === 'string' ? '' : (img.alt || img.imageAlt || img.caption || img.label || '');
+      if (alt) parts.push('Na imagem: ' + clean(alt) + '.');
+      else if (src) parts.push('Na imagem: documento ilustrativo.');
     });
 
     if (screen.quote) parts.push(sentence(screen.quote));
@@ -152,7 +184,8 @@
     return out + ' Cada acerto vale 50 pontos.';
   }
 
-  function buildScreenText(screen) {
+  /* Monta o roteiro pelo conteúdo da tela (com imagens). */
+  function buildScreenTextAuto(screen) {
     if (!screen) return '';
     var parts = [];
 
@@ -205,6 +238,16 @@
 
     if (screen.imageAlt) parts.push('Na imagem: ' + clean(screen.imageAlt) + '.');
     return joinParts(parts);
+  }
+
+  function buildScreenText(screen) {
+    if (!screen) return '';
+    var auto = buildScreenTextAuto(screen);
+    var tr = screen.transcript ? clean(stripHtml(screen.transcript)) : '';
+    /* Transcript curto (resumo) cede lugar ao roteiro completo com imagens.
+       Depois de gerar o áudio, o transcript da página é atualizado com esse texto. */
+    if (tr && tr.length >= Math.max(60, Math.floor(auto.length * 0.85))) return tr;
+    return auto || tr;
   }
 
   function buildHomeText() {

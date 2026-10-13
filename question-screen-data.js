@@ -37,7 +37,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 1 — Logística para todos: equipamentos e quem pode operar",
           "subtitle": "Objetivos do treinamento, os cinco equipamentos da Logística e do Drive e a formação exigida para cada um.",
-          "transcript": "Módulo 1: Logística para Todos: Equipamentos e Quem Pode Operar.",
+          "transcript": "Módulo 1, Logística para todos: equipamentos e quem pode operar. Objetivos do treinamento, os cinco equipamentos da Logística e do Drive e a formação exigida para cada um. Na imagem: Capa do Módulo 1: equipamentos e quem pode operar na Logística e no Drive.",
           "image": "assets/fotos/capamodulo1.png",
           "imageAlt": "Capa do Módulo 1: equipamentos e quem pode operar na Logística e no Drive"
         },
@@ -52,7 +52,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Abertura com o instrutor Lucas + takes na logística da Leroy Merlin",
           "brief": "Lucas se apresenta; cortes rápidos: paleteira manual, pedestre na faixa pintada, operador afivelando o cinto; título do treinamento sobre o galpão.",
           "body": "Todo dia, toneladas de mercadorias passam pela logística e pelo Drive. Este treinamento existe para prevenir acidentes, conscientizar, reduzir custos, aumentar a produtividade e promover bem-estar e segurança no trabalho.",
-          "transcript": "Vídeo de abertura: logística segura começa por você."
+          "transcript": "Vídeo. Logística segura começa por você."
         },
         {
           "id": "m1-objetivos",
@@ -94,7 +94,7 @@ window.QUESTION_SCREEN_SESSION = {
               "body": "um ambiente de trabalho melhor para todos"
             }
           ],
-          "transcript": "Objetivos do treinamento: prevenção de acidentes, conscientização, redução de custos, maior produtividade, bem-estar e segurança."
+          "transcript": "Objetivos do treinamento. Na imagem: Cinco ícones em verde: escudo, lâmpada, cofrinho, gráfico em alta e capacete. Objetivo 1. Prevenção de acidentes: agir antes que o risco vire ocorrência. Objetivo 2. Conscientização dos colaboradores: cada pessoa faz parte da segurança. Objetivo 3. Redução de custos: menos acidentes, menos perdas e paradas. Objetivo 4. Maior produtividade: operação segura é operação que flui. Objetivo 5. Bem-estar e segurança: um ambiente de trabalho melhor para todos."
         },
         {
           "id": "m1-v-equipamentos",
@@ -107,7 +107,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real — um plano por equipamento, todos parados",
           "brief": "Empilhadeira, empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA, cada um com o nome em legenda; último plano com os cinco lado a lado.",
           "body": "Cinco equipamentos fazem o trabalho pesado: empilhadeira (a gás ou elétrica), empilhadeira elétrica patolada, paleteira manual, transpaleteira elétrica e PTA. Cada um tem suas regras, e nem todo mundo pode operar todos.",
-          "transcript": "Vídeo: os cinco equipamentos da logística e do Drive."
+          "transcript": "Vídeo. Os cinco equipamentos da Logística e do Drive."
         },
         {
           "id": "m1-quem-opera",
@@ -158,7 +158,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Formação de NR 12 obrigatória."
             }
           ],
-          "transcript": "Quem pode operar cada equipamento: a formação exigida e a carteirinha."
+          "transcript": "Quem pode operar o quê. Empilhadeira a gás: CNH + treinamento teórico e prático. Empilhadeira elétrica: CNH + treinamento teórico e prático. Empilhadeira elétrica patolada: Sem CNH: treinamento teórico e prático. CNH não exigida. Paleteira / transpaleteira elétrica: NR 11 Operador de Paleteira (teoria e prática) + carteirinha. Plataforma elevatória (PTA): NR 35 e NR 18 (teoria e prática) + carteirinha. Manipulador de sacaria a vácuo: Formação de NR 12 obrigatória."
         },
         {
           "id": "m1-carteirinha",
@@ -179,7 +179,7 @@ window.QUESTION_SCREEN_SESSION = {
             }
           ],
           "body": "Se não tiver a validade do treinamento, não há autorização para a operação do equipamento.",
-          "transcript": "A carteirinha do operador: a frente identifica o colaborador e o verso mostra os equipamentos autorizados e a validade do treinamento."
+          "transcript": "A carteirinha do operador: frente e verso. Se não tiver a validade do treinamento, não há autorização para a operação do equipamento. Na imagem: Frente da carteirinha: nome do colaborador, matrícula, validade do ASO e operador de equipamentos móveis. Na imagem: Verso da carteirinha: equipamentos motorizados autorizados e validade do treinamento de cada um."
         },
         {
           "id": "m1-quiz-intro",
@@ -189,7 +189,7 @@ window.QUESTION_SCREEN_SESSION = {
           "minCorrect": 5,
           "icon": "🪪",
           "body": "6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: <strong>libere</strong> ou <strong>barre</strong>. Mínimo de <strong>5 acertos</strong> para avançar.",
-          "transcript": "Desafio do módulo 1: Crachá Liberado?."
+          "transcript": "Desafio, Crachá liberado?. 6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: libere ou barre. Mínimo de 5 acertos para avançar."
         },
         {
           "id": "m1-q1",
@@ -210,7 +210,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Liberado: CNH e treinamento teórico e prático completos.",
           "review": "Habilitação da empilhadeira",
-          "transcript": "Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás.",
+          "transcript": "Caso 1 de 6 CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 1 de 6 CNH e treinamento teórico e prático de empilhadeira. Quer operar a.",
           "image": "assets/fotos/m1p1.png",
           "imageAlt": "Ilustração: Caso 1 de 6 · CNH e treinamento teórico e prático de empilhadeira. Quer operar a"
         },
@@ -233,7 +233,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Barrado: a CNH é obrigatória para empilhadeira. A única exceção é a empilhadeira patolada.",
           "review": "CNH para empilhadeira",
-          "transcript": "Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica.",
+          "transcript": "Caso 2 de 6 Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 2 de 6 Treinamento teórico e prático, mas sem CNH. Quer operar a empilhad.",
           "image": "assets/fotos/m1p2.png",
           "imageAlt": "Ilustração: Caso 2 de 6 · Treinamento teórico e prático, mas sem CNH. Quer operar a empilhad"
         },
@@ -256,7 +256,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Liberado: a patolada não exige CNH, só o treinamento teórico e prático.",
           "review": "Exceção da empilhadeira patolada",
-          "transcript": "Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada.",
+          "transcript": "Caso 3 de 6 Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 3 de 6 Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira.",
           "image": "assets/fotos/m1p3.png",
           "imageAlt": "Ilustração: Caso 3 de 6 · Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira"
         },
@@ -279,7 +279,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Barrado: a formação é teoria e prática, e é preciso ter a carteirinha.",
           "review": "Formação da paleteira elétrica",
-          "transcript": "Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica.",
+          "transcript": "Caso 4 de 6 Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 4 de 6 Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha..",
           "image": "assets/fotos/m1p4.png",
           "imageAlt": "Ilustração: Caso 4 de 6 · Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha."
         },
@@ -302,7 +302,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Liberado: as duas formações e a carteirinha em dia.",
           "review": "Requisitos da PTA",
-          "transcript": "Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA).",
+          "transcript": "Caso 5 de 6 NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA). Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 5 de 6 NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a.",
           "image": "assets/fotos/m1p5.png",
           "imageAlt": "Ilustração: Caso 5 de 6 · NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a"
         },
@@ -325,7 +325,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Barrado: o modo embarcado não está autorizado para ninguém, por razões de segurança.",
           "review": "Modo embarcado da transpaleteira",
-          "transcript": "Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado.",
+          "transcript": "Caso 6 de 6 NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 6 de 6 NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no.",
           "image": "assets/fotos/m1p6.png",
           "imageAlt": "Ilustração: Caso 6 de 6 · NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no "
         }
@@ -346,7 +346,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 2 — EPI: sua primeira barreira",
           "subtitle": "Os EPIs obrigatórios na Logística, as responsabilidades do colaborador e os óculos com grau.",
-          "transcript": "Módulo 2: EPI: Sua Primeira Barreira.",
+          "transcript": "Módulo 2, EPI: sua primeira barreira. Os EPIs obrigatórios na Logística, as responsabilidades do colaborador e os óculos com grau. Na imagem: Capa do Módulo 2: EPI, sua primeira barreira.",
           "image": "assets/fotos/capamodulo2.png",
           "imageAlt": "Capa do Módulo 2: EPI — sua primeira barreira"
         },
@@ -361,7 +361,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Lucas em câmera + cortes de demonstração real",
           "brief": "Quatro responsabilidades aparecem como texto na tela: usar, guardar e conservar, higienizar, comunicar. Cortes: inspeção do capacete e EPIs guardados no armário.",
           "body": "O EPI é de uso obrigatório e varia conforme o local e a tarefa. Suas responsabilidades: usar adequadamente, guardar e conservar, higienizar e comunicar quando impróprio. Antes de cada atividade, avalie se estão em condições de uso.",
-          "transcript": "Vídeo: EPI obrigatório e de acordo com a tarefa."
+          "transcript": "Vídeo. EPI: obrigatório e de acordo com a tarefa."
         },
         {
           "id": "m2-foto-epis",
@@ -414,7 +414,7 @@ window.QUESTION_SCREEN_SESSION = {
               "title": "Protetor auricular (empilhadeira a gás)"
             }
           ],
-          "transcript": "Foto: os EPIs da logística. Capacete com jugular, óculos, luva, calçado, cinta lombar e protetor auricular."
+          "transcript": "Os EPIs da Logística, um a um. Capacete de segurança com jugular. Óculos de segurança (empilhadeira). Luva de proteção (atividades manuais). Calçado de segurança. Cinta lombar. Protetor auricular (empilhadeira a gás)."
         },
         {
           "id": "m2-responsabilidades",
@@ -444,7 +444,7 @@ window.QUESTION_SCREEN_SESSION = {
               "body": "Avise quando estiver impróprio para uso."
             }
           ],
-          "transcript": "Responsabilidades do colaborador com o EPI: usar, guardar, higienizar e comunicar."
+          "transcript": "Responsabilidades com o EPI. Usar: Use adequadamente, conforme a tarefa. Guardar e conservar: Cuide do equipamento e guarde no lugar certo. Higienizar: Mantenha o EPI limpo. Comunicar: Avise quando estiver impróprio para uso."
         },
         {
           "id": "m2-oculos-checagem",
@@ -468,7 +468,7 @@ window.QUESTION_SCREEN_SESSION = {
               "imageAlt": "Verificação dos EPIs antes da atividade"
             }
           ],
-          "transcript": "Óculos com grau: a empresa fornece; entregue a receita ao líder. Antes da atividade, avalie se os EPIs estão em condições de uso."
+          "transcript": "Dois cuidados que não podem faltar. Óculos com grau: a empresa fornece. Entregue a receita médica atualizada ao seu líder, que envia ao RH para fazer a solicitação. Na imagem: Óculos de segurança com grau. Antes da atividade: avalie os EPIs e veja se estão em condições de uso. Na imagem: Verificação dos EPIs antes da atividade."
         },
         {
           "id": "m2-quiz-intro",
@@ -478,7 +478,7 @@ window.QUESTION_SCREEN_SESSION = {
           "minCorrect": 1,
           "icon": "🦺",
           "body": "Ligue cada <strong>tarefa</strong> ao <strong>EPI</strong> que ela exige. Só avança com todos os pares certos.",
-          "transcript": "Desafio do módulo 2: Vista o Operador."
+          "transcript": "Desafio, Vista o operador. Ligue cada tarefa ao EPI que ela exige. Só avança com todos os pares certos."
         },
         {
           "id": "m2-match",
@@ -510,7 +510,7 @@ window.QUESTION_SCREEN_SESSION = {
             }
           ],
           "review": "EPI exigido em cada tarefa",
-          "transcript": "Ligue cada tarefa ao EPI que ela exige."
+          "transcript": "Vista o operador. Toque numa tarefa e depois no EPI que ela exige."
         }
       ]
     },
@@ -529,7 +529,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 3 — Empilhadeira e PTA: operação segura",
           "subtitle": "Riscos, limite de velocidade, regras de operação, checklist diário, troca de baterias e plataforma elevatória.",
-          "transcript": "Módulo 3: Empilhadeira e PTA: Operação Segura.",
+          "transcript": "Módulo 3, Empilhadeira e PTA: operação segura. Riscos, limite de velocidade, regras de operação, checklist diário, troca de baterias e plataforma elevatória. Na imagem: Capa do Módulo 3: empilhadeira e PTA, operação segura.",
           "image": "assets/fotos/capamodulo3.png",
           "imageAlt": "Capa do Módulo 3: empilhadeira e PTA — operação segura"
         },
@@ -544,7 +544,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Lucas em câmera + animações estilo Pixar (acidente não se filma)",
           "brief": "Tombamento, colisão, atropelamento e queda de carga em animação, sempre parando antes do impacto. No fim, \"6 km/h\" ocupa a tela.",
           "body": "Tombamento, colisão, atropelamento, queda e falta de manutenção são os riscos principais. A velocidade máxima no Drive e na Logística é de 6 km/h.",
-          "transcript": "Vídeo: os riscos da empilhadeira."
+          "transcript": "Vídeo. Os riscos da empilhadeira."
         },
         {
           "id": "m3-riscos",
@@ -586,7 +586,7 @@ window.QUESTION_SCREEN_SESSION = {
               "imageAlt": "Quedas de material ou operador"
             }
           ],
-          "transcript": "Os riscos da empilhadeira e suas causas: tombamentos, colisões, atropelamentos e quedas."
+          "transcript": "Riscos da empilhadeira e suas causas. Tombamentos: Excesso de carga, manobras arriscadas, obstáculos no caminho. Na imagem: Tombamentos de empilhadeira. Colisões: Pontos cegos, excesso de velocidade. Na imagem: Colisões com empilhadeira. Atropelamentos: Falta de sinalização, distração, pontos cegos, perda de controle. Na imagem: Atropelamentos. Quedas: Material sem stretch, falta do cinto de segurança. Na imagem: Quedas de material ou operador."
         },
         {
           "id": "m3-riscos-avisos",
@@ -606,7 +606,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "6 km/h no Drive e na Logística."
             }
           ],
-          "transcript": "Falta de manutenção transforma qualquer equipamento em risco. Velocidade máxima: seis quilômetros por hora."
+          "transcript": "Dois avisos que salvam a operação. Falta de manutenção: transforma qualquer equipamento em um risco. Velocidade máxima: 6 km/h no Drive e na Logística."
         },
         {
           "id": "m3-fatores",
@@ -635,7 +635,7 @@ window.QUESTION_SCREEN_SESSION = {
               "body": "Falta de conhecimento ou habilidade específica para o desenvolvimento de uma atividade científica ou técnica."
             }
           ],
-          "transcript": "Fatores de risco: negligência, imprudência e imperícia."
+          "transcript": "Fatores de risco: definição. Negligência: Falta de cuidado e desleixo proposital em determinada situação. Imprudência: Falta de reflexão ou precipitação em tomar atitudes diferentes daquelas aprendidas ou esperadas. Imperícia: Falta de conhecimento ou habilidade específica para o desenvolvimento de uma atividade científica ou técnica."
         },
         {
           "id": "m3-v-operacao",
@@ -648,7 +648,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real acompanhando um operador em sequência",
           "brief": "Checklist assinado, cinto afivelado, celular guardado, palete com stretch, garfos baixos, redução diante de piso molhado sinalizado.",
           "body": "Faça o checklist, use o cinto, não use o celular, respeite capacidade e altura da carga, fixe a carga, não ande com garfos erguidos e cheque o piso. Empilhadeira a gás não entra na loja nem em lugares fechados.",
-          "transcript": "Vídeo: operação segura, do checklist ao estacionamento."
+          "transcript": "Vídeo. Operação segura, do checklist ao estacionamento."
         },
         {
           "id": "m3-operacao",
@@ -708,7 +708,7 @@ window.QUESTION_SCREEN_SESSION = {
               "imageAlt": "Empilhadeira a gás proibida em locais fechados"
             }
           ],
-          "transcript": "Regras de operação segura da empilhadeira."
+          "transcript": "Regras de operação. Checklist: Faça antes de iniciar a atividade. Na imagem: Checklist antes de iniciar a atividade. Cinto de segurança: Use sempre. Celular, nunca durante a operação. Na imagem: Cinto de segurança na operação. Capacidade e altura: Transporte só a quantidade permitida e não exceda a altura da carga. Na imagem: Capacidade e altura da carga. Garfos: Fixe a carga e não ande com os garfos erguidos. Na imagem: Garfos da empilhadeira. Carga solta: Amarre com fitilho ou fita stretch. Na imagem: Carga amarrada com stretch. Piso: Cheque sempre, pode estar molhado ou oleoso. Velocidade constante e carga estável. Na imagem: Atenção ao piso molhado ou oleoso. Empilhadeira a gás: Proibida dentro da loja e em lugares fechados. Na imagem: Empilhadeira a gás proibida em locais fechados."
         },
         {
           "id": "m3-v-baterias",
@@ -721,7 +721,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real na área de troca e carga de baterias",
           "brief": "Roteiro a completar com o passo a passo oficial do SESMT (slides de troca de baterias). Fecha com a conferência da trava de segurança.",
           "body": "A troca de baterias tem um processo seguro, definido pelo SESMT, que deve ser seguido passo a passo. Ao terminar, confira se a bateria está bem fixa e se a trava de segurança está no lugar.",
-          "transcript": "Vídeo: processo seguro de troca de baterias."
+          "transcript": "Vídeo. Processo seguro de troca de baterias."
         },
         {
           "id": "m3-checklist-pta",
@@ -752,7 +752,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "Só depois de participar das formações e possuir a carteirinha correspondente."
             }
           ],
-          "transcript": "Checklist diário obrigatório e requisitos para usar a plataforma elevatória."
+          "transcript": "Checklist diário e plataforma elevatória. Todos os dias. Checklist diário: Obrigatório em empilhadeira e PTA, antes de iniciar a atividade. NR 35 + NR 18. PTA: Só opera quem fez NR 35 e NR 18 (teoria e prática) e tem a carteirinha. Equipamento motorizado: Só depois de participar das formações e possuir a carteirinha correspondente."
         },
         {
           "id": "m3-checklist-obrigatorio",
@@ -772,7 +772,7 @@ window.QUESTION_SCREEN_SESSION = {
               "alt": "Ficha de inspeção diária da empilhadeira"
             }
           ],
-          "transcript": "Obrigatoriedade do checklist diário em empilhadeira e PTA."
+          "transcript": "Obrigatoriedade do checklist diário em empilhadeira / PTA. Na imagem: Check list de inspeção de uso da PTA, plataforma de trabalho aéreo. Na imagem: Ficha de inspeção diária da empilhadeira."
         },
         {
           "id": "m3-quiz-intro",
@@ -782,7 +782,7 @@ window.QUESTION_SCREEN_SESSION = {
           "minCorrect": 8,
           "icon": "✅",
           "body": "10 situações, uma de cada vez. Marque <strong>Conforme</strong> ou <strong>Não conforme</strong> antes do tempo acabar. Mínimo de <strong>8 acertos</strong> para avançar.",
-          "transcript": "Desafio do módulo 3: Checklist Relâmpago."
+          "transcript": "Desafio, Checklist relâmpago. 10 situações, uma de cada vez. Marque Conforme ou Não conforme antes do tempo acabar. Mínimo de 8 acertos para avançar."
         },
         {
           "id": "m3-q1",
@@ -803,7 +803,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Cinto de segurança é obrigatório na operação.",
           "review": "Cinto de segurança",
-          "transcript": "Situação 1 de 10 · Operador com o cinto de segurança afivelado.",
+          "transcript": "Situação 1 de 10 Operador com o cinto de segurança afivelado. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 1 de 10 Operador com o cinto de segurança afivelado..",
           "image": "assets/fotos/m3p1.png",
           "imageAlt": "Ilustração: Situação 1 de 10 · Operador com o cinto de segurança afivelado."
         },
@@ -826,7 +826,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não ande com os garfos erguidos.",
           "review": "Posição dos garfos",
-          "transcript": "Situação 2 de 10 · Deslocamento com os garfos erguidos.",
+          "transcript": "Situação 2 de 10 Deslocamento com os garfos erguidos. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 2 de 10 Deslocamento com os garfos erguidos..",
           "image": "assets/fotos/m3p2.png",
           "imageAlt": "Ilustração: Situação 2 de 10 · Deslocamento com os garfos erguidos."
         },
@@ -849,7 +849,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Peças soltas devem ser amarradas com fitilho ou fita stretch.",
           "review": "Fixação da carga",
-          "transcript": "Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch.",
+          "transcript": "Situação 3 de 10 Palete de peças soltas amarrado com fitilho e fita stretch. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 3 de 10 Palete de peças soltas amarrado com fitilho e fita stretch..",
           "image": "assets/fotos/m3p3.png",
           "imageAlt": "Ilustração: Situação 3 de 10 · Palete de peças soltas amarrado com fitilho e fita stretch."
         },
@@ -872,7 +872,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Empilhadeira a gás não é permitida dentro da loja e em lugares fechados.",
           "review": "Empilhadeira a gás em local fechado",
-          "transcript": "Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja.",
+          "transcript": "Situação 4 de 10 Empilhadeira a gás circulando dentro da loja. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 4 de 10 Empilhadeira a gás circulando dentro da loja..",
           "image": "assets/fotos/m3p4.png",
           "imageAlt": "Ilustração: Situação 4 de 10 · Empilhadeira a gás circulando dentro da loja."
         },
@@ -895,7 +895,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não use o celular durante a operação.",
           "review": "Celular na operação",
-          "transcript": "Situação 5 de 10 · Operador respondendo mensagem no celular em movimento.",
+          "transcript": "Situação 5 de 10 Operador respondendo mensagem no celular em movimento. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 5 de 10 Operador respondendo mensagem no celular em movimento..",
           "image": "assets/fotos/m3p5.png",
           "imageAlt": "Ilustração: Situação 5 de 10 · Operador respondendo mensagem no celular em movimento."
         },
@@ -918,7 +918,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "O checklist diário é obrigatório antes de começar.",
           "review": "Checklist diário",
-          "transcript": "Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade.",
+          "transcript": "Situação 6 de 10 Checklist preenchido antes de iniciar a atividade. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 6 de 10 Checklist preenchido antes de iniciar a atividade..",
           "image": "assets/fotos/m3p6.png",
           "imageAlt": "Ilustração: Situação 6 de 10 · Checklist preenchido antes de iniciar a atividade."
         },
@@ -941,7 +941,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "A velocidade máxima no Drive e na Logística é 6 km/h.",
           "review": "Velocidade máxima",
-          "transcript": "Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive.",
+          "transcript": "Situação 7 de 10 Velocímetro marcando 10 km/h no Drive. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 7 de 10 Velocímetro marcando 10 km/h no Drive..",
           "image": "assets/fotos/m3p7.png",
           "imageAlt": "Ilustração: Situação 7 de 10 · Velocímetro marcando 10 km/h no Drive."
         },
@@ -964,7 +964,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Transporte só a quantidade permitida e respeite a altura da carga.",
           "review": "Capacidade e altura da carga",
-          "transcript": "Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas.",
+          "transcript": "Situação 8 de 10 Carga dentro da capacidade e da altura permitidas. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 8 de 10 Carga dentro da capacidade e da altura permitidas..",
           "image": "assets/fotos/m3p8.png",
           "imageAlt": "Ilustração: Situação 8 de 10 · Carga dentro da capacidade e da altura permitidas."
         },
@@ -987,7 +987,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Equipamento em manutenção não deve ser utilizado.",
           "review": "Equipamento em manutenção",
-          "transcript": "Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\".",
+          "transcript": "Situação 9 de 10 Equipamento em manutenção sendo usado \"só dessa vez\". Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 9 de 10 Equipamento em manutenção sendo usado \"só dessa vez\"..",
           "image": "assets/fotos/m3p9.png",
           "imageAlt": "Ilustração: Situação 9 de 10 · Equipamento em manutenção sendo usado \"só dessa vez\"."
         },
@@ -1010,7 +1010,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Cheque sempre o estado do piso, que pode estar molhado ou oleoso.",
           "review": "Estado do piso",
-          "transcript": "Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes de passar.",
+          "transcript": "Situação 10 de 10 Operador reduz a velocidade e confere o piso molhado antes de passar. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 10 de 10 Operador reduz a velocidade e confere o piso molhado antes d.",
           "image": "assets/fotos/m3p10.png",
           "imageAlt": "Ilustração: Situação 10 de 10 · Operador reduz a velocidade e confere o piso molhado antes d"
         }
@@ -1031,7 +1031,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 4 — Paleteiras e pedestres: dividindo o mesmo piso",
           "subtitle": "Transpaleteira elétrica, paleteira manual, onde nunca estacionar e as regras do pedestre.",
-          "transcript": "Módulo 4: Paleteiras e Pedestres: Dividindo o Mesmo Piso.",
+          "transcript": "Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Transpaleteira elétrica, paleteira manual, onde nunca estacionar e as regras do pedestre. Na imagem: Capa do Módulo 4: paleteiras e pedestres, dividindo o mesmo piso.",
           "image": "assets/fotos/capamodulo4.png",
           "imageAlt": "Capa do Módulo 4: paleteiras e pedestres — dividindo o mesmo piso"
         },
@@ -1046,7 +1046,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real — close nos pontos de inspeção",
           "brief": "Limpeza, placas de aviso e identificação, nível e fixação da bateria, trava de segurança e etiqueta de manutenção. Fecha com o operador conduzindo a pé.",
           "body": "A transpaleteira elétrica carrega palete de até 1.500 kg. Inspecione no início de cada turno: limpeza, placas, bateria e trava. Equipamento na manutenção não se usa. Só opera quem tem NR 11 e carteirinha, e nunca no modo embarcado.",
-          "transcript": "Vídeo: transpaleteira elétrica, inspeção a cada turno."
+          "transcript": "Vídeo. Transpaleteira elétrica: inspeção a cada turno."
         },
         {
           "id": "m4-v-manual",
@@ -1059,7 +1059,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real — plano lateral acompanhando o colaborador",
           "brief": "Colaborador empurra a paleteira em ritmo de caminhada e para sem movimento brusco, sem pé na roda.",
           "body": "Velocidade de uma pessoa caminhando, parada sem movimentos bruscos (nada de pé na roda nem girar a manopla de uma vez) e, sempre que possível, empurrar em vez de puxar.",
-          "transcript": "Vídeo: paleteira manual, empurre e não puxe."
+          "transcript": "Vídeo. Paleteira manual: empurre, não puxe."
         },
         {
           "id": "m4-v-pedestres",
@@ -1072,7 +1072,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Lucas em câmera + cenas reais de pedestres em conduta correta",
           "brief": "Pedestre na faixa pintada com celular guardado, parando diante de área isolada; gráfico de 5 m entre pedestre e equipamento em elevação.",
           "body": "Ande só nas faixas de pedestres, sem celular, longe de equipamento em movimento e respeitando áreas isoladas. Na elevação de carga, distância mínima de 5 metros.",
-          "transcript": "Vídeo: pedestres na logística."
+          "transcript": "Vídeo. Pedestres na Logística."
         },
         {
           "id": "m4-estacionar",
@@ -1117,7 +1117,7 @@ window.QUESTION_SCREEN_SESSION = {
               ]
             }
           ],
-          "transcript": "Onde nunca estacionar o equipamento: saída de emergência, hidrantes e extintor, painéis elétricos e sprinkler."
+          "transcript": "Onde nunca estacionar. Parte 1 de 2. Equipamentos de emergência. Saída de emergência: Nunca obstrua. Hidrantes e extintor: Mantenha livres. Painéis elétricos: Acesso livre. Acesso sempre desimpedido. Sprinkler: Nunca obstrua. Nunca armazene produtos com altura que obstrua o sprinkler."
         },
         {
           "id": "m4-estacionar-2",
@@ -1163,7 +1163,7 @@ window.QUESTION_SCREEN_SESSION = {
               ]
             }
           ],
-          "transcript": "Onde nunca estacionar o equipamento: trânsito de pessoas, ruas de acesso, prateleiras e as regras do pedestre."
+          "transcript": "Onde nunca estacionar. Parte 2 de 2. Circulação e pedestres. Trânsito de pessoas: Não bloqueie faixas e passagens. Ruas de acesso: Não estacione no meio da circulação. Prateleiras: Acesso livre. Não bloqueie o acesso a elas. Pedestres: Regra do pedestre. Só nas faixas, sem celular, longe do equipamento em movimento, em áreas isoladas e a 5 m na elevação."
         },
         {
           "id": "m4-quiz-intro",
@@ -1173,7 +1173,7 @@ window.QUESTION_SCREEN_SESSION = {
           "minCorrect": 5,
           "icon": "🚧",
           "body": "6 situações. Em cada uma, escolha o <strong>local onde é proibido</strong> deixar o equipamento. Mínimo de <strong>5 acertos</strong> para avançar.",
-          "transcript": "Desafio do módulo 4: Pode Parar Aqui?."
+          "transcript": "Desafio, Pode parar aqui?. 6 situações. Em cada uma, escolha o local onde é proibido deixar o equipamento. Mínimo de 5 acertos para avançar."
         },
         {
           "id": "m4-q1",
@@ -1204,7 +1204,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Saída de emergência nunca pode ser obstruída.",
           "review": "Saída de emergência",
-          "transcript": "Onde é proibido deixar a transpaleteira?",
+          "transcript": "Onde é proibido deixar a transpaleteira? Opção 1: Em frente à saída de emergência. Opção 2: Na vaga demarcada para equipamentos. Opção 3: Na área de espera sinalizada. Opção 4: No ponto de carga de bateria. Na imagem: Ilustração: Onde é proibido deixar a transpaleteira?.",
           "image": "assets/fotos/m4p1.png",
           "imageAlt": "Ilustração: Onde é proibido deixar a transpaleteira?"
         },
@@ -1237,7 +1237,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Hidrantes e extintores precisam estar sempre livres e acessíveis.",
           "review": "Hidrantes e extintores",
-          "transcript": "Qual destes locais NÃO pode ser obstruído pelo equipamento?",
+          "transcript": "Qual destes locais NÃO pode ser obstruído pelo equipamento? Opção 1: Corredor sem uso, fora da circulação. Opção 2: Vaga demarcada para equipamentos. Opção 3: Hidrante e extintor de incêndio. Opção 4: Área de espera sinalizada. Na imagem: Ilustração: Qual destes locais NÃO pode ser obstruído pelo equipamento?.",
           "image": "assets/fotos/m4p2.png",
           "imageAlt": "Ilustração: Qual destes locais NÃO pode ser obstruído pelo equipamento?"
         },
@@ -1270,7 +1270,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Painéis elétricos precisam de acesso desimpedido.",
           "review": "Painéis elétricos",
-          "transcript": "Onde NÃO se deve parar a paleteira?",
+          "transcript": "Onde NÃO se deve parar a paleteira? Opção 1: Vaga demarcada para equipamentos. Opção 2: Em frente ao painel elétrico. Opção 3: Área de espera sinalizada. Opção 4: Ao lado da bancada de embalagem, fora da passagem. Na imagem: Ilustração: Onde NÃO se deve parar a paleteira?.",
           "image": "assets/fotos/m4p3.png",
           "imageAlt": "Ilustração: Onde NÃO se deve parar a paleteira?"
         },
@@ -1303,7 +1303,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não bloqueie o trânsito de pessoas nem as faixas de pedestres.",
           "review": "Trânsito de pessoas",
-          "transcript": "Qual situação é proibida?",
+          "transcript": "Qual situação é proibida? Opção 1: Equipamento na vaga demarcada. Opção 2: Equipamento parado sobre a faixa de pedestres. Opção 3: Equipamento na área de espera. Opção 4: Equipamento recolhido no ponto de carga. Na imagem: Ilustração: Qual situação é proibida?.",
           "image": "assets/fotos/m4p4.png",
           "imageAlt": "Ilustração: Qual situação é proibida?"
         },
@@ -1336,7 +1336,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Ruas de acesso são de circulação, e não de estacionamento.",
           "review": "Ruas de acesso",
-          "transcript": "Onde nunca deixar o equipamento estacionado?",
+          "transcript": "Onde nunca deixar o equipamento estacionado? Opção 1: No meio da rua de acesso. Opção 2: Na vaga demarcada. Opção 3: Na área de espera sinalizada. Opção 4: No ponto de carga. Na imagem: Ilustração: Onde nunca deixar o equipamento estacionado?.",
           "image": "assets/fotos/m4p5.png",
           "imageAlt": "Ilustração: Onde nunca deixar o equipamento estacionado?"
         },
@@ -1369,7 +1369,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Nunca armazene produtos com altura que obstrua o sprinkler.",
           "review": "Sprinkler",
-          "transcript": "Qual armazenagem é proibida?",
+          "transcript": "Qual armazenagem é proibida? Opção 1: Altura que obstrui o sprinkler. Opção 2: Altura com folga até o sprinkler. Opção 3: Palete no rack, dentro do limite. Opção 4: Palete strechado e fitilhado. Na imagem: Ilustração: Qual armazenagem é proibida?.",
           "image": "assets/fotos/m4p6.png",
           "imageAlt": "Ilustração: Qual armazenagem é proibida?"
         }
@@ -1390,7 +1390,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 5 — Movimentação manual, manipulador a vácuo e estilete",
           "subtitle": "Postura e limites de peso, o manipulador de sacaria do Drive e o uso correto do estilete.",
-          "transcript": "Módulo 5: Movimentação Manual, Manipulador a Vácuo e Estilete.",
+          "transcript": "Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Postura e limites de peso, o manipulador de sacaria do Drive e o uso correto do estilete. Na imagem: Capa do Módulo 5: movimentação manual, manipulador a vácuo e estilete.",
           "image": "assets/fotos/capamodulo5.png",
           "imageAlt": "Capa do Módulo 5: movimentação manual, manipulador a vácuo e estilete"
         },
@@ -1405,7 +1405,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Lucas em câmera + três cortes de demonstração de técnica",
           "brief": "Agachar com a coluna reta e a carga junto ao corpo; dois colegas erguendo juntos; ajuste e afrouxamento da cinta lombar. Nenhuma lesão é mostrada.",
           "body": "Pegue a carga de frente, sem torcer o tronco, o mais perto do corpo. Acima de 25 kg ou sem boa pega, peça ajuda. Mercadoria comprida e de difícil pega, a partir de 15 kg. Cinta lombar só durante o esforço. Cargas pesadas: transpaleteira elétrica.",
-          "transcript": "Vídeo: movimentação manual de cargas."
+          "transcript": "Vídeo. Movimentação manual de cargas."
         },
         {
           "id": "m5-v-vacuo",
@@ -1418,7 +1418,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real no Drive — área isolada e close da ventosa",
           "brief": "Só o operador dentro da marcação pintada; ventosa prende o saco por vácuo; cliente e colaboradores aguardam fora da linha.",
           "body": "O manipulador reduz a fadiga, ganha performance e elimina o contato direto com a carga. Exige formação de NR 12. A área deve ser isolada, com sinalização no piso e placas, e só o operador fica nela.",
-          "transcript": "Vídeo: manipulador de sacaria a vácuo no Drive."
+          "transcript": "Vídeo. Manipulador de sacaria a vácuo no Drive."
         },
         {
           "id": "m5-foto-estilete",
@@ -1447,7 +1447,7 @@ window.QUESTION_SCREEN_SESSION = {
             "O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado.",
             "Use apenas ferramentas homologadas para corte de embalagens."
           ],
-          "transcript": "Foto: uso do estilete, forma correta. O estilete não é um EPI, mas você é responsável pelo uso adequado."
+          "transcript": "Uso do estilete: forma correta. O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado. Use apenas ferramentas homologadas para corte de embalagens. Atenção: O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado. Regra: Use apenas ferramentas homologadas para corte de embalagens. Na imagem: Estilete homologado sendo usado da forma correta para cortar embalagens."
         },
         {
           "id": "m5-regras",
@@ -1494,7 +1494,7 @@ window.QUESTION_SCREEN_SESSION = {
               ]
             }
           ],
-          "transcript": "Regras da movimentação manual de cargas: peça ajuda acima de vinte e cinco quilos, mercadoria comprida, postura e ferramentas."
+          "transcript": "Regras da movimentação manual. Parte 1 de 2. Como carregar com segurança. Acima de 25 quilos ou sem boa pega: Peça ajuda a um colega e redobre a atenção com a postura. Mercadoria comprida e de difícil pega: Peça ajuda a partir de 15 quilos. Postura: Apanhe a carga de frente, sem torcer o tronco e o mais próximo do corpo. Ferramentas: Use EPIs e ferramentas homologadas para movimentar, abastecer e cortar embalagens."
         },
         {
           "id": "m5-regras-2",
@@ -1534,7 +1534,7 @@ window.QUESTION_SCREEN_SESSION = {
               ]
             }
           ],
-          "transcript": "Regras da movimentação manual de cargas: escada, cinta lombar e transpaleteira para cargas mais pesadas."
+          "transcript": "Regras da movimentação manual. Parte 2 de 2. Equipamentos de apoio. Escada: No abastecimento ou na pega, use o capacete. Cinta lombar: Ajuste só durante a movimentação e afrouxe os velcros nas pausas. Cargas mais pesadas: Use a transpaleteira elétrica."
         },
         {
           "id": "m5-quiz-intro",
@@ -1544,7 +1544,7 @@ window.QUESTION_SCREEN_SESSION = {
           "minCorrect": 6,
           "icon": "⚖️",
           "body": "8 cargas. Para cada uma, decida: levantar <strong>sozinho</strong>, <strong>com um colega</strong> ou <strong>com equipamento</strong>. Mínimo de <strong>6 acertos</strong> para avançar.",
-          "transcript": "Desafio do módulo 5: Balança da Decisão."
+          "transcript": "Desafio, Balança da decisão. 8 cargas. Para cada uma, decida: levantar sozinho, com um colega ou com equipamento. Mínimo de 6 acertos para avançar."
         },
         {
           "id": "m5-q1",
@@ -1570,7 +1570,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Leve, boa pega e distância curta: basta a postura correta.",
           "review": "Carga leve",
-          "transcript": "Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado.",
+          "transcript": "Carga 1 de 8 Caixa de 8 quilos, boa pega, prateleira ao lado. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 1 de 8 Caixa de 8 quilos, boa pega, prateleira ao lado..",
           "image": "assets/fotos/m5-carga1.png",
           "imageAlt": "Ilustração: Carga 1 de 8 · Caixa de 8 kg, boa pega, prateleira ao lado."
         },
@@ -1598,7 +1598,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Acima de 25 kg, peça ajuda a um colega.",
           "review": "Carga acima de 25 kg",
-          "transcript": "Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado.",
+          "transcript": "Carga 2 de 8 Caixa de 30 quilos, boa pega, prateleira ao lado. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 2 de 8 Caixa de 30 quilos, boa pega, prateleira ao lado..",
           "image": "assets/fotos/m5p1.png",
           "imageAlt": "Ilustração: Carga 2 de 8 · Caixa de 30 kg, boa pega, prateleira ao lado."
         },
@@ -1626,7 +1626,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Mercadoria comprida e de difícil pega, acima de 15 kg: peça ajuda.",
           "review": "Carga comprida e de difícil pega",
-          "transcript": "Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar.",
+          "transcript": "Carga 3 de 8 Perfil metálico comprido de 18 quilos, difícil de segurar. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 3 de 8 Perfil metálico comprido de 18 quilos, difícil de segurar..",
           "image": "assets/fotos/m5p2.png",
           "imageAlt": "Ilustração: Carga 3 de 8 · Perfil metálico comprido de 18 kg, difícil de segurar."
         },
@@ -1654,7 +1654,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Para distâncias acima de 2 m, use carrinho ou paleteira manual.",
           "review": "Distância acima de 2 metros",
-          "transcript": "Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros.",
+          "transcript": "Carga 4 de 8 Caixa de 12 quilos, boa pega, destino a 20 metros. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 4 de 8 Caixa de 12 quilos, boa pega, destino a 20 metros..",
           "image": "assets/fotos/m5p3.png",
           "imageAlt": "Ilustração: Carga 4 de 8 · Caixa de 12 kg, boa pega, destino a 20 metros."
         },
@@ -1682,7 +1682,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Carga pesada em palete: transpaleteira elétrica.",
           "review": "Palete pesado",
-          "transcript": "Carga 5 de 8 · Palete fechado de 600 kg.",
+          "transcript": "Carga 5 de 8 Palete fechado de 600 quilos. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 5 de 8 Palete fechado de 600 quilos..",
           "image": "assets/fotos/m5p4.png",
           "imageAlt": "Ilustração: Carga 5 de 8 · Palete fechado de 600 kg."
         },
@@ -1710,7 +1710,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Sacaria no Drive: manipulador a vácuo, por operador com NR 12.",
           "review": "Sacaria no Drive",
-          "transcript": "Carga 6 de 8 · Saco de 50 kg no Drive.",
+          "transcript": "Carga 6 de 8 Saco de 50 quilos no Drive. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 6 de 8 Saco de 50 quilos no Drive..",
           "image": "assets/fotos/m5p5.png",
           "imageAlt": "Ilustração: Carga 6 de 8 · Saco de 50 kg no Drive."
         },
@@ -1738,7 +1738,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Use o carrinho de transporte de chapas, conforme o informativo do SESMT.",
           "review": "Chapas de madeira",
-          "transcript": "Carga 7 de 8 · Chapa de madeira inteira.",
+          "transcript": "Carga 7 de 8 Chapa de madeira inteira. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 7 de 8 Chapa de madeira inteira..",
           "image": "assets/fotos/m5p6.png",
           "imageAlt": "Ilustração: Carga 7 de 8 · Chapa de madeira inteira."
         },
@@ -1766,7 +1766,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Dentro dos limites: pegue de frente, junto ao corpo, sem torcer o tronco.",
           "review": "Carga dentro dos limites",
-          "transcript": "Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento.",
+          "transcript": "Carga 8 de 8 Caixa de 10 quilos, boa pega, 1 metro de deslocamento. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 8 de 8 Caixa de 10 quilos, boa pega, 1 metro de deslocamento..",
           "image": "assets/fotos/m5p7.png",
           "imageAlt": "Ilustração: Carga 8 de 8 · Caixa de 10 kg, boa pega, 1 metro de deslocamento."
         }
@@ -1787,7 +1787,7 @@ window.QUESTION_SCREEN_SESSION = {
           "type": "cover",
           "title": "Módulo 6 — Armazenagem, docas e encerramento",
           "subtitle": "Palete aéreo, longarinas e palete PBR, equipamento certo para cada produto, docas e manuais de segurança.",
-          "transcript": "Módulo 6: Armazenagem, Docas e Encerramento.",
+          "transcript": "Módulo 6, Armazenagem, docas e encerramento. Palete aéreo, longarinas e palete PBR, equipamento certo para cada produto, docas e manuais de segurança. Na imagem: Capa do Módulo 6: armazenagem, docas e encerramento.",
           "image": "assets/fotos/capamodulo6.png",
           "imageAlt": "Capa do Módulo 6: armazenagem, docas e encerramento"
         },
@@ -1802,7 +1802,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real com cotas gráficas sobre a imagem",
           "brief": "Palete stretchado e fitilhado no alto do rack; cotas de 50 cm, 1 m e 50 cm; placa de capacidade da longarina; palete PBR em bom estado e tocos apoiados.",
           "body": "Paletes aéreos stretchados e fitilhados; altura até 50 cm do limitador; 1 m do sistema de incêndio e da infraestrutura elétrica; 50 cm da parede. Verifique a capacidade das longarinas e o estado do palete PBR.",
-          "transcript": "Vídeo: palete aéreo e armazenagem segura."
+          "transcript": "Vídeo. Palete aéreo e armazenagem segura."
         },
         {
           "id": "m6-v-docas",
@@ -1815,7 +1815,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Filmagem real em dois blocos: corredor de estoque e doca",
           "brief": "Colaborador usa carrinho em vez de carregar no braço; rampa elevada e livre; caminhão encosta, a rampa apoia na carroceria e a paleteira elétrica atravessa.",
           "body": "Use o equipamento adequado, confira antes de usar, não arraste mercadorias e use carrinho ou paleteira acima de 2 m. Na doca, a rampa não guarda produtos, fica elevada quando parada e só se usa apoiada no caminhão.",
-          "transcript": "Vídeo: equipamento certo e segurança nas docas."
+          "transcript": "Vídeo. Equipamento certo e segurança nas docas."
         },
         {
           "id": "m6-armazenagem",
@@ -1867,7 +1867,7 @@ window.QUESTION_SCREEN_SESSION = {
               ]
             }
           ],
-          "transcript": "Medidas da armazenagem em racks: altura, sistema de incêndio e elétrica, parede e palete PBR."
+          "transcript": "Armazenagem: medidas e cuidados. Parte 1 de 2. As medidas. Altura: Até 50 centímetros acima do limitador do rack. Na imagem: Altura. Sistema de incêndio e elétrica: Empilhar a 1 m de distância. Na imagem: Sistema de incêndio e elétrica. Parede: Manter 50 centímetros de distância. Na imagem: Parede. Palete PBR: 1,20 m ou 1,00 m, padrão nacional. Na imagem: Palete PBR."
         },
         {
           "id": "m6-armazenagem-2",
@@ -1911,7 +1911,7 @@ window.QUESTION_SCREEN_SESSION = {
               ]
             }
           ],
-          "transcript": "Cuidados da armazenagem em racks: longarinas, tocos e estado do palete PBR."
+          "transcript": "Armazenagem: medidas e cuidados. Parte 2 de 2. Longarinas e palete. Longarinas: Verifique a capacidade de carga antes de armazenar. O vão é de 1,00 m. Na imagem: Longarinas. Tocos: São eles que ficam apoiados na longarina, e não as ripas. Na imagem: Tocos. Palete PBR em bom estado: Sem ripas quebradas e sem tocos faltando. Na imagem: Palete PBR em bom estado."
         },
         {
           "id": "m6-docas",
@@ -1959,7 +1959,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "prefira a paleteira elétrica à manual."
             }
           ],
-          "transcript": "Dicas de equipamentos e de segurança nas docas."
+          "transcript": "Dicas de equipamentos e docas. Equipamento: use o adequado para cada produto e verifique as condições antes de usar. Não arraste: mercadorias pelo piso. Peça ajuda em mercadorias comprida e de difícil pega. Distâncias acima de 2 m: use carrinhos ou paleteiras manuais. Rampa da doca: não guarde produtos nela e deixe elevada quando não estiver em uso. Uso da rampa: somente apoiada no caminhão, para a correta distribuição de peso. Na doca: prefira a paleteira elétrica à manual."
         },
         {
           "id": "m6-manuais",
@@ -1989,7 +1989,7 @@ window.QUESTION_SCREEN_SESSION = {
               "text": "sesmt@leroymerlin.com.br"
             }
           ],
-          "transcript": "Os manuais de segurança da Logística e do Drive estão no Google Drive. Dúvidas: SESMT."
+          "transcript": "Manuais de segurança e SESMT. Manual de segurança, Logística: disponível no Google Drive, pasta SESMT para todos - LMB, subpasta MANUAIS. Link: https://drive.google.com/file/d/1UmbjKqiv1f6IDeeJbRqS9wFIBVJMLpj6/view?usp=sharing. Manual de segurança, Drive: disponível na mesma pasta, subpasta MANUAIS. Link: https://drive.google.com/file/d/1BC1ton7IiuBNAkVilW1FdLXA6s7b5OyS/view?usp=sharing. Dúvidas: sesmt@leroymerlin.com.br."
         },
         {
           "id": "m6-v-encerramento",
@@ -2002,7 +2002,7 @@ window.QUESTION_SCREEN_SESSION = {
           "scene": "Lucas em câmera, mesmo enquadramento da abertura",
           "brief": "Um corte de apoio: equipe reunida no início do turno, todos de EPI. E-mail do SESMT em texto na tela.",
           "body": "Agora você sabe quem pode operar cada equipamento, quais EPIs usar, como circular, levantar peso e armazenar com segurança. Nada disso funciona sozinho: depende de você, todos os dias.",
-          "transcript": "Vídeo de encerramento: logística segura é com você."
+          "transcript": "Vídeo. Logística segura é com você."
         },
         {
           "id": "m6-quiz-intro",
@@ -2012,7 +2012,7 @@ window.QUESTION_SCREEN_SESSION = {
           "minCorrect": 5,
           "icon": "📐",
           "body": "7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de <strong>5 acertos</strong> para concluir.",
-          "transcript": "Desafio do módulo 6: Na Medida."
+          "transcript": "Desafio, Na medida. 7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de 5 acertos para concluir."
         },
         {
           "id": "m6-q1",
@@ -2042,7 +2042,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "A velocidade máxima é de 6 km/h.",
           "review": "Velocidade máxima",
-          "transcript": "Qual é a velocidade máxima no Drive e na Logística?",
+          "transcript": "Qual é a velocidade máxima no Drive e na Logística? Opção 1: 3 km/h. Opção 2: 6 km/h. Opção 3: 10 km/h. Opção 4: 15 km/h. Na imagem: Ilustração: Qual é a velocidade máxima no Drive e na Logística?.",
           "image": "assets/fotos/m6p1.png",
           "imageAlt": "Ilustração: Qual é a velocidade máxima no Drive e na Logística?"
         },
@@ -2074,7 +2074,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Distância mínima de 5 metros.",
           "review": "Distância do pedestre na elevação",
-          "transcript": "A que distância mínima o pedestre fica do equipamento em elevação?",
+          "transcript": "A que distância mínima o pedestre fica do equipamento em elevação? Opção 1: 1 metro. Opção 2: 2 metros. Opção 3: 5 metros. Opção 4: 10 metros. Na imagem: Ilustração: A que distância mínima o pedestre fica do equipamento em elevação?.",
           "image": "assets/fotos/m6p2.png",
           "imageAlt": "Ilustração: A que distância mínima o pedestre fica do equipamento em elevação?"
         },
@@ -2106,7 +2106,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "A altura não pode ultrapassar 50 cm do limitador do rack.",
           "review": "Altura do palete aéreo",
-          "transcript": "Quanto a carga do palete aéreo pode passar do limitador do rack?",
+          "transcript": "Quanto a carga do palete aéreo pode passar do limitador do rack? Opção 1: Até 20 centímetros. Opção 2: Até 50 centímetros. Opção 3: Até 1 metro. Opção 4: Não há limite. Na imagem: Ilustração: Quanto a carga do palete aéreo pode passar do limitador do rack?.",
           "image": "assets/fotos/m6p5.png",
           "imageAlt": "Ilustração: Quanto a carga do palete aéreo pode passar do limitador do rack?"
         },
@@ -2138,7 +2138,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Mantenha 1 metro de distância.",
           "review": "Distância do sistema de incêndio",
-          "transcript": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica?",
+          "transcript": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica? Opção 1: 10 centímetros. Opção 2: 50 centímetros. Opção 3: 1 metro. Opção 4: 2 metros. Na imagem: Ilustração: Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura el.",
           "image": "assets/fotos/m6p7.png",
           "imageAlt": "Ilustração: Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura el"
         },
@@ -2170,7 +2170,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Mantenha 50 cm de distância da parede.",
           "review": "Distância da parede",
-          "transcript": "E a distância do empilhamento até a parede?",
+          "transcript": "E a distância do empilhamento até a parede? Opção 1: 10 centímetros. Opção 2: 25 centímetros. Opção 3: 50 centímetros. Opção 4: 1 metro. Na imagem: Ilustração: E a distância do empilhamento até a parede?.",
           "image": "assets/fotos/m6p4.png",
           "imageAlt": "Ilustração: E a distância do empilhamento até a parede?"
         },
@@ -2202,7 +2202,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Transporta cargas em palete de até 1.500 kg.",
           "review": "Capacidade da transpaleteira",
-          "transcript": "Qual a capacidade máxima da transpaleteira elétrica?",
+          "transcript": "Qual a capacidade máxima da transpaleteira elétrica? Opção 1: 500 quilos. Opção 2: 1.000 quilos. Opção 3: 1.500 quilos. Opção 4: 3.000 quilos. Na imagem: Ilustração: Qual a capacidade máxima da transpaleteira elétrica?.",
           "image": "assets/fotos/m6p3.png",
           "imageAlt": "Ilustração: Qual a capacidade máxima da transpaleteira elétrica?"
         },
@@ -2234,7 +2234,7 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "O palete PBR mede 1,20 m × 1,00 m.",
           "review": "Medidas do palete PBR",
-          "transcript": "Quais as medidas do palete PBR padrão nacional?",
+          "transcript": "Quais as medidas do palete PBR padrão nacional? Opção 1: 0,80 m ou 0,80 m. Opção 2: 1,00 m ou 1,00 m. Opção 3: 1,20 m ou 1,00 m. Opção 4: 1,20 m ou 1,20 m. Na imagem: Ilustração: Quais as medidas do palete PBR padrão nacional?.",
           "image": "assets/fotos/m6p6.png",
           "imageAlt": "Ilustração: Quais as medidas do palete PBR padrão nacional?"
         },
@@ -2253,7 +2253,7 @@ window.QUESTION_SCREEN_SESSION = {
             "Logística para Todos",
             "Leroy Merlin"
           ],
-          "transcript": "Parabéns. Você finalizou o NR 11, Logística para Todos."
+          "transcript": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 11 – Logística para Todos. Segurança é ter as pessoas em primeiro lugar, em cada movimento. Na imagem: Capa de parabéns, conclusão do treinamento."
         }
       ]
     }

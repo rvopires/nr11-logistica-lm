@@ -1,641 +1,429 @@
 {
-  "generatedAt": "2026-10-01T13:18:42.258Z",
+  "generatedAt": "2026-10-13T13:32:27.996Z",
   "items": {
-    "m5-v-final": {
-      "file": "assets/audio/m5-v-final.mp3",
-      "text": "Vídeo. Efeitos da má postura e mensagem final."
-    },
-    "m4-foto-rotas-2": {
-      "file": "assets/audio/m4-foto-rotas-2.mp3",
-      "text": "Sinalização das Rotas de Fuga no Escritório. Na imagem: Sinalização de rota de fuga, imagem 2."
-    },
-    "m4-cover": {
-      "file": "assets/audio/m4-cover.mp3",
-      "text": "Módulo 4, Prevenção, Riscos e Ação em Emergência. Hábitos de prevenção, primeiros segundos, rotas de fuga e riscos da edificação. Na imagem: Capa do módulo 4: prevenção, riscos e ação em emergência."
-    },
-    "menu-1": {
-      "file": "assets/audio/menu-1.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 1 de 7 liberado."
-    },
-    "m2-result-fail": {
-      "file": "assets/audio/m2-result-fail.mp3",
-      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
-    },
-    "m4-cmp-fios": {
-      "file": "assets/audio/m4-cmp-fios.mp3",
-      "text": "Certo ou errado: fios elétricos. Correto: Cabos organizados e à vista, longe de tapetes e de passagem. Na imagem: Cabos organizados e à vista. Evitar: Fio sob o tapete esquenta sem ninguém ver e pode iniciar um incêndio. Na imagem: Fio da cafeteira sob o tapete."
-    },
-    "m6-result-pass": {
-      "file": "assets/audio/m6-result-pass.mp3",
-      "text": "Módulo 6 concluído. Título conquistado. PRIMEIRA RESPOSTA. Você sabe conduzir as emergências clínicas mais comuns."
-    },
-    "m4-quiz-intro": {
-      "file": "assets/audio/m4-quiz-intro.mp3",
-      "text": "Desafio, Caça ao Risco. Identifique os riscos escondidos na cena (copa/reunião). A isca (extintor correto) não é risco. Mínimo de 3 acertos."
-    },
-    "m3-v-co2": {
-      "file": "assets/audio/m3-v-co2.mp3",
-      "text": "Vídeo. Extintor de CO₂ e o Uso Indevido."
-    },
-    "m6-q1": {
-      "file": "assets/audio/m6-q1.mp3",
-      "text": "Decisão 1 de 3 Colega caído perto de uma tomada, aparentemente após choque. O que fazer primeiro? Opção 1: Desligar a energia elétrica antes de qualquer contato. Opção 2: Puxar a vítima pelo braço para afastá-la da tomada. Na imagem: Colega caído perto de uma tomada após choque elétrico."
-    },
-    "m3-iso": {
-      "file": "assets/audio/m3-iso.mp3",
-      "text": "O que diz a ISO 11226. 4 segundos já é postura estática de trabalho. 2 horas limite antes de variar a postura. Posturas ajoelhada e agachada devem ser evitadas no abastecimento, usar sempre um suporte para sentar. Em pé: tronco sem flexão rotineira; itens frequentes no alcance normal, ocasionais no alcance máximo. Baixa estatura: pés apoiados, tronco próximo ao mobiliário, sem compressão do corpo. Na imagem: Ilustração ISO 11226: postura estática de 4 segundos, variação a cada 2 horas e zonas de alcance na loja."
-    },
-    "m5-v-porque": {
-      "file": "assets/audio/m5-v-porque.mp3",
-      "text": "Vídeo. Por Que Falar de Psicologia em Emergência?."
-    },
-    "m8-rcp-antes": {
-      "file": "assets/audio/m8-rcp-antes.mp3",
-      "text": "RCP: Antes de Começar. Verifique o local: o ambiente precisa ser seguro pra você e pra vítima. Cheque a resposta: toque nos ombros e pergunte em voz alta se ela está bem. Chame ajuda: 192 (SAMU), e peça um DEA se houver um por perto. Observe a respiração: o tórax se move? Por no máximo 10 segundos. Posicione a vítima: de barriga para cima, sobre uma superfície firme e plana."
-    },
-    "m4-cmp-gas": {
-      "file": "assets/audio/m4-cmp-gas.mp3",
-      "text": "Certo ou errado: cheiro de gás. Correto: Abra janelas e portas para ventilar, sem acionar nenhum interruptor. Na imagem: Abrir janelas e portas para ventilar. Evitar: Não acenda fósforo nem mexa em interruptores, a faísca pode provocar explosão. Na imagem: Acender um fósforo para achar o vazamento."
-    },
-    "m3-result-fail": {
-      "file": "assets/audio/m3-result-fail.mp3",
-      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
-    },
-    "m6-cover": {
-      "file": "assets/audio/m6-cover.mp3",
-      "text": "Módulo 6, Primeiros Socorros. Queimaduras, choque, hemorragia, desmaio, engasgo e convulsão. Na imagem: Capa do módulo 6: primeiros socorros."
-    },
-    "m6-hemorragia-torniquete": {
-      "file": "assets/audio/m6-hemorragia-torniquete.mp3",
-      "text": "Torniquete: Passo a Passo. Só use o torniquete quando a pressão direta não for suficiente para parar o sangramento. Posicione: 5 a 7 centímetros acima da ferida, na direção do tronco. Nunca sobre uma articulação; sem saber o local exato, coloque o mais alto possível no membro. Na imagem: Posicionamento do torniquete acima da ferida. Ajuste: passe a fita ao redor do membro e puxe o velcro com firmeza, sem folga nenhuma. Na imagem: Ajuste firme da fita do torniquete no membro. Torça: gire a barra de torção até o sangramento parar totalmente e o pulso sumir. Dói bastante, mas é necessário. Na imagem: Torção da barra do torniquete até estancar o sangramento. Trave: prenda a barra no clipe de fixação e cubra com a tira de segurança. Na imagem: Barra do torniquete travada no clipe de fixação. Anote o horário: registre a hora exata da aplicação, no próprio torniquete ou num papel visível na vítima. Na imagem: Registro do horário de aplicação do torniquete. Nunca afrouxe: só uma equipe médica no hospital pode remover o torniquete. Na imagem: Torniquete mantido no lugar até o atendimento hospitalar."
-    },
-    "m1-v-oque": {
-      "file": "assets/audio/m1-v-oque.mp3",
-      "text": "Vídeo. O Que É a Brigada de Incêndio."
-    },
-    "m5-v-reacoes": {
-      "file": "assets/audio/m5-v-reacoes.mp3",
-      "text": "Vídeo. Reações Psicológicas: Medo, Pânico e Paralisia."
-    },
-    "m3-v-pe": {
-      "file": "assets/audio/m3-v-pe.mp3",
-      "text": "Vídeo. Postura correta no posto em pé."
-    },
-    "m4-prevenir-brigada": {
-      "file": "assets/audio/m4-prevenir-brigada.mp3",
-      "text": "Prevenir e o Papel da Brigada. Prevenir. Papel do brigadista."
-    },
-    "m2-v-levantamento": {
-      "file": "assets/audio/m2-v-levantamento.mp3",
-      "text": "Vídeo principal. Levantamento correto de cargas."
-    },
-    "m6-engasgo-criancas-adultos-foto": {
-      "file": "assets/audio/m6-engasgo-criancas-adultos-foto.mp3",
-      "text": "Engasgo em Crianças (+1 ano) e Adultos. Na imagem: Infográfico da manobra Heimlich para desengasgar: posicionar-se atrás, fechar o punho, comprimir entre umbigo e tórax e empurrar para dentro e para cima."
-    },
-    "m1-v-porque": {
-      "file": "assets/audio/m1-v-porque.mp3",
-      "text": "Vídeo. Por que a Ergonomia importa."
-    },
-    "m3-reflexao": {
-      "file": "assets/audio/m3-reflexao.mp3",
-      "text": "Uma pausa para pensar. E você, já reparou nisso na sua rotina? Movimento repetitivo, vibração e postura forçada acontecem em pequenos momentos do dia a dia, muitas vezes sem percebermos. Preste atenção na próxima tarefa que você fizer e veja se algum desses riscos aparece."
-    },
-    "m4-riscos": {
-      "file": "assets/audio/m4-riscos.mp3",
-      "text": "Riscos Específicos da Edificação. Estruturais: Materiais inflamáveis, pé-direito baixo, ausência de rotas de fuga. Na imagem: Riscos estruturais. Operacionais: Máquinas quentes, eletricidade, soldas, combustíveis. Na imagem: Riscos operacionais."
-    },
-    "m4-v-olhos": {
-      "file": "assets/audio/m4-v-olhos.mp3",
-      "text": "Vídeo 2 de 3. Cuidado com os olhos e pausas visuais."
-    },
     "m1-q1": {
       "file": "assets/audio/m1-q1.mp3",
-      "text": "O que é a Brigada de Incêndio? Opção 1: Um setor exclusivo da segurança patrimonial. Opção 2: Grupo treinado e capacitado para prevenir, combater um princípio de incêndio, evacuar e prestar primeiros socorros. Opção 3: Somente os bombeiros civis contratados. Opção 4: Um grupo que só age depois que o Corpo de Bombeiros chega. Na imagem: Equipamentos de brigada: extintores, mangueira, colete, capacete, abrigo de mangueira, kit de primeiros socorros e cone de sinalização."
-    },
-    "m8-rcp-compressoes": {
-      "file": "assets/audio/m8-rcp-compressoes.mp3",
-      "text": "RCP: Como Fazer as Compressões. Posição das mãos: ajoelhado ao lado da vítima, uma mão sobre a outra, dedos entrelaçados, no centro do peito. Postura: braços esticados, use o peso do corpo, ângulo de 90° com o tórax. Frequência: 100 a 120 compressões por minuto, no ritmo de \"Stayin' Alive\", dos Bee Gees. Profundidade: pelo menos 5 a 6 centímetros em adultos. Retorno do tórax: deixe o peito voltar à posição normal entre uma compressão e outra."
-    },
-    "menu-done": {
-      "file": "assets/audio/menu-done.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Treinamento concluído. Você finalizou todos os módulos."
-    },
-    "m2-cover": {
-      "file": "assets/audio/m2-cover.mp3",
-      "text": "Módulo 2, O Fogo: Teoria e Métodos de Extinção. Tetraedro do fogo e os três métodos: abafamento, resfriamento e retirada do material. Na imagem: Instrutora com EPI apontando para o triângulo do fogo na parede, com extintor e hidrante ao lado."
-    },
-    "m2-v-tetraedro": {
-      "file": "assets/audio/m2-v-tetraedro.mp3",
-      "text": "Vídeo. O Tetraedro do Fogo."
-    },
-    "m2-v-paleteira": {
-      "file": "assets/audio/m2-v-paleteira.mp3",
-      "text": "Vídeo. Transporte com paleteira manual."
-    },
-    "m3-q3": {
-      "file": "assets/audio/m3-q3.mp3",
-      "text": "Classe C, quadro elétrico energizado. Qual agente? Opção 1: Água. Opção 2: CO₂. Opção 3: Qualquer um, tanto faz. Na imagem: Quadro elétrico energizado, típico de incêndio classe C."
-    },
-    "m8-cover": {
-      "file": "assets/audio/m8-cover.mp3",
-      "text": "Módulo 7, Primeiros Socorros, RCP e Encerramento. Traumas, emergências clínicas, AVC, infarto, RCP, números de emergência e certificado. Na imagem: Capa do módulo 7: primeiros socorros, RCP e encerramento."
-    },
-    "m6-v-convulsao": {
-      "file": "assets/audio/m6-v-convulsao.mp3",
-      "text": "Vídeo. Convulsão: Cuidados e Como Proteger a Vítima."
-    },
-    "m2-v-biomecanica": {
-      "file": "assets/audio/m2-v-biomecanica.mp3",
-      "text": "Vídeo animação. O que acontece no corpo."
-    },
-    "m2-q3": {
-      "file": "assets/audio/m2-q3.mp3",
-      "text": "A pega está a 70 centímetros do corpo. Liberar o levantamento nessa posição? Opção 1: Liberar. Opção 2: Não liberar."
-    },
-    "m4-foto-rotas": {
-      "file": "assets/audio/m4-foto-rotas.mp3",
-      "text": "Sinalização das Rotas de Fuga no Escritório. Na imagem: Sinalização de rota de fuga, imagem 1."
-    },
-    "m5-q3": {
-      "file": "assets/audio/m5-q3.mp3",
-      "text": "A obediência cega, seguir ordens sem questionar, é sempre uma reação positiva numa emergência. Opção 1: Verdadeiro. Opção 2: Falso. Na imagem: Pessoas seguindo ordens em situação de emergência."
-    },
-    "m2-v-oque": {
-      "file": "assets/audio/m2-v-oque.mp3",
-      "text": "Vídeo. O Que É o Fogo, Afinal?."
-    },
-    "m4-order": {
-      "file": "assets/audio/m4-order.mp3",
-      "text": "Ordene a rotina. Toque nos cuidados na ordem que você seguiria."
-    },
-    "m6-v-desmaio-engasgo": {
-      "file": "assets/audio/m6-v-desmaio-engasgo.mp3",
-      "text": "Vídeo. Desmaio e Engasgo (Adulto e Bebê)."
-    },
-    "m8-numeros": {
-      "file": "assets/audio/m8-numeros.mp3",
-      "text": "Números de Emergência: Saiba Quem Chamar. 193 Bombeiros. 199 Defesa Civil. 194 Polícia Federal. 192 SAMU. 191 Polícia Rodoviária Federal. 190 Polícia Militar. 198 ou 191 Polícia Militar Rodoviária Estadual. 8427 1052 Guarda Municipal. 0800 643 5252 Centro de Informações Toxicológicas."
-    },
-    "m5-ficha": {
-      "file": "assets/audio/m5-ficha.mp3",
-      "text": "Ficha de consulta, sequência de alongamento. Mãos: fechar contra o pulso e abrir, 3 vezes. Dedos: entrelaçar e ondular / girar polegares / estender alternado, 3 vezes cada. Antebraço: puxar palma para fora, 20 segundos cada lado, 3 vezes. Punhos: unir palmas no peito e afastar / girar nos dois sentidos. Braços: cotovelo atrás da cabeça, 20 segundos cada lado, 3 vezes. Braços (atrás do corpo): dedos entrelaçados, afastar do corpo, 20 segundos, 3 vezes. Braços (acima da cabeça): dedos entrelaçados, palmas para cima, 20 segundos. Cabeça/pescoço: sim/não e inclinação lateral, 20 segundos cada lado, 3 vezes (evitar levar a cabeça para trás). Ombros: elevar ao inspirar / girar frente-trás, 3 vezes cada sentido. Tronco: braço sobre a cabeça, inclinação lateral, 20 segundos cada lado, 3 vezes."
-    },
-    "m5-v-bracos": {
-      "file": "assets/audio/m5-v-bracos.mp3",
-      "text": "Vídeo. Alongamento: antebraços e braços."
-    },
-    "m6-q2": {
-      "file": "assets/audio/m6-q2.mp3",
-      "text": "Decisão 2 de 3 Energia desligada. Próximo passo? Opção 1: Verificar a respiração e a pulsação da vítima. Opção 2: Aplicar pomada na área da queimadura imediatamente. Na imagem: Energia desligada, pronto para o próximo passo do atendimento."
-    },
-    "m3-agentes": {
-      "file": "assets/audio/m3-agentes.mp3",
-      "text": "Qual agente usar em cada classe. Água: Madeira, papel, tecidos e resíduos sólidos comuns. Na imagem: Extintor de água em uso. Pó Químico Seco: Líquidos inflamáveis e equipamentos elétricos energizados. Na imagem: Extintor de pó químico seco em uso. Gás Carbônico (CO₂): Painéis e equipamentos elétricos sensíveis, sem deixar resíduos. Na imagem: Extintor de gás carbônico em painel elétrico."
-    },
-    "m6-v-choque-hemorragia": {
-      "file": "assets/audio/m6-v-choque-hemorragia.mp3",
-      "text": "Vídeo. Choque Elétrico e Hemorragias: Agindo Rápido."
-    },
-    "m8-quiz-intro": {
-      "file": "assets/audio/m8-quiz-intro.mp3",
-      "text": "Desafio, Roleta da RCP. 2 desafios: monte a sequência da RCP e depois toque no ritmo das compressões."
-    },
-    "m6-quiz-intro": {
-      "file": "assets/audio/m6-quiz-intro.mp3",
-      "text": "Desafio, Corrente de Decisão. Cenário de choque elétrico: 3 decisões em sequência, e cada erro mostra a consequência. Mínimo de 2 acertos."
-    },
-    "m3-q1": {
-      "file": "assets/audio/m3-q1.mp3",
-      "text": "Classe A, papel, tecido, madeira. Qual agente? Opção 1: Água. Opção 2: Pó Químico Seco. Opção 3: CO₂. Na imagem: Materiais combustíveis de classe A: papel, tecido e madeira."
-    },
-    "m6-engasgo-bebe": {
-      "file": "assets/audio/m6-engasgo-bebe.mp3",
-      "text": "Engasgo em Bebês (menos de 1 ano). Proibido: compressão abdominal em bebês, o risco de ferir os órgãos internos é grande. De bruços no antebraço: cabeça mais baixa que o corpo, e 5 pancadas firmes nas costas. Vire de barriga para cima: 5 compressões torácicas no centro do peito, com a base da mão. Alterne os ciclos: até o bebê expelir o objeto ou perder a consciência."
-    },
-    "m6-v-queimaduras": {
-      "file": "assets/audio/m6-v-queimaduras.mp3",
-      "text": "Vídeo. Queimaduras: Causas, Classificação e Conduta."
-    },
-    "m6-v-intro": {
-      "file": "assets/audio/m6-v-intro.mp3",
-      "text": "Vídeo. Primeiros Socorros: Você é a Primeira Resposta."
-    },
-    "m6-engasgo-criancas-adultos": {
-      "file": "assets/audio/m6-engasgo-criancas-adultos.mp3",
-      "text": "Engasgo em Crianças (+1 ano) e Adultos. A sequência certa alterna pancadas nas costas com compressões abdominais. Posicione-se: atrás da vítima. 5 pancadas nas costas: golpes firmes entre as escápulas. Não saiu? Heimlich: 5 compressões abdominais. Repita: até o objeto sair ou a pessoa desmaiar. Se desmaiar, inicie a RCP."
-    },
-    "m5-quiz-intro": {
-      "file": "assets/audio/m5-quiz-intro.mp3",
-      "text": "Desafio, Guerra de Palpites. Verdadeiro ou falso. Mínimo de 3 acertos. (Uma rodada era bônus 2 vezes no roteiro.)"
-    },
-    "m8-order-rcp": {
-      "file": "assets/audio/m8-order-rcp.mp3",
-      "text": "Ordene as etapas da RCP. Toque nas etapas na ordem correta do procedimento."
-    },
-    "m4-reflexao": {
-      "file": "assets/audio/m4-reflexao.mp3",
-      "text": "Uma pausa para pensar. Quando foi a última vez que você ajustou a posição do seu monitor? Um ajuste de poucos segundos evita horas de desconforto no fim do dia."
-    },
-    "m4-riscos-2": {
-      "file": "assets/audio/m4-riscos-2.mp3",
-      "text": "Riscos Específicos da Edificação. Ambientais: Calor, ventilação inadequada, poeiras combustíveis. Na imagem: Riscos ambientais. Humanos: Falta de treinamento, negligência, uso incorreto de EPIs. Na imagem: Riscos humanos."
-    },
-    "m2-v-metodos": {
-      "file": "assets/audio/m2-v-metodos.mp3",
-      "text": "Vídeo. Métodos de Extinção: Abafamento, Resfriamento e Retirada."
-    },
-    "m4-q4": {
-      "file": "assets/audio/m4-q4.mp3",
-      "text": "Caixas de papelão empilhadas encostadas no quadro de distribuição elétrica. Isso é… Opção 1: Risco, combustível junto à elétrica. Opção 2: Armazenamento adequado. Opção 3: Isca, não é risco. Na imagem: Caixas de papelão empilhadas encostadas no quadro elétrico."
+      "text": "Caso 1 de 6 CNH e treinamento teórico e prático de empilhadeira. Quer operar a empilhadeira a gás. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 1 de 6 CNH e treinamento teórico e prático de empilhadeira. Quer operar a."
     },
     "m1-q3": {
       "file": "assets/audio/m1-q3.mp3",
-      "text": "Qual é a distância mínima recomendada no abandono de área? Opção 1: 10 metros. Opção 2: 50 metros. Opção 3: 100 metros. Opção 4: Não há distância definida. Na imagem: Colaboradores evacuando pela saída de emergência em direção ao ponto de encontro."
-    },
-    "menu-2": {
-      "file": "assets/audio/menu-2.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 2 de 7 liberado."
-    },
-    "m5-v-lideranca": {
-      "file": "assets/audio/m5-v-lideranca.mp3",
-      "text": "Vídeo. O Papel e a Liderança do Brigadista em Momentos de Crise."
-    },
-    "m2-q4": {
-      "file": "assets/audio/m2-q4.mp3",
-      "text": "Transporte contínuo de caixas por 3 horas sem pausa. Liberar a rotina? Opção 1: Liberar. Opção 2: Não liberar."
-    },
-    "m5-cover": {
-      "file": "assets/audio/m5-cover.mp3",
-      "text": "Módulo 5, Psicologia em Emergências. Comportamento humano, reações ao perigo e liderança do brigadista. Na imagem: Capa do módulo 5: psicologia em emergências."
-    },
-    "m3-q2": {
-      "file": "assets/audio/m3-q2.mp3",
-      "text": "Classe B, álcool, gasolina, GLP. Qual agente? Opção 1: Água. Opção 2: Pó Químico Seco. Opção 3: Nenhum dos anteriores. Na imagem: Líquidos inflamáveis de classe B: álcool, gasolina e GLP."
+      "text": "Caso 3 de 6 Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira elétrica patolada. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 3 de 6 Treinamento teórico e prático, sem CNH. Quer operar a empilhadeira."
     },
     "m1-q4": {
       "file": "assets/audio/m1-q4.mp3",
-      "text": "Qual é a ordem correta dos procedimentos básicos de emergência? Opção 1: Alerta → Análise → Corte de energia → Abandono → Socorros → Confinamento. Opção 2: Confinamento → Alerta → Abandono. Opção 3: Abandono → Alerta → Corte de energia. Opção 4: Análise → Confinamento → Alerta. Na imagem: Quatro etapas de emergência: telefone de alerta, acionamento do alarme, saída de emergência e extintor combatendo o fogo."
-    },
-    "m4-v-monitor": {
-      "file": "assets/audio/m4-v-monitor.mp3",
-      "text": "Vídeo 1 de 3. Posicionamento do monitor."
-    },
-    "m5-result-fail": {
-      "file": "assets/audio/m5-result-fail.mp3",
-      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
-    },
-    "m1-v-seg": {
-      "file": "assets/audio/m1-v-seg.mp3",
-      "text": "Vídeo. Ergonomia e Segurança do Trabalho."
-    },
-    "m3-reposicao": {
-      "file": "assets/audio/m3-reposicao.mp3",
-      "text": "Reposição baixa: certo ou errado. Correto: Use o suporte para sentar, joelhos e coluna agradecem. Evitar: Agachar por tempo prolongado sobrecarrega joelhos e coluna."
-    },
-    "m4-foto-consequencias": {
-      "file": "assets/audio/m4-foto-consequencias.mp3",
-      "text": "O Que Está em Jogo: Consequências de um Incêndio ou Explosão de Gás. Na imagem: Consequências de incêndio ou explosão, imagem 1. Na imagem: Consequências de incêndio ou explosão, imagem 2."
-    },
-    "m5-v-maos": {
-      "file": "assets/audio/m5-v-maos.mp3",
-      "text": "Vídeo. Alongamento: mãos, dedos e punhos."
-    },
-    "m3-q5": {
-      "file": "assets/audio/m3-q5.mp3",
-      "text": "O movimento repetitivo não é considerado um risco biomecânico relevante no comércio e na logística. Opção 1: Verdadeiro. Opção 2: Falso."
+      "text": "Caso 4 de 6 Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha. Quer operar a paleteira elétrica. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 4 de 6 Fez só a teoria da NR 11 de paleteira, sem a prática e sem carteirinha.."
     },
     "m1-cover": {
       "file": "assets/audio/m1-cover.mp3",
-      "text": "Módulo 1, Fundamentos da Brigada de Incêndio. Abertura, composição da brigada e procedimentos básicos, do alerta ao confinamento. Na imagem: Instrutora com EPI em fábrica, apontando para equipamentos de combate a incêndio e sinalização da brigada."
-    },
-    "m5-done": {
-      "file": "assets/audio/m5-done.mp3",
-      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 17, Ergonomia no Comércio e na Logística. Por mérito, dedicação e compromisso com a ergonomia, você percorreu os módulos disponíveis."
-    },
-    "m2-img-regras": {
-      "file": "assets/audio/m2-img-regras.mp3",
-      "text": "NR 17.5, demais regras. Impulsão/tração (vagonetes, carros de mão, paleteira) também deve observar carga, frequência, pega e distância. Prevenção: meios técnicos facilitadores, peso e tamanho adequados, pausas não superiores a 2 horas. Quem faz transporte manual não eventual deve receber orientação sobre os métodos corretos. Este capítulo não se aplica a levantamento, transporte e movimentação de pessoas, só de cargas. Lembrete: Acima de 25 quilos, use duas pessoas ou equipamento, e luvas. Na imagem: Ilustração: demais regras da NR 17.5 no depósito, paleteira, pausa, orientação e só cargas."
-    },
-    "m3-quiz-intro": {
-      "file": "assets/audio/m3-quiz-intro.mp3",
-      "text": "Desafio, Combinação Certa. Combine a classe de incêndio com o agente extintor certo. Mínimo de 3 acertos."
-    },
-    "m4-q2": {
-      "file": "assets/audio/m4-q2.mp3",
-      "text": "Fio da cafeteira passando por baixo de um tapete. Isso é… Opção 1: Risco, fio coberto / aquecimento. Opção 2: Organização correta de cabos. Opção 3: Isca, não é risco. Na imagem: Fio da cafeteira passando por baixo de um tapete."
-    },
-    "m5-cuidado": {
-      "file": "assets/audio/m5-cuidado.mp3",
-      "text": "Cuidando de Quem Cuida: Saúde Emocional do Brigadista. Reconhecer os próprios limites emocionais. Controlar o estresse, manter o foco e a calma. Buscar apoio psicológico após eventos críticos. Liderar em crise tem custo emocional real, reconhecer isso não é fraqueza, é preparo."
-    },
-    "m8-v-rcp": {
-      "file": "assets/audio/m8-v-rcp.mp3",
-      "text": "Vídeo. RCP: O Passo a Passo Que Salva Vidas."
-    },
-    "m1-v-procedimentos": {
-      "file": "assets/audio/m1-v-procedimentos.mp3",
-      "text": "Vídeo. Procedimentos Básicos: do Alerta ao Confinamento."
-    },
-    "m8-v-encerramento": {
-      "file": "assets/audio/m8-v-encerramento.mp3",
-      "text": "Vídeo. Encerramento: Você Está Pronto."
-    },
-    "m6-engasgo-bebe-foto": {
-      "file": "assets/audio/m6-engasgo-bebe-foto.mp3",
-      "text": "Engasgo em Bebês (menos de 1 ano). Na imagem: Infográfico de desengasgo em bebês: bruços no antebraço com palmadas nas costas, verificar respiração, chamar SAMU 192 e iniciar RCP se necessário."
-    },
-    "m8-v-avc-infarto": {
-      "file": "assets/audio/m8-v-avc-infarto.mp3",
-      "text": "Vídeo. Reconhecendo o AVC e o Infarto."
-    },
-    "m3-v-classes": {
-      "file": "assets/audio/m3-v-classes.mp3",
-      "text": "Vídeo. As 4 Classes de Incêndio."
-    },
-    "m4-result-pass": {
-      "file": "assets/audio/m4-result-pass.mp3",
-      "text": "Módulo 4 concluído. Título conquistado. OLHO NO RISCO. Você previne no dia a dia e age nos primeiros segundos."
-    },
-    "m2-q1": {
-      "file": "assets/audio/m2-q1.mp3",
-      "text": "Colaborador levanta sozinho 18 quilos, com a pega próxima ao corpo. Liberar? Opção 1: Liberar. Opção 2: Não liberar."
-    },
-    "m3-v-riscos": {
-      "file": "assets/audio/m3-v-riscos.mp3",
-      "text": "Vídeo. Riscos biomecânicos do dia a dia."
-    },
-    "m4-q3": {
-      "file": "assets/audio/m4-q3.mp3",
-      "text": "Extintor de PQS fixado na parede, com o pino no lugar. Isso é… Opção 1: Risco, precisa remover. Opção 2: Isca, está correto, não é risco. Opção 3: Risco, falta sinalização. Na imagem: Extintor de pó químico seco fixado na parede, com o pino no lugar."
-    },
-    "m1-areas": {
-      "file": "assets/audio/m1-areas.mp3",
-      "text": "As 3 áreas da Ergonomia. Física: Anatomia, fisiologia, biomecânica e antropometria. Envolve postura, movimentos repetitivos, manuseio de materiais e LER/DORT. Organizacional: Trabalho em grupo, tempo de trabalho, processos comunicativos, projetos participativos, gestão de qualidade. Cognitiva: Tomada de decisões, confiabilidade humana, estresse, carga mental, interação com a máquina. O sistema de ossos, tendões, músculos e ligamentos permite movimentos amplos e coordenação motora fina, mas com resistência pequena, por isso grandes resistências (carga e peso) devem ser feitas por máquinas e carrinhos, não pelo corpo."
+      "text": "Módulo 1, Logística para todos: equipamentos e quem pode operar. Objetivos do treinamento, os cinco equipamentos da Logística e do Drive e a formação exigida para cada um. Na imagem: Capa do Módulo 1: equipamentos e quem pode operar na Logística e no Drive."
     },
     "m1-q2": {
       "file": "assets/audio/m1-q2.mp3",
-      "text": "Quem comanda a ação nos primeiros minutos de uma emergência? Opção 1: Qualquer visitante presente. Opção 2: O Líder da Brigada. Opção 3: Somente o Corpo de Bombeiros. Opção 4: Ninguém, espera-se a chegada do socorro. Na imagem: Líder da brigada com prancheta orientando dois brigadistas, com extintor e ponto de encontro ao fundo."
-    },
-    "m2-img-equip": {
-      "file": "assets/audio/m2-img-equip.mp3",
-      "text": "Equipamentos de apoio da loja. Paleteira manual e carrinhos de carga. Acima de 25 quilos: duas pessoas ou equipamento, com luvas. Na imagem: Paleteira e carrinhos de carga na loja."
-    },
-    "m5-q1": {
-      "file": "assets/audio/m5-q1.mp3",
-      "text": "O pânico é sempre a pior reação possível numa emergência e deve ser eliminado a qualquer custo. Opção 1: Verdadeiro. Opção 2: Falso. Na imagem: Cena ilustrando reação de pânico em emergência."
+      "text": "Caso 2 de 6 Treinamento teórico e prático, mas sem CNH. Quer operar a empilhadeira elétrica. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 2 de 6 Treinamento teórico e prático, mas sem CNH. Quer operar a empilhad."
     },
     "m1-result-pass": {
       "file": "assets/audio/m1-result-pass.mp3",
-      "text": "Módulo 1 concluído. Título conquistado. GUARDIÃO DO ALERTA. Você já sabe o que a brigada faz e a ordem dos primeiros minutos."
-    },
-    "m4-v-temp": {
-      "file": "assets/audio/m4-v-temp.mp3",
-      "text": "Vídeo 3 de 3. Temperatura ideal do posto."
+      "text": "Módulo 1 concluído. Título conquistado. OPERADOR HABILITADO. Você sabe quem pode operar cada equipamento e o que é exigido."
     },
     "m1-quiz-intro": {
       "file": "assets/audio/m1-quiz-intro.mp3",
-      "text": "Desafio, Contra o Alarme. 4 perguntas cronometradas. Mínimo de 3 acertos para avançar."
-    },
-    "m4-dicas": {
-      "file": "assets/audio/m4-dicas.mp3",
-      "text": "Dicas rápidas do posto administrativo. Elimine reflexos: janelas paralelas ao monitor, nunca à frente ou atrás. Olhar muito tempo para a tela reduz o piscar e causa olhos secos, pisque com frequência. Na pausa, evite o computador e olhe para o horizonte, a mais de 6 metros de distância. Temperatura de conforto: 18 a 25 °C, a saída do ar-condicionado não deve incidir direto sobre o colaborador. Se não for possível redirecionar o ar, reposicione o posto de trabalho."
-    },
-    "menu-5": {
-      "file": "assets/audio/menu-5.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 5 de 7 liberado."
-    },
-    "m5-q4": {
-      "file": "assets/audio/m5-q4.mp3",
-      "text": "O brigadista também deve buscar apoio psicológico após viver um evento crítico. Opção 1: Verdadeiro. Opção 2: Falso. Na imagem: Brigadista buscando apoio após evento crítico."
-    },
-    "m4-q1": {
-      "file": "assets/audio/m4-q1.mp3",
-      "text": "Na copa: várias tomadas ligadas num único plugue em T atrás do micro-ondas. Isso é… Opção 1: Risco, sobrecarga elétrica. Opção 2: Situação segura e normal. Opção 3: Isca, não é risco. Na imagem: Várias tomadas ligadas num plugue em T atrás do micro-ondas."
-    },
-    "m5-refl-negacao": {
-      "file": "assets/audio/m5-refl-negacao.mp3",
-      "text": "Reconheça a reação. Um colega diz “deve ser só um teste” e continua na mesa, ignorando o alarme. Que reação é essa? É a negação: a pessoa se recusa a acreditar na gravidade da situação. Fale de forma clara e direta, sem discutir nem impor ordens com agressividade, e conduza-a à saída."
-    },
-    "m3-v-agua-pqs": {
-      "file": "assets/audio/m3-v-agua-pqs.mp3",
-      "text": "Vídeo. Extintores de Água e PQS: Como Operar."
-    },
-    "m6-q3": {
-      "file": "assets/audio/m6-q3.mp3",
-      "text": "Decisão 3 de 3 Vítima respirando, com queimadura visível no braço. Ação final? Opção 1: Cobrir com compressa limpa e úmida e chamar o SAMU. Opção 2: Colocar gelo diretamente sobre a queimadura. Na imagem: Vítima respirando com queimadura visível no braço."
-    },
-    "m4-v-prevenir": {
-      "file": "assets/audio/m4-v-prevenir.mp3",
-      "text": "Vídeo. Como Prevenir um Incêndio no Dia a Dia."
-    },
-    "m4-v-primeiros": {
-      "file": "assets/audio/m4-v-primeiros.mp3",
-      "text": "Vídeo. Em Caso de Incêndio: Como Agir nos Primeiros Segundos."
-    },
-    "m3-cover": {
-      "file": "assets/audio/m3-cover.mp3",
-      "text": "Módulo 3, Classes de Incêndio e Extintores. Classes A, B, C e D e como operar água, PQS e CO₂. Na imagem: Capa do módulo 3: classes de incêndio e extintores no ambiente de trabalho."
-    },
-    "m5-match": {
-      "file": "assets/audio/m5-match.mp3",
-      "text": "Associe o exercício à região."
-    },
-    "m3-q4": {
-      "file": "assets/audio/m3-q4.mp3",
-      "text": "Classe D, raspas de metal. Qual agente? Opção 1: Agente extintor específico para metais. Opção 2: Água. Opção 3: Pó Químico Seco comum. Na imagem: Raspas e resíduos de metal, típicos de incêndio classe D."
-    },
-    "m5-v-pescoco": {
-      "file": "assets/audio/m5-v-pescoco.mp3",
-      "text": "Vídeo. Cabeça, pescoço, ombros e tronco."
-    },
-    "menu-4": {
-      "file": "assets/audio/menu-4.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 4 de 7 liberado."
-    },
-    "menu-6": {
-      "file": "assets/audio/menu-6.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 6 de 7 liberado."
-    },
-    "home": {
-      "file": "assets/audio/home.mp3",
-      "text": "Abertura do treinamento. Segurança do trabalho. NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Aprenda a prevenir, combater o princípio de incêndio, apoiar na evacuação e prestar os primeiros socorros no ambiente Coca-Cola. São sete módulos, com conteúdo completo, em treinamento cem por cento online. Na imagem: capa do treinamento, brigadistas em ação no ambiente de trabalho. Na imagem: logo TecnoCursos."
-    },
-    "m5-q2": {
-      "file": "assets/audio/m5-q2.mp3",
-      "text": "Um brigadista calmo pode evitar o pânico se espalhar entre as outras pessoas. Opção 1: Verdadeiro. Opção 2: Falso. Na imagem: Brigadista calmo orientando outras pessoas."
-    },
-    "menu-7": {
-      "file": "assets/audio/menu-7.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 7 de 7 liberado."
-    },
-    "m6-ficha": {
-      "file": "assets/audio/m6-ficha.mp3",
-      "text": "Ficha Rápida: O Que Fazer em Cada Emergência. Queimaduras: Abafar/rolar; químico → água; cobrir úmido; socorro. Na imagem: Atendimento a queimadura. Choque elétrico: Desligar energia primeiro; checar respiração/pulso; cobrir; SAMU. Na imagem: Atendimento a choque elétrico. Hemorragia: Curativo compressivo; chamar socorro. Na imagem: Controle de hemorragia. Desmaio: Local arejado; deitar com pernas elevadas; afrouxar roupas. Na imagem: Atendimento a desmaio. Engasgo adulto: Tosse → Heimlich → SAMU → RCP se necessário. Na imagem: Manobra de desengasgo em adulto. Engasgo bebê: Bruços no antebraço + palmadas nas costas → SAMU → RCP se necessário. Na imagem: Manobra de desengasgo em bebê. Convulsão: Proteger a cabeça; afastar objetos; pano entre os dentes. Na imagem: Atendimento a convulsão."
-    },
-    "m1-composicao": {
-      "file": "assets/audio/m1-composicao.mp3",
-      "text": "Composição da Brigada e Atribuições. Coordenador Geral: Responsável institucional pela brigada perante a Coca-Cola. Líder da Brigada: Comanda a ação nos primeiros minutos de qualquer emergência. Brigadistas: Atuam na prevenção, combate ao princípio de incêndio, abandono de área e primeiros socorros. Prevenção: analisar os riscos existentes no local. Comunicar: informar ao coordenador irregularidades de prevenção e proteção. Orientar: orientar colaboradores do setor sobre prevenção e proteção contra incêndios."
-    },
-    "m8-result-pass": {
-      "file": "assets/audio/m8-result-pass.mp3",
-      "text": "Módulo 8 concluído. Título conquistado. PRONTO PARA AGIR. Você reconhece AVC/infarto, sabe a RCP e quem ligar."
+      "text": "Desafio, Crachá liberado?. 6 casos cronometrados. Veja o crachá do colaborador e o equipamento que ele quer usar: libere ou barre. Mínimo de 5 acertos para avançar."
     },
     "m1-v-abertura": {
       "file": "assets/audio/m1-v-abertura.mp3",
-      "text": "Vídeo. Os Primeiros Minutos Decidem Tudo."
-    },
-    "m4-result-fail": {
-      "file": "assets/audio/m4-result-fail.mp3",
-      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
-    },
-    "m5-result-pass": {
-      "file": "assets/audio/m5-result-pass.mp3",
-      "text": "Módulo 5 concluído. Título conquistado. LÍDER SERENO. Você reconhece reações e lidera com calma."
-    },
-    "m4-cmp-tomadas": {
-      "file": "assets/audio/m4-cmp-tomadas.mp3",
-      "text": "Certo ou errado: tomadas. Correto: Cada aparelho na sua tomada. Ao fim do expediente, desligue o que não está em uso. Na imagem: Cada aparelho na sua tomada. Evitar: Vários aparelhos num plugue em T sobrecarregam a tomada e podem causar curto-circuito. Na imagem: Vários aparelhos num plugue em T."
+      "text": "Vídeo. Logística segura começa por você."
     },
     "m1-result-fail": {
       "file": "assets/audio/m1-result-fail.mp3",
       "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
     },
-    "m2-transmissao": {
-      "file": "assets/audio/m2-transmissao.mp3",
-      "text": "Transmissão de Calor. Condução: Transmite a temperatura molécula a molécula. Ex.: colher na água fervente. Na imagem: Colher no vapor de água fervente, com o cabo aquecido, condução de calor. Convecção: Ar quente sobe e encontra ar frio, formando looping. Pode atingir o ponto de fulgor e iniciar novo foco. Na imagem: Panela fervendo com setas de ar quente subindo e ar frio descendo, convecção. Irradiação: Transmissão por ondas caloríferas de uma fonte de calor, como o sol. Na imagem: Pessoa aquecendo as mãos diante da lareira, irradiação de calor."
+    "m1-objetivos": {
+      "file": "assets/audio/m1-objetivos.mp3",
+      "text": "Objetivos do treinamento. Na imagem: Cinco ícones em verde: escudo, lâmpada, cofrinho, gráfico em alta e capacete. Objetivo 1. Prevenção de acidentes: agir antes que o risco vire ocorrência. Objetivo 2. Conscientização dos colaboradores: cada pessoa faz parte da segurança. Objetivo 3. Redução de custos: menos acidentes, menos perdas e paradas. Objetivo 4. Maior produtividade: operação segura é operação que flui. Objetivo 5. Bem-estar e segurança: um ambiente de trabalho melhor para todos."
     },
-    "menu-3": {
-      "file": "assets/audio/menu-3.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Sistema de Controle de Incidentes (SCI). Módulo 7, Primeiros Socorros, RCP e Encerramento. Módulo 3 de 7 liberado."
+    "m1-v-equipamentos": {
+      "file": "assets/audio/m1-v-equipamentos.mp3",
+      "text": "Vídeo. Os cinco equipamentos da Logística e do Drive."
+    },
+    "m1-quem-opera": {
+      "file": "assets/audio/m1-quem-opera.mp3",
+      "text": "Quem pode operar o quê. Empilhadeira a gás: CNH + treinamento teórico e prático. Empilhadeira elétrica: CNH + treinamento teórico e prático. Empilhadeira elétrica patolada: Sem CNH: treinamento teórico e prático. CNH não exigida. Paleteira / transpaleteira elétrica: NR 11 Operador de Paleteira (teoria e prática) + carteirinha. Plataforma elevatória (PTA): NR 35 e NR 18 (teoria e prática) + carteirinha. Manipulador de sacaria a vácuo: Formação de NR 12 obrigatória."
+    },
+    "m1-carteirinha": {
+      "file": "assets/audio/m1-carteirinha.mp3",
+      "text": "A carteirinha do operador: frente e verso. Se não tiver a validade do treinamento, não há autorização para a operação do equipamento. Na imagem: Frente da carteirinha: nome do colaborador, matrícula, validade do ASO e operador de equipamentos móveis. Na imagem: Verso da carteirinha: equipamentos motorizados autorizados e validade do treinamento de cada um."
+    },
+    "m1-q5": {
+      "file": "assets/audio/m1-q5.mp3",
+      "text": "Caso 5 de 6 NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a plataforma elevatória (PTA). Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 5 de 6 NR 35 e NR 18 (teoria e prática) e carteirinha em dia. Quer usar a."
+    },
+    "m1-q6": {
+      "file": "assets/audio/m1-q6.mp3",
+      "text": "Caso 6 de 6 NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no modo embarcado. Opção 1: Liberar. Opção 2: Barrar. Na imagem: Ilustração: Caso 6 de 6 NR 11 de paleteira e carteirinha. Quer operar a transpaleteira no."
+    },
+    "home": {
+      "file": "assets/audio/home.mp3",
+      "text": "Abertura do treinamento. Segurança do trabalho. NR 11, Logística para todos. Aprenda a operar, circular e armazenar com segurança na Logística e no Drive da Leroy Merlin. São seis módulos, com conteúdo completo, em treinamento cem por cento online. Na imagem: capa do treinamento, logística e Drive da Leroy Merlin. Na imagem: logo TecnoCursos."
+    },
+    "menu-1": {
+      "file": "assets/audio/menu-1.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Módulo 1 de 6 liberado."
+    },
+    "menu-2": {
+      "file": "assets/audio/menu-2.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Módulo 2 de 6 liberado."
+    },
+    "m2-cover": {
+      "file": "assets/audio/m2-cover.mp3",
+      "text": "Módulo 2, EPI: sua primeira barreira. Os EPIs obrigatórios na Logística, as responsabilidades do colaborador e os óculos com grau. Na imagem: Capa do Módulo 2: EPI, sua primeira barreira."
+    },
+    "m2-v-epi": {
+      "file": "assets/audio/m2-v-epi.mp3",
+      "text": "Vídeo. EPI: obrigatório e de acordo com a tarefa."
+    },
+    "m2-foto-epis": {
+      "file": "assets/audio/m2-foto-epis.mp3",
+      "text": "Os EPIs da Logística, um a um. Capacete de segurança com jugular. Óculos de segurança (empilhadeira). Luva de proteção (atividades manuais). Calçado de segurança. Cinta lombar. Protetor auricular (empilhadeira a gás)."
+    },
+    "m2-responsabilidades": {
+      "file": "assets/audio/m2-responsabilidades.mp3",
+      "text": "Responsabilidades com o EPI. Usar: Use adequadamente, conforme a tarefa. Guardar e conservar: Cuide do equipamento e guarde no lugar certo. Higienizar: Mantenha o EPI limpo. Comunicar: Avise quando estiver impróprio para uso."
+    },
+    "m2-oculos-checagem": {
+      "file": "assets/audio/m2-oculos-checagem.mp3",
+      "text": "Dois cuidados que não podem faltar. Óculos com grau: a empresa fornece. Entregue a receita médica atualizada ao seu líder, que envia ao RH para fazer a solicitação. Na imagem: Óculos de segurança com grau. Antes da atividade: avalie os EPIs e veja se estão em condições de uso. Na imagem: Verificação dos EPIs antes da atividade."
     },
     "m2-quiz-intro": {
       "file": "assets/audio/m2-quiz-intro.mp3",
-      "text": "Desafio, Apaga ou Alimenta?. Ligue cada situação ao efeito dela sobre o fogo: APAGA ou ALIMENTA. Só avança com todos os pares certos."
+      "text": "Desafio, Vista o operador. Ligue cada tarefa ao EPI que ela exige. Só avança com todos os pares certos."
     },
-    "m8-finale": {
-      "file": "assets/audio/m8-finale.mp3",
-      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 23 – Proteção Contra Incêndios (Brigada de Incêndio - Nível Avançado). Segurança não é sorte: é prevenção, preparo e atitude no momento certo. Agora você está pronto para proteger vidas. Na imagem: Imagem final de parabéns pelo treinamento concluído."
+    "m2-match": {
+      "file": "assets/audio/m2-match.mp3",
+      "text": "Vista o operador. Toque numa tarefa e depois no EPI que ela exige."
     },
     "m2-result-pass": {
       "file": "assets/audio/m2-result-pass.mp3",
-      "text": "Módulo 2 concluído. Título conquistado. MESTRE DO TETRAEDRO. Você entende o fogo e sabe o que o apaga, ou o alimenta."
+      "text": "Módulo 2 concluído. Título conquistado. EPI EM DIA. Você sabe qual proteção usar em cada tarefa."
     },
-    "m6-hemorragia-controle": {
-      "file": "assets/audio/m6-hemorragia-controle.mp3",
-      "text": "Hemorragia: Como Controlar o Sangramento. Controle o sangramento externo nesta ordem, do mais urgente ao último recurso. Ligue para a emergência: SAMU 192 ou Bombeiros 193, imediatamente. Na imagem: Profissional de saúde ligando para emergência no celular. Proteja-se: use luvas descartáveis, se tiver, antes de tocar no sangue. Na imagem: Uso de luvas descartáveis antes de tocar no sangue. Comprima a ferida: cubra com pano limpo, toalha ou gaze e pressione com firmeza por 10 a 20 minutos. Na imagem: Compressão da ferida com gaze no braço do trabalhador. Não retire panos encharcados: se o sangue passar, coloque outro pano limpo por cima, sem tirar o primeiro. Na imagem: Novo pano limpo colocado sobre o curativo encharcado, sem retirar o primeiro. Eleve o membro: braço ou perna acima do nível do coração, se não houver suspeita de fratura grave. Na imagem: Elevação do membro ferido acima do nível do coração. Torniquete como último recurso: só se a pressão direta não for suficiente num sangramento grave em membro. Na imagem: Aplicação de torniquete no braço como último recurso."
+    "m2-result-fail": {
+      "file": "assets/audio/m2-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
     },
-    "m5-reflexao": {
-      "file": "assets/audio/m5-reflexao.mp3",
-      "text": "Antes de encerrar. Quando você vai praticar esses alongamentos? Não se esqueça de pensar neste assunto todos os dias. Cuidar da sua postura hoje é evitar dores e afastamentos amanhã, pequenos ajustes, repetidos todos os dias, fazem toda a diferença."
+    "menu-3": {
+      "file": "assets/audio/menu-3.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Módulo 3 de 6 liberado."
     },
-    "m3-equipamentos": {
-      "file": "assets/audio/m3-equipamentos.mp3",
-      "text": "Mangueira e Hidrante. Mangueira: Fibra sintética com revestimento de borracha; 15 ou 30 m (30 m não é mais usado). Na imagem: Mangueira de incêndio. Hidrante / abrigo: Chapa de aço, porta com ventilação e visor “Incêndio”, suporte em meia-lua. Na imagem: Hidrante e abrigo de incêndio."
+    "m3-cover": {
+      "file": "assets/audio/m3-cover.mp3",
+      "text": "Módulo 3, Empilhadeira e PTA: operação segura. Riscos, limite de velocidade, regras de operação, checklist diário, troca de baterias e plataforma elevatória. Na imagem: Capa do Módulo 3: empilhadeira e PTA, operação segura."
     },
-    "m2-img-numeros": {
-      "file": "assets/audio/m2-img-numeros.mp3",
-      "text": "NR 17.5, os 3 números para memorizar. 60 centímetros distância máxima de pega. 25 quilos limite para transporte sozinho. 2 horas intervalo máximo sem pausa. Não exigir nem admitir transporte manual cujo peso comprometa a saúde ou segurança; reduzir a carga para mulher e trabalhador menor. Organizar pega e depósito para evitar flexões, extensões e rotações excessivas do tronco; cargas o mais próximo possível do corpo. É vedado o levantamento quando a distância horizontal da pega for superior a 60 centímetros. Importante: Sozinho só até 25 quilos. Acima disso: duas pessoas ou equipamento, com luvas. Na imagem: Ilustração: os 3 números da NR 17.5 no estoque, 60 centímetros, 25 quilos e 2 horas."
+    "m3-v-riscos": {
+      "file": "assets/audio/m3-v-riscos.mp3",
+      "text": "Vídeo. Os riscos da empilhadeira."
     },
-    "m8-rhythm": {
-      "file": "assets/audio/m8-rhythm.mp3",
-      "text": "Ritmo da compressão. Compressões de 100 a 120 por minuto. Acompanhe a pulsação e depois toque 8 vezes no mesmo ritmo."
+    "m3-riscos": {
+      "file": "assets/audio/m3-riscos.mp3",
+      "text": "Riscos da empilhadeira e suas causas. Tombamentos: Excesso de carga, manobras arriscadas, obstáculos no caminho. Na imagem: Tombamentos de empilhadeira. Colisões: Pontos cegos, excesso de velocidade. Na imagem: Colisões com empilhadeira. Atropelamentos: Falta de sinalização, distração, pontos cegos, perda de controle. Na imagem: Atropelamentos. Quedas: Material sem stretch, falta do cinto de segurança. Na imagem: Quedas de material ou operador."
+    },
+    "m3-riscos-avisos": {
+      "file": "assets/audio/m3-riscos-avisos.mp3",
+      "text": "Dois avisos que salvam a operação. Falta de manutenção: transforma qualquer equipamento em um risco. Velocidade máxima: 6 km/h no Drive e na Logística."
+    },
+    "m3-fatores": {
+      "file": "assets/audio/m3-fatores.mp3",
+      "text": "Fatores de risco: definição. Negligência: Falta de cuidado e desleixo proposital em determinada situação. Imprudência: Falta de reflexão ou precipitação em tomar atitudes diferentes daquelas aprendidas ou esperadas. Imperícia: Falta de conhecimento ou habilidade específica para o desenvolvimento de uma atividade científica ou técnica."
+    },
+    "m3-v-operacao": {
+      "file": "assets/audio/m3-v-operacao.mp3",
+      "text": "Vídeo. Operação segura, do checklist ao estacionamento."
+    },
+    "m3-operacao": {
+      "file": "assets/audio/m3-operacao.mp3",
+      "text": "Regras de operação. Checklist: Faça antes de iniciar a atividade. Na imagem: Checklist antes de iniciar a atividade. Cinto de segurança: Use sempre. Celular, nunca durante a operação. Na imagem: Cinto de segurança na operação. Capacidade e altura: Transporte só a quantidade permitida e não exceda a altura da carga. Na imagem: Capacidade e altura da carga. Garfos: Fixe a carga e não ande com os garfos erguidos. Na imagem: Garfos da empilhadeira. Carga solta: Amarre com fitilho ou fita stretch. Na imagem: Carga amarrada com stretch. Piso: Cheque sempre, pode estar molhado ou oleoso. Velocidade constante e carga estável. Na imagem: Atenção ao piso molhado ou oleoso. Empilhadeira a gás: Proibida dentro da loja e em lugares fechados. Na imagem: Empilhadeira a gás proibida em locais fechados."
+    },
+    "m3-v-baterias": {
+      "file": "assets/audio/m3-v-baterias.mp3",
+      "text": "Vídeo. Processo seguro de troca de baterias."
+    },
+    "m3-checklist-pta": {
+      "file": "assets/audio/m3-checklist-pta.mp3",
+      "text": "Checklist diário e plataforma elevatória. Todos os dias. Checklist diário: Obrigatório em empilhadeira e PTA, antes de iniciar a atividade. NR 35 + NR 18. PTA: Só opera quem fez NR 35 e NR 18 (teoria e prática) e tem a carteirinha. Equipamento motorizado: Só depois de participar das formações e possuir a carteirinha correspondente."
+    },
+    "m3-checklist-obrigatorio": {
+      "file": "assets/audio/m3-checklist-obrigatorio.mp3",
+      "text": "Obrigatoriedade do checklist diário em empilhadeira / PTA. Na imagem: Check list de inspeção de uso da PTA, plataforma de trabalho aéreo. Na imagem: Ficha de inspeção diária da empilhadeira."
+    },
+    "m3-quiz-intro": {
+      "file": "assets/audio/m3-quiz-intro.mp3",
+      "text": "Desafio, Checklist relâmpago. 10 situações, uma de cada vez. Marque Conforme ou Não conforme antes do tempo acabar. Mínimo de 8 acertos para avançar."
+    },
+    "m3-q1": {
+      "file": "assets/audio/m3-q1.mp3",
+      "text": "Situação 1 de 10 Operador com o cinto de segurança afivelado. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 1 de 10 Operador com o cinto de segurança afivelado.."
+    },
+    "m3-q2": {
+      "file": "assets/audio/m3-q2.mp3",
+      "text": "Situação 2 de 10 Deslocamento com os garfos erguidos. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 2 de 10 Deslocamento com os garfos erguidos.."
+    },
+    "m3-q3": {
+      "file": "assets/audio/m3-q3.mp3",
+      "text": "Situação 3 de 10 Palete de peças soltas amarrado com fitilho e fita stretch. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 3 de 10 Palete de peças soltas amarrado com fitilho e fita stretch.."
+    },
+    "m3-q4": {
+      "file": "assets/audio/m3-q4.mp3",
+      "text": "Situação 4 de 10 Empilhadeira a gás circulando dentro da loja. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 4 de 10 Empilhadeira a gás circulando dentro da loja.."
+    },
+    "m3-q5": {
+      "file": "assets/audio/m3-q5.mp3",
+      "text": "Situação 5 de 10 Operador respondendo mensagem no celular em movimento. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 5 de 10 Operador respondendo mensagem no celular em movimento.."
+    },
+    "m3-q6": {
+      "file": "assets/audio/m3-q6.mp3",
+      "text": "Situação 6 de 10 Checklist preenchido antes de iniciar a atividade. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 6 de 10 Checklist preenchido antes de iniciar a atividade.."
+    },
+    "m3-q7": {
+      "file": "assets/audio/m3-q7.mp3",
+      "text": "Situação 7 de 10 Velocímetro marcando 10 km/h no Drive. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 7 de 10 Velocímetro marcando 10 km/h no Drive.."
+    },
+    "m3-q8": {
+      "file": "assets/audio/m3-q8.mp3",
+      "text": "Situação 8 de 10 Carga dentro da capacidade e da altura permitidas. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 8 de 10 Carga dentro da capacidade e da altura permitidas.."
+    },
+    "m3-q9": {
+      "file": "assets/audio/m3-q9.mp3",
+      "text": "Situação 9 de 10 Equipamento em manutenção sendo usado \"só dessa vez\". Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 9 de 10 Equipamento em manutenção sendo usado \"só dessa vez\".."
+    },
+    "m3-q10": {
+      "file": "assets/audio/m3-q10.mp3",
+      "text": "Situação 10 de 10 Operador reduz a velocidade e confere o piso molhado antes de passar. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 10 de 10 Operador reduz a velocidade e confere o piso molhado antes d."
     },
     "m3-result-pass": {
       "file": "assets/audio/m3-result-pass.mp3",
-      "text": "Módulo 3 concluído. Título conquistado. AGENTE CERTO. Você escolhe a classe e o extintor corretos."
+      "text": "Módulo 3 concluído. Título conquistado. CHECKLIST SEM FALHA. Você reconhece uma operação segura e a que não é."
     },
-    "m8-result-fail": {
-      "file": "assets/audio/m8-result-fail.mp3",
+    "m3-result-fail": {
+      "file": "assets/audio/m3-result-fail.mp3",
       "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
     },
-    "m2-q2": {
-      "file": "assets/audio/m2-q2.mp3",
-      "text": "Caixa de 30 quilos do estoque ao checkout. Liberar transporte sozinho? Opção 1: Liberar. Opção 2: Não liberar."
+    "menu-4": {
+      "file": "assets/audio/menu-4.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Módulo 4 de 6 liberado."
+    },
+    "m4-cover": {
+      "file": "assets/audio/m4-cover.mp3",
+      "text": "Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Transpaleteira elétrica, paleteira manual, onde nunca estacionar e as regras do pedestre. Na imagem: Capa do Módulo 4: paleteiras e pedestres, dividindo o mesmo piso."
+    },
+    "m4-v-transpaleteira": {
+      "file": "assets/audio/m4-v-transpaleteira.mp3",
+      "text": "Vídeo. Transpaleteira elétrica: inspeção a cada turno."
+    },
+    "m4-v-manual": {
+      "file": "assets/audio/m4-v-manual.mp3",
+      "text": "Vídeo. Paleteira manual: empurre, não puxe."
+    },
+    "m4-v-pedestres": {
+      "file": "assets/audio/m4-v-pedestres.mp3",
+      "text": "Vídeo. Pedestres na Logística."
+    },
+    "m4-estacionar": {
+      "file": "assets/audio/m4-estacionar.mp3",
+      "text": "Onde nunca estacionar. Parte 1 de 2. Equipamentos de emergência. Saída de emergência: Nunca obstrua. Hidrantes e extintor: Mantenha livres. Painéis elétricos: Acesso livre. Acesso sempre desimpedido. Sprinkler: Nunca obstrua. Nunca armazene produtos com altura que obstrua o sprinkler."
+    },
+    "m4-estacionar-2": {
+      "file": "assets/audio/m4-estacionar-2.mp3",
+      "text": "Onde nunca estacionar. Parte 2 de 2. Circulação e pedestres. Trânsito de pessoas: Não bloqueie faixas e passagens. Ruas de acesso: Não estacione no meio da circulação. Prateleiras: Acesso livre. Não bloqueie o acesso a elas. Pedestres: Regra do pedestre. Só nas faixas, sem celular, longe do equipamento em movimento, em áreas isoladas e a 5 m na elevação."
+    },
+    "m4-quiz-intro": {
+      "file": "assets/audio/m4-quiz-intro.mp3",
+      "text": "Desafio, Pode parar aqui?. 6 situações. Em cada uma, escolha o local onde é proibido deixar o equipamento. Mínimo de 5 acertos para avançar."
+    },
+    "m4-q1": {
+      "file": "assets/audio/m4-q1.mp3",
+      "text": "Onde é proibido deixar a transpaleteira? Opção 1: Em frente à saída de emergência. Opção 2: Na vaga demarcada para equipamentos. Opção 3: Na área de espera sinalizada. Opção 4: No ponto de carga de bateria. Na imagem: Ilustração: Onde é proibido deixar a transpaleteira?."
+    },
+    "m4-q2": {
+      "file": "assets/audio/m4-q2.mp3",
+      "text": "Qual destes locais NÃO pode ser obstruído pelo equipamento? Opção 1: Corredor sem uso, fora da circulação. Opção 2: Vaga demarcada para equipamentos. Opção 3: Hidrante e extintor de incêndio. Opção 4: Área de espera sinalizada. Na imagem: Ilustração: Qual destes locais NÃO pode ser obstruído pelo equipamento?."
+    },
+    "m4-q3": {
+      "file": "assets/audio/m4-q3.mp3",
+      "text": "Onde NÃO se deve parar a paleteira? Opção 1: Vaga demarcada para equipamentos. Opção 2: Em frente ao painel elétrico. Opção 3: Área de espera sinalizada. Opção 4: Ao lado da bancada de embalagem, fora da passagem. Na imagem: Ilustração: Onde NÃO se deve parar a paleteira?."
+    },
+    "m4-q4": {
+      "file": "assets/audio/m4-q4.mp3",
+      "text": "Qual situação é proibida? Opção 1: Equipamento na vaga demarcada. Opção 2: Equipamento parado sobre a faixa de pedestres. Opção 3: Equipamento na área de espera. Opção 4: Equipamento recolhido no ponto de carga. Na imagem: Ilustração: Qual situação é proibida?."
+    },
+    "m4-q5": {
+      "file": "assets/audio/m4-q5.mp3",
+      "text": "Onde nunca deixar o equipamento estacionado? Opção 1: No meio da rua de acesso. Opção 2: Na vaga demarcada. Opção 3: Na área de espera sinalizada. Opção 4: No ponto de carga. Na imagem: Ilustração: Onde nunca deixar o equipamento estacionado?."
+    },
+    "m4-q6": {
+      "file": "assets/audio/m4-q6.mp3",
+      "text": "Qual armazenagem é proibida? Opção 1: Altura que obstrui o sprinkler. Opção 2: Altura com folga até o sprinkler. Opção 3: Palete no rack, dentro do limite. Opção 4: Palete strechado e fitilhado. Na imagem: Ilustração: Qual armazenagem é proibida?."
+    },
+    "m4-result-pass": {
+      "file": "assets/audio/m4-result-pass.mp3",
+      "text": "Módulo 4 concluído. Título conquistado. PISTA LIVRE. Você sabe onde parar o equipamento e como circular a pé."
+    },
+    "m4-result-fail": {
+      "file": "assets/audio/m4-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "menu-5": {
+      "file": "assets/audio/menu-5.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Módulo 5 de 6 liberado."
+    },
+    "m5-cover": {
+      "file": "assets/audio/m5-cover.mp3",
+      "text": "Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Postura e limites de peso, o manipulador de sacaria do Drive e o uso correto do estilete. Na imagem: Capa do Módulo 5: movimentação manual, manipulador a vácuo e estilete."
+    },
+    "m5-v-manual": {
+      "file": "assets/audio/m5-v-manual.mp3",
+      "text": "Vídeo. Movimentação manual de cargas."
+    },
+    "m5-v-vacuo": {
+      "file": "assets/audio/m5-v-vacuo.mp3",
+      "text": "Vídeo. Manipulador de sacaria a vácuo no Drive."
+    },
+    "m5-foto-estilete": {
+      "file": "assets/audio/m5-foto-estilete.mp3",
+      "text": "Uso do estilete: forma correta. O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado. Use apenas ferramentas homologadas para corte de embalagens. Atenção: O estilete não é um EPI, mas você é o responsável pela conservação e pelo uso adequado. Regra: Use apenas ferramentas homologadas para corte de embalagens. Na imagem: Estilete homologado sendo usado da forma correta para cortar embalagens."
+    },
+    "m5-regras": {
+      "file": "assets/audio/m5-regras.mp3",
+      "text": "Regras da movimentação manual. Parte 1 de 2. Como carregar com segurança. Acima de 25 quilos ou sem boa pega: Peça ajuda a um colega e redobre a atenção com a postura. Mercadoria comprida e de difícil pega: Peça ajuda a partir de 15 quilos. Postura: Apanhe a carga de frente, sem torcer o tronco e o mais próximo do corpo. Ferramentas: Use EPIs e ferramentas homologadas para movimentar, abastecer e cortar embalagens."
+    },
+    "m5-regras-2": {
+      "file": "assets/audio/m5-regras-2.mp3",
+      "text": "Regras da movimentação manual. Parte 2 de 2. Equipamentos de apoio. Escada: No abastecimento ou na pega, use o capacete. Cinta lombar: Ajuste só durante a movimentação e afrouxe os velcros nas pausas. Cargas mais pesadas: Use a transpaleteira elétrica."
+    },
+    "m5-quiz-intro": {
+      "file": "assets/audio/m5-quiz-intro.mp3",
+      "text": "Desafio, Balança da decisão. 8 cargas. Para cada uma, decida: levantar sozinho, com um colega ou com equipamento. Mínimo de 6 acertos para avançar."
+    },
+    "m5-q1": {
+      "file": "assets/audio/m5-q1.mp3",
+      "text": "Carga 1 de 8 Caixa de 8 quilos, boa pega, prateleira ao lado. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 1 de 8 Caixa de 8 quilos, boa pega, prateleira ao lado.."
+    },
+    "m5-q2": {
+      "file": "assets/audio/m5-q2.mp3",
+      "text": "Carga 2 de 8 Caixa de 30 quilos, boa pega, prateleira ao lado. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 2 de 8 Caixa de 30 quilos, boa pega, prateleira ao lado.."
+    },
+    "m5-q3": {
+      "file": "assets/audio/m5-q3.mp3",
+      "text": "Carga 3 de 8 Perfil metálico comprido de 18 quilos, difícil de segurar. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 3 de 8 Perfil metálico comprido de 18 quilos, difícil de segurar.."
+    },
+    "m5-q4": {
+      "file": "assets/audio/m5-q4.mp3",
+      "text": "Carga 4 de 8 Caixa de 12 quilos, boa pega, destino a 20 metros. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 4 de 8 Caixa de 12 quilos, boa pega, destino a 20 metros.."
+    },
+    "m5-q5": {
+      "file": "assets/audio/m5-q5.mp3",
+      "text": "Carga 5 de 8 Palete fechado de 600 quilos. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 5 de 8 Palete fechado de 600 quilos.."
+    },
+    "m5-q6": {
+      "file": "assets/audio/m5-q6.mp3",
+      "text": "Carga 6 de 8 Saco de 50 quilos no Drive. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 6 de 8 Saco de 50 quilos no Drive.."
+    },
+    "m5-q7": {
+      "file": "assets/audio/m5-q7.mp3",
+      "text": "Carga 7 de 8 Chapa de madeira inteira. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 7 de 8 Chapa de madeira inteira.."
+    },
+    "m5-q8": {
+      "file": "assets/audio/m5-q8.mp3",
+      "text": "Carga 8 de 8 Caixa de 10 quilos, boa pega, 1 metro de deslocamento. Opção 1: Sozinho. Opção 2: Com um colega. Opção 3: Com equipamento. Na imagem: Ilustração: Carga 8 de 8 Caixa de 10 quilos, boa pega, 1 metro de deslocamento.."
+    },
+    "m5-result-pass": {
+      "file": "assets/audio/m5-result-pass.mp3",
+      "text": "Módulo 5 concluído. Título conquistado. CORPO E CARGA. Você decide bem quando levantar sozinho, pedir ajuda ou usar equipamento."
+    },
+    "m5-result-fail": {
+      "file": "assets/audio/m5-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "menu-6": {
+      "file": "assets/audio/menu-6.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Módulo 6 de 6 liberado."
+    },
+    "menu-done": {
+      "file": "assets/audio/menu-done.mp3",
+      "text": "NR 11, Logística para todos. Conteúdo programático completo. Módulo 1, Logística para todos: equipamentos e quem pode operar. Módulo 2, EPI: sua primeira barreira. Módulo 3, Empilhadeira e PTA: operação segura. Módulo 4, Paleteiras e pedestres: dividindo o mesmo piso. Módulo 5, Movimentação manual, manipulador a vácuo e estilete. Módulo 6, Armazenagem, docas e encerramento. Treinamento concluído. Você finalizou todos os módulos."
+    },
+    "m6-cover": {
+      "file": "assets/audio/m6-cover.mp3",
+      "text": "Módulo 6, Armazenagem, docas e encerramento. Palete aéreo, longarinas e palete PBR, equipamento certo para cada produto, docas e manuais de segurança. Na imagem: Capa do Módulo 6: armazenagem, docas e encerramento."
+    },
+    "m6-v-armazenagem": {
+      "file": "assets/audio/m6-v-armazenagem.mp3",
+      "text": "Vídeo. Palete aéreo e armazenagem segura."
+    },
+    "m6-v-docas": {
+      "file": "assets/audio/m6-v-docas.mp3",
+      "text": "Vídeo. Equipamento certo e segurança nas docas."
+    },
+    "m6-armazenagem": {
+      "file": "assets/audio/m6-armazenagem.mp3",
+      "text": "Armazenagem: medidas e cuidados. Parte 1 de 2. As medidas. Altura: Até 50 centímetros acima do limitador do rack. Na imagem: Altura. Sistema de incêndio e elétrica: Empilhar a 1 m de distância. Na imagem: Sistema de incêndio e elétrica. Parede: Manter 50 centímetros de distância. Na imagem: Parede. Palete PBR: 1,20 m ou 1,00 m, padrão nacional. Na imagem: Palete PBR."
+    },
+    "m6-armazenagem-2": {
+      "file": "assets/audio/m6-armazenagem-2.mp3",
+      "text": "Armazenagem: medidas e cuidados. Parte 2 de 2. Longarinas e palete. Longarinas: Verifique a capacidade de carga antes de armazenar. O vão é de 1,00 m. Na imagem: Longarinas. Tocos: São eles que ficam apoiados na longarina, e não as ripas. Na imagem: Tocos. Palete PBR em bom estado: Sem ripas quebradas e sem tocos faltando. Na imagem: Palete PBR em bom estado."
+    },
+    "m6-docas": {
+      "file": "assets/audio/m6-docas.mp3",
+      "text": "Dicas de equipamentos e docas. Equipamento: use o adequado para cada produto e verifique as condições antes de usar. Não arraste: mercadorias pelo piso. Peça ajuda em mercadorias comprida e de difícil pega. Distâncias acima de 2 m: use carrinhos ou paleteiras manuais. Rampa da doca: não guarde produtos nela e deixe elevada quando não estiver em uso. Uso da rampa: somente apoiada no caminhão, para a correta distribuição de peso. Na doca: prefira a paleteira elétrica à manual."
+    },
+    "m6-manuais": {
+      "file": "assets/audio/m6-manuais.mp3",
+      "text": "Manuais de segurança e SESMT. Manual de segurança, Logística: disponível no Google Drive, pasta SESMT para todos - LMB, subpasta MANUAIS. Link: https://drive.google.com/file/d/1UmbjKqiv1f6IDeeJbRqS9wFIBVJMLpj6/view?usp=sharing. Manual de segurança, Drive: disponível na mesma pasta, subpasta MANUAIS. Link: https://drive.google.com/file/d/1BC1ton7IiuBNAkVilW1FdLXA6s7b5OyS/view?usp=sharing. Dúvidas: sesmt@leroymerlin.com.br."
+    },
+    "m6-v-encerramento": {
+      "file": "assets/audio/m6-v-encerramento.mp3",
+      "text": "Vídeo. Logística segura é com você."
+    },
+    "m6-quiz-intro": {
+      "file": "assets/audio/m6-quiz-intro.mp3",
+      "text": "Desafio, Na medida. 7 medidas do treinamento. Escolha o valor correto em cada uma. Mínimo de 5 acertos para concluir."
+    },
+    "m6-q1": {
+      "file": "assets/audio/m6-q1.mp3",
+      "text": "Qual é a velocidade máxima no Drive e na Logística? Opção 1: 3 km/h. Opção 2: 6 km/h. Opção 3: 10 km/h. Opção 4: 15 km/h. Na imagem: Ilustração: Qual é a velocidade máxima no Drive e na Logística?."
+    },
+    "m6-q2": {
+      "file": "assets/audio/m6-q2.mp3",
+      "text": "A que distância mínima o pedestre fica do equipamento em elevação? Opção 1: 1 metro. Opção 2: 2 metros. Opção 3: 5 metros. Opção 4: 10 metros. Na imagem: Ilustração: A que distância mínima o pedestre fica do equipamento em elevação?."
+    },
+    "m6-q3": {
+      "file": "assets/audio/m6-q3.mp3",
+      "text": "Quanto a carga do palete aéreo pode passar do limitador do rack? Opção 1: Até 20 centímetros. Opção 2: Até 50 centímetros. Opção 3: Até 1 metro. Opção 4: Não há limite. Na imagem: Ilustração: Quanto a carga do palete aéreo pode passar do limitador do rack?."
+    },
+    "m6-q4": {
+      "file": "assets/audio/m6-q4.mp3",
+      "text": "Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura elétrica? Opção 1: 10 centímetros. Opção 2: 50 centímetros. Opção 3: 1 metro. Opção 4: 2 metros. Na imagem: Ilustração: Qual a distância do empilhamento até o sistema de incêndio e a infraestrutura el."
+    },
+    "m6-q5": {
+      "file": "assets/audio/m6-q5.mp3",
+      "text": "E a distância do empilhamento até a parede? Opção 1: 10 centímetros. Opção 2: 25 centímetros. Opção 3: 50 centímetros. Opção 4: 1 metro. Na imagem: Ilustração: E a distância do empilhamento até a parede?."
+    },
+    "m6-q6": {
+      "file": "assets/audio/m6-q6.mp3",
+      "text": "Qual a capacidade máxima da transpaleteira elétrica? Opção 1: 500 quilos. Opção 2: 1.000 quilos. Opção 3: 1.500 quilos. Opção 4: 3.000 quilos. Na imagem: Ilustração: Qual a capacidade máxima da transpaleteira elétrica?."
+    },
+    "m6-q7": {
+      "file": "assets/audio/m6-q7.mp3",
+      "text": "Quais as medidas do palete PBR padrão nacional? Opção 1: 0,80 m ou 0,80 m. Opção 2: 1,00 m ou 1,00 m. Opção 3: 1,20 m ou 1,00 m. Opção 4: 1,20 m ou 1,20 m. Na imagem: Ilustração: Quais as medidas do palete PBR padrão nacional?."
+    },
+    "m6-finale": {
+      "file": "assets/audio/m6-finale.mp3",
+      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 11 – Logística para Todos. Segurança é ter as pessoas em primeiro lugar, em cada movimento. Na imagem: Capa de parabéns, conclusão do treinamento."
+    },
+    "m6-result-pass": {
+      "file": "assets/audio/m6-result-pass.mp3",
+      "text": "Módulo 6 concluído. Título conquistado. MEDIDA CERTA. Você domina as medidas e regras da armazenagem e das docas."
     },
     "m6-result-fail": {
       "file": "assets/audio/m6-result-fail.mp3",
       "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
-    },
-    "m5-refl-paralisia": {
-      "file": "assets/audio/m5-refl-paralisia.mp3",
-      "text": "Reconheça a reação. Durante o alarme, um colega para no meio do corredor e não consegue decidir nem se mover. Que reação é essa? É a paralisia: a pessoa fica incapaz de tomar decisões ou de se mover. Aproxime-se com calma, mantenha contato visual e use comandos simples e diretos."
-    },
-    "m2-match": {
-      "file": "assets/audio/m2-match.mp3",
-      "text": "Apaga ou Alimenta?. Toque numa situação e depois no efeito dela sobre o fogo."
-    },
-    "m1-reflexao": {
-      "file": "assets/audio/m1-reflexao.mp3",
-      "text": "Antes de começar. Você já pensou na sua postura hoje? O segredo está na postura correta. Ao longo deste módulo você vai entender como aplicá-la em cada função do chão de loja."
-    },
-    "menu-8": {
-      "file": "assets/audio/menu-8.mp3",
-      "text": "NR 23, Proteção Contra Incêndios, Brigada de Incêndio, Nível Avançado. Conteúdo programático completo. Módulo 1, Fundamentos da Brigada de Incêndio. Módulo 2, O Fogo: Teoria e Métodos de Extinção. Módulo 3, Classes de Incêndio e Extintores. Módulo 4, Prevenção, Riscos e Ação em Emergência. Módulo 5, Psicologia em Emergências. Módulo 6, Primeiros Socorros: Traumas e Emergências Clínicas. Módulo 7, Sistema de Controle de Incidentes (SCI). Módulo 8, RCP, Infarto e Encerramento. Módulo 8 de 8 liberado."
-    },
-    "m7-cover": {
-      "file": "assets/audio/m7-cover.mp3",
-      "text": "Módulo 6, Sistema de Controle de Incidentes (SCI). Como organizar comando, comunicação e resposta em qualquer emergência. Na imagem: Capa do módulo 6: Sistema de Controle de Incidentes."
-    },
-    "m7-v-oque": {
-      "file": "assets/audio/m7-v-oque.mp3",
-      "text": "Vídeo. O Que É o Sistema de Controle de Incidentes?."
-    },
-    "m7-principios": {
-      "file": "assets/audio/m7-principios.mp3",
-      "text": "Princípios Básicos do SCI. Hierarquia clara: Uma cadeia de comando definida, sem ambiguidade sobre quem decide. Funções bem definidas: Cada pessoa sabe exatamente qual é o seu papel. Organização modular: A estrutura cresce ou diminui conforme o tamanho da emergência. Linguagem comum: Termos simples e de fácil entendimento entre todos os envolvidos. Flexibilidade e escalabilidade: O sistema se adapta a diferentes tipos e portes de incidente. Integração: Entre equipes internas e órgãos externos, como Bombeiros e SAMU. Objetivos claros: Planos operacionais bem definidos, sem depender de improviso."
-    },
-    "m7-estrutura": {
-      "file": "assets/audio/m7-estrutura.mp3",
-      "text": "Vídeo. Estrutura Básica do SCI."
-    },
-    "m7-funcoes": {
-      "file": "assets/audio/m7-funcoes.mp3",
-      "text": "Funções do Brigadista Dentro do SCI. Apoiar o comando: Informar o Comandante do Incidente sobre a situação local. Executar sua função: Agir de acordo com o papel que lhe foi atribuído. Manter a comunicação: Com os líderes e com o restante da equipe. Relatar riscos: Avisar imediatamente sobre riscos e necessidades que encontrar. Auxiliar vítimas: Apoiar a evacuação e o atendimento de quem precisar."
-    },
-    "m7-procedimento": {
-      "file": "assets/audio/m7-procedimento.mp3",
-      "text": "Vídeo. Procedimentos do SCI em Ação."
-    },
-    "m7-vantagens": {
-      "file": "assets/audio/m7-vantagens.mp3",
-      "text": "Vantagens de Implantar o SCI. Quatro ganhos quando o SCI está implantado na operação:. Agilidade: Organização que acelera a resposta em incidentes. Menos improviso: Reduz falhas causadas por decisões de última hora. Mais segurança: Para as equipes envolvidas e para as vítimas. Coordenação: Entre diferentes setores da empresa ou instituições externas."
-    },
-    "m7-reflexao": {
-      "file": "assets/audio/m7-reflexao.mp3",
-      "text": "Reflexão Sobre o SCI. Por que o treinamento contínuo é tão importante para o SCI funcionar de verdade? O SCI é uma ferramenta essencial para uma atuação organizada, mas só funciona se todo mundo souber usá-la na hora certa. O treinamento contínuo é a chave para isso, e a Brigada de Incêndio é peça fundamental para aplicar o SCI com sucesso."
-    },
-    "m7-quiz-intro": {
-      "file": "assets/audio/m7-quiz-intro.mp3",
-      "text": "Desafio, Comando Estruturado. 4 perguntas pra fechar o módulo: objetivo, estrutura, funções do brigadista e princípios do SCI. Mínimo de 3 acertos."
-    },
-    "m7-q1": {
-      "file": "assets/audio/m7-q1.mp3",
-      "text": "Qual é o principal objetivo do Sistema de Controle de Incidentes (SCI)? Opção 1: Substituir a brigada em situações de emergência.. Opção 2: Garantir que todas as emergências sejam resolvidas sem apoio externo.. Opção 3: Organizar e coordenar a resposta a emergências de forma estruturada.. Na imagem: Equipe organizada respondendo a uma emergência com comando claro."
-    },
-    "m7-result-pass": {
-      "file": "assets/audio/m7-result-pass.mp3",
-      "text": "Módulo 7 concluído. Título conquistado. COMANDO ESTRUTURADO. Você sabe como o SCI organiza a resposta a qualquer emergência."
-    },
-    "m7-result-fail": {
-      "file": "assets/audio/m7-result-fail.mp3",
-      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
-    },
-    "m7-q2": {
-      "file": "assets/audio/m7-q2.mp3",
-      "text": "Na estrutura básica do SCI, quem fica no topo e quais são as quatro seções logo abaixo? Opção 1: Comandante do Incidente no topo; Operações, Planejamento, Logística e Administração/Finanças abaixo.. Opção 2: Brigadista no topo; Segurança, Evacuação, Combate e Primeiros Socorros abaixo.. Opção 3: Diretoria da empresa no topo; RH, Manutenção, Almoxarifado e Portaria abaixo.. Na imagem: Organograma do SCI: Comandante do Incidente e quatro seções."
-    },
-    "m7-q3": {
-      "file": "assets/audio/m7-q3.mp3",
-      "text": "Qual destas é uma função do brigadista dentro do SCI? Opção 1: Assumir sozinho o comando de toda a emergência, sem informar ninguém.. Opção 2: Apoiar o comando, executar sua função, manter a comunicação e relatar riscos.. Opção 3: Decidir sozinho o orçamento e os registros financeiros do incidente.. Na imagem: Brigadista comunicando a situação ao comando durante emergência."
-    },
-    "m7-q4": {
-      "file": "assets/audio/m7-q4.mp3",
-      "text": "Qual princípio do SCI evita que cada equipe use termos diferentes e se confunda na emergência? Opção 1: Linguagem comum, termos simples e de fácil entendimento entre todos.. Opção 2: Organização modular, a estrutura cresce ou diminui conforme o incidente.. Opção 3: Flexibilidade e escalabilidade, o sistema se adapta a diferentes portes.. Na imagem: Equipes internas e externas se comunicando com linguagem comum na emergência."
-    },
-    "m2-tetraedro-elementos": {
-      "file": "assets/audio/m2-tetraedro-elementos.mp3",
-      "text": "Tetraedro do Fogo: os 4 Elementos. O tetraedro do fogo é o modelo que explica como o fogo começa e se mantém. Tirando qualquer um dos quatro elementos, o fogo se apaga. Combustível: o material que queima, sólido (madeira, papel), líquido (gasolina, álcool) ou gasoso (gás de cozinha). Comburente: o que torna a queima possível, o oxigênio do ar é o mais comum. Calor: a energia que inicia o fogo, como uma faísca, e leva o combustível à temperatura de ignição. Reação em cadeia: o calor das próprias chamas alimenta a queima, fazendo o fogo se propagar sozinho."
     }
   }
 }

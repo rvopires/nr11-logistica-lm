@@ -254,9 +254,32 @@
       });
   }
 
+  function notifyMissingAudio(key, url) {
+    console.warn('[narração] áudio não encontrado:', key, url);
+    var el = document.getElementById('simToast');
+    if (!el) return;
+    el.hidden = false;
+    el.textContent = 'Áudio desta página ainda não foi gerado (' + key + ').';
+    el.classList.add('is-on');
+    clearTimeout(el._narrationToast);
+    el._narrationToast = setTimeout(function () {
+      el.classList.remove('is-on');
+      el.hidden = true;
+    }, 2800);
+  }
+
   /** Toca o mp3 pré-gerado em assets/audio/. */
   function playPageAudio(key) {
-    var url = CONFIG.audioDir + T.audioFileName(key);
+    if (!key || !T || !T.audioFileName) {
+      setSpeaking(false);
+      return Promise.resolve(false);
+    }
+    /* Caminho absoluto a partir da página — evita falhar conforme a pasta do servidor. */
+    var rel = CONFIG.audioDir + T.audioFileName(key);
+    var url = rel;
+    try {
+      url = new URL(rel, document.baseURI || global.location.href).href;
+    } catch (e) {}
     var id = ++state.playId;
     setSpeaking(true);
     var audio = new Audio(url);
@@ -265,13 +288,14 @@
       if (id === state.playId) stopSpeech();
     }, { once: true });
     audio.addEventListener('error', function () {
-      console.warn('[narração] áudio não encontrado: ' + url);
+      notifyMissingAudio(key, url);
       if (id === state.playId) stopSpeech();
     }, { once: true });
     return audio.play()
       .then(function () { return true; })
       .catch(function (err) {
         console.warn('[narração] não tocou ' + url + ':', err && err.message ? err.message : err);
+        notifyMissingAudio(key, url);
         if (id === state.playId) stopSpeech();
         return false;
       });

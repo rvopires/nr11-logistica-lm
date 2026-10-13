@@ -165,11 +165,11 @@
 
   <audio id="bg-music" loop preload="metadata" aria-hidden="true"></audio>
 
-  <script src="question-screen-data.js?v=fat1"></script>
+  <script src="question-screen-data.js?v=transcriptAll1"></script>
   <script src="question-screen.js?v=fat1"></script>
   <script src="capa-animada.js?v=nr11"></script>
-  <script src="narration-text.js?v=mergeFirstAid7"></script>
-  <script src="narration.js?v=tts6"></script>
+  <script src="narration-text.js?v=transcriptAll1"></script>
+  <script src="narration.js?v=transcriptAll1"></script>
   <script>
 (function () {
   var session = window.QUESTION_SCREEN_SESSION;
@@ -1192,8 +1192,9 @@
     if (window.Narration) Narration.toggleNarration();
   });
 
-  /* O vídeo tem narração própria: quando ele começa, a nossa cala para não
-     falarem por cima. O botão continua ligado e volta a narrar na tela seguinte. */
+  /* O vídeo tem narração própria: quando o Panda/vídeo da página começa, a
+     nossa cala para não falarem por cima. Só cala mídia da página — não o
+     áudio da Transcrição (que fica fora do shell). */
   function hushNarration() {
     if (window.Narration) Narration.stopSpeech();
   }
@@ -1203,8 +1204,14 @@
     var msg = typeof data === 'object' ? (data.message || data.event || data.type || '') : data;
     if (String(msg).toLowerCase().indexOf('panda_play') !== -1) hushNarration();
   });
-  // 'play' não sobe na árvore, por isso a escuta na fase de captura
-  shell.addEventListener('play', hushNarration, true);
+  shell.addEventListener('play', function (ev) {
+    var t = ev && ev.target;
+    if (!t) return;
+    if (t.id === 'bg-music') return;
+    if (t.tagName === 'VIDEO' || (t.tagName === 'AUDIO' && t.classList && t.classList.contains('qs-player'))) {
+      hushNarration();
+    }
+  }, true);
 
   var musicOn = false;
   var btnMusic = document.getElementById('btnMusic');
