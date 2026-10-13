@@ -880,7 +880,7 @@ window.QUESTION_SCREEN_SESSION = {
           "id": "m3-q5",
           "type": "question",
           "variant": "duelo",
-          "question": "Situação 5 de 10 · Operador respondendo mensagem no celular em movimento.",
+          "question": "Situação 5 de 10 · Operador respondendo mensagem no celular com a máquina em movimento.",
           "alternatives": [
             {
               "id": "a",
@@ -895,9 +895,9 @@ window.QUESTION_SCREEN_SESSION = {
           ],
           "explanation": "Não use o celular durante a operação.",
           "review": "Celular na operação",
-          "transcript": "Situação 5 de 10 Operador respondendo mensagem no celular em movimento. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 5 de 10 Operador respondendo mensagem no celular em movimento..",
+          "transcript": "Situação 5 de 10 Operador respondendo mensagem no celular com a máquina em movimento. Opção 1: Conforme. Opção 2: Não conforme. Na imagem: Ilustração: Situação 5 de 10 Operador respondendo mensagem no celular com a máquina em movimento..",
           "image": "assets/fotos/m3p5.png",
-          "imageAlt": "Ilustração: Situação 5 de 10 · Operador respondendo mensagem no celular em movimento."
+          "imageAlt": "Ilustração: Situação 5 de 10 · Operador respondendo mensagem no celular com a máquina em movimento."
         },
         {
           "id": "m3-q6",
